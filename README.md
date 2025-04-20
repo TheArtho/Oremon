@@ -1,2 +1,2 @@
-# Bedrock-Addon-Dev-Environment
-Minecraft Bedrock Edition dev environment for NodeJS
+# Oremon
+Minecraft Bedrock Edition port of Cobblemon mod.

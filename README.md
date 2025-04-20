@@ -84,7 +84,7 @@ This project is a **fan-made mod** and is **not affiliated with Nintendo, Game F
 - [ ] Implementing Moves
 - [ ] Pokéball capture mechanics
 - [ ] Item mechanics
-- [ ] Turn-based battle system
-- [ ] Real-time battle system
+- [ ] Turn-based battle systems (Classic and Legends Arceus battle system)
+- [ ] Real-time battle system (Legends Z-A battle system)
 - [ ] Generation 8-9 and custom Oremon support
 

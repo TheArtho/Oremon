@@ -1,6 +1,6 @@
-# Oremon Core – Minecraft Bedrock Addon (Gen 1–8)
+# Oremon – Minecraft Bedrock Addon (Gen 1–8)
 
-**Oremon Core** is an open-source Minecraft Bedrock Behavior Pack written in **TypeScript**, bringing a modular Pokémon-inspired experience to Bedrock Edition. It includes full data support for all official Pokémon from **Generation 1 to Generation 8**, and is designed with extensibility, performance, and clean development in mind.
+**Oremon** is an open-source Minecraft Bedrock Behavior Pack written in **TypeScript**, bringing a modular Pokémon-inspired experience to Bedrock Edition. It aims to include full data support for all official Pokémon from **Generation 1 to Generation 8**.
 
 > Inspired by the Pokémon franchise and powered by the latest Bedrock Scripting API (`@minecraft/server 2.0.0-beta`).
 
@@ -8,7 +8,7 @@
 
 ## Current Features
 
-- Includes every Pokémon from Gen 1 to Gen 8 (800+)
+- Includes every Pokémon data from Gen 1 to Gen 8 (800+)
 - TypeScript-based scripting for safe, maintainable code
 - NodeJS environment for automated compilation and deployment
 - Clean and type-safe `OremonData` interface structure
@@ -58,7 +58,7 @@ npm run build:clean
 
 Contributions are welcome! If you’d like to:
 
-- Add more mechanics (battles, capturing, etc.)
+- Add more mechanics (moves, battles, capturing, etc.)
 - Improve typings or organization
 - Report issues or suggest features
 
@@ -66,13 +66,13 @@ Contributions are welcome! If you’d like to:
 
 ---
 
-## 📘 License
+## License
 
 This project is licensed under the **MIT License**.
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This project is a **fan-made mod** and is **not affiliated with Nintendo, Game Freak, or The Pokémon Company**. All trademarks, logos, and names belong to their respective owners.
 
@@ -80,9 +80,10 @@ This project is a **fan-made mod** and is **not affiliated with Nintendo, Game F
 
 ## 🔮 Roadmap
 
-- [ ] Battle and stat systems
-- [ ] Move execution engine
+- [ ] Implementing Moves
 - [ ] Pokéball capture mechanics
+- [ ] Item mechanics
+- [ ] Turn-based battle system
+- [ ] Real-time battle system
 - [ ] Generation 8-9 and custom Oremon support
 
----

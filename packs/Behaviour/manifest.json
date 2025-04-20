@@ -1,0 +1,55 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Artho."
+		]
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			21,
+			70
+		],
+		"uuid": "defbc1e4-ac16-406b-a737-d211fef65be0",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "565f807d-cf5a-48c0-afca-9724d66b540c",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "8643f16e-2ad7-4052-94db-9f9ce63f4489",
+			"entry": "scripts/main.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.0.0-beta"
+		}
+	]
+}

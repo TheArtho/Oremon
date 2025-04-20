@@ -1,0 +1,44 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Artho."
+		]
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			21,
+			70
+		],
+		"uuid": "4fe1d83e-b1bf-4393-a19c-cfc7d84fdee5",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "9a4ac8e0-fd51-4c37-85d7-b96c3e7fe9e1",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "defbc1e4-ac16-406b-a737-d211fef65be0",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

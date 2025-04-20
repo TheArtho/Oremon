@@ -1,5 +1,5 @@
 // Elemental types used by Oremon
-export enum OremonType {
+export enum Types {
     Normal = "normal",
     Fire = "fire",
     Water = "water",
@@ -20,22 +20,15 @@ export enum OremonType {
     Fairy = "fairy"
 }
 
-// Oremon IDs
-export enum OremonId {
-    Bulbasaur = "oremon:bulbasaur",
-    Ivysaur = "oremon:ivysaur",
-    Venusaur = "oremon:venusaur",
-}
-
 // Move categories
-export enum MoveCategory {
+export enum MoveCategories {
     Physical = "physical",
     Special = "special",
     Status = "status"
 }
 
 // Stat identifiers
-export enum Stat {
+export enum Stats {
     HP = "hp",
     Attack = "atk",
     Defense = "def",

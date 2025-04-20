@@ -1,0 +1,60 @@
+const deerling = {
+    "id": "oremon:deerling",
+    "name": "oremon.deerling.name",
+    "description": "oremon.deerling.description",
+    "types": [
+        "normal",
+        "grass"
+    ],
+    "baseStats": {
+        "hp": 60,
+        "atk": 60,
+        "def": 50,
+        "atk_spe": 40,
+        "def_spe": 50,
+        "spd": 75
+    },
+    "evYield": {
+        "hp": 0,
+        "atk": 0,
+        "def": 0,
+        "atk_spe": 0,
+        "def_spe": 0,
+        "spd": 1
+    },
+    "abilities": {},
+    "genderRate": 4,
+    "catchRate": 190,
+    "eggGroups": [
+        "ground"
+    ],
+    "hatchCounter": 20,
+    "height": 0.6,
+    "weight": 19.5,
+    "baseExperience": 67,
+    "growthRateId": "medium",
+    "generationId": 5,
+    "isBaby": false,
+    "hasGenderDifferences": false,
+    "formSwitchable": true,
+    "shape": "quadruped",
+    "color": "Pink",
+    "model": {
+        "default": "models/entity/deerling.geo.json"
+    },
+    "textures": {
+        "default": "textures/entity/deerling.png"
+    },
+    "evolutions": [
+        {
+            "into": "oremon:sawsbuck",
+            "method": "level-up",
+            "conditions": {
+                "minLevel": 34,
+                "needsOverworldRain": false,
+                "turnUpsideDown": false
+            }
+        }
+    ]
+};
+export default deerling;

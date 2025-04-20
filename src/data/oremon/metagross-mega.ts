@@ -1,0 +1,46 @@
+import { OremonData } from "../../types/OremonData";
+
+const metagross_mega: OremonData = {
+  "id": "oremon:metagross-mega",
+  "name": "oremon.metagross-mega.name",
+  "description": "oremon.metagross-mega.description",
+  "types": [
+    "steel",
+    "psychic"
+  ],
+  "baseStats": {
+    "hp": 80,
+    "atk": 145,
+    "def": 150,
+    "atk_spe": 105,
+    "def_spe": 110,
+    "spd": 110
+  },
+  "evYield": {
+    "hp": 0,
+    "atk": 0,
+    "def": 3,
+    "atk_spe": 0,
+    "def_spe": 0,
+    "spd": 0
+  },
+  "abilities": {},
+  "eggGroups": [
+    "mineral"
+  ],
+  "height": 2.5,
+  "weight": 942.9,
+  "baseExperience": 315,
+  "isBaby": false,
+  "hasGenderDifferences": false,
+  "formSwitchable": false,
+  "model": {
+    "default": "models/entity/metagross-mega.geo.json"
+  },
+  "textures": {
+    "default": "textures/entity/metagross-mega.png"
+  },
+  "evolutions": []
+};
+
+export default metagross_mega;

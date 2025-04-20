@@ -1,6 +1,13 @@
+import cn from "./cn";
 import en from "./en";
 import fr from "./fr";
-const locales = { en, fr };
+import de from "./de";
+import es from "./es";
+import it from "./it";
+import jp from "./jp";
+import kr from "./kr";
+import us from "./us";
+const locales = { cn, de, en, es, fr, it, jp, kr, us };
 export class Localization {
     static setLanguage(lang) {
         if (locales[lang]) {
@@ -12,6 +19,8 @@ export class Localization {
     }
     static t(key, overrideLang) {
         const lang = overrideLang ?? this.currentLang;
+        if (!key)
+            return "undefined";
         return locales[lang]?.[key] ?? `${key}`;
     }
     static has(key, lang) {

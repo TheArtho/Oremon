@@ -1,5 +1,5 @@
-import { OremonRegistry } from "../registry/OremonRegistry";
-import oremonData from "../../data/oremon/index";
+import { OremonDataRegistry } from "../registry/OremonDataRegistry";
+import oremonData from "../../data/oremonData";
 
 export class CoreSystem {
     static initialize() {
@@ -7,9 +7,9 @@ export class CoreSystem {
     }
 
     private static registerAllOremon() {
-        for (const oremon of oremonData) {
-            OremonRegistry.register(oremon);
+        for (const data of oremonData) {
+            OremonDataRegistry.register(data);
         }
-        console.log(`[Oremon] Registered ${OremonRegistry.getAll().length} Oremon`);
+        console.log(`[Oremon] Registered ${OremonDataRegistry.getAll().length} Oremon`);
     }
 }

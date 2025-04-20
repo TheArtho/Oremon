@@ -3,7 +3,7 @@ const path = require("path");
 const { execSync } = require("child_process");
 const config = require("./buildconfig.json");
 
-const modName = config.name || "MyMod";
+const modName = config.name;
 
 const behaviorPack = path.join(__dirname, "packs", "Behaviour");
 const resourcePack = path.join(__dirname, "packs", "Resource");

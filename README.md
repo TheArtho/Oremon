@@ -81,7 +81,7 @@ This project is a **fan-made mod** and is **not affiliated with Nintendo, Game F
 
 ## 🔮 Roadmap
 
-- [ ] Implementing Moves
+- [ ] Implementing Moves Data
 - [ ] Pokéball capture mechanics
 - [ ] Item mechanics
 - [ ] Turn-based battle systems (Classic and Legends Arceus battle system)

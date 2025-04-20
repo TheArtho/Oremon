@@ -7,7 +7,7 @@ class Game {
         CoreSystem.initialize();
         this.registerEvents();
 
-        console.log(`${Localization.t(bulbasaur.description, "jp")}`);
+        console.log(`Test: ${Localization.t(bulbasaur.description, "en")}`);
     }
 
     static registerEvents() {

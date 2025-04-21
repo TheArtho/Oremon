@@ -1,0 +1,125 @@
+{
+  "format_version": "1.21.70",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "oremon:bulbasaur",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "properties": {
+        "oremon:shiny": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        },
+        "oremon:gender": {
+          "type": "enum",
+          "values": ["male", "female", "genderless"],
+          "default": "male",
+          "client_sync": true
+        }
+      }
+    },
+    "component_groups": {
+      "despawn": {
+        "minecraft:instant_despawn": {}
+      },
+      "shiny": {
+        "minecraft:skin_id": { "value": 1 }
+      },
+      "tamed": {
+        "minecraft:is_tamed": {},
+        "minecraft:persistent": {},
+        "minecraft:behavior.follow_owner": {
+          "priority": 4,
+          "speed_multiplier": 1.2,
+          "start_distance": 5,
+          "stop_distance": 3
+        }
+      },
+      "sit": {
+        "minecraft:sittable": {}
+      },
+      "evolve_to:ivysaur": {
+        "minecraft:transformation": {
+          "into": "oremon:ivysaur<oremon:evolution>",
+          "keep_owner": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": { "family": ["oremon"] },
+      "minecraft:skin_id": { "value": 0 },
+      "minecraft:nameable": {
+        "always_show": false,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:collision_box": { "width": 0.9, "height": 1.2 },
+      "minecraft:health": { "value": 100, "max": 100 },
+      "minecraft:attack": { "damage": 10 },
+      "minecraft:movement": { "value": 0.25 },
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:navigation.generic": {},
+      "minecraft:movement.generic": {},
+      "minecraft:behavior.random_stroll": { "priority": 8, "speed_multiplier": 1 },
+      "minecraft:behavior.look_at_player": {
+        "priority": 0,
+        "probability": 1,
+        "angle_of_view_horizontal": 90,
+        "angle_of_view_vertical": 90
+      },
+      "minecraft:behavior.float": { "priority": 0 },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_water": false,
+        "breathes_air": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:physics": {
+        "has_gravity": true
+      }
+    },
+    "events": {
+      "oremon:despawn": {
+        "add": { "component_groups": ["despawn"] }
+      },
+      "oremon:make_shiny": {
+        "add": { "component_groups": ["shiny"] },
+        "set_property": {
+          "oremon:shiny": true
+        }
+      },
+      "oremon:make_male": {
+        "set_property": {
+          "oremon:gender": "male"
+        }
+      },
+      "oremon:make_female": {
+        "set_property": {
+          "oremon:gender": "female"
+        }
+      },
+      "oremon:make_genderless": {
+        "set_property": {
+          "oremon:gender": "genderless"
+        }
+      },
+      "oremon:sit": {
+        "add": { "component_groups": ["sit"] }
+      },
+      "oremon:tame": {
+        "add": { "component_groups": ["tamed"] }
+      },
+      "oremon:evolve_ivysaur": {
+        "add": { "component_groups": ["evolve_to:ivysaur"] }
+      },
+      "oremon:evolution": {
+        "add": { "component_groups": ["tamed"] }
+      }
+    }
+  }
+}

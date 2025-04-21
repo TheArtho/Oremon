@@ -1,0 +1,17 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.head_look": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(q.head_x_rotation(0), -80, 80)",
+            "math.clamp(q.head_y_rotation(0), -45, 45)",
+            0
+          ]
+        }
+      }
+    }
+  }
+}

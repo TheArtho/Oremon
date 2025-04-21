@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "oremon:bulbasaur",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/bulbasaur/bulbasaur",
+        "shiny": "textures/entity/bulbasaur/bulbasaur_shiny"
+      },
+      "geometry": {
+        "default": "geometry.bulbasaur"
+      },
+      "animations": {
+        "look_at": "animation.head_look",
+        "look_at_controller": "controller.animation.oremon.lookat",
+        "walk_controller": "controller.animation.oremon.walk",
+        "idle": "animation.bulbasaur.ground_idle",
+        "walk": "animation.bulbasaur.ground_walk"
+      },
+      "scripts": {
+        "animate": ["walk_controller", "look_at_controller"]
+      },
+      "spawn_egg": {
+        "overlay_color": "#669853",
+        "base_color": "#60a89c"
+      },
+      "render_controllers": ["controller.render.bulbasaur"]
+    }
+  }
+}

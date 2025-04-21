@@ -1,2 +1,4 @@
 pack.name=Oremon Resource Pack
 pack.description=Oremon Addon resource pack.
+entity.oremon:bulbasaur.name=Bulbasaur
+item.spawn_egg.entity.oremon:bulbasaur.name=Bulbasaur

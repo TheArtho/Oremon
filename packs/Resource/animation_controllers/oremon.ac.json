@@ -1,0 +1,37 @@
+{
+  "format_version": "1.12.0",
+  "animation_controllers": {
+    "controller.animation.oremon.lookat": {
+      "initial_state": "look_at",
+      "states": {
+        "look_at": {
+          "blend_transition": 0,
+          "animations": ["look_at"]
+        }
+      }
+    },
+    "controller.animation.oremon.walk": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "blend_transition": 0.2,
+          "animations": ["idle"],
+          "transitions": [
+            {
+              "moving": "q.modified_move_speed > 0.1"
+            }
+          ]
+        },
+        "moving": {
+          "blend_transition": 0.2,
+          "animations": ["walk"],
+          "transitions": [
+            {
+              "standing": "q.modified_move_speed < 0.1"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

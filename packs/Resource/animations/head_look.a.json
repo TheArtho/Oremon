@@ -6,8 +6,8 @@
       "bones": {
         "head": {
           "rotation": [
-            "math.clamp(q.head_x_rotation(0), -80, 80)",
-            "math.clamp(q.head_y_rotation(0), -45, 45)",
+            "q.head_x_rotation(0)",
+            "Math.clamp(q.head_y_rotation(0), -60, 60)",
             0
           ]
         }

@@ -1,4 +1,6 @@
 // Main data structure for a creature in the Oremon system
+import {GenderRatio} from "../enums/base";
+
 export interface OremonData {
     id: string;
     name: string;
@@ -25,7 +27,7 @@ export interface OremonData {
         1?: string;
         H?: string;
     };
-    genderRate?: number;
+    genderRate?: number | GenderRatio;
     catchRate?: number;
     eggGroups?: [string, string?];
     hatchCounter?: number;

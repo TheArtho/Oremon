@@ -20,6 +20,31 @@
       }
     },
     "component_groups": {
+      "size:very_small": {
+        "minecraft:scale": {
+          "value": 0.6
+        }
+      },
+      "size:small": {
+        "minecraft:scale": {
+          "value": 0.8
+        }
+      },
+      "size:medium": {
+        "minecraft:scale": {
+          "value": 1
+        }
+      },
+      "size:big": {
+        "minecraft:scale": {
+          "value": 1.2
+        }
+      },
+      "size:gigantic": {
+        "minecraft:scale": {
+          "value": 1.4
+        }
+      },
       "despawn": {
         "minecraft:instant_despawn": {}
       },
@@ -29,11 +54,16 @@
       "tamed": {
         "minecraft:is_tamed": {},
         "minecraft:persistent": {},
+        "minecraft:tick_world": {
+          "never_despawn": true,
+          "radius": 6
+        },
         "minecraft:behavior.follow_owner": {
           "priority": 4,
           "speed_multiplier": 1.2,
-          "start_distance": 5,
-          "stop_distance": 3
+          "start_distance": 4,
+          "stop_distance": 3,
+          "can_teleport": true
         }
       },
       "sit": {
@@ -47,6 +77,8 @@
       }
     },
     "components": {
+      "minecraft:interact": {},
+      "minecraft:tameable": {},
       "minecraft:type_family": { "family": ["oremon"] },
       "minecraft:skin_id": { "value": 0 },
       "minecraft:nameable": {
@@ -65,8 +97,8 @@
       "minecraft:behavior.look_at_player": {
         "priority": 0,
         "probability": 1,
-        "angle_of_view_horizontal": 90,
-        "angle_of_view_vertical": 90
+        "angle_of_view_horizontal": 45,
+        "angle_of_view_vertical": 45
       },
       "minecraft:behavior.float": { "priority": 0 },
       "minecraft:breathable": {
@@ -114,11 +146,26 @@
       "oremon:tame": {
         "add": { "component_groups": ["tamed"] }
       },
-      "oremon:evolve_ivysaur": {
-        "add": { "component_groups": ["evolve_to:ivysaur"] }
-      },
       "oremon:evolution": {
         "add": { "component_groups": ["tamed"] }
+      },
+      "setsize:very_small": {
+        "add": { "component_groups": ["size:very_small"] }
+      },
+      "setsize:small": {
+        "add": { "component_groups": ["size:small"] }
+      },
+      "setsize:medium": {
+        "add": { "component_groups": ["size:medium"] }
+      },
+      "setsize:big": {
+        "add": { "component_groups": ["size:big"] }
+      },
+      "setsize:gigantic": {
+        "add": { "component_groups": ["size:gigantic"] }
+      },
+      "oremon:evolve_ivysaur": {
+        "add": { "component_groups": ["evolve_to:ivysaur"] }
       }
     }
   }

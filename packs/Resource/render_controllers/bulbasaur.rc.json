@@ -8,7 +8,9 @@
           "*": "material.default"
         }
       ],
-      "textures": ["texture.default"]
+      "textures": [
+        "query.skin_id == 1 ? texture.shiny : texture.default"
+      ]
     }
   }
 }

@@ -21,7 +21,7 @@
         "walk": "animation.bulbasaur.ground_walk"
       },
       "scripts": {
-        "animate": ["walk_controller", "look_at_controller"]
+        "animate": ["walk_controller"]
       },
       "spawn_egg": {
         "overlay_color": "#669853",

@@ -1,19 +1,19 @@
-import bulbasaur from "./data/oremon/bulbasaur";
-import {Localization} from "./i18n/Localization";
 import {OremonEntityEventHandler} from "./core/monsters/OremonEntityEventHandler";
+import {PlayerSaveEventHandler} from "./core/save/PlayerSaveEventHandler";
 
 class Game {
     static initialize() {
         try {
             this.registerEvents();
-            console.log(`Test: ${Localization.t(bulbasaur.description, "en")}`);
         }
         catch (e) {
             console.error(e);
         }
+        console.log("[Oremon] Addon initialized!")
     }
 
     static registerEvents() {
+        PlayerSaveEventHandler.register();
         OremonEntityEventHandler.register();
     }
 

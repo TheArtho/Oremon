@@ -81,4 +81,8 @@ export class OremonEntityEventHandler {
             }
         });
     }
+
+    private static registerPlayerLeaveEvent() {
+
+    }
 }

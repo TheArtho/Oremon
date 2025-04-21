@@ -67,7 +67,7 @@ export class OremonEntityEventHandler {
                     system.run(() => {
                         tameable.tame(player);
                         try {
-                            entity.triggerEvent("oremon:tame");
+                            entity.triggerEvent("oremon:capture");
                         }
                         catch (e) {
                             console.error(e);
@@ -76,5 +76,7 @@ export class OremonEntityEventHandler {
                 }
             }
         });
+    }
+    static registerPlayerLeaveEvent() {
     }
 }

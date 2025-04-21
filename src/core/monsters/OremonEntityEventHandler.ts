@@ -67,19 +67,16 @@ export class OremonEntityEventHandler {
             if (family && family.hasTypeFamily("oremon")) {
                 const tameable = entity.getComponent("tameable");
 
-                if (tameable) {
+                if (tameable && !tameable.isTamed) {
                     system.run(() => {
                         tameable.tame(player);
                         try {
-                            entity.triggerEvent("oremon:tame");
+                            entity.triggerEvent("oremon:capture");
                         }
                         catch (e) {
                             console.error(e);
                         }
                     });
-                }
-                else {
-                    player.sendMessage("Oremon is not tameable.");
                 }
             }
         });

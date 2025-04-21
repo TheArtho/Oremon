@@ -54,10 +54,6 @@
       "tamed": {
         "minecraft:is_tamed": {},
         "minecraft:persistent": {},
-        "minecraft:tick_world": {
-          "never_despawn": true,
-          "radius": 6
-        },
         "minecraft:behavior.follow_owner": {
           "priority": 4,
           "speed_multiplier": 1.2,
@@ -73,6 +69,12 @@
         "minecraft:transformation": {
           "into": "oremon:ivysaur<oremon:evolution>",
           "keep_owner": true
+        }
+      },
+      "tick_world": {
+        "minecraft:tick_world": {
+          "never_despawn": true,
+          "radius": 6
         }
       }
     },
@@ -143,11 +145,11 @@
       "oremon:sit": {
         "add": { "component_groups": ["sit"] }
       },
-      "oremon:tame": {
-        "add": { "component_groups": ["tamed"] }
+      "oremon:capture": {
+        "add": { "component_groups": ["tamed", "tick_world"] }
       },
       "oremon:evolution": {
-        "add": { "component_groups": ["tamed"] }
+        "add": { "component_groups": ["tamed", "tick_world"] }
       },
       "setsize:very_small": {
         "add": { "component_groups": ["size:very_small"] }

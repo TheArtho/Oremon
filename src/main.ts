@@ -1,4 +1,4 @@
-import {OremonEntityEventHandler} from "./core/monsters/OremonEntityEventHandler";
+import {OremonEntityEventHandler} from "./core/monster/OremonEntityEventHandler";
 import {PlayerSaveEventHandler} from "./core/save/PlayerSaveEventHandler";
 
 class Game {

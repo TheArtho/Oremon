@@ -23,7 +23,7 @@ class Game {
 
             // Checks for a oremon
             if (family && family.hasTypeFamily("oremon")) {
-                const level = (Math.random() * 9 + 1).toFixed(0);
+                const level = Math.ceil(Math.random() * 9);
                 const name = Localization.t(oremonData[entity.typeId].name, "en");
 
                 entity.nameTag = `${name}\nLv.${level}`;

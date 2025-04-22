@@ -69,7 +69,28 @@ Contributions are welcome! If you’d like to:
 
 ## License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the **MIT License** for all original code and assets created specifically for Oremon.
+
+> However, some assets used in this project are licensed under separate terms. See below.
+
+---
+
+## Attributions
+
+This project makes use of **3D models from the Cobblemon project**, which are included under the terms of the **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)** license.
+
+You can view the original Cobblemon assets and license at:  
+🔗 [https://gitlab.com/cable-mc/cobblemon-assets/-/tree/master](https://gitlab.com/cable-mc/cobblemon-assets/-/tree/master)
+
+In accordance with the license:
+
+- All Cobblemon models remain © their original creators.
+- These assets are **used non-commercially** and **with attribution**.
+- Any modifications made to these models are indicated in the resource pack.
+- This project does **not monetize** or offer paid distribution of Cobblemon models.
+
+Attribution:  
+> "3D Pokémon models used in this addon are adapted from the [Cobblemon project](https://cobblemon.com), licensed under CC BY-NC 4.0 by CableMC and contributors. These assets have been modified for use in the Minecraft Bedrock platform."
 
 ---
 

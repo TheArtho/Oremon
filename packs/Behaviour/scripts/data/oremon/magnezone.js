@@ -39,12 +39,6 @@ const magnezone = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/magnezone.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/magnezone.png"
-    },
     "evolutions": []
 };
 export default magnezone;

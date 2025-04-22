@@ -40,12 +40,6 @@ const pansear: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Red",
-  "model": {
-    "default": "models/entity/pansear.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pansear.png"
-  },
   "evolutions": [
     {
       "into": "oremon:simisear",

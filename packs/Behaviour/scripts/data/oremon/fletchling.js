@@ -39,12 +39,6 @@ const fletchling = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Red",
-    "model": {
-        "default": "models/entity/fletchling.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/fletchling.png"
-    },
     "evolutions": [
         {
             "into": "oremon:fletchinder",

@@ -38,12 +38,6 @@ const duskull = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Black",
-    "model": {
-        "default": "models/entity/duskull.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/duskull.png"
-    },
     "evolutions": [
         {
             "into": "oremon:dusclops",

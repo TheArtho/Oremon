@@ -41,12 +41,6 @@ const zekrom: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Black",
-  "model": {
-    "default": "models/entity/zekrom.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/zekrom.png"
-  },
   "evolutions": []
 };
 

@@ -41,12 +41,6 @@ const meloetta_aria: OremonData = {
   "formSwitchable": true,
   "shape": "humanoid",
   "color": "White",
-  "model": {
-    "default": "models/entity/meloetta-aria.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/meloetta-aria.png"
-  },
   "evolutions": []
 };
 

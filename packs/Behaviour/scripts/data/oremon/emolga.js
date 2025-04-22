@@ -39,12 +39,6 @@ const emolga = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "White",
-    "model": {
-        "default": "models/entity/emolga.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/emolga.png"
-    },
     "evolutions": []
 };
 export default emolga;

@@ -32,12 +32,6 @@ const marowak_alola = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/marowak-alola.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/marowak-alola.png"
-    },
     "evolutions": []
 };
 export default marowak_alola;

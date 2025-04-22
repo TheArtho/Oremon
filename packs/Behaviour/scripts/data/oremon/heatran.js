@@ -39,12 +39,6 @@ const heatran = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/heatran.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/heatran.png"
-    },
     "evolutions": []
 };
 export default heatran;

@@ -40,12 +40,6 @@ const sunflora: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/sunflora.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/sunflora.png"
-  },
   "evolutions": []
 };
 

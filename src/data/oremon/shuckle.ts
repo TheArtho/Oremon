@@ -41,12 +41,6 @@ const shuckle: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/shuckle.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/shuckle.png"
-  },
   "evolutions": []
 };
 

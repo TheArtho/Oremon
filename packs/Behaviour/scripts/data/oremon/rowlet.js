@@ -39,12 +39,6 @@ const rowlet = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/rowlet.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/rowlet.png"
-    },
     "evolutions": [
         {
             "into": "oremon:dartrix",

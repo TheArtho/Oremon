@@ -41,12 +41,6 @@ const deerling: OremonData = {
   "formSwitchable": true,
   "shape": "quadruped",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/deerling.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/deerling.png"
-  },
   "evolutions": [
     {
       "into": "oremon:sawsbuck",

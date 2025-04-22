@@ -32,12 +32,6 @@ const grimer_alola = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/grimer-alola.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/grimer-alola.png"
-    },
     "evolutions": []
 };
 export default grimer_alola;

@@ -38,12 +38,6 @@ const minun = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/minun.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/minun.png"
-    },
     "evolutions": []
 };
 export default minun;

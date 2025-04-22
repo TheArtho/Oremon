@@ -31,12 +31,6 @@ const tornadus_therian = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/tornadus-therian.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/tornadus-therian.png"
-    },
     "evolutions": []
 };
 export default tornadus_therian;

@@ -38,12 +38,6 @@ const stoutland = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/stoutland.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/stoutland.png"
-    },
     "evolutions": []
 };
 export default stoutland;

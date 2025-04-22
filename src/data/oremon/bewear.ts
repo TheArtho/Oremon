@@ -41,12 +41,6 @@ const bewear: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/bewear.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/bewear.png"
-  },
   "evolutions": []
 };
 

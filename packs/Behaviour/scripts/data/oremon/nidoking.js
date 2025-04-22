@@ -40,12 +40,6 @@ const nidoking = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/nidoking.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/nidoking.png"
-    },
     "evolutions": []
 };
 export default nidoking;

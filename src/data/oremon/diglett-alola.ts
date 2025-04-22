@@ -34,12 +34,6 @@ const diglett_alola: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/diglett-alola.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/diglett-alola.png"
-  },
   "evolutions": []
 };
 

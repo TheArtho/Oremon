@@ -40,12 +40,6 @@ const togetic = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "White",
-    "model": {
-        "default": "models/entity/togetic.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/togetic.png"
-    },
     "evolutions": [
         {
             "into": "oremon:togekiss",

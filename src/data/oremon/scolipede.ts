@@ -41,12 +41,6 @@ const scolipede: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Red",
-  "model": {
-    "default": "models/entity/scolipede.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/scolipede.png"
-  },
   "evolutions": []
 };
 

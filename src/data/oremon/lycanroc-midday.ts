@@ -40,12 +40,6 @@ const lycanroc_midday: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/lycanroc-midday.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/lycanroc-midday.png"
-  },
   "evolutions": []
 };
 

@@ -32,12 +32,6 @@ const mimikyu_totem_busted = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/mimikyu-totem-busted.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mimikyu-totem-busted.png"
-    },
     "evolutions": []
 };
 export default mimikyu_totem_busted;

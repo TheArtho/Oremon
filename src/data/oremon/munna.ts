@@ -40,12 +40,6 @@ const munna: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/munna.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/munna.png"
-  },
   "evolutions": [
     {
       "into": "oremon:musharna",

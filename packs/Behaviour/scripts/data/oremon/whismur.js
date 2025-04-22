@@ -39,12 +39,6 @@ const whismur = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/whismur.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/whismur.png"
-    },
     "evolutions": [
         {
             "into": "oremon:loudred",

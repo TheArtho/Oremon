@@ -40,12 +40,6 @@ const nidorina: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/nidorina.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/nidorina.png"
-  },
   "evolutions": [
     {
       "into": "oremon:nidoqueen",

@@ -41,12 +41,6 @@ const exeggcute: OremonData = {
   "formSwitchable": false,
   "shape": "heads",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/exeggcute.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/exeggcute.png"
-  },
   "evolutions": [
     {
       "into": "oremon:exeggutor",

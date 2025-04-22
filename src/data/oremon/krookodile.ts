@@ -41,12 +41,6 @@ const krookodile: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Red",
-  "model": {
-    "default": "models/entity/krookodile.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/krookodile.png"
-  },
   "evolutions": []
 };
 

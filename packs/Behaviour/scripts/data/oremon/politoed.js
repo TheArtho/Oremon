@@ -38,12 +38,6 @@ const politoed = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Green",
-    "model": {
-        "default": "models/entity/politoed.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/politoed.png"
-    },
     "evolutions": []
 };
 export default politoed;

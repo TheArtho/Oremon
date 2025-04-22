@@ -40,12 +40,6 @@ const dedenne = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/dedenne.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/dedenne.png"
-    },
     "evolutions": []
 };
 export default dedenne;

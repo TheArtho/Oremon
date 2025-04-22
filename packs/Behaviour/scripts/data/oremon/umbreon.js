@@ -38,12 +38,6 @@ const umbreon = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Black",
-    "model": {
-        "default": "models/entity/umbreon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/umbreon.png"
-    },
     "evolutions": []
 };
 export default umbreon;

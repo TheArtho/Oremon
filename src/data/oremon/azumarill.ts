@@ -42,12 +42,6 @@ const azumarill: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/azumarill.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/azumarill.png"
-  },
   "evolutions": []
 };
 

@@ -32,12 +32,6 @@ const pumpkaboo_small = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/pumpkaboo-small.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pumpkaboo-small.png"
-    },
     "evolutions": []
 };
 export default pumpkaboo_small;

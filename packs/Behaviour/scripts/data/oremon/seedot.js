@@ -39,12 +39,6 @@ const seedot = {
     "formSwitchable": false,
     "shape": "legs",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/seedot.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/seedot.png"
-    },
     "evolutions": [
         {
             "into": "oremon:nuzleaf",

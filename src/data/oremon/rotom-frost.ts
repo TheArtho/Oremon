@@ -34,12 +34,6 @@ const rotom_frost: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/rotom-frost.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/rotom-frost.png"
-  },
   "evolutions": []
 };
 

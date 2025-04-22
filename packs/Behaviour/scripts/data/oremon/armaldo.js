@@ -39,12 +39,6 @@ const armaldo = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/armaldo.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/armaldo.png"
-    },
     "evolutions": []
 };
 export default armaldo;

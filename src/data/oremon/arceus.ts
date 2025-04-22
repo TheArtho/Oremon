@@ -40,12 +40,6 @@ const arceus: OremonData = {
   "formSwitchable": true,
   "shape": "quadruped",
   "color": "White",
-  "model": {
-    "default": "models/entity/arceus.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/arceus.png"
-  },
   "evolutions": []
 };
 

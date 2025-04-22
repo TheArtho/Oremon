@@ -32,12 +32,6 @@ const camerupt_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/camerupt-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/camerupt-mega.png"
-    },
     "evolutions": []
 };
 export default camerupt_mega;

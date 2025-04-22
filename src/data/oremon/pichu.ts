@@ -40,12 +40,6 @@ const pichu: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/pichu.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pichu.png"
-  },
   "evolutions": [
     {
       "into": "oremon:pikachu",

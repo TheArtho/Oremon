@@ -34,12 +34,6 @@ const oricorio_pau: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/oricorio-pau.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/oricorio-pau.png"
-  },
   "evolutions": []
 };
 

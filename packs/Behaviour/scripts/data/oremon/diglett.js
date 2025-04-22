@@ -38,12 +38,6 @@ const diglett = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/diglett.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/diglett.png"
-    },
     "evolutions": [
         {
             "into": "oremon:dugtrio",

@@ -1,7 +1,7 @@
+import { system, world } from "@minecraft/server";
 import { OremonEntityEventHandler } from "./core/monster/OremonEntityEventHandler";
 import { PlayerSaveEventHandler } from "./core/save/PlayerSaveEventHandler";
 import { PlayerSaveManager } from "./core/save/PlayerSaveManager";
-import { system, world } from "@minecraft/server";
 import { ItemEventHandler } from "./core/items/ItemEventHandler";
 import { CaptureEventHandler } from "./core/capture/CaptureEventHandler";
 import { UiManager } from "./core/ui/UiManager";

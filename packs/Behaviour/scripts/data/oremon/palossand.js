@@ -39,12 +39,6 @@ const palossand = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/palossand.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/palossand.png"
-    },
     "evolutions": []
 };
 export default palossand;

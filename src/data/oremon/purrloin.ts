@@ -40,12 +40,6 @@ const purrloin: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/purrloin.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/purrloin.png"
-  },
   "evolutions": [
     {
       "into": "oremon:liepard",

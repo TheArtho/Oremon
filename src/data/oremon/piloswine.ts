@@ -41,12 +41,6 @@ const piloswine: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/piloswine.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/piloswine.png"
-  },
   "evolutions": [
     {
       "into": "oremon:mamoswine",

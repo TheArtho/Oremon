@@ -32,12 +32,6 @@ const tyranitar_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/tyranitar-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/tyranitar-mega.png"
-    },
     "evolutions": []
 };
 export default tyranitar_mega;

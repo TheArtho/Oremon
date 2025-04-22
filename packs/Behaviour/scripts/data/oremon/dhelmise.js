@@ -39,12 +39,6 @@ const dhelmise = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "Green",
-    "model": {
-        "default": "models/entity/dhelmise.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/dhelmise.png"
-    },
     "evolutions": []
 };
 export default dhelmise;

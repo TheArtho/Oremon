@@ -39,12 +39,6 @@ const toxapex = {
     "formSwitchable": false,
     "shape": "tentacles",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/toxapex.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/toxapex.png"
-    },
     "evolutions": []
 };
 export default toxapex;

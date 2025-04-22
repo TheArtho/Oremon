@@ -40,12 +40,6 @@ const chespin: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Green",
-  "model": {
-    "default": "models/entity/chespin.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/chespin.png"
-  },
   "evolutions": [
     {
       "into": "oremon:quilladin",

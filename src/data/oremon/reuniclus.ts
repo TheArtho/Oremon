@@ -40,12 +40,6 @@ const reuniclus: OremonData = {
   "formSwitchable": false,
   "shape": "arms",
   "color": "Green",
-  "model": {
-    "default": "models/entity/reuniclus.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/reuniclus.png"
-  },
   "evolutions": []
 };
 

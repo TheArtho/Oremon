@@ -40,12 +40,6 @@ const flareon: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Red",
-  "model": {
-    "default": "models/entity/flareon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/flareon.png"
-  },
   "evolutions": []
 };
 

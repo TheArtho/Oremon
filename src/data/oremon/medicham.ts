@@ -41,12 +41,6 @@ const medicham: OremonData = {
   "formSwitchable": true,
   "shape": "humanoid",
   "color": "Red",
-  "model": {
-    "default": "models/entity/medicham.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/medicham.png"
-  },
   "evolutions": []
 };
 

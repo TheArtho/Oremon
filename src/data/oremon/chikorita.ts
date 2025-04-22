@@ -41,12 +41,6 @@ const chikorita: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Green",
-  "model": {
-    "default": "models/entity/chikorita.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/chikorita.png"
-  },
   "evolutions": [
     {
       "into": "oremon:bayleef",

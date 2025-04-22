@@ -40,12 +40,6 @@ const eevee: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/eevee.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/eevee.png"
-  },
   "evolutions": [
     {
       "into": "oremon:vaporeon",

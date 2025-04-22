@@ -42,12 +42,6 @@ const ludicolo: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Green",
-  "model": {
-    "default": "models/entity/ludicolo.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/ludicolo.png"
-  },
   "evolutions": []
 };
 

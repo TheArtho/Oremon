@@ -41,12 +41,6 @@ const ampharos: OremonData = {
   "formSwitchable": true,
   "shape": "upright",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/ampharos.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/ampharos.png"
-  },
   "evolutions": []
 };
 

@@ -41,12 +41,6 @@ const squirtle: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/squirtle.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/squirtle.png"
-  },
   "evolutions": [
     {
       "into": "oremon:wartortle",

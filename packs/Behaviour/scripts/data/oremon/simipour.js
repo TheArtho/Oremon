@@ -38,12 +38,6 @@ const simipour = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/simipour.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/simipour.png"
-    },
     "evolutions": []
 };
 export default simipour;

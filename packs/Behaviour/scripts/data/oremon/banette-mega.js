@@ -31,12 +31,6 @@ const banette_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/banette-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/banette-mega.png"
-    },
     "evolutions": []
 };
 export default banette_mega;

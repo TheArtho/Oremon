@@ -41,12 +41,6 @@ const meditite: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/meditite.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/meditite.png"
-  },
   "evolutions": [
     {
       "into": "oremon:medicham",

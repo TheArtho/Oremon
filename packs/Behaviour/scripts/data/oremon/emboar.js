@@ -39,12 +39,6 @@ const emboar = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Red",
-    "model": {
-        "default": "models/entity/emboar.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/emboar.png"
-    },
     "evolutions": []
 };
 export default emboar;

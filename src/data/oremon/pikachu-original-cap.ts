@@ -34,12 +34,6 @@ const pikachu_original_cap: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/pikachu-original-cap.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pikachu-original-cap.png"
-  },
   "evolutions": []
 };
 

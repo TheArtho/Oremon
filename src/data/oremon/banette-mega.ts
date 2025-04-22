@@ -33,12 +33,6 @@ const banette_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/banette-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/banette-mega.png"
-  },
   "evolutions": []
 };
 

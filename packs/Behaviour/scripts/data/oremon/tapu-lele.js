@@ -39,12 +39,6 @@ const tapu_lele = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/tapu-lele.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/tapu-lele.png"
-    },
     "evolutions": []
 };
 export default tapu_lele;

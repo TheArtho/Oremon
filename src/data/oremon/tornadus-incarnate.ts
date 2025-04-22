@@ -40,12 +40,6 @@ const tornadus_incarnate: OremonData = {
   "formSwitchable": true,
   "shape": "arms",
   "color": "Green",
-  "model": {
-    "default": "models/entity/tornadus-incarnate.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/tornadus-incarnate.png"
-  },
   "evolutions": []
 };
 

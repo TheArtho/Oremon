@@ -41,12 +41,6 @@ const lanturn: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/lanturn.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/lanturn.png"
-  },
   "evolutions": []
 };
 

@@ -40,12 +40,6 @@ const sealeo = {
     "formSwitchable": false,
     "shape": "fish",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/sealeo.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/sealeo.png"
-    },
     "evolutions": [
         {
             "into": "oremon:walrein",

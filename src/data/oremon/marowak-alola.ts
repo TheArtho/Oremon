@@ -34,12 +34,6 @@ const marowak_alola: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/marowak-alola.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/marowak-alola.png"
-  },
   "evolutions": []
 };
 

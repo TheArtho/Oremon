@@ -40,12 +40,6 @@ const watchog: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/watchog.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/watchog.png"
-  },
   "evolutions": []
 };
 

@@ -39,12 +39,6 @@ const dartrix = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/dartrix.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/dartrix.png"
-    },
     "evolutions": [
         {
             "into": "oremon:decidueye",

@@ -38,12 +38,6 @@ const sandslash = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/sandslash.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/sandslash.png"
-    },
     "evolutions": []
 };
 export default sandslash;

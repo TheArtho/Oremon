@@ -39,12 +39,6 @@ const lampent = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Black",
-    "model": {
-        "default": "models/entity/lampent.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/lampent.png"
-    },
     "evolutions": [
         {
             "into": "oremon:chandelure",

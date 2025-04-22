@@ -33,12 +33,6 @@ const togedemaru_totem = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/togedemaru-totem.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/togedemaru-totem.png"
-    },
     "evolutions": []
 };
 export default togedemaru_totem;

@@ -40,12 +40,6 @@ const comfey: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Green",
-  "model": {
-    "default": "models/entity/comfey.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/comfey.png"
-  },
   "evolutions": []
 };
 

@@ -34,12 +34,6 @@ const steelix_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/steelix-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/steelix-mega.png"
-  },
   "evolutions": []
 };
 

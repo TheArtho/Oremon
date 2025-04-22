@@ -38,12 +38,6 @@ const oshawott = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/oshawott.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/oshawott.png"
-    },
     "evolutions": [
         {
             "into": "oremon:dewott",

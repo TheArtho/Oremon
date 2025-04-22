@@ -40,12 +40,6 @@ const arcanine: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/arcanine.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/arcanine.png"
-  },
   "evolutions": []
 };
 

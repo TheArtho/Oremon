@@ -40,12 +40,6 @@ const eelektrik: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/eelektrik.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/eelektrik.png"
-  },
   "evolutions": [
     {
       "into": "oremon:eelektross",

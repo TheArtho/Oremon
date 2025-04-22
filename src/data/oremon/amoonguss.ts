@@ -41,12 +41,6 @@ const amoonguss: OremonData = {
   "formSwitchable": false,
   "shape": "arms",
   "color": "White",
-  "model": {
-    "default": "models/entity/amoonguss.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/amoonguss.png"
-  },
   "evolutions": []
 };
 

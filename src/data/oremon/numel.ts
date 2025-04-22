@@ -41,12 +41,6 @@ const numel: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/numel.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/numel.png"
-  },
   "evolutions": [
     {
       "into": "oremon:camerupt",

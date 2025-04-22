@@ -32,12 +32,6 @@ const shaymin_sky = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/shaymin-sky.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/shaymin-sky.png"
-    },
     "evolutions": []
 };
 export default shaymin_sky;

@@ -32,12 +32,6 @@ const raticate_alola = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/raticate-alola.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/raticate-alola.png"
-    },
     "evolutions": []
 };
 export default raticate_alola;

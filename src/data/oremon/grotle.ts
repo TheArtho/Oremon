@@ -41,12 +41,6 @@ const grotle: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Green",
-  "model": {
-    "default": "models/entity/grotle.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/grotle.png"
-  },
   "evolutions": [
     {
       "into": "oremon:torterra",

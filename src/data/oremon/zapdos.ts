@@ -41,12 +41,6 @@ const zapdos: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/zapdos.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/zapdos.png"
-  },
   "evolutions": []
 };
 

@@ -41,12 +41,6 @@ const exeggutor: OremonData = {
   "formSwitchable": false,
   "shape": "legs",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/exeggutor.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/exeggutor.png"
-  },
   "evolutions": []
 };
 

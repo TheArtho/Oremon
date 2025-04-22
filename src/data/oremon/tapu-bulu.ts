@@ -41,12 +41,6 @@ const tapu_bulu: OremonData = {
   "formSwitchable": false,
   "shape": "arms",
   "color": "Red",
-  "model": {
-    "default": "models/entity/tapu-bulu.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/tapu-bulu.png"
-  },
   "evolutions": []
 };
 

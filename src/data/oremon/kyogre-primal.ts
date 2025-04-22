@@ -33,12 +33,6 @@ const kyogre_primal: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/kyogre-primal.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/kyogre-primal.png"
-  },
   "evolutions": []
 };
 

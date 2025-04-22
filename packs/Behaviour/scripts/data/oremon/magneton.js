@@ -39,12 +39,6 @@ const magneton = {
     "formSwitchable": false,
     "shape": "heads",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/magneton.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/magneton.png"
-    },
     "evolutions": [
         {
             "into": "oremon:magnezone",

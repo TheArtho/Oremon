@@ -38,12 +38,6 @@ const hitmonchan = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/hitmonchan.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/hitmonchan.png"
-    },
     "evolutions": []
 };
 export default hitmonchan;

@@ -40,12 +40,6 @@ const slurpuff: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "White",
-  "model": {
-    "default": "models/entity/slurpuff.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/slurpuff.png"
-  },
   "evolutions": []
 };
 

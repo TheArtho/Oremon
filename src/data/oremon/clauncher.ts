@@ -41,12 +41,6 @@ const clauncher: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/clauncher.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/clauncher.png"
-  },
   "evolutions": [
     {
       "into": "oremon:clawitzer",

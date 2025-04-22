@@ -33,12 +33,6 @@ const basculin_blue_striped: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/basculin-blue-striped.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/basculin-blue-striped.png"
-  },
   "evolutions": []
 };
 

@@ -41,12 +41,6 @@ const brionne: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/brionne.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/brionne.png"
-  },
   "evolutions": [
     {
       "into": "oremon:primarina",

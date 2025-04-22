@@ -41,12 +41,6 @@ const gligar: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/gligar.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gligar.png"
-  },
   "evolutions": [
     {
       "into": "oremon:gliscor",

@@ -34,12 +34,6 @@ const castform_rainy: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/castform-rainy.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/castform-rainy.png"
-  },
   "evolutions": []
 };
 

@@ -38,12 +38,6 @@ const mewtwo = {
     "formSwitchable": true,
     "shape": "upright",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/mewtwo.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mewtwo.png"
-    },
     "evolutions": []
 };
 export default mewtwo;

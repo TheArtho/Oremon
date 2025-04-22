@@ -41,12 +41,6 @@ const blacephalon: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "White",
-  "model": {
-    "default": "models/entity/blacephalon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/blacephalon.png"
-  },
   "evolutions": []
 };
 

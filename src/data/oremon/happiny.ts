@@ -40,12 +40,6 @@ const happiny: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/happiny.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/happiny.png"
-  },
   "evolutions": [
     {
       "into": "oremon:chansey",

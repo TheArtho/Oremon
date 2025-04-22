@@ -41,12 +41,6 @@ const mamoswine: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/mamoswine.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/mamoswine.png"
-  },
   "evolutions": []
 };
 

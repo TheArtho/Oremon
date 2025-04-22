@@ -39,12 +39,6 @@ const beedrill = {
     "formSwitchable": true,
     "shape": "bug wings",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/beedrill.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/beedrill.png"
-    },
     "evolutions": []
 };
 export default beedrill;

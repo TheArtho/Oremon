@@ -38,12 +38,6 @@ const groudon = {
     "formSwitchable": true,
     "shape": "upright",
     "color": "Red",
-    "model": {
-        "default": "models/entity/groudon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/groudon.png"
-    },
     "evolutions": []
 };
 export default groudon;

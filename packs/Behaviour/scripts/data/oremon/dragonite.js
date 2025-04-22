@@ -40,12 +40,6 @@ const dragonite = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/dragonite.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/dragonite.png"
-    },
     "evolutions": []
 };
 export default dragonite;

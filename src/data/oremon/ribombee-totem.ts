@@ -35,12 +35,6 @@ const ribombee_totem: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/ribombee-totem.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/ribombee-totem.png"
-  },
   "evolutions": []
 };
 

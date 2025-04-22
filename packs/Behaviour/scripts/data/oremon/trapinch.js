@@ -38,12 +38,6 @@ const trapinch = {
     "formSwitchable": false,
     "shape": "armor",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/trapinch.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/trapinch.png"
-    },
     "evolutions": [
         {
             "into": "oremon:vibrava",

@@ -32,12 +32,6 @@ const latios_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/latios-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/latios-mega.png"
-    },
     "evolutions": []
 };
 export default latios_mega;

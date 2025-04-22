@@ -41,12 +41,6 @@ const haxorus: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/haxorus.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/haxorus.png"
-  },
   "evolutions": []
 };
 

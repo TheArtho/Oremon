@@ -41,12 +41,6 @@ const croagunk: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/croagunk.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/croagunk.png"
-  },
   "evolutions": [
     {
       "into": "oremon:toxicroak",

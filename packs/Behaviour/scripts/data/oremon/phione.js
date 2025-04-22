@@ -39,12 +39,6 @@ const phione = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/phione.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/phione.png"
-    },
     "evolutions": []
 };
 export default phione;

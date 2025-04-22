@@ -42,12 +42,6 @@ const malamar: OremonData = {
   "formSwitchable": false,
   "shape": "blob",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/malamar.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/malamar.png"
-  },
   "evolutions": []
 };
 

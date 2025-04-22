@@ -38,12 +38,6 @@ const passimian = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "White",
-    "model": {
-        "default": "models/entity/passimian.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/passimian.png"
-    },
     "evolutions": []
 };
 export default passimian;

@@ -38,12 +38,6 @@ const machamp = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/machamp.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/machamp.png"
-    },
     "evolutions": []
 };
 export default machamp;

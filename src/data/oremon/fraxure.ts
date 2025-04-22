@@ -41,12 +41,6 @@ const fraxure: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Green",
-  "model": {
-    "default": "models/entity/fraxure.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/fraxure.png"
-  },
   "evolutions": [
     {
       "into": "oremon:haxorus",

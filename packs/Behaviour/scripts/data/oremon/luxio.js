@@ -38,12 +38,6 @@ const luxio = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/luxio.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/luxio.png"
-    },
     "evolutions": [
         {
             "into": "oremon:luxray",

@@ -40,12 +40,6 @@ const omanyte = {
     "formSwitchable": false,
     "shape": "tentacles",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/omanyte.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/omanyte.png"
-    },
     "evolutions": [
         {
             "into": "oremon:omastar",

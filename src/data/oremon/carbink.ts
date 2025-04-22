@@ -42,12 +42,6 @@ const carbink: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/carbink.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/carbink.png"
-  },
   "evolutions": []
 };
 

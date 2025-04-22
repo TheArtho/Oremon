@@ -39,12 +39,6 @@ const sawsbuck = {
     "formSwitchable": true,
     "shape": "quadruped",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/sawsbuck.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/sawsbuck.png"
-    },
     "evolutions": []
 };
 export default sawsbuck;

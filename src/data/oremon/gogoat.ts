@@ -40,12 +40,6 @@ const gogoat: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/gogoat.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gogoat.png"
-  },
   "evolutions": []
 };
 

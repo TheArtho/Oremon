@@ -39,12 +39,6 @@ const noctowl = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/noctowl.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/noctowl.png"
-    },
     "evolutions": []
 };
 export default noctowl;

@@ -42,12 +42,6 @@ const corsola: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/corsola.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/corsola.png"
-  },
   "evolutions": []
 };
 

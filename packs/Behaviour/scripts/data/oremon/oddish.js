@@ -39,12 +39,6 @@ const oddish = {
     "formSwitchable": false,
     "shape": "legs",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/oddish.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/oddish.png"
-    },
     "evolutions": [
         {
             "into": "oremon:gloom",

@@ -33,12 +33,6 @@ const sceptile_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/sceptile-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/sceptile-mega.png"
-    },
     "evolutions": []
 };
 export default sceptile_mega;

@@ -40,12 +40,6 @@ const kecleon: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Green",
-  "model": {
-    "default": "models/entity/kecleon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/kecleon.png"
-  },
   "evolutions": []
 };
 

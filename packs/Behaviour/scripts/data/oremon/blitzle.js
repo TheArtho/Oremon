@@ -38,12 +38,6 @@ const blitzle = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Black",
-    "model": {
-        "default": "models/entity/blitzle.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/blitzle.png"
-    },
     "evolutions": [
         {
             "into": "oremon:zebstrika",

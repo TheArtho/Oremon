@@ -32,12 +32,6 @@ const hoopa_unbound = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/hoopa-unbound.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/hoopa-unbound.png"
-    },
     "evolutions": []
 };
 export default hoopa_unbound;

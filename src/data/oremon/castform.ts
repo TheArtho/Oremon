@@ -41,12 +41,6 @@ const castform: OremonData = {
   "formSwitchable": true,
   "shape": "ball",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/castform.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/castform.png"
-  },
   "evolutions": []
 };
 

@@ -40,12 +40,6 @@ const inkay = {
     "formSwitchable": false,
     "shape": "tentacles",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/inkay.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/inkay.png"
-    },
     "evolutions": [
         {
             "into": "oremon:malamar",

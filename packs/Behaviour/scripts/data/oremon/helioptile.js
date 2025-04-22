@@ -40,12 +40,6 @@ const helioptile = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/helioptile.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/helioptile.png"
-    },
     "evolutions": [
         {
             "into": "oremon:heliolisk",

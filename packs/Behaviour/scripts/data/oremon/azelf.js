@@ -38,12 +38,6 @@ const azelf = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/azelf.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/azelf.png"
-    },
     "evolutions": []
 };
 export default azelf;

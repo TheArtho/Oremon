@@ -42,12 +42,6 @@ const cacturne: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Green",
-  "model": {
-    "default": "models/entity/cacturne.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/cacturne.png"
-  },
   "evolutions": []
 };
 

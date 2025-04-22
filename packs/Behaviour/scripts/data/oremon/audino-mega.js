@@ -32,12 +32,6 @@ const audino_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/audino-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/audino-mega.png"
-    },
     "evolutions": []
 };
 export default audino_mega;

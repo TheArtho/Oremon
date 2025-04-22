@@ -39,12 +39,6 @@ const wartortle = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/wartortle.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/wartortle.png"
-    },
     "evolutions": [
         {
             "into": "oremon:blastoise",

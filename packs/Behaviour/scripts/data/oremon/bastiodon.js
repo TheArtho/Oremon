@@ -39,12 +39,6 @@ const bastiodon = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/bastiodon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/bastiodon.png"
-    },
     "evolutions": []
 };
 export default bastiodon;

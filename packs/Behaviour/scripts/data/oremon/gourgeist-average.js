@@ -39,12 +39,6 @@ const gourgeist_average = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/gourgeist-average.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/gourgeist-average.png"
-    },
     "evolutions": []
 };
 export default gourgeist_average;

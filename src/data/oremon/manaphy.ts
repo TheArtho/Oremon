@@ -41,12 +41,6 @@ const manaphy: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/manaphy.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/manaphy.png"
-  },
   "evolutions": []
 };
 

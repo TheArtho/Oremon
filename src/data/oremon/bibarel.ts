@@ -42,12 +42,6 @@ const bibarel: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/bibarel.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/bibarel.png"
-  },
   "evolutions": []
 };
 

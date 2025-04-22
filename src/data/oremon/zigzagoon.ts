@@ -40,12 +40,6 @@ const zigzagoon: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/zigzagoon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/zigzagoon.png"
-  },
   "evolutions": [
     {
       "into": "oremon:linoone",

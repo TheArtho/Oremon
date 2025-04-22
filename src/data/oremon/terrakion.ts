@@ -41,12 +41,6 @@ const terrakion: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/terrakion.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/terrakion.png"
-  },
   "evolutions": []
 };
 

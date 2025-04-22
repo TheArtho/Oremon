@@ -32,12 +32,6 @@ const kyurem_black = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/kyurem-black.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/kyurem-black.png"
-    },
     "evolutions": []
 };
 export default kyurem_black;

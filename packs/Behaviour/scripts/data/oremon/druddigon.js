@@ -39,12 +39,6 @@ const druddigon = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Red",
-    "model": {
-        "default": "models/entity/druddigon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/druddigon.png"
-    },
     "evolutions": []
 };
 export default druddigon;

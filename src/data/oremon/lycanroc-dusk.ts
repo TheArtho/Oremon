@@ -33,12 +33,6 @@ const lycanroc_dusk: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/lycanroc-dusk.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/lycanroc-dusk.png"
-  },
   "evolutions": []
 };
 

@@ -32,12 +32,6 @@ const minior_yellow_meteor = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/minior-yellow-meteor.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/minior-yellow-meteor.png"
-    },
     "evolutions": []
 };
 export default minior_yellow_meteor;

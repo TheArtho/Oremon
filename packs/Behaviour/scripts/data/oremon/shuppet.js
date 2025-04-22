@@ -38,12 +38,6 @@ const shuppet = {
     "formSwitchable": false,
     "shape": "ball",
     "color": "Black",
-    "model": {
-        "default": "models/entity/shuppet.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/shuppet.png"
-    },
     "evolutions": [
         {
             "into": "oremon:banette",

@@ -40,12 +40,6 @@ const pyukumuku: OremonData = {
   "formSwitchable": false,
   "shape": "squiggle",
   "color": "Black",
-  "model": {
-    "default": "models/entity/pyukumuku.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pyukumuku.png"
-  },
   "evolutions": []
 };
 

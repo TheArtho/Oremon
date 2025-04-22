@@ -41,12 +41,6 @@ const skitty: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/skitty.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/skitty.png"
-  },
   "evolutions": [
     {
       "into": "oremon:delcatty",

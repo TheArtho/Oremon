@@ -42,12 +42,6 @@ const ribombee: OremonData = {
   "formSwitchable": false,
   "shape": "bug wings",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/ribombee.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/ribombee.png"
-  },
   "evolutions": []
 };
 

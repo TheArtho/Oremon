@@ -40,12 +40,6 @@ const teddiursa: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/teddiursa.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/teddiursa.png"
-  },
   "evolutions": [
     {
       "into": "oremon:ursaring",

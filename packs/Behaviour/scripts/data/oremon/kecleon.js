@@ -38,12 +38,6 @@ const kecleon = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Green",
-    "model": {
-        "default": "models/entity/kecleon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/kecleon.png"
-    },
     "evolutions": []
 };
 export default kecleon;

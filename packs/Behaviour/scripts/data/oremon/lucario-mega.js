@@ -33,12 +33,6 @@ const lucario_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/lucario-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/lucario-mega.png"
-    },
     "evolutions": []
 };
 export default lucario_mega;

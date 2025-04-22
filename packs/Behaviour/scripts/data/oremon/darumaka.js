@@ -38,12 +38,6 @@ const darumaka = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Red",
-    "model": {
-        "default": "models/entity/darumaka.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/darumaka.png"
-    },
     "evolutions": [
         {
             "into": "oremon:darmanitan",

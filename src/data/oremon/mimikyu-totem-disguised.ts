@@ -34,12 +34,6 @@ const mimikyu_totem_disguised: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/mimikyu-totem-disguised.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/mimikyu-totem-disguised.png"
-  },
   "evolutions": []
 };
 

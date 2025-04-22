@@ -39,12 +39,6 @@ const tapu_fini = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/tapu-fini.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/tapu-fini.png"
-    },
     "evolutions": []
 };
 export default tapu_fini;

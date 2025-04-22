@@ -38,12 +38,6 @@ const hitmonlee = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/hitmonlee.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/hitmonlee.png"
-    },
     "evolutions": []
 };
 export default hitmonlee;

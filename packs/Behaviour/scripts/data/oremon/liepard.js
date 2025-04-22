@@ -38,12 +38,6 @@ const liepard = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/liepard.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/liepard.png"
-    },
     "evolutions": []
 };
 export default liepard;

@@ -40,12 +40,6 @@ const grumpig: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/grumpig.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/grumpig.png"
-  },
   "evolutions": []
 };
 

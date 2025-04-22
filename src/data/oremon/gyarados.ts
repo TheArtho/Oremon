@@ -42,12 +42,6 @@ const gyarados: OremonData = {
   "formSwitchable": true,
   "shape": "squiggle",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/gyarados.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gyarados.png"
-  },
   "evolutions": []
 };
 

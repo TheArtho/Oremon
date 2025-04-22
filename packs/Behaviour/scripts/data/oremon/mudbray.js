@@ -38,12 +38,6 @@ const mudbray = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/mudbray.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mudbray.png"
-    },
     "evolutions": [
         {
             "into": "oremon:mudsdale",

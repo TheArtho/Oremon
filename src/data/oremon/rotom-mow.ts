@@ -34,12 +34,6 @@ const rotom_mow: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/rotom-mow.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/rotom-mow.png"
-  },
   "evolutions": []
 };
 

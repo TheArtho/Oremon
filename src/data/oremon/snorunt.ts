@@ -41,12 +41,6 @@ const snorunt: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/snorunt.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/snorunt.png"
-  },
   "evolutions": [
     {
       "into": "oremon:glalie",

@@ -38,12 +38,6 @@ const conkeldurr = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/conkeldurr.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/conkeldurr.png"
-    },
     "evolutions": []
 };
 export default conkeldurr;

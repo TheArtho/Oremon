@@ -39,12 +39,6 @@ const chesnaught = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Green",
-    "model": {
-        "default": "models/entity/chesnaught.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/chesnaught.png"
-    },
     "evolutions": []
 };
 export default chesnaught;

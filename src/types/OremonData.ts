@@ -42,14 +42,6 @@ export interface OremonData {
     shape?: string;
     evolutions?: EvolutionData[];
     color?: string;
-    model?: {
-        default: string;
-    };
-    textures?: {
-        default: string;
-        shiny?: string;
-        female?: string;
-    };
 }
 
 
@@ -74,7 +66,7 @@ export type OremonType =
 // Structure for evolution data
 export interface Evolution {
     level: number;      // Level at which the Oremon evolves
-    into: string;       // ID of the evolved form (e.g., "core:ivysaur")
+    into: string;       // ID of the evolved forms (e.g., "core:ivysaur")
 }
 
 // Asset mapping for an Oremon
@@ -108,4 +100,14 @@ export interface EvolutionData {
     into: string; // ID of the resulting Oremon
     method: "level-up" | "use-item" | "trade" | "shed";
     conditions: EvolutionCondition;
+}
+
+export interface FormData {
+    id: string;                 // (ex: "form:giratina-altered")
+    form_identifier?: string;   // (ex: "altered")
+    pokemon_identifier: string; // (ex: "oremon:giratina-altered")
+    isDefault?: boolean;        // (ex: true)
+    isBattleOnly?: boolean;     // (ex: false)
+    isMega?: boolean;           // (ex: false)
+    formOrder: number;          // (ex: 1)
 }

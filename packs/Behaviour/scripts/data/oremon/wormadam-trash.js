@@ -32,12 +32,6 @@ const wormadam_trash = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/wormadam-trash.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/wormadam-trash.png"
-    },
     "evolutions": []
 };
 export default wormadam_trash;

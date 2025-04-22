@@ -41,12 +41,6 @@ const venipede: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Red",
-  "model": {
-    "default": "models/entity/venipede.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/venipede.png"
-  },
   "evolutions": [
     {
       "into": "oremon:whirlipede",

@@ -38,12 +38,6 @@ const floette = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "White",
-    "model": {
-        "default": "models/entity/floette.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/floette.png"
-    },
     "evolutions": [
         {
             "into": "oremon:florges",

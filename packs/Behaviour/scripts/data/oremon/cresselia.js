@@ -38,12 +38,6 @@ const cresselia = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/cresselia.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/cresselia.png"
-    },
     "evolutions": []
 };
 export default cresselia;

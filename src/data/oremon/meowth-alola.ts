@@ -33,12 +33,6 @@ const meowth_alola: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/meowth-alola.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/meowth-alola.png"
-  },
   "evolutions": []
 };
 

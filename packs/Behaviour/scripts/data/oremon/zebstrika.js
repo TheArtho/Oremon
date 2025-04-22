@@ -38,12 +38,6 @@ const zebstrika = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Black",
-    "model": {
-        "default": "models/entity/zebstrika.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/zebstrika.png"
-    },
     "evolutions": []
 };
 export default zebstrika;

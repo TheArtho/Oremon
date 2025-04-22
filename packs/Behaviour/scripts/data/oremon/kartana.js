@@ -39,12 +39,6 @@ const kartana = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "White",
-    "model": {
-        "default": "models/entity/kartana.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/kartana.png"
-    },
     "evolutions": []
 };
 export default kartana;

@@ -40,12 +40,6 @@ const audino: OremonData = {
   "formSwitchable": true,
   "shape": "upright",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/audino.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/audino.png"
-  },
   "evolutions": []
 };
 

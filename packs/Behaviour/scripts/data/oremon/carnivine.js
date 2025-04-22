@@ -38,12 +38,6 @@ const carnivine = {
     "formSwitchable": false,
     "shape": "tentacles",
     "color": "Green",
-    "model": {
-        "default": "models/entity/carnivine.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/carnivine.png"
-    },
     "evolutions": []
 };
 export default carnivine;

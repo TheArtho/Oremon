@@ -33,12 +33,6 @@ const abomasnow_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/abomasnow-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/abomasnow-mega.png"
-    },
     "evolutions": []
 };
 export default abomasnow_mega;

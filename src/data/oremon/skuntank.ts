@@ -41,12 +41,6 @@ const skuntank: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/skuntank.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/skuntank.png"
-  },
   "evolutions": []
 };
 

@@ -40,12 +40,6 @@ const mew: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/mew.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/mew.png"
-  },
   "evolutions": []
 };
 

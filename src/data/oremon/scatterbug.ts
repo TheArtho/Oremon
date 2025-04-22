@@ -40,12 +40,6 @@ const scatterbug: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Black",
-  "model": {
-    "default": "models/entity/scatterbug.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/scatterbug.png"
-  },
   "evolutions": [
     {
       "into": "oremon:spewpa",

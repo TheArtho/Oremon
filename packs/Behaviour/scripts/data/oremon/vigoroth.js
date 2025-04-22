@@ -38,12 +38,6 @@ const vigoroth = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "White",
-    "model": {
-        "default": "models/entity/vigoroth.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/vigoroth.png"
-    },
     "evolutions": [
         {
             "into": "oremon:slaking",

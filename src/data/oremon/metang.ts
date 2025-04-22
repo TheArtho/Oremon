@@ -41,12 +41,6 @@ const metang: OremonData = {
   "formSwitchable": false,
   "shape": "arms",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/metang.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/metang.png"
-  },
   "evolutions": [
     {
       "into": "oremon:metagross",

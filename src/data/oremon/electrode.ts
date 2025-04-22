@@ -40,12 +40,6 @@ const electrode: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Red",
-  "model": {
-    "default": "models/entity/electrode.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/electrode.png"
-  },
   "evolutions": []
 };
 

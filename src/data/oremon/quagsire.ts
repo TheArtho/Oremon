@@ -42,12 +42,6 @@ const quagsire: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/quagsire.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/quagsire.png"
-  },
   "evolutions": []
 };
 

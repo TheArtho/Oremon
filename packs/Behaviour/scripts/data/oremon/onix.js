@@ -39,12 +39,6 @@ const onix = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/onix.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/onix.png"
-    },
     "evolutions": [
         {
             "into": "oremon:steelix",

@@ -41,12 +41,6 @@ const reshiram: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "White",
-  "model": {
-    "default": "models/entity/reshiram.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/reshiram.png"
-  },
   "evolutions": []
 };
 

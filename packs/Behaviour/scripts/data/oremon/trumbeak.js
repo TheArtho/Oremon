@@ -39,12 +39,6 @@ const trumbeak = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Black",
-    "model": {
-        "default": "models/entity/trumbeak.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/trumbeak.png"
-    },
     "evolutions": [
         {
             "into": "oremon:toucannon",

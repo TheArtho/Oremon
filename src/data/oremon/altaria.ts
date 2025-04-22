@@ -42,12 +42,6 @@ const altaria: OremonData = {
   "formSwitchable": true,
   "shape": "wings",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/altaria.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/altaria.png"
-  },
   "evolutions": []
 };
 

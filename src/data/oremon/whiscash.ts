@@ -41,12 +41,6 @@ const whiscash: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/whiscash.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/whiscash.png"
-  },
   "evolutions": []
 };
 

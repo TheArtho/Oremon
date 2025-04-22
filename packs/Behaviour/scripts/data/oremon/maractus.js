@@ -38,12 +38,6 @@ const maractus = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "Green",
-    "model": {
-        "default": "models/entity/maractus.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/maractus.png"
-    },
     "evolutions": []
 };
 export default maractus;

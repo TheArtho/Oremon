@@ -38,12 +38,6 @@ const sliggoo = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/sliggoo.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/sliggoo.png"
-    },
     "evolutions": [
         {
             "into": "oremon:goodra",

@@ -40,12 +40,6 @@ const mudsdale: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/mudsdale.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/mudsdale.png"
-  },
   "evolutions": []
 };
 

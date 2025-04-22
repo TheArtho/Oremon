@@ -32,12 +32,6 @@ const sandslash_alola = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/sandslash-alola.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/sandslash-alola.png"
-    },
     "evolutions": []
 };
 export default sandslash_alola;

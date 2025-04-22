@@ -41,12 +41,6 @@ const nihilego: OremonData = {
   "formSwitchable": false,
   "shape": "tentacles",
   "color": "White",
-  "model": {
-    "default": "models/entity/nihilego.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/nihilego.png"
-  },
   "evolutions": []
 };
 

@@ -41,12 +41,6 @@ const armaldo: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/armaldo.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/armaldo.png"
-  },
   "evolutions": []
 };
 

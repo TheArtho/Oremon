@@ -39,12 +39,6 @@ const yveltal = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Red",
-    "model": {
-        "default": "models/entity/yveltal.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/yveltal.png"
-    },
     "evolutions": []
 };
 export default yveltal;

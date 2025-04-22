@@ -39,12 +39,6 @@ const yanmega = {
     "formSwitchable": false,
     "shape": "bug wings",
     "color": "Green",
-    "model": {
-        "default": "models/entity/yanmega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/yanmega.png"
-    },
     "evolutions": []
 };
 export default yanmega;

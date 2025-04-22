@@ -38,12 +38,6 @@ const boldore = {
     "formSwitchable": false,
     "shape": "tentacles",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/boldore.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/boldore.png"
-    },
     "evolutions": [
         {
             "into": "oremon:gigalith",

@@ -41,12 +41,6 @@ const carvanha: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Red",
-  "model": {
-    "default": "models/entity/carvanha.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/carvanha.png"
-  },
   "evolutions": [
     {
       "into": "oremon:sharpedo",

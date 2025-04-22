@@ -39,12 +39,6 @@ const treecko = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Green",
-    "model": {
-        "default": "models/entity/treecko.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/treecko.png"
-    },
     "evolutions": [
         {
             "into": "oremon:grovyle",

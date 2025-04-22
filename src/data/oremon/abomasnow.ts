@@ -42,12 +42,6 @@ const abomasnow: OremonData = {
   "formSwitchable": true,
   "shape": "upright",
   "color": "White",
-  "model": {
-    "default": "models/entity/abomasnow.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/abomasnow.png"
-  },
   "evolutions": []
 };
 

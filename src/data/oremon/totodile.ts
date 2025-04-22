@@ -41,12 +41,6 @@ const totodile: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/totodile.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/totodile.png"
-  },
   "evolutions": [
     {
       "into": "oremon:croconaw",

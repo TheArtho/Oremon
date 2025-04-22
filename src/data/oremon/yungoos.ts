@@ -40,12 +40,6 @@ const yungoos: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/yungoos.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/yungoos.png"
-  },
   "evolutions": [
     {
       "into": "oremon:gumshoos",

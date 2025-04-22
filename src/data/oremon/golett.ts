@@ -41,12 +41,6 @@ const golett: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Green",
-  "model": {
-    "default": "models/entity/golett.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/golett.png"
-  },
   "evolutions": [
     {
       "into": "oremon:golurk",

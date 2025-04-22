@@ -40,12 +40,6 @@ const cryogonal: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/cryogonal.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/cryogonal.png"
-  },
   "evolutions": []
 };
 

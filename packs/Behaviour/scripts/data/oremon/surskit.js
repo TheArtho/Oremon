@@ -40,12 +40,6 @@ const surskit = {
     "formSwitchable": false,
     "shape": "armor",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/surskit.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/surskit.png"
-    },
     "evolutions": [
         {
             "into": "oremon:masquerain",

@@ -42,12 +42,6 @@ const stunfisk: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/stunfisk.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/stunfisk.png"
-  },
   "evolutions": []
 };
 

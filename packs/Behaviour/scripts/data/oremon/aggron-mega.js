@@ -31,12 +31,6 @@ const aggron_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/aggron-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/aggron-mega.png"
-    },
     "evolutions": []
 };
 export default aggron_mega;

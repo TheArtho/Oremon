@@ -32,12 +32,6 @@ const diancie_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/diancie-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/diancie-mega.png"
-    },
     "evolutions": []
 };
 export default diancie_mega;

@@ -39,12 +39,6 @@ const sandygast = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/sandygast.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/sandygast.png"
-    },
     "evolutions": [
         {
             "into": "oremon:palossand",

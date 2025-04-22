@@ -32,12 +32,6 @@ const blaziken_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/blaziken-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/blaziken-mega.png"
-    },
     "evolutions": []
 };
 export default blaziken_mega;

@@ -41,12 +41,6 @@ const chesnaught: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Green",
-  "model": {
-    "default": "models/entity/chesnaught.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/chesnaught.png"
-  },
   "evolutions": []
 };
 

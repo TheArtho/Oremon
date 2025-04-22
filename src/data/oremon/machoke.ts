@@ -40,12 +40,6 @@ const machoke: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/machoke.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/machoke.png"
-  },
   "evolutions": [
     {
       "into": "oremon:machamp",

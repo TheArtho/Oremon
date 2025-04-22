@@ -32,12 +32,6 @@ const golem_alola = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/golem-alola.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/golem-alola.png"
-    },
     "evolutions": []
 };
 export default golem_alola;

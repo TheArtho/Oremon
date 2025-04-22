@@ -40,12 +40,6 @@ const fomantis: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/fomantis.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/fomantis.png"
-  },
   "evolutions": [
     {
       "into": "oremon:lurantis",

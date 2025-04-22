@@ -38,12 +38,6 @@ const solosis = {
     "formSwitchable": false,
     "shape": "ball",
     "color": "Green",
-    "model": {
-        "default": "models/entity/solosis.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/solosis.png"
-    },
     "evolutions": [
         {
             "into": "oremon:duosion",

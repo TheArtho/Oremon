@@ -38,12 +38,6 @@ const tornadus_incarnate = {
     "formSwitchable": true,
     "shape": "arms",
     "color": "Green",
-    "model": {
-        "default": "models/entity/tornadus-incarnate.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/tornadus-incarnate.png"
-    },
     "evolutions": []
 };
 export default tornadus_incarnate;

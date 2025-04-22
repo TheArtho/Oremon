@@ -38,12 +38,6 @@ const cleffa = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/cleffa.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/cleffa.png"
-    },
     "evolutions": [
         {
             "into": "oremon:clefairy",

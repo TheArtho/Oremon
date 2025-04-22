@@ -39,12 +39,6 @@ const aurorus = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/aurorus.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/aurorus.png"
-    },
     "evolutions": []
 };
 export default aurorus;

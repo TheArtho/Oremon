@@ -39,12 +39,6 @@ const pyroar = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/pyroar.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pyroar.png"
-    },
     "evolutions": []
 };
 export default pyroar;

@@ -41,12 +41,6 @@ const servine: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Green",
-  "model": {
-    "default": "models/entity/servine.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/servine.png"
-  },
   "evolutions": [
     {
       "into": "oremon:serperior",

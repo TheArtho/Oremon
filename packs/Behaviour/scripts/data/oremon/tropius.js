@@ -40,12 +40,6 @@ const tropius = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Green",
-    "model": {
-        "default": "models/entity/tropius.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/tropius.png"
-    },
     "evolutions": []
 };
 export default tropius;

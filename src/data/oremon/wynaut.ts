@@ -40,12 +40,6 @@ const wynaut: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/wynaut.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/wynaut.png"
-  },
   "evolutions": [
     {
       "into": "oremon:wobbuffet",

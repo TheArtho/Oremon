@@ -40,12 +40,6 @@ const typhlosion: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/typhlosion.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/typhlosion.png"
-  },
   "evolutions": []
 };
 

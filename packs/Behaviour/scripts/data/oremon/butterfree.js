@@ -39,12 +39,6 @@ const butterfree = {
     "formSwitchable": false,
     "shape": "bug wings",
     "color": "White",
-    "model": {
-        "default": "models/entity/butterfree.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/butterfree.png"
-    },
     "evolutions": []
 };
 export default butterfree;

@@ -31,12 +31,6 @@ const gumshoos_totem = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/gumshoos-totem.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/gumshoos-totem.png"
-    },
     "evolutions": []
 };
 export default gumshoos_totem;

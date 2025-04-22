@@ -38,12 +38,6 @@ const skiddo = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/skiddo.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/skiddo.png"
-    },
     "evolutions": [
         {
             "into": "oremon:gogoat",

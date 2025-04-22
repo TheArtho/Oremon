@@ -32,12 +32,6 @@ const pidgeot_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/pidgeot-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pidgeot-mega.png"
-    },
     "evolutions": []
 };
 export default pidgeot_mega;

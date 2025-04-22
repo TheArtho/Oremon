@@ -40,12 +40,6 @@ const krabby: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Red",
-  "model": {
-    "default": "models/entity/krabby.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/krabby.png"
-  },
   "evolutions": [
     {
       "into": "oremon:kingler",

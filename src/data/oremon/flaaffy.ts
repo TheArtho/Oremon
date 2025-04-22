@@ -41,12 +41,6 @@ const flaaffy: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/flaaffy.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/flaaffy.png"
-  },
   "evolutions": [
     {
       "into": "oremon:ampharos",

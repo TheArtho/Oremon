@@ -38,12 +38,6 @@ const timburr = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/timburr.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/timburr.png"
-    },
     "evolutions": [
         {
             "into": "oremon:gurdurr",

@@ -39,12 +39,6 @@ const zygarde = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Green",
-    "model": {
-        "default": "models/entity/zygarde.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/zygarde.png"
-    },
     "evolutions": []
 };
 export default zygarde;

@@ -40,12 +40,6 @@ const drowzee: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/drowzee.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/drowzee.png"
-  },
   "evolutions": [
     {
       "into": "oremon:hypno",

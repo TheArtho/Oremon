@@ -34,12 +34,6 @@ const shaymin_sky: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/shaymin-sky.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/shaymin-sky.png"
-  },
   "evolutions": []
 };
 

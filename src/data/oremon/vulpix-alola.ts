@@ -33,12 +33,6 @@ const vulpix_alola: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/vulpix-alola.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/vulpix-alola.png"
-  },
   "evolutions": []
 };
 

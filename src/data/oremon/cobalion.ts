@@ -41,12 +41,6 @@ const cobalion: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/cobalion.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/cobalion.png"
-  },
   "evolutions": []
 };
 

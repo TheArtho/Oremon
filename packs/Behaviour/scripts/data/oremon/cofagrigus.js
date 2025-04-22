@@ -39,12 +39,6 @@ const cofagrigus = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/cofagrigus.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/cofagrigus.png"
-    },
     "evolutions": []
 };
 export default cofagrigus;

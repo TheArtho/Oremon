@@ -42,12 +42,6 @@ const tyrunt: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/tyrunt.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/tyrunt.png"
-  },
   "evolutions": [
     {
       "into": "oremon:tyrantrum",

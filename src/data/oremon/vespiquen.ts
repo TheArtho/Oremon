@@ -41,12 +41,6 @@ const vespiquen: OremonData = {
   "formSwitchable": false,
   "shape": "bug wings",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/vespiquen.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/vespiquen.png"
-  },
   "evolutions": []
 };
 

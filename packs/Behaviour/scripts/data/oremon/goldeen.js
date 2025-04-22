@@ -38,12 +38,6 @@ const goldeen = {
     "formSwitchable": false,
     "shape": "fish",
     "color": "Red",
-    "model": {
-        "default": "models/entity/goldeen.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/goldeen.png"
-    },
     "evolutions": [
         {
             "into": "oremon:seaking",

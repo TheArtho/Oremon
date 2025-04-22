@@ -38,12 +38,6 @@ const grubbin = {
     "formSwitchable": false,
     "shape": "armor",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/grubbin.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/grubbin.png"
-    },
     "evolutions": [
         {
             "into": "oremon:charjabug",

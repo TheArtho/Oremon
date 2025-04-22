@@ -40,12 +40,6 @@ const marowak: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/marowak.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/marowak.png"
-  },
   "evolutions": []
 };
 

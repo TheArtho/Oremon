@@ -33,12 +33,6 @@ const deoxys_speed: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/deoxys-speed.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/deoxys-speed.png"
-  },
   "evolutions": []
 };
 

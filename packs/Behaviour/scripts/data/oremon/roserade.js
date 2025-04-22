@@ -40,12 +40,6 @@ const roserade = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Green",
-    "model": {
-        "default": "models/entity/roserade.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/roserade.png"
-    },
     "evolutions": []
 };
 export default roserade;

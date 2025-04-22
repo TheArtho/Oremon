@@ -8,10 +8,13 @@
       },
       "textures": {
         "default": "textures/entity/bulbasaur/bulbasaur",
-        "shiny": "textures/entity/bulbasaur/bulbasaur_shiny"
+        "default_female": "textures/entity/bulbasaur/bulbasaur",
+        "shiny": "textures/entity/bulbasaur/bulbasaur_shiny",
+        "shiny_female": "textures/entity/bulbasaur/bulbasaur_shiny"
       },
       "geometry": {
-        "default": "geometry.bulbasaur"
+        "default": "geometry.bulbasaur",
+        "default_female": "geometry.bulbasaur"
       },
       "animations": {
         "look_at": "animation.head_look",
@@ -27,7 +30,7 @@
         "overlay_color": "#669853",
         "base_color": "#60a89c"
       },
-      "render_controllers": ["controller.render.bulbasaur"]
+      "render_controllers": ["controller.render.oremon"]
     }
   }
 }

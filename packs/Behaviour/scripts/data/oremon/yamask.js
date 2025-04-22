@@ -39,12 +39,6 @@ const yamask = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Black",
-    "model": {
-        "default": "models/entity/yamask.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/yamask.png"
-    },
     "evolutions": [
         {
             "into": "oremon:cofagrigus",

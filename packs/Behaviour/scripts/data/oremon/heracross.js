@@ -39,12 +39,6 @@ const heracross = {
     "formSwitchable": true,
     "shape": "humanoid",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/heracross.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/heracross.png"
-    },
     "evolutions": []
 };
 export default heracross;

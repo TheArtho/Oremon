@@ -38,12 +38,6 @@ const torkoal = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/torkoal.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/torkoal.png"
-    },
     "evolutions": []
 };
 export default torkoal;

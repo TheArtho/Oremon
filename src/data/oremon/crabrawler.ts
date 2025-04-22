@@ -40,12 +40,6 @@ const crabrawler: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/crabrawler.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/crabrawler.png"
-  },
   "evolutions": [
     {
       "into": "oremon:crabominable",

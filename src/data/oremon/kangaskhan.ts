@@ -40,12 +40,6 @@ const kangaskhan: OremonData = {
   "formSwitchable": true,
   "shape": "upright",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/kangaskhan.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/kangaskhan.png"
-  },
   "evolutions": []
 };
 

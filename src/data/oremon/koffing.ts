@@ -40,12 +40,6 @@ const koffing: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/koffing.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/koffing.png"
-  },
   "evolutions": [
     {
       "into": "oremon:weezing",

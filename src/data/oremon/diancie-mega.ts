@@ -34,12 +34,6 @@ const diancie_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/diancie-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/diancie-mega.png"
-  },
   "evolutions": []
 };
 

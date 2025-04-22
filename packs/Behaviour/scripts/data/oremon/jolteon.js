@@ -38,12 +38,6 @@ const jolteon = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/jolteon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/jolteon.png"
-    },
     "evolutions": []
 };
 export default jolteon;

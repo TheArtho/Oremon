@@ -34,12 +34,6 @@ const metagross_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/metagross-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/metagross-mega.png"
-  },
   "evolutions": []
 };
 

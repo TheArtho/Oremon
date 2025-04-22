@@ -38,12 +38,6 @@ const patrat = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/patrat.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/patrat.png"
-    },
     "evolutions": [
         {
             "into": "oremon:watchog",

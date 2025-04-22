@@ -39,12 +39,6 @@ const poliwrath = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/poliwrath.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/poliwrath.png"
-    },
     "evolutions": []
 };
 export default poliwrath;

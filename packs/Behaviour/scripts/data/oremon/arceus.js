@@ -38,12 +38,6 @@ const arceus = {
     "formSwitchable": true,
     "shape": "quadruped",
     "color": "White",
-    "model": {
-        "default": "models/entity/arceus.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/arceus.png"
-    },
     "evolutions": []
 };
 export default arceus;

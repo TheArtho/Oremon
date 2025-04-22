@@ -39,12 +39,6 @@ const camerupt = {
     "formSwitchable": true,
     "shape": "quadruped",
     "color": "Red",
-    "model": {
-        "default": "models/entity/camerupt.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/camerupt.png"
-    },
     "evolutions": []
 };
 export default camerupt;

@@ -40,12 +40,6 @@ const drilbur: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/drilbur.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/drilbur.png"
-  },
   "evolutions": [
     {
       "into": "oremon:excadrill",

@@ -38,12 +38,6 @@ const registeel = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/registeel.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/registeel.png"
-    },
     "evolutions": []
 };
 export default registeel;

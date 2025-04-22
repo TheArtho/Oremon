@@ -40,12 +40,6 @@ const finneon: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/finneon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/finneon.png"
-  },
   "evolutions": [
     {
       "into": "oremon:lumineon",

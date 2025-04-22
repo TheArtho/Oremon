@@ -40,12 +40,6 @@ const slowbro = {
     "formSwitchable": true,
     "shape": "upright",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/slowbro.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/slowbro.png"
-    },
     "evolutions": []
 };
 export default slowbro;

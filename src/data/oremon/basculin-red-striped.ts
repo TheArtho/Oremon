@@ -40,12 +40,6 @@ const basculin_red_striped: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Green",
-  "model": {
-    "default": "models/entity/basculin-red-striped.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/basculin-red-striped.png"
-  },
   "evolutions": []
 };
 

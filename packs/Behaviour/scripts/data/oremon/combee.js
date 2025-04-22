@@ -39,12 +39,6 @@ const combee = {
     "formSwitchable": false,
     "shape": "heads",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/combee.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/combee.png"
-    },
     "evolutions": [
         {
             "into": "oremon:vespiquen",

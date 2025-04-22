@@ -34,12 +34,6 @@ const raticate_totem_alola: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/raticate-totem-alola.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/raticate-totem-alola.png"
-  },
   "evolutions": []
 };
 

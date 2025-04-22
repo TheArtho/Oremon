@@ -40,12 +40,6 @@ const marill = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/marill.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/marill.png"
-    },
     "evolutions": [
         {
             "into": "oremon:azumarill",

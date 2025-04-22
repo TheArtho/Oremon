@@ -33,12 +33,6 @@ const mewtwo_mega_y: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/mewtwo-mega-y.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/mewtwo-mega-y.png"
-  },
   "evolutions": []
 };
 

@@ -39,12 +39,6 @@ const tapu_koko = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/tapu-koko.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/tapu-koko.png"
-    },
     "evolutions": []
 };
 export default tapu_koko;

@@ -40,12 +40,6 @@ const dusclops: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Black",
-  "model": {
-    "default": "models/entity/dusclops.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/dusclops.png"
-  },
   "evolutions": [
     {
       "into": "oremon:dusknoir",

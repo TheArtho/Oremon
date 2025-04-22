@@ -39,12 +39,6 @@ const ariados = {
     "formSwitchable": false,
     "shape": "armor",
     "color": "Red",
-    "model": {
-        "default": "models/entity/ariados.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/ariados.png"
-    },
     "evolutions": []
 };
 export default ariados;

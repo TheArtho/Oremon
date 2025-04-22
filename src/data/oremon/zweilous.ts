@@ -41,12 +41,6 @@ const zweilous: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/zweilous.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/zweilous.png"
-  },
   "evolutions": [
     {
       "into": "oremon:hydreigon",

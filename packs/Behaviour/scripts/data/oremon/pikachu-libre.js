@@ -32,12 +32,6 @@ const pikachu_libre = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/pikachu-libre.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pikachu-libre.png"
-    },
     "evolutions": []
 };
 export default pikachu_libre;

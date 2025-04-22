@@ -40,12 +40,6 @@ const kabuto = {
     "formSwitchable": false,
     "shape": "armor",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/kabuto.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/kabuto.png"
-    },
     "evolutions": [
         {
             "into": "oremon:kabutops",

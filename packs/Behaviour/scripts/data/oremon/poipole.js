@@ -38,12 +38,6 @@ const poipole = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/poipole.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/poipole.png"
-    },
     "evolutions": [
         {
             "into": "oremon:naganadel",

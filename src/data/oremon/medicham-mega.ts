@@ -34,12 +34,6 @@ const medicham_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/medicham-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/medicham-mega.png"
-  },
   "evolutions": []
 };
 

@@ -39,12 +39,6 @@ const granbull = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/granbull.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/granbull.png"
-    },
     "evolutions": []
 };
 export default granbull;

@@ -40,12 +40,6 @@ const archeops = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/archeops.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/archeops.png"
-    },
     "evolutions": []
 };
 export default archeops;

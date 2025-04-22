@@ -38,12 +38,6 @@ const hippopotas = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/hippopotas.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/hippopotas.png"
-    },
     "evolutions": [
         {
             "into": "oremon:hippowdon",

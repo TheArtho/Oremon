@@ -32,12 +32,6 @@ const oricorio_pom_pom = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/oricorio-pom-pom.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/oricorio-pom-pom.png"
-    },
     "evolutions": []
 };
 export default oricorio_pom_pom;

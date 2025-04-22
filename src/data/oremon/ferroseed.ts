@@ -42,12 +42,6 @@ const ferroseed: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/ferroseed.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/ferroseed.png"
-  },
   "evolutions": [
     {
       "into": "oremon:ferrothorn",

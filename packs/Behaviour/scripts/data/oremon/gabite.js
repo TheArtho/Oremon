@@ -40,12 +40,6 @@ const gabite = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/gabite.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/gabite.png"
-    },
     "evolutions": [
         {
             "into": "oremon:garchomp",

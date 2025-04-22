@@ -31,12 +31,6 @@ const deoxys_attack = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/deoxys-attack.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/deoxys-attack.png"
-    },
     "evolutions": []
 };
 export default deoxys_attack;

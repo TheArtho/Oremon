@@ -39,12 +39,6 @@ const venomoth = {
     "formSwitchable": false,
     "shape": "bug wings",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/venomoth.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/venomoth.png"
-    },
     "evolutions": []
 };
 export default venomoth;

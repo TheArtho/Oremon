@@ -39,12 +39,6 @@ const mothim = {
     "formSwitchable": false,
     "shape": "bug wings",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/mothim.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mothim.png"
-    },
     "evolutions": []
 };
 export default mothim;

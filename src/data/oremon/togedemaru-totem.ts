@@ -35,12 +35,6 @@ const togedemaru_totem: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/togedemaru-totem.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/togedemaru-totem.png"
-  },
   "evolutions": []
 };
 

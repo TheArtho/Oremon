@@ -39,12 +39,6 @@ const zubat = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/zubat.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/zubat.png"
-    },
     "evolutions": [
         {
             "into": "oremon:golbat",

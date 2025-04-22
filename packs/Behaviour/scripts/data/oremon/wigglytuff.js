@@ -39,12 +39,6 @@ const wigglytuff = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/wigglytuff.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/wigglytuff.png"
-    },
     "evolutions": []
 };
 export default wigglytuff;

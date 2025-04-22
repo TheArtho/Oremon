@@ -40,12 +40,6 @@ const meowth: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/meowth.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/meowth.png"
-  },
   "evolutions": [
     {
       "into": "oremon:persian",

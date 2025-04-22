@@ -38,12 +38,6 @@ const gulpin = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Green",
-    "model": {
-        "default": "models/entity/gulpin.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/gulpin.png"
-    },
     "evolutions": [
         {
             "into": "oremon:swalot",

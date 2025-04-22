@@ -34,12 +34,6 @@ const pikachu_hoenn_cap: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/pikachu-hoenn-cap.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pikachu-hoenn-cap.png"
-  },
   "evolutions": []
 };
 

@@ -38,12 +38,6 @@ const rockruff = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/rockruff.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/rockruff.png"
-    },
     "evolutions": [
         {
             "into": "oremon:lycanroc",

@@ -40,12 +40,6 @@ const vanillite: OremonData = {
   "formSwitchable": false,
   "shape": "blob",
   "color": "White",
-  "model": {
-    "default": "models/entity/vanillite.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/vanillite.png"
-  },
   "evolutions": [
     {
       "into": "oremon:vanillish",

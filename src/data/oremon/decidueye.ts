@@ -41,12 +41,6 @@ const decidueye: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/decidueye.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/decidueye.png"
-  },
   "evolutions": []
 };
 

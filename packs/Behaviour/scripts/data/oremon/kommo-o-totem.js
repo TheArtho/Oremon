@@ -32,12 +32,6 @@ const kommo_o_totem = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/kommo-o-totem.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/kommo-o-totem.png"
-    },
     "evolutions": []
 };
 export default kommo_o_totem;

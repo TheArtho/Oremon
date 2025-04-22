@@ -39,12 +39,6 @@ const exeggutor = {
     "formSwitchable": false,
     "shape": "legs",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/exeggutor.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/exeggutor.png"
-    },
     "evolutions": []
 };
 export default exeggutor;

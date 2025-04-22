@@ -38,12 +38,6 @@ const ambipom = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/ambipom.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/ambipom.png"
-    },
     "evolutions": []
 };
 export default ambipom;

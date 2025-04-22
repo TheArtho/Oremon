@@ -34,12 +34,6 @@ const rotom_fan: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/rotom-fan.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/rotom-fan.png"
-  },
   "evolutions": []
 };
 

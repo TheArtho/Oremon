@@ -42,12 +42,6 @@ const scrafty: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Red",
-  "model": {
-    "default": "models/entity/scrafty.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/scrafty.png"
-  },
   "evolutions": []
 };
 

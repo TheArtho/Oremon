@@ -42,12 +42,6 @@ const swanna: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "White",
-  "model": {
-    "default": "models/entity/swanna.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/swanna.png"
-  },
   "evolutions": []
 };
 

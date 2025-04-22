@@ -32,12 +32,6 @@ const exeggutor_alola = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/exeggutor-alola.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/exeggutor-alola.png"
-    },
     "evolutions": []
 };
 export default exeggutor_alola;

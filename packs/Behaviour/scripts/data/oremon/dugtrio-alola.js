@@ -32,12 +32,6 @@ const dugtrio_alola = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/dugtrio-alola.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/dugtrio-alola.png"
-    },
     "evolutions": []
 };
 export default dugtrio_alola;

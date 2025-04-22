@@ -39,12 +39,6 @@ const pidove = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/pidove.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pidove.png"
-    },
     "evolutions": [
         {
             "into": "oremon:tranquill",

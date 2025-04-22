@@ -39,12 +39,6 @@ const skuntank = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/skuntank.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/skuntank.png"
-    },
     "evolutions": []
 };
 export default skuntank;

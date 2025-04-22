@@ -39,12 +39,6 @@ const bayleef = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Green",
-    "model": {
-        "default": "models/entity/bayleef.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/bayleef.png"
-    },
     "evolutions": [
         {
             "into": "oremon:meganium",

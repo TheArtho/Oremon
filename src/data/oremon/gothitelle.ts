@@ -40,12 +40,6 @@ const gothitelle: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/gothitelle.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gothitelle.png"
-  },
   "evolutions": []
 };
 

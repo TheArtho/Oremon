@@ -41,12 +41,6 @@ const mandibuzz: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/mandibuzz.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/mandibuzz.png"
-  },
   "evolutions": []
 };
 

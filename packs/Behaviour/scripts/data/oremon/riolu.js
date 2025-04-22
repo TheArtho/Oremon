@@ -38,12 +38,6 @@ const riolu = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/riolu.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/riolu.png"
-    },
     "evolutions": [
         {
             "into": "oremon:lucario",

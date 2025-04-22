@@ -39,12 +39,6 @@ const wailmer = {
     "formSwitchable": false,
     "shape": "fish",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/wailmer.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/wailmer.png"
-    },
     "evolutions": [
         {
             "into": "oremon:wailord",

@@ -39,12 +39,6 @@ const vivillon = {
     "formSwitchable": false,
     "shape": "bug wings",
     "color": "White",
-    "model": {
-        "default": "models/entity/vivillon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/vivillon.png"
-    },
     "evolutions": []
 };
 export default vivillon;

@@ -40,12 +40,6 @@ const slowpoke = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/slowpoke.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/slowpoke.png"
-    },
     "evolutions": [
         {
             "into": "oremon:slowbro",

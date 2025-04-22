@@ -41,12 +41,6 @@ const volcanion: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/volcanion.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/volcanion.png"
-  },
   "evolutions": []
 };
 

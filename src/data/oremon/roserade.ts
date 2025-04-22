@@ -42,12 +42,6 @@ const roserade: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Green",
-  "model": {
-    "default": "models/entity/roserade.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/roserade.png"
-  },
   "evolutions": []
 };
 

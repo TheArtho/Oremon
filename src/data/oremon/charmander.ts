@@ -41,12 +41,6 @@ const charmander: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Red",
-  "model": {
-    "default": "models/entity/charmander.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/charmander.png"
-  },
   "evolutions": [
     {
       "into": "oremon:charmeleon",

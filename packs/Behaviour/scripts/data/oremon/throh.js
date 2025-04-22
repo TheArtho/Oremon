@@ -38,12 +38,6 @@ const throh = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Red",
-    "model": {
-        "default": "models/entity/throh.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/throh.png"
-    },
     "evolutions": []
 };
 export default throh;

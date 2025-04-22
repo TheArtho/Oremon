@@ -38,12 +38,6 @@ const plusle = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/plusle.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/plusle.png"
-    },
     "evolutions": []
 };
 export default plusle;

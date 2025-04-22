@@ -34,12 +34,6 @@ const castform_sunny: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/castform-sunny.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/castform-sunny.png"
-  },
   "evolutions": []
 };
 

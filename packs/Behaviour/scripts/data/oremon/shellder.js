@@ -38,12 +38,6 @@ const shellder = {
     "formSwitchable": false,
     "shape": "ball",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/shellder.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/shellder.png"
-    },
     "evolutions": [
         {
             "into": "oremon:cloyster",

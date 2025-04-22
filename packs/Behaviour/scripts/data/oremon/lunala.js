@@ -39,12 +39,6 @@ const lunala = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/lunala.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/lunala.png"
-    },
     "evolutions": []
 };
 export default lunala;

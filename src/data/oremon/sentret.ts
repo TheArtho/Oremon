@@ -40,12 +40,6 @@ const sentret: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/sentret.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/sentret.png"
-  },
   "evolutions": [
     {
       "into": "oremon:furret",

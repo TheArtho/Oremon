@@ -39,12 +39,6 @@ const sableye = {
     "formSwitchable": true,
     "shape": "humanoid",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/sableye.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/sableye.png"
-    },
     "evolutions": []
 };
 export default sableye;

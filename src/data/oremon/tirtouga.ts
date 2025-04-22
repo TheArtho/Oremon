@@ -42,12 +42,6 @@ const tirtouga: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/tirtouga.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/tirtouga.png"
-  },
   "evolutions": [
     {
       "into": "oremon:carracosta",

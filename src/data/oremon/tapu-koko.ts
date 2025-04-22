@@ -41,12 +41,6 @@ const tapu_koko: OremonData = {
   "formSwitchable": false,
   "shape": "arms",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/tapu-koko.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/tapu-koko.png"
-  },
   "evolutions": []
 };
 

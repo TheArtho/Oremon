@@ -41,12 +41,6 @@ const moltres: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/moltres.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/moltres.png"
-  },
   "evolutions": []
 };
 

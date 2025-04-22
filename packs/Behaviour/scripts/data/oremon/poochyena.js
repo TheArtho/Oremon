@@ -38,12 +38,6 @@ const poochyena = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/poochyena.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/poochyena.png"
-    },
     "evolutions": [
         {
             "into": "oremon:mightyena",

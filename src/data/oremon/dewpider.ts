@@ -42,12 +42,6 @@ const dewpider: OremonData = {
   "formSwitchable": false,
   "shape": "legs",
   "color": "Green",
-  "model": {
-    "default": "models/entity/dewpider.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/dewpider.png"
-  },
   "evolutions": [
     {
       "into": "oremon:araquanid",

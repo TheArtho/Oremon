@@ -38,12 +38,6 @@ const deoxys_normal = {
     "formSwitchable": true,
     "shape": "humanoid",
     "color": "Red",
-    "model": {
-        "default": "models/entity/deoxys-normal.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/deoxys-normal.png"
-    },
     "evolutions": []
 };
 export default deoxys_normal;

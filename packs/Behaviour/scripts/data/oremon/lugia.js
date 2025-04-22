@@ -39,12 +39,6 @@ const lugia = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "White",
-    "model": {
-        "default": "models/entity/lugia.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/lugia.png"
-    },
     "evolutions": []
 };
 export default lugia;

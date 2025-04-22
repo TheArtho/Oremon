@@ -32,12 +32,6 @@ const minior_indigo_meteor = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/minior-indigo-meteor.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/minior-indigo-meteor.png"
-    },
     "evolutions": []
 };
 export default minior_indigo_meteor;

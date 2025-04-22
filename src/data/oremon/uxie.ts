@@ -40,12 +40,6 @@ const uxie: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/uxie.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/uxie.png"
-  },
   "evolutions": []
 };
 

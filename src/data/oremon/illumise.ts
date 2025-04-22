@@ -41,12 +41,6 @@ const illumise: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/illumise.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/illumise.png"
-  },
   "evolutions": []
 };
 

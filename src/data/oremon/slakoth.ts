@@ -40,12 +40,6 @@ const slakoth: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/slakoth.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/slakoth.png"
-  },
   "evolutions": [
     {
       "into": "oremon:vigoroth",

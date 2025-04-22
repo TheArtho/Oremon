@@ -40,12 +40,6 @@ const wimpod = {
     "formSwitchable": false,
     "shape": "tentacles",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/wimpod.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/wimpod.png"
-    },
     "evolutions": [
         {
             "into": "oremon:golisopod",

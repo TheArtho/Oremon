@@ -35,12 +35,6 @@ const slowbro_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/slowbro-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/slowbro-mega.png"
-  },
   "evolutions": []
 };
 

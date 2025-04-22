@@ -40,12 +40,6 @@ const dugtrio: OremonData = {
   "formSwitchable": false,
   "shape": "heads",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/dugtrio.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/dugtrio.png"
-  },
   "evolutions": []
 };
 

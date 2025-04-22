@@ -41,12 +41,6 @@ const unfezant: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/unfezant.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/unfezant.png"
-  },
   "evolutions": []
 };
 

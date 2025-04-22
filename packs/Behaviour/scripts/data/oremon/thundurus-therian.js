@@ -32,12 +32,6 @@ const thundurus_therian = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/thundurus-therian.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/thundurus-therian.png"
-    },
     "evolutions": []
 };
 export default thundurus_therian;

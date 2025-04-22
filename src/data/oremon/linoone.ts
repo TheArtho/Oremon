@@ -40,12 +40,6 @@ const linoone: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "White",
-  "model": {
-    "default": "models/entity/linoone.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/linoone.png"
-  },
   "evolutions": []
 };
 

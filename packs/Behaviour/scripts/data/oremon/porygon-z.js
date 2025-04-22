@@ -38,12 +38,6 @@ const porygon_z = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Red",
-    "model": {
-        "default": "models/entity/porygon-z.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/porygon-z.png"
-    },
     "evolutions": []
 };
 export default porygon_z;

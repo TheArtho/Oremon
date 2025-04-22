@@ -40,12 +40,6 @@ const raikou: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/raikou.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/raikou.png"
-  },
   "evolutions": []
 };
 

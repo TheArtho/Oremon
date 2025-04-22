@@ -39,12 +39,6 @@ const seviper = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Black",
-    "model": {
-        "default": "models/entity/seviper.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/seviper.png"
-    },
     "evolutions": []
 };
 export default seviper;

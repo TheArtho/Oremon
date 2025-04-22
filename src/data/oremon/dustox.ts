@@ -41,12 +41,6 @@ const dustox: OremonData = {
   "formSwitchable": false,
   "shape": "bug wings",
   "color": "Green",
-  "model": {
-    "default": "models/entity/dustox.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/dustox.png"
-  },
   "evolutions": []
 };
 

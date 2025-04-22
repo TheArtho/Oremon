@@ -39,12 +39,6 @@ const piplup = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/piplup.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/piplup.png"
-    },
     "evolutions": [
         {
             "into": "oremon:prinplup",

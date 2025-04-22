@@ -40,12 +40,6 @@ const togepi: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "White",
-  "model": {
-    "default": "models/entity/togepi.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/togepi.png"
-  },
   "evolutions": [
     {
       "into": "oremon:togetic",

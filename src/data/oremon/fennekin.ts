@@ -40,12 +40,6 @@ const fennekin: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Red",
-  "model": {
-    "default": "models/entity/fennekin.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/fennekin.png"
-  },
   "evolutions": [
     {
       "into": "oremon:braixen",

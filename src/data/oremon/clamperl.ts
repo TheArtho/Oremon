@@ -40,12 +40,6 @@ const clamperl: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/clamperl.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/clamperl.png"
-  },
   "evolutions": [
     {
       "into": "oremon:huntail",

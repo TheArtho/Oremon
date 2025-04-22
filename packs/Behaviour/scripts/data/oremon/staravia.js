@@ -39,12 +39,6 @@ const staravia = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/staravia.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/staravia.png"
-    },
     "evolutions": [
         {
             "into": "oremon:staraptor",

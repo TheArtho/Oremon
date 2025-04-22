@@ -41,12 +41,6 @@ const aegislash_shield: OremonData = {
   "formSwitchable": true,
   "shape": "blob",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/aegislash-shield.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/aegislash-shield.png"
-  },
   "evolutions": []
 };
 

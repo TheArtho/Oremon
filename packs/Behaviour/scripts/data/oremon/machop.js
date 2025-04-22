@@ -38,12 +38,6 @@ const machop = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/machop.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/machop.png"
-    },
     "evolutions": [
         {
             "into": "oremon:machoke",

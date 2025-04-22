@@ -34,12 +34,6 @@ const sandslash_alola: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/sandslash-alola.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/sandslash-alola.png"
-  },
   "evolutions": []
 };
 

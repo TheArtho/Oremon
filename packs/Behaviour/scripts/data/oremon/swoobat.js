@@ -40,12 +40,6 @@ const swoobat = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/swoobat.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/swoobat.png"
-    },
     "evolutions": []
 };
 export default swoobat;

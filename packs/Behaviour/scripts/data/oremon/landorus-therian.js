@@ -32,12 +32,6 @@ const landorus_therian = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/landorus-therian.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/landorus-therian.png"
-    },
     "evolutions": []
 };
 export default landorus_therian;

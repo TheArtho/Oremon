@@ -41,12 +41,6 @@ const lairon: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/lairon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/lairon.png"
-  },
   "evolutions": [
     {
       "into": "oremon:aggron",

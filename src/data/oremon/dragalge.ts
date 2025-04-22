@@ -42,12 +42,6 @@ const dragalge: OremonData = {
   "formSwitchable": false,
   "shape": "blob",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/dragalge.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/dragalge.png"
-  },
   "evolutions": []
 };
 

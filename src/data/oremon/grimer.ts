@@ -40,12 +40,6 @@ const grimer: OremonData = {
   "formSwitchable": false,
   "shape": "arms",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/grimer.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/grimer.png"
-  },
   "evolutions": [
     {
       "into": "oremon:muk",

@@ -41,12 +41,6 @@ const charmeleon: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Red",
-  "model": {
-    "default": "models/entity/charmeleon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/charmeleon.png"
-  },
   "evolutions": [
     {
       "into": "oremon:charizard",

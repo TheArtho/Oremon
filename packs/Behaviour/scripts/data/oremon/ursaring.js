@@ -38,12 +38,6 @@ const ursaring = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/ursaring.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/ursaring.png"
-    },
     "evolutions": []
 };
 export default ursaring;

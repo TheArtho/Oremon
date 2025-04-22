@@ -38,12 +38,6 @@ const zorua = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/zorua.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/zorua.png"
-    },
     "evolutions": [
         {
             "into": "oremon:zoroark",

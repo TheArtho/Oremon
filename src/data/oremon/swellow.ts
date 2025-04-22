@@ -41,12 +41,6 @@ const swellow: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/swellow.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/swellow.png"
-  },
   "evolutions": []
 };
 

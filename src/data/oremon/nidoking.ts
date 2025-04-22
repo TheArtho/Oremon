@@ -42,12 +42,6 @@ const nidoking: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/nidoking.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/nidoking.png"
-  },
   "evolutions": []
 };
 

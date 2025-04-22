@@ -39,12 +39,6 @@ const kommo_o = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/kommo-o.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/kommo-o.png"
-    },
     "evolutions": []
 };
 export default kommo_o;

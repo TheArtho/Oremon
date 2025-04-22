@@ -41,12 +41,6 @@ const celebi: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Green",
-  "model": {
-    "default": "models/entity/celebi.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/celebi.png"
-  },
   "evolutions": []
 };
 

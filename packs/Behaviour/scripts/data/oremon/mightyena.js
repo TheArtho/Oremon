@@ -38,12 +38,6 @@ const mightyena = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/mightyena.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mightyena.png"
-    },
     "evolutions": []
 };
 export default mightyena;

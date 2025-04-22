@@ -40,12 +40,6 @@ const hypno: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/hypno.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/hypno.png"
-  },
   "evolutions": []
 };
 

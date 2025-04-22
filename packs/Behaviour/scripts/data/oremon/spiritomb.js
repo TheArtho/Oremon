@@ -39,12 +39,6 @@ const spiritomb = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/spiritomb.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/spiritomb.png"
-    },
     "evolutions": []
 };
 export default spiritomb;

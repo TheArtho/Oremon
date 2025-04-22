@@ -34,12 +34,6 @@ const gengar_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/gengar-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gengar-mega.png"
-  },
   "evolutions": []
 };
 

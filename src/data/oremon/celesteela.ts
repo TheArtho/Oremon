@@ -41,12 +41,6 @@ const celesteela: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Green",
-  "model": {
-    "default": "models/entity/celesteela.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/celesteela.png"
-  },
   "evolutions": []
 };
 

@@ -41,12 +41,6 @@ const bisharp: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Red",
-  "model": {
-    "default": "models/entity/bisharp.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/bisharp.png"
-  },
   "evolutions": []
 };
 

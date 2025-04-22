@@ -38,12 +38,6 @@ const goomy = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/goomy.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/goomy.png"
-    },
     "evolutions": [
         {
             "into": "oremon:sliggoo",

@@ -40,12 +40,6 @@ const deoxys_normal: OremonData = {
   "formSwitchable": true,
   "shape": "humanoid",
   "color": "Red",
-  "model": {
-    "default": "models/entity/deoxys-normal.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/deoxys-normal.png"
-  },
   "evolutions": []
 };
 

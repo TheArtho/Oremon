@@ -33,12 +33,6 @@ const deoxys_defense: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/deoxys-defense.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/deoxys-defense.png"
-  },
   "evolutions": []
 };
 

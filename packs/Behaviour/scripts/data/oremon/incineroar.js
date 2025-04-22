@@ -39,12 +39,6 @@ const incineroar = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Red",
-    "model": {
-        "default": "models/entity/incineroar.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/incineroar.png"
-    },
     "evolutions": []
 };
 export default incineroar;

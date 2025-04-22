@@ -39,12 +39,6 @@ const toucannon = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Black",
-    "model": {
-        "default": "models/entity/toucannon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/toucannon.png"
-    },
     "evolutions": []
 };
 export default toucannon;

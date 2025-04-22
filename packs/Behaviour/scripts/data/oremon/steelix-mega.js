@@ -32,12 +32,6 @@ const steelix_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/steelix-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/steelix-mega.png"
-    },
     "evolutions": []
 };
 export default steelix_mega;

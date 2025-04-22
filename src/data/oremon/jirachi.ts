@@ -41,12 +41,6 @@ const jirachi: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/jirachi.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/jirachi.png"
-  },
   "evolutions": []
 };
 

@@ -42,12 +42,6 @@ const crawdaunt: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Red",
-  "model": {
-    "default": "models/entity/crawdaunt.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/crawdaunt.png"
-  },
   "evolutions": []
 };
 

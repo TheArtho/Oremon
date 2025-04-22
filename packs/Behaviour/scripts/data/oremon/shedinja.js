@@ -39,12 +39,6 @@ const shedinja = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/shedinja.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/shedinja.png"
-    },
     "evolutions": []
 };
 export default shedinja;

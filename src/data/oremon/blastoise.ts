@@ -41,12 +41,6 @@ const blastoise: OremonData = {
   "formSwitchable": true,
   "shape": "upright",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/blastoise.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/blastoise.png"
-  },
   "evolutions": []
 };
 

@@ -41,12 +41,6 @@ const noivern: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/noivern.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/noivern.png"
-  },
   "evolutions": []
 };
 

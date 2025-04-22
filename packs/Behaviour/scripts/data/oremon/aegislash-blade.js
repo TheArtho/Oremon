@@ -32,12 +32,6 @@ const aegislash_blade = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/aegislash-blade.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/aegislash-blade.png"
-    },
     "evolutions": []
 };
 export default aegislash_blade;

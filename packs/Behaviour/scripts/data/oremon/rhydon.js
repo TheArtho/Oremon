@@ -40,12 +40,6 @@ const rhydon = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/rhydon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/rhydon.png"
-    },
     "evolutions": [
         {
             "into": "oremon:rhyperior",

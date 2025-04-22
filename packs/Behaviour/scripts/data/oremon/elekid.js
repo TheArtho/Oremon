@@ -38,12 +38,6 @@ const elekid = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/elekid.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/elekid.png"
-    },
     "evolutions": [
         {
             "into": "oremon:electabuzz",

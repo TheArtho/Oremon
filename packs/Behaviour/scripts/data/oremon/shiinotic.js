@@ -39,12 +39,6 @@ const shiinotic = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/shiinotic.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/shiinotic.png"
-    },
     "evolutions": []
 };
 export default shiinotic;

@@ -40,12 +40,6 @@ const pangoro = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "White",
-    "model": {
-        "default": "models/entity/pangoro.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pangoro.png"
-    },
     "evolutions": []
 };
 export default pangoro;

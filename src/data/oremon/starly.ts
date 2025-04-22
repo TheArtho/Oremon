@@ -41,12 +41,6 @@ const starly: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/starly.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/starly.png"
-  },
   "evolutions": [
     {
       "into": "oremon:staravia",

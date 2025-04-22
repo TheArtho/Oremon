@@ -41,12 +41,6 @@ const spinarak: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Green",
-  "model": {
-    "default": "models/entity/spinarak.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/spinarak.png"
-  },
   "evolutions": [
     {
       "into": "oremon:ariados",

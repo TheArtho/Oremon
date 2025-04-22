@@ -40,12 +40,6 @@ const sawk: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/sawk.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/sawk.png"
-  },
   "evolutions": []
 };
 

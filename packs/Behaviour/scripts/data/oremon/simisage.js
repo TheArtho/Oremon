@@ -38,12 +38,6 @@ const simisage = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Green",
-    "model": {
-        "default": "models/entity/simisage.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/simisage.png"
-    },
     "evolutions": []
 };
 export default simisage;

@@ -40,12 +40,6 @@ const lurantis: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/lurantis.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/lurantis.png"
-  },
   "evolutions": []
 };
 

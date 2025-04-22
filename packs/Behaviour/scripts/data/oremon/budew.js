@@ -39,12 +39,6 @@ const budew = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Green",
-    "model": {
-        "default": "models/entity/budew.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/budew.png"
-    },
     "evolutions": [
         {
             "into": "oremon:roselia",

@@ -41,12 +41,6 @@ const arbok: OremonData = {
   "formSwitchable": false,
   "shape": "squiggle",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/arbok.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/arbok.png"
-  },
   "evolutions": []
 };
 

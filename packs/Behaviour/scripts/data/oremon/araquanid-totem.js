@@ -33,12 +33,6 @@ const araquanid_totem = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/araquanid-totem.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/araquanid-totem.png"
-    },
     "evolutions": []
 };
 export default araquanid_totem;

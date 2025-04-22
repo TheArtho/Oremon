@@ -41,12 +41,6 @@ const salamence: OremonData = {
   "formSwitchable": true,
   "shape": "quadruped",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/salamence.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/salamence.png"
-  },
   "evolutions": []
 };
 

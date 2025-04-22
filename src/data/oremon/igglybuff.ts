@@ -41,12 +41,6 @@ const igglybuff: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/igglybuff.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/igglybuff.png"
-  },
   "evolutions": [
     {
       "into": "oremon:jigglypuff",

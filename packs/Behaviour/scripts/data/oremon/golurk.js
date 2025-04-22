@@ -39,12 +39,6 @@ const golurk = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Green",
-    "model": {
-        "default": "models/entity/golurk.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/golurk.png"
-    },
     "evolutions": []
 };
 export default golurk;

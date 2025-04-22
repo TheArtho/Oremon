@@ -39,12 +39,6 @@ const palpitoad = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/palpitoad.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/palpitoad.png"
-    },
     "evolutions": [
         {
             "into": "oremon:seismitoad",

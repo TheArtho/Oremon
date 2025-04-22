@@ -41,12 +41,6 @@ const cradily: OremonData = {
   "formSwitchable": false,
   "shape": "blob",
   "color": "Green",
-  "model": {
-    "default": "models/entity/cradily.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/cradily.png"
-  },
   "evolutions": []
 };
 

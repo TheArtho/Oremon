@@ -41,12 +41,6 @@ const ledian: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Red",
-  "model": {
-    "default": "models/entity/ledian.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/ledian.png"
-  },
   "evolutions": []
 };
 

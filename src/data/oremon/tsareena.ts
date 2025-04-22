@@ -40,12 +40,6 @@ const tsareena: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/tsareena.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/tsareena.png"
-  },
   "evolutions": []
 };
 

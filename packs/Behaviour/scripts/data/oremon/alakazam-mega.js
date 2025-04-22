@@ -31,12 +31,6 @@ const alakazam_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/alakazam-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/alakazam-mega.png"
-    },
     "evolutions": []
 };
 export default alakazam_mega;

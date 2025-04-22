@@ -39,12 +39,6 @@ const pancham = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "White",
-    "model": {
-        "default": "models/entity/pancham.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pancham.png"
-    },
     "evolutions": [
         {
             "into": "oremon:pangoro",

@@ -32,12 +32,6 @@ const rotom_mow = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/rotom-mow.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/rotom-mow.png"
-    },
     "evolutions": []
 };
 export default rotom_mow;

@@ -40,12 +40,6 @@ const swalot: OremonData = {
   "formSwitchable": false,
   "shape": "arms",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/swalot.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/swalot.png"
-  },
   "evolutions": []
 };
 

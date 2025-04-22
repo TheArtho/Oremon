@@ -32,12 +32,6 @@ const medicham_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/medicham-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/medicham-mega.png"
-    },
     "evolutions": []
 };
 export default medicham_mega;

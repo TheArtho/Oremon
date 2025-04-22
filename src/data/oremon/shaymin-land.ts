@@ -40,12 +40,6 @@ const shaymin_land: OremonData = {
   "formSwitchable": true,
   "shape": "quadruped",
   "color": "Green",
-  "model": {
-    "default": "models/entity/shaymin-land.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/shaymin-land.png"
-  },
   "evolutions": []
 };
 

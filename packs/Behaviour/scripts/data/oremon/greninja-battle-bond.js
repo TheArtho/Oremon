@@ -32,12 +32,6 @@ const greninja_battle_bond = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/greninja-battle-bond.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/greninja-battle-bond.png"
-    },
     "evolutions": []
 };
 export default greninja_battle_bond;

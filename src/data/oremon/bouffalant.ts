@@ -40,12 +40,6 @@ const bouffalant: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/bouffalant.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/bouffalant.png"
-  },
   "evolutions": []
 };
 

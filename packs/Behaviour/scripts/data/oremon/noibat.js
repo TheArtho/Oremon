@@ -39,12 +39,6 @@ const noibat = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/noibat.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/noibat.png"
-    },
     "evolutions": [
         {
             "into": "oremon:noivern",

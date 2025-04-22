@@ -40,12 +40,6 @@ const relicanth = {
     "formSwitchable": false,
     "shape": "fish",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/relicanth.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/relicanth.png"
-    },
     "evolutions": []
 };
 export default relicanth;

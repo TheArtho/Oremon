@@ -40,12 +40,6 @@ const mesprit: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/mesprit.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/mesprit.png"
-  },
   "evolutions": []
 };
 

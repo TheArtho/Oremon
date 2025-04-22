@@ -39,12 +39,6 @@ const pawniard = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Red",
-    "model": {
-        "default": "models/entity/pawniard.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pawniard.png"
-    },
     "evolutions": [
         {
             "into": "oremon:bisharp",

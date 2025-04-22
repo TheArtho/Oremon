@@ -34,12 +34,6 @@ const meloetta_pirouette: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/meloetta-pirouette.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/meloetta-pirouette.png"
-  },
   "evolutions": []
 };
 

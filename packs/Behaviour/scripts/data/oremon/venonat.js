@@ -39,12 +39,6 @@ const venonat = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/venonat.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/venonat.png"
-    },
     "evolutions": [
         {
             "into": "oremon:venomoth",

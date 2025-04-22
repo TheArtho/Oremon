@@ -38,12 +38,6 @@ const caterpie = {
     "formSwitchable": false,
     "shape": "armor",
     "color": "Green",
-    "model": {
-        "default": "models/entity/caterpie.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/caterpie.png"
-    },
     "evolutions": [
         {
             "into": "oremon:metapod",

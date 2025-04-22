@@ -39,12 +39,6 @@ const shieldon = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/shieldon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/shieldon.png"
-    },
     "evolutions": [
         {
             "into": "oremon:bastiodon",

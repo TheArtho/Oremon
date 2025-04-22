@@ -38,12 +38,6 @@ const manectric = {
     "formSwitchable": true,
     "shape": "quadruped",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/manectric.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/manectric.png"
-    },
     "evolutions": []
 };
 export default manectric;

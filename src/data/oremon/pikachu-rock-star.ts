@@ -34,12 +34,6 @@ const pikachu_rock_star: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/pikachu-rock-star.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pikachu-rock-star.png"
-  },
   "evolutions": []
 };
 

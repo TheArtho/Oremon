@@ -40,12 +40,6 @@ const zoroark: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/zoroark.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/zoroark.png"
-  },
   "evolutions": []
 };
 

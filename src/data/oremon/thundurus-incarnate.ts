@@ -41,12 +41,6 @@ const thundurus_incarnate: OremonData = {
   "formSwitchable": true,
   "shape": "arms",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/thundurus-incarnate.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/thundurus-incarnate.png"
-  },
   "evolutions": []
 };
 

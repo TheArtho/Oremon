@@ -40,12 +40,6 @@ const poliwag: OremonData = {
   "formSwitchable": false,
   "shape": "legs",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/poliwag.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/poliwag.png"
-  },
   "evolutions": [
     {
       "into": "oremon:poliwhirl",

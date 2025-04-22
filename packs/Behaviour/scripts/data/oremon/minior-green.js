@@ -32,12 +32,6 @@ const minior_green = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/minior-green.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/minior-green.png"
-    },
     "evolutions": []
 };
 export default minior_green;

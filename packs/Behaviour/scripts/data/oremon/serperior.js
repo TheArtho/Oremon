@@ -39,12 +39,6 @@ const serperior = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Green",
-    "model": {
-        "default": "models/entity/serperior.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/serperior.png"
-    },
     "evolutions": []
 };
 export default serperior;

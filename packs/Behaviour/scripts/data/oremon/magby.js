@@ -38,12 +38,6 @@ const magby = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Red",
-    "model": {
-        "default": "models/entity/magby.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/magby.png"
-    },
     "evolutions": [
         {
             "into": "oremon:magmar",

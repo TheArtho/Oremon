@@ -40,12 +40,6 @@ const klang: OremonData = {
   "formSwitchable": false,
   "shape": "heads",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/klang.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/klang.png"
-  },
   "evolutions": [
     {
       "into": "oremon:klinklang",

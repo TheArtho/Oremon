@@ -41,12 +41,6 @@ const whirlipede: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/whirlipede.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/whirlipede.png"
-  },
   "evolutions": [
     {
       "into": "oremon:scolipede",

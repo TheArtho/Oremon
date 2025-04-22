@@ -39,12 +39,6 @@ const barboach = {
     "formSwitchable": false,
     "shape": "fish",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/barboach.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/barboach.png"
-    },
     "evolutions": [
         {
             "into": "oremon:whiscash",

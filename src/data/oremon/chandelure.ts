@@ -41,12 +41,6 @@ const chandelure: OremonData = {
   "formSwitchable": false,
   "shape": "arms",
   "color": "Black",
-  "model": {
-    "default": "models/entity/chandelure.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/chandelure.png"
-  },
   "evolutions": []
 };
 

@@ -40,12 +40,6 @@ const weezing: OremonData = {
   "formSwitchable": false,
   "shape": "heads",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/weezing.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/weezing.png"
-  },
   "evolutions": []
 };
 

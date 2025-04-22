@@ -40,12 +40,6 @@ const tauros: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/tauros.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/tauros.png"
-  },
   "evolutions": []
 };
 

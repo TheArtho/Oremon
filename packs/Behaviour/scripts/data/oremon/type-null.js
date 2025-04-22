@@ -38,12 +38,6 @@ const type_null = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/type-null.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/type-null.png"
-    },
     "evolutions": [
         {
             "into": "oremon:silvally",

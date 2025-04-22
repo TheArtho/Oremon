@@ -40,12 +40,6 @@ const araquanid = {
     "formSwitchable": false,
     "shape": "armor",
     "color": "Green",
-    "model": {
-        "default": "models/entity/araquanid.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/araquanid.png"
-    },
     "evolutions": []
 };
 export default araquanid;

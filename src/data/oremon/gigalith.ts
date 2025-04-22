@@ -40,12 +40,6 @@ const gigalith: OremonData = {
   "formSwitchable": false,
   "shape": "tentacles",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/gigalith.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gigalith.png"
-  },
   "evolutions": []
 };
 

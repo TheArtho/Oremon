@@ -33,12 +33,6 @@ const kangaskhan_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/kangaskhan-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/kangaskhan-mega.png"
-  },
   "evolutions": []
 };
 

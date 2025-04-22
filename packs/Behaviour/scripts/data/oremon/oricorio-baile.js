@@ -39,12 +39,6 @@ const oricorio_baile = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Red",
-    "model": {
-        "default": "models/entity/oricorio-baile.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/oricorio-baile.png"
-    },
     "evolutions": []
 };
 export default oricorio_baile;

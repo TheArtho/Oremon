@@ -41,12 +41,6 @@ const aron: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/aron.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/aron.png"
-  },
   "evolutions": [
     {
       "into": "oremon:lairon",

@@ -40,12 +40,6 @@ const stantler: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/stantler.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/stantler.png"
-  },
   "evolutions": []
 };
 

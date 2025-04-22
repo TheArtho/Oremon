@@ -41,12 +41,6 @@ const volbeat: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/volbeat.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/volbeat.png"
-  },
   "evolutions": []
 };
 

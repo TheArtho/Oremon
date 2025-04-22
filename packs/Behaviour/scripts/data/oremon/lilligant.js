@@ -38,12 +38,6 @@ const lilligant = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "Green",
-    "model": {
-        "default": "models/entity/lilligant.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/lilligant.png"
-    },
     "evolutions": []
 };
 export default lilligant;

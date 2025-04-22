@@ -39,12 +39,6 @@ const bidoof = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/bidoof.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/bidoof.png"
-    },
     "evolutions": [
         {
             "into": "oremon:bibarel",

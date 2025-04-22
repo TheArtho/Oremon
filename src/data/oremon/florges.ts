@@ -40,12 +40,6 @@ const florges: OremonData = {
   "formSwitchable": false,
   "shape": "arms",
   "color": "White",
-  "model": {
-    "default": "models/entity/florges.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/florges.png"
-  },
   "evolutions": []
 };
 

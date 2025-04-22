@@ -40,12 +40,6 @@ const seaking: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Red",
-  "model": {
-    "default": "models/entity/seaking.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/seaking.png"
-  },
   "evolutions": []
 };
 

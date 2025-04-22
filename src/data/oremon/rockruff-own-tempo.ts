@@ -33,12 +33,6 @@ const rockruff_own_tempo: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/rockruff-own-tempo.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/rockruff-own-tempo.png"
-  },
   "evolutions": []
 };
 

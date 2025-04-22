@@ -38,12 +38,6 @@ const smeargle = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "White",
-    "model": {
-        "default": "models/entity/smeargle.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/smeargle.png"
-    },
     "evolutions": []
 };
 export default smeargle;

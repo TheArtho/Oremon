@@ -41,12 +41,6 @@ const gengar: OremonData = {
   "formSwitchable": true,
   "shape": "upright",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/gengar.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gengar.png"
-  },
   "evolutions": []
 };
 

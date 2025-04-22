@@ -32,12 +32,6 @@ const greninja_ash = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/greninja-ash.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/greninja-ash.png"
-    },
     "evolutions": []
 };
 export default greninja_ash;

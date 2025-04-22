@@ -40,12 +40,6 @@ const conkeldurr: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/conkeldurr.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/conkeldurr.png"
-  },
   "evolutions": []
 };
 

@@ -34,12 +34,6 @@ const pikachu_sinnoh_cap: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/pikachu-sinnoh-cap.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pikachu-sinnoh-cap.png"
-  },
   "evolutions": []
 };
 

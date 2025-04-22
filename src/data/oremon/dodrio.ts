@@ -41,12 +41,6 @@ const dodrio: OremonData = {
   "formSwitchable": false,
   "shape": "legs",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/dodrio.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/dodrio.png"
-  },
   "evolutions": []
 };
 

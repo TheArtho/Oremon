@@ -42,12 +42,6 @@ const whimsicott: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Green",
-  "model": {
-    "default": "models/entity/whimsicott.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/whimsicott.png"
-  },
   "evolutions": []
 };
 

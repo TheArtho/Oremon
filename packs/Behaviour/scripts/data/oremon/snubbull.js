@@ -39,12 +39,6 @@ const snubbull = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/snubbull.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/snubbull.png"
-    },
     "evolutions": [
         {
             "into": "oremon:granbull",

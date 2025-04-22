@@ -39,12 +39,6 @@ const axew = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Green",
-    "model": {
-        "default": "models/entity/axew.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/axew.png"
-    },
     "evolutions": [
         {
             "into": "oremon:fraxure",

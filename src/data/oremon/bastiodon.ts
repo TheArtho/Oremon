@@ -41,12 +41,6 @@ const bastiodon: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/bastiodon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/bastiodon.png"
-  },
   "evolutions": []
 };
 

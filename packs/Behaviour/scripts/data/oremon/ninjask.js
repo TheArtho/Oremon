@@ -39,12 +39,6 @@ const ninjask = {
     "formSwitchable": false,
     "shape": "bug wings",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/ninjask.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/ninjask.png"
-    },
     "evolutions": []
 };
 export default ninjask;

@@ -39,12 +39,6 @@ const natu = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Green",
-    "model": {
-        "default": "models/entity/natu.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/natu.png"
-    },
     "evolutions": [
         {
             "into": "oremon:xatu",

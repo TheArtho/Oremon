@@ -34,12 +34,6 @@ const marowak_totem: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/marowak-totem.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/marowak-totem.png"
-  },
   "evolutions": []
 };
 

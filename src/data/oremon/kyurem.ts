@@ -41,12 +41,6 @@ const kyurem: OremonData = {
   "formSwitchable": true,
   "shape": "upright",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/kyurem.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/kyurem.png"
-  },
   "evolutions": []
 };
 

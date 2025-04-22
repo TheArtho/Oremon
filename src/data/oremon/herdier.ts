@@ -40,12 +40,6 @@ const herdier: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/herdier.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/herdier.png"
-  },
   "evolutions": [
     {
       "into": "oremon:stoutland",

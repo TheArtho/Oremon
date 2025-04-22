@@ -39,12 +39,6 @@ const meloetta_aria = {
     "formSwitchable": true,
     "shape": "humanoid",
     "color": "White",
-    "model": {
-        "default": "models/entity/meloetta-aria.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/meloetta-aria.png"
-    },
     "evolutions": []
 };
 export default meloetta_aria;

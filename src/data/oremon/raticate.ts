@@ -40,12 +40,6 @@ const raticate: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/raticate.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/raticate.png"
-  },
   "evolutions": []
 };
 

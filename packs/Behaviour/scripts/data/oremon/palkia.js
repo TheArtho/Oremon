@@ -39,12 +39,6 @@ const palkia = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/palkia.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/palkia.png"
-    },
     "evolutions": []
 };
 export default palkia;

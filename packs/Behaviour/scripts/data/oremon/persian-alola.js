@@ -31,12 +31,6 @@ const persian_alola = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/persian-alola.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/persian-alola.png"
-    },
     "evolutions": []
 };
 export default persian_alola;

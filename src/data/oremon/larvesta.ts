@@ -41,12 +41,6 @@ const larvesta: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "White",
-  "model": {
-    "default": "models/entity/larvesta.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/larvesta.png"
-  },
   "evolutions": [
     {
       "into": "oremon:volcarona",

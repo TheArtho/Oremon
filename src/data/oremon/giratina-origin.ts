@@ -34,12 +34,6 @@ const giratina_origin: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/giratina-origin.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/giratina-origin.png"
-  },
   "evolutions": []
 };
 

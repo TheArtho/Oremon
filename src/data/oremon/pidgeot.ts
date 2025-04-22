@@ -41,12 +41,6 @@ const pidgeot: OremonData = {
   "formSwitchable": true,
   "shape": "wings",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/pidgeot.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pidgeot.png"
-  },
   "evolutions": []
 };
 

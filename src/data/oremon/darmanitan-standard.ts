@@ -40,12 +40,6 @@ const darmanitan_standard: OremonData = {
   "formSwitchable": true,
   "shape": "quadruped",
   "color": "Red",
-  "model": {
-    "default": "models/entity/darmanitan-standard.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/darmanitan-standard.png"
-  },
   "evolutions": []
 };
 

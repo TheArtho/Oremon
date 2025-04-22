@@ -34,12 +34,6 @@ const keldeo_resolute: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/keldeo-resolute.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/keldeo-resolute.png"
-  },
   "evolutions": []
 };
 

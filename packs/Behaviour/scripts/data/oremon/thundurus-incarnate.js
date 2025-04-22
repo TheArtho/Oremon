@@ -39,12 +39,6 @@ const thundurus_incarnate = {
     "formSwitchable": true,
     "shape": "arms",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/thundurus-incarnate.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/thundurus-incarnate.png"
-    },
     "evolutions": []
 };
 export default thundurus_incarnate;

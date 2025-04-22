@@ -39,12 +39,6 @@ const remoraid = {
     "formSwitchable": false,
     "shape": "fish",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/remoraid.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/remoraid.png"
-    },
     "evolutions": [
         {
             "into": "oremon:octillery",

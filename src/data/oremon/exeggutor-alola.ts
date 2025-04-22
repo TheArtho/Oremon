@@ -34,12 +34,6 @@ const exeggutor_alola: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/exeggutor-alola.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/exeggutor-alola.png"
-  },
   "evolutions": []
 };
 

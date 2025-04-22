@@ -39,12 +39,6 @@ const tranquill = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/tranquill.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/tranquill.png"
-    },
     "evolutions": [
         {
             "into": "oremon:unfezant",

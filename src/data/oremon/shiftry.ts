@@ -42,12 +42,6 @@ const shiftry: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/shiftry.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/shiftry.png"
-  },
   "evolutions": []
 };
 

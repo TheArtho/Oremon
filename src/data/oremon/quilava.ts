@@ -40,12 +40,6 @@ const quilava: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/quilava.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/quilava.png"
-  },
   "evolutions": [
     {
       "into": "oremon:typhlosion",

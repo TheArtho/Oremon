@@ -42,12 +42,6 @@ const snover: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "White",
-  "model": {
-    "default": "models/entity/snover.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/snover.png"
-  },
   "evolutions": [
     {
       "into": "oremon:abomasnow",

@@ -41,12 +41,6 @@ const lopunny: OremonData = {
   "formSwitchable": true,
   "shape": "upright",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/lopunny.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/lopunny.png"
-  },
   "evolutions": []
 };
 

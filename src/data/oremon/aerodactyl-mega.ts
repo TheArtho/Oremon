@@ -34,12 +34,6 @@ const aerodactyl_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/aerodactyl-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/aerodactyl-mega.png"
-  },
   "evolutions": []
 };
 

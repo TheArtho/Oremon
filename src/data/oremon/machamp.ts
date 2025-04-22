@@ -40,12 +40,6 @@ const machamp: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/machamp.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/machamp.png"
-  },
   "evolutions": []
 };
 

@@ -42,12 +42,6 @@ const lombre: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Green",
-  "model": {
-    "default": "models/entity/lombre.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/lombre.png"
-  },
   "evolutions": [
     {
       "into": "oremon:ludicolo",

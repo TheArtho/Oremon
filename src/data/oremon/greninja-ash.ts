@@ -34,12 +34,6 @@ const greninja_ash: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/greninja-ash.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/greninja-ash.png"
-  },
   "evolutions": []
 };
 

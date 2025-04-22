@@ -39,12 +39,6 @@ const magnemite = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/magnemite.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/magnemite.png"
-    },
     "evolutions": [
         {
             "into": "oremon:magneton",

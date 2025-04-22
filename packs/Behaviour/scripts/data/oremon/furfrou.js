@@ -38,12 +38,6 @@ const furfrou = {
     "formSwitchable": true,
     "shape": "quadruped",
     "color": "White",
-    "model": {
-        "default": "models/entity/furfrou.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/furfrou.png"
-    },
     "evolutions": []
 };
 export default furfrou;

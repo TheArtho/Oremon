@@ -40,12 +40,6 @@ const dewott: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/dewott.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/dewott.png"
-  },
   "evolutions": [
     {
       "into": "oremon:samurott",

@@ -40,12 +40,6 @@ const electivire: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/electivire.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/electivire.png"
-  },
   "evolutions": []
 };
 

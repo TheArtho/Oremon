@@ -42,12 +42,6 @@ const dewgong: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "White",
-  "model": {
-    "default": "models/entity/dewgong.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/dewgong.png"
-  },
   "evolutions": []
 };
 

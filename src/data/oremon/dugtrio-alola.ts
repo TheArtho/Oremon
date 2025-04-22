@@ -34,12 +34,6 @@ const dugtrio_alola: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/dugtrio-alola.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/dugtrio-alola.png"
-  },
   "evolutions": []
 };
 

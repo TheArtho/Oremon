@@ -38,12 +38,6 @@ const karrablast = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/karrablast.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/karrablast.png"
-    },
     "evolutions": [
         {
             "into": "oremon:escavalier",

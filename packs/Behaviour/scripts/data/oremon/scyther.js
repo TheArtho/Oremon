@@ -39,12 +39,6 @@ const scyther = {
     "formSwitchable": false,
     "shape": "bug wings",
     "color": "Green",
-    "model": {
-        "default": "models/entity/scyther.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/scyther.png"
-    },
     "evolutions": [
         {
             "into": "oremon:scizor",

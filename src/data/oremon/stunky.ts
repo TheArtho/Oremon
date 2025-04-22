@@ -41,12 +41,6 @@ const stunky: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/stunky.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/stunky.png"
-  },
   "evolutions": [
     {
       "into": "oremon:skuntank",

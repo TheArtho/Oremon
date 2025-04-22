@@ -41,12 +41,6 @@ const vibrava: OremonData = {
   "formSwitchable": false,
   "shape": "bug wings",
   "color": "Green",
-  "model": {
-    "default": "models/entity/vibrava.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/vibrava.png"
-  },
   "evolutions": [
     {
       "into": "oremon:flygon",

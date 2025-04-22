@@ -39,12 +39,6 @@ const snivy = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Green",
-    "model": {
-        "default": "models/entity/snivy.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/snivy.png"
-    },
     "evolutions": [
         {
             "into": "oremon:servine",

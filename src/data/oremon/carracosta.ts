@@ -42,12 +42,6 @@ const carracosta: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/carracosta.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/carracosta.png"
-  },
   "evolutions": []
 };
 

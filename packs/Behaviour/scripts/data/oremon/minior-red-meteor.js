@@ -39,12 +39,6 @@ const minior_red_meteor = {
     "formSwitchable": false,
     "shape": "ball",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/minior-red-meteor.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/minior-red-meteor.png"
-    },
     "evolutions": []
 };
 export default minior_red_meteor;

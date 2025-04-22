@@ -41,12 +41,6 @@ const buneary: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/buneary.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/buneary.png"
-  },
   "evolutions": [
     {
       "into": "oremon:lopunny",

@@ -39,12 +39,6 @@ const keldeo_ordinary = {
     "formSwitchable": true,
     "shape": "quadruped",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/keldeo-ordinary.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/keldeo-ordinary.png"
-    },
     "evolutions": []
 };
 export default keldeo_ordinary;

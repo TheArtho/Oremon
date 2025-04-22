@@ -40,12 +40,6 @@ const lapras = {
     "formSwitchable": false,
     "shape": "fish",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/lapras.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/lapras.png"
-    },
     "evolutions": []
 };
 export default lapras;

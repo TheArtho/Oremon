@@ -40,12 +40,6 @@ const huntail: OremonData = {
   "formSwitchable": false,
   "shape": "squiggle",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/huntail.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/huntail.png"
-  },
   "evolutions": []
 };
 

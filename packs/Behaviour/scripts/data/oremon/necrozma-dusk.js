@@ -32,12 +32,6 @@ const necrozma_dusk = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/necrozma-dusk.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/necrozma-dusk.png"
-    },
     "evolutions": []
 };
 export default necrozma_dusk;

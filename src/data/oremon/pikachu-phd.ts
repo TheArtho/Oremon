@@ -34,12 +34,6 @@ const pikachu_phd: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/pikachu-phd.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pikachu-phd.png"
-  },
   "evolutions": []
 };
 

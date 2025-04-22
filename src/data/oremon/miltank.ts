@@ -40,12 +40,6 @@ const miltank: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/miltank.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/miltank.png"
-  },
   "evolutions": []
 };
 

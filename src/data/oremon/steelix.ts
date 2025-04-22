@@ -41,12 +41,6 @@ const steelix: OremonData = {
   "formSwitchable": true,
   "shape": "squiggle",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/steelix.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/steelix.png"
-  },
   "evolutions": []
 };
 

@@ -34,12 +34,6 @@ const castform_snowy: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/castform-snowy.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/castform-snowy.png"
-  },
   "evolutions": []
 };
 

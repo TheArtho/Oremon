@@ -39,12 +39,6 @@ const xatu = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Green",
-    "model": {
-        "default": "models/entity/xatu.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/xatu.png"
-    },
     "evolutions": []
 };
 export default xatu;

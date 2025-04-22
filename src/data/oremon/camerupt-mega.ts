@@ -34,12 +34,6 @@ const camerupt_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/camerupt-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/camerupt-mega.png"
-  },
   "evolutions": []
 };
 

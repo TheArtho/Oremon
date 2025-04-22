@@ -39,12 +39,6 @@ const buzzwole = {
     "formSwitchable": false,
     "shape": "tentacles",
     "color": "Red",
-    "model": {
-        "default": "models/entity/buzzwole.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/buzzwole.png"
-    },
     "evolutions": []
 };
 export default buzzwole;

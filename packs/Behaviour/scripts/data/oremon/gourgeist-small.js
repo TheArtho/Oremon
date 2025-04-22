@@ -32,12 +32,6 @@ const gourgeist_small = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/gourgeist-small.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/gourgeist-small.png"
-    },
     "evolutions": []
 };
 export default gourgeist_small;

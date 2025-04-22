@@ -39,12 +39,6 @@ const diancie = {
     "formSwitchable": true,
     "shape": "arms",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/diancie.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/diancie.png"
-    },
     "evolutions": []
 };
 export default diancie;

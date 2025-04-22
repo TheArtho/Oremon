@@ -39,12 +39,6 @@ const volcarona = {
     "formSwitchable": false,
     "shape": "bug wings",
     "color": "White",
-    "model": {
-        "default": "models/entity/volcarona.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/volcarona.png"
-    },
     "evolutions": []
 };
 export default volcarona;

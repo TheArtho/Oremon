@@ -40,12 +40,6 @@ const furret: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/furret.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/furret.png"
-  },
   "evolutions": []
 };
 

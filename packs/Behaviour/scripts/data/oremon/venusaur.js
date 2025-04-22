@@ -40,12 +40,6 @@ const venusaur = {
     "formSwitchable": true,
     "shape": "quadruped",
     "color": "Green",
-    "model": {
-        "default": "models/entity/venusaur.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/venusaur.png"
-    },
     "evolutions": []
 };
 export default venusaur;

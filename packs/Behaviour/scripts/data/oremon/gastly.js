@@ -39,12 +39,6 @@ const gastly = {
     "formSwitchable": false,
     "shape": "ball",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/gastly.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/gastly.png"
-    },
     "evolutions": [
         {
             "into": "oremon:haunter",

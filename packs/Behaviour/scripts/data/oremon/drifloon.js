@@ -39,12 +39,6 @@ const drifloon = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/drifloon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/drifloon.png"
-    },
     "evolutions": [
         {
             "into": "oremon:drifblim",

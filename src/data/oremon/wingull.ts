@@ -42,12 +42,6 @@ const wingull: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "White",
-  "model": {
-    "default": "models/entity/wingull.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/wingull.png"
-  },
   "evolutions": [
     {
       "into": "oremon:pelipper",

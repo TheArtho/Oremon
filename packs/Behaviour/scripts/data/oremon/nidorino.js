@@ -39,12 +39,6 @@ const nidorino = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/nidorino.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/nidorino.png"
-    },
     "evolutions": [
         {
             "into": "oremon:nidoking",

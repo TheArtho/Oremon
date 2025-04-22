@@ -38,12 +38,6 @@ const porygon = {
     "formSwitchable": false,
     "shape": "legs",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/porygon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/porygon.png"
-    },
     "evolutions": [
         {
             "into": "oremon:porygon2",

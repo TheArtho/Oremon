@@ -38,12 +38,6 @@ const vaporeon = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/vaporeon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/vaporeon.png"
-    },
     "evolutions": []
 };
 export default vaporeon;

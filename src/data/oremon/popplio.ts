@@ -41,12 +41,6 @@ const popplio: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/popplio.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/popplio.png"
-  },
   "evolutions": [
     {
       "into": "oremon:brionne",

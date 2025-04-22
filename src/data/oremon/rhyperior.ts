@@ -42,12 +42,6 @@ const rhyperior: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/rhyperior.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/rhyperior.png"
-  },
   "evolutions": []
 };
 

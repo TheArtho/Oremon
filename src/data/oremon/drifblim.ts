@@ -41,12 +41,6 @@ const drifblim: OremonData = {
   "formSwitchable": false,
   "shape": "arms",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/drifblim.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/drifblim.png"
-  },
   "evolutions": []
 };
 

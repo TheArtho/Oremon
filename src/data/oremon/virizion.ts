@@ -41,12 +41,6 @@ const virizion: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Green",
-  "model": {
-    "default": "models/entity/virizion.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/virizion.png"
-  },
   "evolutions": []
 };
 

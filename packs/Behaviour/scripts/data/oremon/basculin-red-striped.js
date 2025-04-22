@@ -38,12 +38,6 @@ const basculin_red_striped = {
     "formSwitchable": false,
     "shape": "fish",
     "color": "Green",
-    "model": {
-        "default": "models/entity/basculin-red-striped.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/basculin-red-striped.png"
-    },
     "evolutions": []
 };
 export default basculin_red_striped;

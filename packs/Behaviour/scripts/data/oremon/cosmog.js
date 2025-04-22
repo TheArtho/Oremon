@@ -38,12 +38,6 @@ const cosmog = {
     "formSwitchable": false,
     "shape": "ball",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/cosmog.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/cosmog.png"
-    },
     "evolutions": [
         {
             "into": "oremon:cosmoem",

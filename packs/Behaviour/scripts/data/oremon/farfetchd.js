@@ -40,12 +40,6 @@ const farfetchd = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/farfetchd.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/farfetchd.png"
-    },
     "evolutions": []
 };
 export default farfetchd;

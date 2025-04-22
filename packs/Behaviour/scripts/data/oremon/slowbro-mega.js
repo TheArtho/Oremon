@@ -33,12 +33,6 @@ const slowbro_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/slowbro-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/slowbro-mega.png"
-    },
     "evolutions": []
 };
 export default slowbro_mega;

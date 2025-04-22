@@ -35,12 +35,6 @@ const ampharos_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/ampharos-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/ampharos-mega.png"
-  },
   "evolutions": []
 };
 

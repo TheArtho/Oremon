@@ -41,12 +41,6 @@ const anorith: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/anorith.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/anorith.png"
-  },
   "evolutions": [
     {
       "into": "oremon:armaldo",

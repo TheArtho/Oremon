@@ -38,12 +38,6 @@ const lycanroc_midday = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/lycanroc-midday.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/lycanroc-midday.png"
-    },
     "evolutions": []
 };
 export default lycanroc_midday;

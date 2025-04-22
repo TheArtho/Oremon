@@ -42,12 +42,6 @@ const primarina: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/primarina.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/primarina.png"
-  },
   "evolutions": []
 };
 

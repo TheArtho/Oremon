@@ -38,12 +38,6 @@ const pineco = {
     "formSwitchable": false,
     "shape": "ball",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/pineco.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pineco.png"
-    },
     "evolutions": [
         {
             "into": "oremon:forretress",

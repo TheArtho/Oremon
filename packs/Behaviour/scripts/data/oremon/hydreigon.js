@@ -39,12 +39,6 @@ const hydreigon = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/hydreigon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/hydreigon.png"
-    },
     "evolutions": []
 };
 export default hydreigon;

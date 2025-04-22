@@ -41,12 +41,6 @@ const guzzlord: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Black",
-  "model": {
-    "default": "models/entity/guzzlord.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/guzzlord.png"
-  },
   "evolutions": []
 };
 

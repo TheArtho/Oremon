@@ -38,12 +38,6 @@ const magmortar = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Red",
-    "model": {
-        "default": "models/entity/magmortar.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/magmortar.png"
-    },
     "evolutions": []
 };
 export default magmortar;

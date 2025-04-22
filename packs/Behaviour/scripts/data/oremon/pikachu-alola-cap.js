@@ -32,12 +32,6 @@ const pikachu_alola_cap = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/pikachu-alola-cap.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pikachu-alola-cap.png"
-    },
     "evolutions": []
 };
 export default pikachu_alola_cap;

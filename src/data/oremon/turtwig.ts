@@ -41,12 +41,6 @@ const turtwig: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Green",
-  "model": {
-    "default": "models/entity/turtwig.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/turtwig.png"
-  },
   "evolutions": [
     {
       "into": "oremon:grotle",

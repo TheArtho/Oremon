@@ -32,12 +32,6 @@ const sandshrew_alola = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/sandshrew-alola.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/sandshrew-alola.png"
-    },
     "evolutions": []
 };
 export default sandshrew_alola;

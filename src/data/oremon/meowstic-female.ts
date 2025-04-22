@@ -33,12 +33,6 @@ const meowstic_female: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/meowstic-female.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/meowstic-female.png"
-  },
   "evolutions": []
 };
 

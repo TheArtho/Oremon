@@ -39,12 +39,6 @@ const qwilfish = {
     "formSwitchable": false,
     "shape": "fish",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/qwilfish.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/qwilfish.png"
-    },
     "evolutions": []
 };
 export default qwilfish;

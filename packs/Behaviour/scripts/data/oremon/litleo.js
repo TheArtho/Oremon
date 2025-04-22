@@ -39,12 +39,6 @@ const litleo = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/litleo.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/litleo.png"
-    },
     "evolutions": [
         {
             "into": "oremon:pyroar",

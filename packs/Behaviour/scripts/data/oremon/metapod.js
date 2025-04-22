@@ -38,12 +38,6 @@ const metapod = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Green",
-    "model": {
-        "default": "models/entity/metapod.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/metapod.png"
-    },
     "evolutions": [
         {
             "into": "oremon:butterfree",

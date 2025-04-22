@@ -38,12 +38,6 @@ const swirlix = {
     "formSwitchable": false,
     "shape": "legs",
     "color": "White",
-    "model": {
-        "default": "models/entity/swirlix.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/swirlix.png"
-    },
     "evolutions": [
         {
             "into": "oremon:slurpuff",

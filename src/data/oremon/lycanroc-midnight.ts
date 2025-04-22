@@ -33,12 +33,6 @@ const lycanroc_midnight: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/lycanroc-midnight.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/lycanroc-midnight.png"
-  },
   "evolutions": []
 };
 

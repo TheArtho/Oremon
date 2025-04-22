@@ -32,12 +32,6 @@ const groudon_primal = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/groudon-primal.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/groudon-primal.png"
-    },
     "evolutions": []
 };
 export default groudon_primal;

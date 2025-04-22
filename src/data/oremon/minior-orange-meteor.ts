@@ -34,12 +34,6 @@ const minior_orange_meteor: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/minior-orange-meteor.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/minior-orange-meteor.png"
-  },
   "evolutions": []
 };
 

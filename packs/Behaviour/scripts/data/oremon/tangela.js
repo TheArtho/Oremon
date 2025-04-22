@@ -38,12 +38,6 @@ const tangela = {
     "formSwitchable": false,
     "shape": "legs",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/tangela.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/tangela.png"
-    },
     "evolutions": [
         {
             "into": "oremon:tangrowth",

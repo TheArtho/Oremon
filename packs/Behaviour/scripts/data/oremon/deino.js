@@ -39,12 +39,6 @@ const deino = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/deino.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/deino.png"
-    },
     "evolutions": [
         {
             "into": "oremon:zweilous",

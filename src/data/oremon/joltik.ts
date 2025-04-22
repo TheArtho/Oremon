@@ -41,12 +41,6 @@ const joltik: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/joltik.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/joltik.png"
-  },
   "evolutions": [
     {
       "into": "oremon:galvantula",

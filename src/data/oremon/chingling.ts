@@ -40,12 +40,6 @@ const chingling: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/chingling.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/chingling.png"
-  },
   "evolutions": [
     {
       "into": "oremon:chimecho",

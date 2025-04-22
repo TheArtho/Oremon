@@ -38,12 +38,6 @@ const slaking = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/slaking.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/slaking.png"
-    },
     "evolutions": []
 };
 export default slaking;

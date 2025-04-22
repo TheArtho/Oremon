@@ -39,12 +39,6 @@ const houndoom = {
     "formSwitchable": true,
     "shape": "quadruped",
     "color": "Black",
-    "model": {
-        "default": "models/entity/houndoom.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/houndoom.png"
-    },
     "evolutions": []
 };
 export default houndoom;

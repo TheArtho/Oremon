@@ -40,12 +40,6 @@ const clefairy: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/clefairy.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/clefairy.png"
-  },
   "evolutions": [
     {
       "into": "oremon:clefable",

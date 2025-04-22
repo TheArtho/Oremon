@@ -39,12 +39,6 @@ const vullaby = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/vullaby.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/vullaby.png"
-    },
     "evolutions": [
         {
             "into": "oremon:mandibuzz",

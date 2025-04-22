@@ -39,12 +39,6 @@ const flygon = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Green",
-    "model": {
-        "default": "models/entity/flygon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/flygon.png"
-    },
     "evolutions": []
 };
 export default flygon;

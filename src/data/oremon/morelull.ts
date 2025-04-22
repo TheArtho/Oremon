@@ -41,12 +41,6 @@ const morelull: OremonData = {
   "formSwitchable": false,
   "shape": "blob",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/morelull.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/morelull.png"
-  },
   "evolutions": [
     {
       "into": "oremon:shiinotic",

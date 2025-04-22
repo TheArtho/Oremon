@@ -42,12 +42,6 @@ const cottonee: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Green",
-  "model": {
-    "default": "models/entity/cottonee.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/cottonee.png"
-  },
   "evolutions": [
     {
       "into": "oremon:whimsicott",

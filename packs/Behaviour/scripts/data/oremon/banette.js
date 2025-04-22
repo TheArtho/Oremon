@@ -38,12 +38,6 @@ const banette = {
     "formSwitchable": true,
     "shape": "upright",
     "color": "Black",
-    "model": {
-        "default": "models/entity/banette.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/banette.png"
-    },
     "evolutions": []
 };
 export default banette;

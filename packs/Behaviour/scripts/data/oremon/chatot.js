@@ -39,12 +39,6 @@ const chatot = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Black",
-    "model": {
-        "default": "models/entity/chatot.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/chatot.png"
-    },
     "evolutions": []
 };
 export default chatot;

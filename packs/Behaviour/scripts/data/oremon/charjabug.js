@@ -39,12 +39,6 @@ const charjabug = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Green",
-    "model": {
-        "default": "models/entity/charjabug.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/charjabug.png"
-    },
     "evolutions": [
         {
             "into": "oremon:vikavolt",

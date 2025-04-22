@@ -39,12 +39,6 @@ const zekrom = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Black",
-    "model": {
-        "default": "models/entity/zekrom.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/zekrom.png"
-    },
     "evolutions": []
 };
 export default zekrom;

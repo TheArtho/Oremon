@@ -41,12 +41,6 @@ const exploud: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/exploud.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/exploud.png"
-  },
   "evolutions": []
 };
 

@@ -40,12 +40,6 @@ const cascoon: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/cascoon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/cascoon.png"
-  },
   "evolutions": [
     {
       "into": "oremon:dustox",

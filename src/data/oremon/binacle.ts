@@ -41,12 +41,6 @@ const binacle: OremonData = {
   "formSwitchable": false,
   "shape": "heads",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/binacle.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/binacle.png"
-  },
   "evolutions": [
     {
       "into": "oremon:barbaracle",

@@ -38,12 +38,6 @@ const beheeyem = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/beheeyem.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/beheeyem.png"
-    },
     "evolutions": []
 };
 export default beheeyem;

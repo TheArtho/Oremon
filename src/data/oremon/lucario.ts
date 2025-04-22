@@ -42,12 +42,6 @@ const lucario: OremonData = {
   "formSwitchable": true,
   "shape": "upright",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/lucario.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/lucario.png"
-  },
   "evolutions": []
 };
 

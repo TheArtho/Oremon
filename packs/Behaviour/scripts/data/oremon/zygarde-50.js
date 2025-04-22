@@ -32,12 +32,6 @@ const zygarde_50 = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/zygarde-50.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/zygarde-50.png"
-    },
     "evolutions": []
 };
 export default zygarde_50;

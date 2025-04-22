@@ -40,12 +40,6 @@ const nuzleaf = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/nuzleaf.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/nuzleaf.png"
-    },
     "evolutions": [
         {
             "into": "oremon:shiftry",

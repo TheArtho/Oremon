@@ -35,12 +35,6 @@ const lucario_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/lucario-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/lucario-mega.png"
-  },
   "evolutions": []
 };
 

@@ -40,12 +40,6 @@ const bellossom: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Green",
-  "model": {
-    "default": "models/entity/bellossom.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/bellossom.png"
-  },
   "evolutions": []
 };
 

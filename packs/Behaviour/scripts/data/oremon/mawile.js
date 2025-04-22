@@ -40,12 +40,6 @@ const mawile = {
     "formSwitchable": true,
     "shape": "humanoid",
     "color": "Black",
-    "model": {
-        "default": "models/entity/mawile.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mawile.png"
-    },
     "evolutions": []
 };
 export default mawile;

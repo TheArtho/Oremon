@@ -42,12 +42,6 @@ const roselia: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Green",
-  "model": {
-    "default": "models/entity/roselia.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/roselia.png"
-  },
   "evolutions": [
     {
       "into": "oremon:roserade",

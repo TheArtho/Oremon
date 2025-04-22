@@ -41,12 +41,6 @@ const ekans: OremonData = {
   "formSwitchable": false,
   "shape": "squiggle",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/ekans.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/ekans.png"
-  },
   "evolutions": [
     {
       "into": "oremon:arbok",

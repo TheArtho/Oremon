@@ -40,12 +40,6 @@ const steenee: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/steenee.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/steenee.png"
-  },
   "evolutions": [
     {
       "into": "oremon:tsareena",

@@ -38,12 +38,6 @@ const ninetales = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/ninetales.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/ninetales.png"
-    },
     "evolutions": []
 };
 export default ninetales;

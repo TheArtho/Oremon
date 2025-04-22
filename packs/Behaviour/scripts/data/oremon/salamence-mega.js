@@ -32,12 +32,6 @@ const salamence_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/salamence-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/salamence-mega.png"
-    },
     "evolutions": []
 };
 export default salamence_mega;

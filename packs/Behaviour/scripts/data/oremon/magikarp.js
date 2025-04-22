@@ -39,12 +39,6 @@ const magikarp = {
     "formSwitchable": false,
     "shape": "fish",
     "color": "Red",
-    "model": {
-        "default": "models/entity/magikarp.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/magikarp.png"
-    },
     "evolutions": [
         {
             "into": "oremon:gyarados",

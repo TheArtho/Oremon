@@ -38,12 +38,6 @@ const dusknoir = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Black",
-    "model": {
-        "default": "models/entity/dusknoir.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/dusknoir.png"
-    },
     "evolutions": []
 };
 export default dusknoir;

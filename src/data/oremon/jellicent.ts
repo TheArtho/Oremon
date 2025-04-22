@@ -41,12 +41,6 @@ const jellicent: OremonData = {
   "formSwitchable": false,
   "shape": "tentacles",
   "color": "White",
-  "model": {
-    "default": "models/entity/jellicent.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/jellicent.png"
-  },
   "evolutions": []
 };
 

@@ -40,12 +40,6 @@ const electabuzz: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/electabuzz.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/electabuzz.png"
-  },
   "evolutions": [
     {
       "into": "oremon:electivire",

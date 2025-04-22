@@ -35,12 +35,6 @@ const lopunny_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/lopunny-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/lopunny-mega.png"
-  },
   "evolutions": []
 };
 

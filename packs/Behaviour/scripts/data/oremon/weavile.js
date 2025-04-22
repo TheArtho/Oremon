@@ -39,12 +39,6 @@ const weavile = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Black",
-    "model": {
-        "default": "models/entity/weavile.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/weavile.png"
-    },
     "evolutions": []
 };
 export default weavile;

@@ -41,12 +41,6 @@ const escavalier: OremonData = {
   "formSwitchable": false,
   "shape": "arms",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/escavalier.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/escavalier.png"
-  },
   "evolutions": []
 };
 

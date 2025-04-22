@@ -41,12 +41,6 @@ const azurill: OremonData = {
   "formSwitchable": false,
   "shape": "legs",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/azurill.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/azurill.png"
-  },
   "evolutions": [
     {
       "into": "oremon:marill",

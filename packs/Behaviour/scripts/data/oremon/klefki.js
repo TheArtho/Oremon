@@ -39,12 +39,6 @@ const klefki = {
     "formSwitchable": false,
     "shape": "ball",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/klefki.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/klefki.png"
-    },
     "evolutions": []
 };
 export default klefki;

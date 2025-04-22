@@ -40,12 +40,6 @@ const donphan: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/donphan.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/donphan.png"
-  },
   "evolutions": []
 };
 

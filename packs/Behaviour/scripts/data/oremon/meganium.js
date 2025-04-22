@@ -39,12 +39,6 @@ const meganium = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Green",
-    "model": {
-        "default": "models/entity/meganium.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/meganium.png"
-    },
     "evolutions": []
 };
 export default meganium;

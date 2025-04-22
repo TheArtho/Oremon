@@ -38,12 +38,6 @@ const lillipup = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/lillipup.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/lillipup.png"
-    },
     "evolutions": [
         {
             "into": "oremon:herdier",

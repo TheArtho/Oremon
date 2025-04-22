@@ -40,12 +40,6 @@ const pinsir: OremonData = {
   "formSwitchable": true,
   "shape": "humanoid",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/pinsir.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pinsir.png"
-  },
   "evolutions": []
 };
 

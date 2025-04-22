@@ -40,12 +40,6 @@ const charizard = {
     "formSwitchable": true,
     "shape": "upright",
     "color": "Red",
-    "model": {
-        "default": "models/entity/charizard.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/charizard.png"
-    },
     "evolutions": []
 };
 export default charizard;

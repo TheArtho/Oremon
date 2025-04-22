@@ -39,12 +39,6 @@ const loudred = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/loudred.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/loudred.png"
-    },
     "evolutions": [
         {
             "into": "oremon:exploud",

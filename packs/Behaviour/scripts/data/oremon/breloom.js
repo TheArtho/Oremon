@@ -40,12 +40,6 @@ const breloom = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Green",
-    "model": {
-        "default": "models/entity/breloom.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/breloom.png"
-    },
     "evolutions": []
 };
 export default breloom;

@@ -39,12 +39,6 @@ const larvitar = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Green",
-    "model": {
-        "default": "models/entity/larvitar.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/larvitar.png"
-    },
     "evolutions": [
         {
             "into": "oremon:pupitar",

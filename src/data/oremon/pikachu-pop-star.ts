@@ -34,12 +34,6 @@ const pikachu_pop_star: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/pikachu-pop-star.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pikachu-pop-star.png"
-  },
   "evolutions": []
 };
 

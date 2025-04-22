@@ -40,12 +40,6 @@ const meowstic_male: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/meowstic-male.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/meowstic-male.png"
-  },
   "evolutions": []
 };
 

@@ -34,12 +34,6 @@ const zygarde_10: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/zygarde-10.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/zygarde-10.png"
-  },
   "evolutions": []
 };
 

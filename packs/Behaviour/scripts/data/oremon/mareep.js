@@ -39,12 +39,6 @@ const mareep = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "White",
-    "model": {
-        "default": "models/entity/mareep.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mareep.png"
-    },
     "evolutions": [
         {
             "into": "oremon:flaaffy",

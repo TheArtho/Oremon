@@ -39,12 +39,6 @@ const mareanie = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/mareanie.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mareanie.png"
-    },
     "evolutions": [
         {
             "into": "oremon:toxapex",

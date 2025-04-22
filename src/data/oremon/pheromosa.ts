@@ -41,12 +41,6 @@ const pheromosa: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "White",
-  "model": {
-    "default": "models/entity/pheromosa.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pheromosa.png"
-  },
   "evolutions": []
 };
 

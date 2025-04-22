@@ -40,12 +40,6 @@ const klinklang: OremonData = {
   "formSwitchable": false,
   "shape": "heads",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/klinklang.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/klinklang.png"
-  },
   "evolutions": []
 };
 

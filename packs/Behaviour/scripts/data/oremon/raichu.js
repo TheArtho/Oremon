@@ -39,12 +39,6 @@ const raichu = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/raichu.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/raichu.png"
-    },
     "evolutions": []
 };
 export default raichu;

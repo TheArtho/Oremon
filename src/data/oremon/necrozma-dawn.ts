@@ -34,12 +34,6 @@ const necrozma_dawn: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/necrozma-dawn.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/necrozma-dawn.png"
-  },
   "evolutions": []
 };
 

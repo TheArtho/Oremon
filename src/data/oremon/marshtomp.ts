@@ -42,12 +42,6 @@ const marshtomp: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/marshtomp.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/marshtomp.png"
-  },
   "evolutions": [
     {
       "into": "oremon:swampert",

@@ -39,12 +39,6 @@ const seadra = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/seadra.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/seadra.png"
-    },
     "evolutions": [
         {
             "into": "oremon:kingdra",

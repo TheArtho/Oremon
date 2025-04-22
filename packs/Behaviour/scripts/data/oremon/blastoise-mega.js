@@ -32,12 +32,6 @@ const blastoise_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/blastoise-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/blastoise-mega.png"
-    },
     "evolutions": []
 };
 export default blastoise_mega;

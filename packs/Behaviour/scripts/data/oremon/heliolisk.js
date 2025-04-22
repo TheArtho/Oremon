@@ -40,12 +40,6 @@ const heliolisk = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/heliolisk.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/heliolisk.png"
-    },
     "evolutions": []
 };
 export default heliolisk;

@@ -38,12 +38,6 @@ const petilil = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "Green",
-    "model": {
-        "default": "models/entity/petilil.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/petilil.png"
-    },
     "evolutions": [
         {
             "into": "oremon:lilligant",

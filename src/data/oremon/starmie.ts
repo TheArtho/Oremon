@@ -41,12 +41,6 @@ const starmie: OremonData = {
   "formSwitchable": false,
   "shape": "blob",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/starmie.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/starmie.png"
-  },
   "evolutions": []
 };
 

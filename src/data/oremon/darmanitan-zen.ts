@@ -34,12 +34,6 @@ const darmanitan_zen: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/darmanitan-zen.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/darmanitan-zen.png"
-  },
   "evolutions": []
 };
 

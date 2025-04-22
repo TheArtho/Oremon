@@ -40,12 +40,6 @@ const swampert = {
     "formSwitchable": true,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/swampert.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/swampert.png"
-    },
     "evolutions": []
 };
 export default swampert;

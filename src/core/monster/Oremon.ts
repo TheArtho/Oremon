@@ -41,7 +41,7 @@ export class Oremon {
     private oremonData: OremonData;
 
     /**
-     * Current form ID (for alternate forms).
+     * Current forms ID (for alternate forms).
      */
     private formId: number;
 

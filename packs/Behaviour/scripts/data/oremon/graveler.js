@@ -39,12 +39,6 @@ const graveler = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/graveler.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/graveler.png"
-    },
     "evolutions": [
         {
             "into": "oremon:golem",

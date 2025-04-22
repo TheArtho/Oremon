@@ -40,12 +40,6 @@ const roggenrola: OremonData = {
   "formSwitchable": false,
   "shape": "legs",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/roggenrola.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/roggenrola.png"
-  },
   "evolutions": [
     {
       "into": "oremon:boldore",

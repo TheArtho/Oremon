@@ -41,12 +41,6 @@ const rotom: OremonData = {
   "formSwitchable": true,
   "shape": "ball",
   "color": "Red",
-  "model": {
-    "default": "models/entity/rotom.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/rotom.png"
-  },
   "evolutions": []
 };
 

@@ -39,12 +39,6 @@ const taillow = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/taillow.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/taillow.png"
-    },
     "evolutions": [
         {
             "into": "oremon:swellow",

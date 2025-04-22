@@ -38,12 +38,6 @@ const hariyama = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/hariyama.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/hariyama.png"
-    },
     "evolutions": []
 };
 export default hariyama;

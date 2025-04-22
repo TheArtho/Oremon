@@ -41,12 +41,6 @@ const meganium: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Green",
-  "model": {
-    "default": "models/entity/meganium.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/meganium.png"
-  },
   "evolutions": []
 };
 

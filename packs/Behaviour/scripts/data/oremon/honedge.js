@@ -39,12 +39,6 @@ const honedge = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/honedge.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/honedge.png"
-    },
     "evolutions": [
         {
             "into": "oremon:doublade",

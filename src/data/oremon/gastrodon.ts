@@ -42,12 +42,6 @@ const gastrodon: OremonData = {
   "formSwitchable": false,
   "shape": "squiggle",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/gastrodon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gastrodon.png"
-  },
   "evolutions": []
 };
 

@@ -39,12 +39,6 @@ const kirlia = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "White",
-    "model": {
-        "default": "models/entity/kirlia.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/kirlia.png"
-    },
     "evolutions": [
         {
             "into": "oremon:gardevoir",

@@ -40,12 +40,6 @@ const avalugg: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/avalugg.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/avalugg.png"
-  },
   "evolutions": []
 };
 

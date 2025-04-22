@@ -40,12 +40,6 @@ const omastar = {
     "formSwitchable": false,
     "shape": "tentacles",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/omastar.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/omastar.png"
-    },
     "evolutions": []
 };
 export default omastar;

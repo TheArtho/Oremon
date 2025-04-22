@@ -40,12 +40,6 @@ const xerneas: OremonData = {
   "formSwitchable": true,
   "shape": "quadruped",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/xerneas.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/xerneas.png"
-  },
   "evolutions": []
 };
 

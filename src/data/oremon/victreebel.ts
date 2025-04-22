@@ -41,12 +41,6 @@ const victreebel: OremonData = {
   "formSwitchable": false,
   "shape": "blob",
   "color": "Green",
-  "model": {
-    "default": "models/entity/victreebel.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/victreebel.png"
-  },
   "evolutions": []
 };
 

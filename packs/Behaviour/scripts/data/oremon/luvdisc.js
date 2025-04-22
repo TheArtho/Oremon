@@ -38,12 +38,6 @@ const luvdisc = {
     "formSwitchable": false,
     "shape": "fish",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/luvdisc.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/luvdisc.png"
-    },
     "evolutions": []
 };
 export default luvdisc;

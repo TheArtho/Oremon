@@ -40,12 +40,6 @@ const burmy: OremonData = {
   "formSwitchable": true,
   "shape": "blob",
   "color": "Green",
-  "model": {
-    "default": "models/entity/burmy.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/burmy.png"
-  },
   "evolutions": [
     {
       "into": "oremon:wormadam",

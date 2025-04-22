@@ -39,12 +39,6 @@ const forretress = {
     "formSwitchable": false,
     "shape": "ball",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/forretress.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/forretress.png"
-    },
     "evolutions": []
 };
 export default forretress;

@@ -32,12 +32,6 @@ const keldeo_resolute = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/keldeo-resolute.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/keldeo-resolute.png"
-    },
     "evolutions": []
 };
 export default keldeo_resolute;

@@ -33,12 +33,6 @@ const tornadus_therian: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/tornadus-therian.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/tornadus-therian.png"
-  },
   "evolutions": []
 };
 

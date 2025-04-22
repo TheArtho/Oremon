@@ -41,12 +41,6 @@ const bellsprout: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Green",
-  "model": {
-    "default": "models/entity/bellsprout.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/bellsprout.png"
-  },
   "evolutions": [
     {
       "into": "oremon:weepinbell",

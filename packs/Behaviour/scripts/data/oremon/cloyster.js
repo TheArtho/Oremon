@@ -39,12 +39,6 @@ const cloyster = {
     "formSwitchable": false,
     "shape": "ball",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/cloyster.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/cloyster.png"
-    },
     "evolutions": []
 };
 export default cloyster;

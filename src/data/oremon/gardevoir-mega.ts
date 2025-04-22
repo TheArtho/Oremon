@@ -34,12 +34,6 @@ const gardevoir_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/gardevoir-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gardevoir-mega.png"
-  },
   "evolutions": []
 };
 

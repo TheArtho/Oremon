@@ -38,12 +38,6 @@ const rapidash = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/rapidash.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/rapidash.png"
-    },
     "evolutions": []
 };
 export default rapidash;

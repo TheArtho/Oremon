@@ -39,12 +39,6 @@ const milotic = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/milotic.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/milotic.png"
-    },
     "evolutions": []
 };
 export default milotic;

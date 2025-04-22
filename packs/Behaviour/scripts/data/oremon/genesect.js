@@ -39,12 +39,6 @@ const genesect = {
     "formSwitchable": true,
     "shape": "humanoid",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/genesect.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/genesect.png"
-    },
     "evolutions": []
 };
 export default genesect;

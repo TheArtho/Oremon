@@ -38,12 +38,6 @@ const alakazam = {
     "formSwitchable": true,
     "shape": "humanoid",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/alakazam.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/alakazam.png"
-    },
     "evolutions": []
 };
 export default alakazam;

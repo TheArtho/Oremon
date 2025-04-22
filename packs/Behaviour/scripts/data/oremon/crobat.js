@@ -39,12 +39,6 @@ const crobat = {
     "formSwitchable": false,
     "shape": "bug wings",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/crobat.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/crobat.png"
-    },
     "evolutions": []
 };
 export default crobat;

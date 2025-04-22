@@ -42,12 +42,6 @@ const torterra: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Green",
-  "model": {
-    "default": "models/entity/torterra.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/torterra.png"
-  },
   "evolutions": []
 };
 

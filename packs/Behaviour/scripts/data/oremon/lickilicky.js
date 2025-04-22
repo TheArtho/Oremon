@@ -38,12 +38,6 @@ const lickilicky = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/lickilicky.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/lickilicky.png"
-    },
     "evolutions": []
 };
 export default lickilicky;

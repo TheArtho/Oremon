@@ -31,12 +31,6 @@ const absol_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/absol-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/absol-mega.png"
-    },
     "evolutions": []
 };
 export default absol_mega;

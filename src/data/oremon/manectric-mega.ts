@@ -33,12 +33,6 @@ const manectric_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/manectric-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/manectric-mega.png"
-  },
   "evolutions": []
 };
 

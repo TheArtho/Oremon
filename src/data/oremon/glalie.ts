@@ -41,12 +41,6 @@ const glalie: OremonData = {
   "formSwitchable": true,
   "shape": "ball",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/glalie.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/glalie.png"
-  },
   "evolutions": []
 };
 

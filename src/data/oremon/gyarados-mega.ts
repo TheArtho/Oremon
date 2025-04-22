@@ -35,12 +35,6 @@ const gyarados_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/gyarados-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gyarados-mega.png"
-  },
   "evolutions": []
 };
 

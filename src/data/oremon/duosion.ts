@@ -40,12 +40,6 @@ const duosion: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Green",
-  "model": {
-    "default": "models/entity/duosion.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/duosion.png"
-  },
   "evolutions": [
     {
       "into": "oremon:reuniclus",

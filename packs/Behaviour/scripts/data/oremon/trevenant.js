@@ -40,12 +40,6 @@ const trevenant = {
     "formSwitchable": false,
     "shape": "tentacles",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/trevenant.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/trevenant.png"
-    },
     "evolutions": []
 };
 export default trevenant;

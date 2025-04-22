@@ -40,12 +40,6 @@ const pansage: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Green",
-  "model": {
-    "default": "models/entity/pansage.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pansage.png"
-  },
   "evolutions": [
     {
       "into": "oremon:simisage",

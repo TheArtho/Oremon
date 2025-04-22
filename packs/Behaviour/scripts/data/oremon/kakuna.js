@@ -39,12 +39,6 @@ const kakuna = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/kakuna.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/kakuna.png"
-    },
     "evolutions": [
         {
             "into": "oremon:beedrill",

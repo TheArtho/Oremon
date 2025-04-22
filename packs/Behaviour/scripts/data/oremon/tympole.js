@@ -38,12 +38,6 @@ const tympole = {
     "formSwitchable": false,
     "shape": "fish",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/tympole.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/tympole.png"
-    },
     "evolutions": [
         {
             "into": "oremon:palpitoad",

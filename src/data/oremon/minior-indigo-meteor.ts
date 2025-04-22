@@ -34,12 +34,6 @@ const minior_indigo_meteor: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/minior-indigo-meteor.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/minior-indigo-meteor.png"
-  },
   "evolutions": []
 };
 

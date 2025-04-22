@@ -41,12 +41,6 @@ const hakamo_o: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/hakamo-o.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/hakamo-o.png"
-  },
   "evolutions": [
     {
       "into": "oremon:kommo-o",

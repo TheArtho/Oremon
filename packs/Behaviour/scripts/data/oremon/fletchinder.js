@@ -39,12 +39,6 @@ const fletchinder = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Red",
-    "model": {
-        "default": "models/entity/fletchinder.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/fletchinder.png"
-    },
     "evolutions": [
         {
             "into": "oremon:talonflame",

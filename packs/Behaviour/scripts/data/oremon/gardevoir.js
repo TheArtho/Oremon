@@ -39,12 +39,6 @@ const gardevoir = {
     "formSwitchable": true,
     "shape": "humanoid",
     "color": "White",
-    "model": {
-        "default": "models/entity/gardevoir.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/gardevoir.png"
-    },
     "evolutions": []
 };
 export default gardevoir;

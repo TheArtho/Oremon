@@ -41,12 +41,6 @@ const mudkip: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/mudkip.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/mudkip.png"
-  },
   "evolutions": [
     {
       "into": "oremon:marshtomp",

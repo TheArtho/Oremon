@@ -42,12 +42,6 @@ const empoleon: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/empoleon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/empoleon.png"
-  },
   "evolutions": []
 };
 

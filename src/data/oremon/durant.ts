@@ -41,12 +41,6 @@ const durant: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/durant.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/durant.png"
-  },
   "evolutions": []
 };
 

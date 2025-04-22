@@ -42,12 +42,6 @@ const bulbasaur: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Green",
-  "model": {
-    "default": "models/entity/bulbasaur.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/bulbasaur.png"
-  },
   "evolutions": [
     {
       "into": "oremon:ivysaur",

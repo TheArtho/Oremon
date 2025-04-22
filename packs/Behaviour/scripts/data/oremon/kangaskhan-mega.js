@@ -31,12 +31,6 @@ const kangaskhan_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/kangaskhan-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/kangaskhan-mega.png"
-    },
     "evolutions": []
 };
 export default kangaskhan_mega;

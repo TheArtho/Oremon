@@ -40,12 +40,6 @@ const tyrogue: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/tyrogue.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/tyrogue.png"
-  },
   "evolutions": [
     {
       "into": "oremon:hitmonlee",

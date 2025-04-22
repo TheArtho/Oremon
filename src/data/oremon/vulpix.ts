@@ -40,12 +40,6 @@ const vulpix: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/vulpix.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/vulpix.png"
-  },
   "evolutions": [
     {
       "into": "oremon:ninetales",

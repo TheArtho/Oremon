@@ -39,12 +39,6 @@ const haunter = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/haunter.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/haunter.png"
-    },
     "evolutions": [
         {
             "into": "oremon:gengar",

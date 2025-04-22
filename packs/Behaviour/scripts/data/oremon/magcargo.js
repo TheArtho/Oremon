@@ -39,12 +39,6 @@ const magcargo = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Red",
-    "model": {
-        "default": "models/entity/magcargo.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/magcargo.png"
-    },
     "evolutions": []
 };
 export default magcargo;

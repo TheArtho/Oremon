@@ -41,12 +41,6 @@ const vikavolt: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/vikavolt.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/vikavolt.png"
-  },
   "evolutions": []
 };
 

@@ -34,12 +34,6 @@ const grimer_alola: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/grimer-alola.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/grimer-alola.png"
-  },
   "evolutions": []
 };
 

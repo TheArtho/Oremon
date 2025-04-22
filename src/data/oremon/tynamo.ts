@@ -40,12 +40,6 @@ const tynamo: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "White",
-  "model": {
-    "default": "models/entity/tynamo.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/tynamo.png"
-  },
   "evolutions": [
     {
       "into": "oremon:eelektrik",

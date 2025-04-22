@@ -42,12 +42,6 @@ const drapion: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/drapion.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/drapion.png"
-  },
   "evolutions": []
 };
 

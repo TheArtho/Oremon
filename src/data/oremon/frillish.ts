@@ -41,12 +41,6 @@ const frillish: OremonData = {
   "formSwitchable": false,
   "shape": "tentacles",
   "color": "White",
-  "model": {
-    "default": "models/entity/frillish.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/frillish.png"
-  },
   "evolutions": [
     {
       "into": "oremon:jellicent",

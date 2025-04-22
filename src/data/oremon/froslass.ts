@@ -42,12 +42,6 @@ const froslass: OremonData = {
   "formSwitchable": false,
   "shape": "arms",
   "color": "White",
-  "model": {
-    "default": "models/entity/froslass.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/froslass.png"
-  },
   "evolutions": []
 };
 

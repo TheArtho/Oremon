@@ -42,12 +42,6 @@ const rhyhorn: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/rhyhorn.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/rhyhorn.png"
-  },
   "evolutions": [
     {
       "into": "oremon:rhydon",

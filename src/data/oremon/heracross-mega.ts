@@ -34,12 +34,6 @@ const heracross_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/heracross-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/heracross-mega.png"
-  },
   "evolutions": []
 };
 

@@ -41,12 +41,6 @@ const galvantula: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/galvantula.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/galvantula.png"
-  },
   "evolutions": []
 };
 

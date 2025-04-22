@@ -40,12 +40,6 @@ const slowking = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/slowking.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/slowking.png"
-    },
     "evolutions": []
 };
 export default slowking;

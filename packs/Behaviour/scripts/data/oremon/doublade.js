@@ -39,12 +39,6 @@ const doublade = {
     "formSwitchable": false,
     "shape": "heads",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/doublade.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/doublade.png"
-    },
     "evolutions": [
         {
             "into": "oremon:aegislash",

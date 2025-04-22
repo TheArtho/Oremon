@@ -38,12 +38,6 @@ const aipom = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/aipom.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/aipom.png"
-    },
     "evolutions": [
         {
             "into": "oremon:ambipom",

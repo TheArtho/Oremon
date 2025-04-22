@@ -34,12 +34,6 @@ const gourgeist_large: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/gourgeist-large.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gourgeist-large.png"
-  },
   "evolutions": []
 };
 

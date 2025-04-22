@@ -39,12 +39,6 @@ const hoopa = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/hoopa.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/hoopa.png"
-    },
     "evolutions": []
 };
 export default hoopa;

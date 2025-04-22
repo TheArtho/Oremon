@@ -38,12 +38,6 @@ const uxie = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/uxie.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/uxie.png"
-    },
     "evolutions": []
 };
 export default uxie;

@@ -40,12 +40,6 @@ const froakie: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/froakie.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/froakie.png"
-  },
   "evolutions": [
     {
       "into": "oremon:frogadier",

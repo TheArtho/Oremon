@@ -41,12 +41,6 @@ const psyduck: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/psyduck.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/psyduck.png"
-  },
   "evolutions": [
     {
       "into": "oremon:golduck",

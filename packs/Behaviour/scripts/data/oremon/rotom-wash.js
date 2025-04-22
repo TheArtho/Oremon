@@ -32,12 +32,6 @@ const rotom_wash = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/rotom-wash.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/rotom-wash.png"
-    },
     "evolutions": []
 };
 export default rotom_wash;

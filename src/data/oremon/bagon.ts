@@ -40,12 +40,6 @@ const bagon: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/bagon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/bagon.png"
-  },
   "evolutions": [
     {
       "into": "oremon:shelgon",

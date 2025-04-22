@@ -34,12 +34,6 @@ const sandshrew_alola: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/sandshrew-alola.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/sandshrew-alola.png"
-  },
   "evolutions": []
 };
 

@@ -39,12 +39,6 @@ const pachirisu = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "White",
-    "model": {
-        "default": "models/entity/pachirisu.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pachirisu.png"
-    },
     "evolutions": []
 };
 export default pachirisu;

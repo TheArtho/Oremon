@@ -38,12 +38,6 @@ const absol = {
     "formSwitchable": true,
     "shape": "quadruped",
     "color": "White",
-    "model": {
-        "default": "models/entity/absol.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/absol.png"
-    },
     "evolutions": []
 };
 export default absol;

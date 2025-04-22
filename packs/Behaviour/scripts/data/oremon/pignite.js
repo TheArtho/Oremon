@@ -39,12 +39,6 @@ const pignite = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Red",
-    "model": {
-        "default": "models/entity/pignite.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pignite.png"
-    },
     "evolutions": [
         {
             "into": "oremon:emboar",

@@ -41,12 +41,6 @@ const pumpkaboo_average: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/pumpkaboo-average.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pumpkaboo-average.png"
-  },
   "evolutions": [
     {
       "into": "oremon:gourgeist",

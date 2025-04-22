@@ -33,12 +33,6 @@ const charizard_mega_x = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/charizard-mega-x.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/charizard-mega-x.png"
-    },
     "evolutions": []
 };
 export default charizard_mega_x;

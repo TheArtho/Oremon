@@ -41,12 +41,6 @@ const mr_mime: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/mr-mime.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/mr-mime.png"
-  },
   "evolutions": []
 };
 

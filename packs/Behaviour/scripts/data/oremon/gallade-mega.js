@@ -32,12 +32,6 @@ const gallade_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/gallade-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/gallade-mega.png"
-    },
     "evolutions": []
 };
 export default gallade_mega;

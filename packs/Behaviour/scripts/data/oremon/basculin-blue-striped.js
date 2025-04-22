@@ -31,12 +31,6 @@ const basculin_blue_striped = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/basculin-blue-striped.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/basculin-blue-striped.png"
-    },
     "evolutions": []
 };
 export default basculin_blue_striped;

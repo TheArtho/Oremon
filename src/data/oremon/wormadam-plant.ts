@@ -41,12 +41,6 @@ const wormadam_plant: OremonData = {
   "formSwitchable": false,
   "shape": "blob",
   "color": "Green",
-  "model": {
-    "default": "models/entity/wormadam-plant.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/wormadam-plant.png"
-  },
   "evolutions": []
 };
 

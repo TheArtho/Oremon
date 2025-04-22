@@ -39,12 +39,6 @@ const dialga = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "White",
-    "model": {
-        "default": "models/entity/dialga.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/dialga.png"
-    },
     "evolutions": []
 };
 export default dialga;

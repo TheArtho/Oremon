@@ -40,12 +40,6 @@ const garbodor: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Green",
-  "model": {
-    "default": "models/entity/garbodor.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/garbodor.png"
-  },
   "evolutions": []
 };
 

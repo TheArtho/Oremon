@@ -136,8 +136,6 @@ for (const row of pokemons) {
         formSwitchable: (row.forms_switchable ?? undefined) === 1,
         shape: shapesMap[row.shape_id]?.toLowerCase() || undefined,
         color: row.color ?? undefined,
-        model: { default: `models/entity/${id}.geo.json` },
-        textures: { default: `textures/entity/${id}.png` },
         evolutions: evolutionMap[row.id] || []
     };
 

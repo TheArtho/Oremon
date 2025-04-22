@@ -39,12 +39,6 @@ const tyranitar = {
     "formSwitchable": true,
     "shape": "upright",
     "color": "Green",
-    "model": {
-        "default": "models/entity/tyranitar.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/tyranitar.png"
-    },
     "evolutions": []
 };
 export default tyranitar;

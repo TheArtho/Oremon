@@ -42,12 +42,6 @@ const pangoro: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "White",
-  "model": {
-    "default": "models/entity/pangoro.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pangoro.png"
-  },
   "evolutions": []
 };
 

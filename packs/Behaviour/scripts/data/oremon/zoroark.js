@@ -38,12 +38,6 @@ const zoroark = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/zoroark.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/zoroark.png"
-    },
     "evolutions": []
 };
 export default zoroark;

@@ -38,12 +38,6 @@ const spoink = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Black",
-    "model": {
-        "default": "models/entity/spoink.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/spoink.png"
-    },
     "evolutions": [
         {
             "into": "oremon:grumpig",

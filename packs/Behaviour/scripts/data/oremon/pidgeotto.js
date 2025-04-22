@@ -39,12 +39,6 @@ const pidgeotto = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/pidgeotto.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pidgeotto.png"
-    },
     "evolutions": [
         {
             "into": "oremon:pidgeot",

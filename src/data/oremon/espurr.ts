@@ -40,12 +40,6 @@ const espurr: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/espurr.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/espurr.png"
-  },
   "evolutions": [
     {
       "into": "oremon:meowstic",

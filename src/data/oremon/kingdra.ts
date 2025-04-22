@@ -42,12 +42,6 @@ const kingdra: OremonData = {
   "formSwitchable": false,
   "shape": "blob",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/kingdra.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/kingdra.png"
-  },
   "evolutions": []
 };
 

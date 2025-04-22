@@ -39,12 +39,6 @@ const swadloon = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Green",
-    "model": {
-        "default": "models/entity/swadloon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/swadloon.png"
-    },
     "evolutions": [
         {
             "into": "oremon:leavanny",

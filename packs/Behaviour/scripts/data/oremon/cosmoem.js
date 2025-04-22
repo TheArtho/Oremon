@@ -38,12 +38,6 @@ const cosmoem = {
     "formSwitchable": false,
     "shape": "ball",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/cosmoem.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/cosmoem.png"
-    },
     "evolutions": [
         {
             "into": "oremon:solgaleo",

@@ -38,12 +38,6 @@ const elgyem = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/elgyem.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/elgyem.png"
-    },
     "evolutions": [
         {
             "into": "oremon:beheeyem",

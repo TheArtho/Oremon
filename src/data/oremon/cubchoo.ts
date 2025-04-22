@@ -40,12 +40,6 @@ const cubchoo: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "White",
-  "model": {
-    "default": "models/entity/cubchoo.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/cubchoo.png"
-  },
   "evolutions": [
     {
       "into": "oremon:beartic",

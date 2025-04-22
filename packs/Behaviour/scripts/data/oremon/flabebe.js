@@ -38,12 +38,6 @@ const flabebe = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "White",
-    "model": {
-        "default": "models/entity/flabebe.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/flabebe.png"
-    },
     "evolutions": [
         {
             "into": "oremon:floette",

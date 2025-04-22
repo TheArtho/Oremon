@@ -41,12 +41,6 @@ const beldum: OremonData = {
   "formSwitchable": false,
   "shape": "blob",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/beldum.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/beldum.png"
-  },
   "evolutions": [
     {
       "into": "oremon:metang",

@@ -40,12 +40,6 @@ const klink: OremonData = {
   "formSwitchable": false,
   "shape": "heads",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/klink.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/klink.png"
-  },
   "evolutions": [
     {
       "into": "oremon:klang",

@@ -41,12 +41,6 @@ const solrock: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Red",
-  "model": {
-    "default": "models/entity/solrock.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/solrock.png"
-  },
   "evolutions": []
 };
 

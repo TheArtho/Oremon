@@ -32,12 +32,6 @@ const aerodactyl_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/aerodactyl-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/aerodactyl-mega.png"
-    },
     "evolutions": []
 };
 export default aerodactyl_mega;

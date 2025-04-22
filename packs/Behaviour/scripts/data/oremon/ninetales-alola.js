@@ -32,12 +32,6 @@ const ninetales_alola = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/ninetales-alola.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/ninetales-alola.png"
-    },
     "evolutions": []
 };
 export default ninetales_alola;

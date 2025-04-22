@@ -40,12 +40,6 @@ const lumineon: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/lumineon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/lumineon.png"
-  },
   "evolutions": []
 };
 

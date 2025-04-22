@@ -38,12 +38,6 @@ const sudowoodo = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/sudowoodo.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/sudowoodo.png"
-    },
     "evolutions": []
 };
 export default sudowoodo;

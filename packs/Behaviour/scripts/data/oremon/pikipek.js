@@ -39,12 +39,6 @@ const pikipek = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Black",
-    "model": {
-        "default": "models/entity/pikipek.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pikipek.png"
-    },
     "evolutions": [
         {
             "into": "oremon:trumbeak",

@@ -41,12 +41,6 @@ const nincada: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/nincada.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/nincada.png"
-  },
   "evolutions": [
     {
       "into": "oremon:ninjask",

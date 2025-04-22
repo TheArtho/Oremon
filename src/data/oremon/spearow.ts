@@ -41,12 +41,6 @@ const spearow: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/spearow.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/spearow.png"
-  },
   "evolutions": [
     {
       "into": "oremon:fearow",

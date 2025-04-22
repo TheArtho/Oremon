@@ -39,12 +39,6 @@ const feraligatr = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/feraligatr.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/feraligatr.png"
-    },
     "evolutions": []
 };
 export default feraligatr;

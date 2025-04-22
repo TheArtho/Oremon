@@ -31,12 +31,6 @@ const meowstic_female = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/meowstic-female.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/meowstic-female.png"
-    },
     "evolutions": []
 };
 export default meowstic_female;

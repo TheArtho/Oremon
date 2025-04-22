@@ -40,12 +40,6 @@ const clefable: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/clefable.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/clefable.png"
-  },
   "evolutions": []
 };
 

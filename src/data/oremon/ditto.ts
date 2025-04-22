@@ -40,12 +40,6 @@ const ditto: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/ditto.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/ditto.png"
-  },
   "evolutions": []
 };
 

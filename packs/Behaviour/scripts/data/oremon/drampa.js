@@ -40,12 +40,6 @@ const drampa = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "White",
-    "model": {
-        "default": "models/entity/drampa.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/drampa.png"
-    },
     "evolutions": []
 };
 export default drampa;

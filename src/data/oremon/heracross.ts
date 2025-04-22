@@ -41,12 +41,6 @@ const heracross: OremonData = {
   "formSwitchable": true,
   "shape": "humanoid",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/heracross.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/heracross.png"
-  },
   "evolutions": []
 };
 

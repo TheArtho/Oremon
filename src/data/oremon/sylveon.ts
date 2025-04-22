@@ -40,12 +40,6 @@ const sylveon: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/sylveon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/sylveon.png"
-  },
   "evolutions": []
 };
 

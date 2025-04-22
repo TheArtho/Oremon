@@ -40,12 +40,6 @@ const hariyama: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/hariyama.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/hariyama.png"
-  },
   "evolutions": []
 };
 

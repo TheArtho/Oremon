@@ -39,12 +39,6 @@ const cherrim = {
     "formSwitchable": true,
     "shape": "legs",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/cherrim.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/cherrim.png"
-    },
     "evolutions": []
 };
 export default cherrim;

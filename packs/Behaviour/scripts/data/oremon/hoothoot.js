@@ -39,12 +39,6 @@ const hoothoot = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/hoothoot.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/hoothoot.png"
-    },
     "evolutions": [
         {
             "into": "oremon:noctowl",

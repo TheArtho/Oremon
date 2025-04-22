@@ -39,12 +39,6 @@ const salamence = {
     "formSwitchable": true,
     "shape": "quadruped",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/salamence.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/salamence.png"
-    },
     "evolutions": []
 };
 export default salamence;

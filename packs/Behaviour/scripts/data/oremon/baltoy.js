@@ -39,12 +39,6 @@ const baltoy = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/baltoy.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/baltoy.png"
-    },
     "evolutions": [
         {
             "into": "oremon:claydol",

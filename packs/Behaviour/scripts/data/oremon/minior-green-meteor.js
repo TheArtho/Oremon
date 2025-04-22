@@ -32,12 +32,6 @@ const minior_green_meteor = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/minior-green-meteor.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/minior-green-meteor.png"
-    },
     "evolutions": []
 };
 export default minior_green_meteor;

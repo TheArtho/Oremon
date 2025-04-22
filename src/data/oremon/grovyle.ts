@@ -41,12 +41,6 @@ const grovyle: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Green",
-  "model": {
-    "default": "models/entity/grovyle.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/grovyle.png"
-  },
   "evolutions": [
     {
       "into": "oremon:sceptile",

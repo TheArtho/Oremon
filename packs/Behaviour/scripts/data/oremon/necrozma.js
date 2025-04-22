@@ -38,12 +38,6 @@ const necrozma = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Black",
-    "model": {
-        "default": "models/entity/necrozma.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/necrozma.png"
-    },
     "evolutions": []
 };
 export default necrozma;

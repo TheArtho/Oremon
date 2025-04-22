@@ -39,12 +39,6 @@ const alomomola = {
     "formSwitchable": false,
     "shape": "fish",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/alomomola.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/alomomola.png"
-    },
     "evolutions": []
 };
 export default alomomola;

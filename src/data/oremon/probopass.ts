@@ -41,12 +41,6 @@ const probopass: OremonData = {
   "formSwitchable": false,
   "shape": "heads",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/probopass.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/probopass.png"
-  },
   "evolutions": []
 };
 

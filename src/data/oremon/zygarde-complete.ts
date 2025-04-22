@@ -34,12 +34,6 @@ const zygarde_complete: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/zygarde-complete.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/zygarde-complete.png"
-  },
   "evolutions": []
 };
 

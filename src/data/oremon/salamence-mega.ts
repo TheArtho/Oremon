@@ -34,12 +34,6 @@ const salamence_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/salamence-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/salamence-mega.png"
-  },
   "evolutions": []
 };
 

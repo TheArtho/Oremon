@@ -39,12 +39,6 @@ const weepinbell = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "Green",
-    "model": {
-        "default": "models/entity/weepinbell.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/weepinbell.png"
-    },
     "evolutions": [
         {
             "into": "oremon:victreebel",

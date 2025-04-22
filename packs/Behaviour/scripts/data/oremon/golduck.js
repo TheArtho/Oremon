@@ -39,12 +39,6 @@ const golduck = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/golduck.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/golduck.png"
-    },
     "evolutions": []
 };
 export default golduck;

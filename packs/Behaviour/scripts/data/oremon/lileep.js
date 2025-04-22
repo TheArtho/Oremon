@@ -39,12 +39,6 @@ const lileep = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/lileep.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/lileep.png"
-    },
     "evolutions": [
         {
             "into": "oremon:cradily",

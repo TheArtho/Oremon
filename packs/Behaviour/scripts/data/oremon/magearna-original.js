@@ -32,12 +32,6 @@ const magearna_original = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/magearna-original.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/magearna-original.png"
-    },
     "evolutions": []
 };
 export default magearna_original;

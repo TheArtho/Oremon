@@ -35,12 +35,6 @@ const venusaur_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/venusaur-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/venusaur-mega.png"
-  },
   "evolutions": []
 };
 

@@ -39,12 +39,6 @@ const leavanny = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/leavanny.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/leavanny.png"
-    },
     "evolutions": []
 };
 export default leavanny;

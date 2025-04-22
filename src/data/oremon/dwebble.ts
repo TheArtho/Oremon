@@ -42,12 +42,6 @@ const dwebble: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Red",
-  "model": {
-    "default": "models/entity/dwebble.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/dwebble.png"
-  },
   "evolutions": [
     {
       "into": "oremon:crustle",

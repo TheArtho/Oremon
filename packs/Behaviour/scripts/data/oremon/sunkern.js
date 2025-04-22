@@ -38,12 +38,6 @@ const sunkern = {
     "formSwitchable": false,
     "shape": "ball",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/sunkern.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/sunkern.png"
-    },
     "evolutions": [
         {
             "into": "oremon:sunflora",

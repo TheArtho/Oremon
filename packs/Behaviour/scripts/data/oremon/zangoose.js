@@ -38,12 +38,6 @@ const zangoose = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "White",
-    "model": {
-        "default": "models/entity/zangoose.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/zangoose.png"
-    },
     "evolutions": []
 };
 export default zangoose;

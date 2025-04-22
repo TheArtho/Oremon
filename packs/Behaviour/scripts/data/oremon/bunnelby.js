@@ -38,12 +38,6 @@ const bunnelby = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/bunnelby.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/bunnelby.png"
-    },
     "evolutions": [
         {
             "into": "oremon:diggersby",

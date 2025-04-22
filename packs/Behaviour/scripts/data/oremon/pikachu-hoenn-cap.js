@@ -32,12 +32,6 @@ const pikachu_hoenn_cap = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/pikachu-hoenn-cap.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pikachu-hoenn-cap.png"
-    },
     "evolutions": []
 };
 export default pikachu_hoenn_cap;

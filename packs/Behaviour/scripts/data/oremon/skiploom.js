@@ -40,12 +40,6 @@ const skiploom = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Green",
-    "model": {
-        "default": "models/entity/skiploom.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/skiploom.png"
-    },
     "evolutions": [
         {
             "into": "oremon:jumpluff",

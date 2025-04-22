@@ -42,12 +42,6 @@ const swablu: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/swablu.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/swablu.png"
-  },
   "evolutions": [
     {
       "into": "oremon:altaria",

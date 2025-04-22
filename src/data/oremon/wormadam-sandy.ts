@@ -34,12 +34,6 @@ const wormadam_sandy: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/wormadam-sandy.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/wormadam-sandy.png"
-  },
   "evolutions": []
 };
 

@@ -39,12 +39,6 @@ const ledyba = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Red",
-    "model": {
-        "default": "models/entity/ledyba.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/ledyba.png"
-    },
     "evolutions": [
         {
             "into": "oremon:ledian",

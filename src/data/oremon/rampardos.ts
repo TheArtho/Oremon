@@ -40,12 +40,6 @@ const rampardos: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/rampardos.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/rampardos.png"
-  },
   "evolutions": []
 };
 

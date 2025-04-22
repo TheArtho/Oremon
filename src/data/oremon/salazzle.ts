@@ -42,12 +42,6 @@ const salazzle: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Black",
-  "model": {
-    "default": "models/entity/salazzle.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/salazzle.png"
-  },
   "evolutions": []
 };
 

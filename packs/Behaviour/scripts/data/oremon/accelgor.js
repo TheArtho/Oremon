@@ -38,12 +38,6 @@ const accelgor = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Red",
-    "model": {
-        "default": "models/entity/accelgor.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/accelgor.png"
-    },
     "evolutions": []
 };
 export default accelgor;

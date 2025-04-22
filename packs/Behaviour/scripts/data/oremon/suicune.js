@@ -38,12 +38,6 @@ const suicune = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/suicune.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/suicune.png"
-    },
     "evolutions": []
 };
 export default suicune;

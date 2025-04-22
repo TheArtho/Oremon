@@ -32,12 +32,6 @@ const scizor_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/scizor-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/scizor-mega.png"
-    },
     "evolutions": []
 };
 export default scizor_mega;

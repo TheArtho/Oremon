@@ -41,12 +41,6 @@ const solgaleo: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "White",
-  "model": {
-    "default": "models/entity/solgaleo.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/solgaleo.png"
-  },
   "evolutions": []
 };
 

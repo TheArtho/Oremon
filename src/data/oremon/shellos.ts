@@ -41,12 +41,6 @@ const shellos: OremonData = {
   "formSwitchable": false,
   "shape": "squiggle",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/shellos.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/shellos.png"
-  },
   "evolutions": [
     {
       "into": "oremon:gastrodon",

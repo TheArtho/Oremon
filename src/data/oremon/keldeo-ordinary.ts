@@ -41,12 +41,6 @@ const keldeo_ordinary: OremonData = {
   "formSwitchable": true,
   "shape": "quadruped",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/keldeo-ordinary.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/keldeo-ordinary.png"
-  },
   "evolutions": []
 };
 

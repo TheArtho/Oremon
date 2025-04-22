@@ -41,12 +41,6 @@ const ho_oh: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Red",
-  "model": {
-    "default": "models/entity/ho-oh.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/ho-oh.png"
-  },
   "evolutions": []
 };
 

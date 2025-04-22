@@ -41,12 +41,6 @@ const ralts: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "White",
-  "model": {
-    "default": "models/entity/ralts.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/ralts.png"
-  },
   "evolutions": [
     {
       "into": "oremon:kirlia",

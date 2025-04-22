@@ -39,12 +39,6 @@ const bronzor = {
     "formSwitchable": false,
     "shape": "ball",
     "color": "Green",
-    "model": {
-        "default": "models/entity/bronzor.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/bronzor.png"
-    },
     "evolutions": [
         {
             "into": "oremon:bronzong",

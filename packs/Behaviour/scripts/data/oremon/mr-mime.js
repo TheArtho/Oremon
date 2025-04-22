@@ -39,12 +39,6 @@ const mr_mime = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/mr-mime.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mr-mime.png"
-    },
     "evolutions": []
 };
 export default mr_mime;

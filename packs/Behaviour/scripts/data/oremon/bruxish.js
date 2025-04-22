@@ -39,12 +39,6 @@ const bruxish = {
     "formSwitchable": false,
     "shape": "fish",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/bruxish.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/bruxish.png"
-    },
     "evolutions": []
 };
 export default bruxish;

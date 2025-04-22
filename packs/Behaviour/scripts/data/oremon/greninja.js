@@ -39,12 +39,6 @@ const greninja = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/greninja.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/greninja.png"
-    },
     "evolutions": []
 };
 export default greninja;

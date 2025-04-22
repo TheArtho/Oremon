@@ -42,12 +42,6 @@ const araquanid: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Green",
-  "model": {
-    "default": "models/entity/araquanid.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/araquanid.png"
-  },
   "evolutions": []
 };
 

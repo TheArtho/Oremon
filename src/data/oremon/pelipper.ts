@@ -42,12 +42,6 @@ const pelipper: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/pelipper.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pelipper.png"
-  },
   "evolutions": []
 };
 

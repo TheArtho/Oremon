@@ -38,12 +38,6 @@ const silcoon = {
     "formSwitchable": false,
     "shape": "ball",
     "color": "White",
-    "model": {
-        "default": "models/entity/silcoon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/silcoon.png"
-    },
     "evolutions": [
         {
             "into": "oremon:beautifly",

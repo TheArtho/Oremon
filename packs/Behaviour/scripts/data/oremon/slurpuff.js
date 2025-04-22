@@ -38,12 +38,6 @@ const slurpuff = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "White",
-    "model": {
-        "default": "models/entity/slurpuff.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/slurpuff.png"
-    },
     "evolutions": []
 };
 export default slurpuff;

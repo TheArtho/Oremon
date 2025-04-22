@@ -40,12 +40,6 @@ const minun: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/minun.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/minun.png"
-  },
   "evolutions": []
 };
 

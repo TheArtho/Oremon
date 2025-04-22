@@ -41,12 +41,6 @@ const delphox: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Red",
-  "model": {
-    "default": "models/entity/delphox.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/delphox.png"
-  },
   "evolutions": []
 };
 

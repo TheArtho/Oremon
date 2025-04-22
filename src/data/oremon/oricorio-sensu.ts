@@ -34,12 +34,6 @@ const oricorio_sensu: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/oricorio-sensu.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/oricorio-sensu.png"
-  },
   "evolutions": []
 };
 

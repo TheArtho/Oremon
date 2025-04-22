@@ -39,12 +39,6 @@ const tentacruel = {
     "formSwitchable": false,
     "shape": "tentacles",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/tentacruel.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/tentacruel.png"
-    },
     "evolutions": []
 };
 export default tentacruel;

@@ -39,12 +39,6 @@ const mantyke = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/mantyke.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mantyke.png"
-    },
     "evolutions": [
         {
             "into": "oremon:mantine",

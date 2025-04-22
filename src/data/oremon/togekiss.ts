@@ -42,12 +42,6 @@ const togekiss: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "White",
-  "model": {
-    "default": "models/entity/togekiss.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/togekiss.png"
-  },
   "evolutions": []
 };
 

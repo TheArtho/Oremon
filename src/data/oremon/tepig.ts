@@ -40,12 +40,6 @@ const tepig: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Red",
-  "model": {
-    "default": "models/entity/tepig.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/tepig.png"
-  },
   "evolutions": [
     {
       "into": "oremon:pignite",

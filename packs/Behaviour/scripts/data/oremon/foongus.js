@@ -39,12 +39,6 @@ const foongus = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "White",
-    "model": {
-        "default": "models/entity/foongus.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/foongus.png"
-    },
     "evolutions": [
         {
             "into": "oremon:amoonguss",

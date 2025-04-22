@@ -40,12 +40,6 @@ const cinccino: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/cinccino.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/cinccino.png"
-  },
   "evolutions": []
 };
 

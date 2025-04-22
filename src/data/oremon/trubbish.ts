@@ -40,12 +40,6 @@ const trubbish: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Green",
-  "model": {
-    "default": "models/entity/trubbish.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/trubbish.png"
-  },
   "evolutions": [
     {
       "into": "oremon:garbodor",

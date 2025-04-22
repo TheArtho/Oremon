@@ -39,12 +39,6 @@ const braviary = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Red",
-    "model": {
-        "default": "models/entity/braviary.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/braviary.png"
-    },
     "evolutions": []
 };
 export default braviary;

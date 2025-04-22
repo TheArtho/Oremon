@@ -33,12 +33,6 @@ const lurantis_totem: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/lurantis-totem.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/lurantis-totem.png"
-  },
   "evolutions": []
 };
 

@@ -38,12 +38,6 @@ const kricketune = {
     "formSwitchable": false,
     "shape": "bug wings",
     "color": "Red",
-    "model": {
-        "default": "models/entity/kricketune.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/kricketune.png"
-    },
     "evolutions": []
 };
 export default kricketune;

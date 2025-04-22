@@ -40,12 +40,6 @@ const ferrothorn = {
     "formSwitchable": false,
     "shape": "tentacles",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/ferrothorn.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/ferrothorn.png"
-    },
     "evolutions": []
 };
 export default ferrothorn;

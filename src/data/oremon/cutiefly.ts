@@ -42,12 +42,6 @@ const cutiefly: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/cutiefly.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/cutiefly.png"
-  },
   "evolutions": [
     {
       "into": "oremon:ribombee",

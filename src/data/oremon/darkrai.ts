@@ -40,12 +40,6 @@ const darkrai: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Black",
-  "model": {
-    "default": "models/entity/darkrai.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/darkrai.png"
-  },
   "evolutions": []
 };
 

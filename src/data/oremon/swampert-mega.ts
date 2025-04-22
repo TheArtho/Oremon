@@ -35,12 +35,6 @@ const swampert_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/swampert-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/swampert-mega.png"
-  },
   "evolutions": []
 };
 

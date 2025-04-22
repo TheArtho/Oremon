@@ -41,12 +41,6 @@ const seismitoad: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/seismitoad.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/seismitoad.png"
-  },
   "evolutions": []
 };
 

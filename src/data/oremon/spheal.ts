@@ -42,12 +42,6 @@ const spheal: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/spheal.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/spheal.png"
-  },
   "evolutions": [
     {
       "into": "oremon:sealeo",

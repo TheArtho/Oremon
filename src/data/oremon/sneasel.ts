@@ -41,12 +41,6 @@ const sneasel: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Black",
-  "model": {
-    "default": "models/entity/sneasel.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/sneasel.png"
-  },
   "evolutions": [
     {
       "into": "oremon:weavile",

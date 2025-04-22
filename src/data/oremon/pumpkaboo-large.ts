@@ -34,12 +34,6 @@ const pumpkaboo_large: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/pumpkaboo-large.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pumpkaboo-large.png"
-  },
   "evolutions": []
 };
 

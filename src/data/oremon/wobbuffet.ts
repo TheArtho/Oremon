@@ -40,12 +40,6 @@ const wobbuffet: OremonData = {
   "formSwitchable": false,
   "shape": "blob",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/wobbuffet.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/wobbuffet.png"
-  },
   "evolutions": []
 };
 

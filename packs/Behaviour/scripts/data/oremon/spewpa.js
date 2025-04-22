@@ -38,12 +38,6 @@ const spewpa = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "Black",
-    "model": {
-        "default": "models/entity/spewpa.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/spewpa.png"
-    },
     "evolutions": [
         {
             "into": "oremon:vivillon",

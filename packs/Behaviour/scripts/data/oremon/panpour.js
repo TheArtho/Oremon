@@ -38,12 +38,6 @@ const panpour = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/panpour.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/panpour.png"
-    },
     "evolutions": [
         {
             "into": "oremon:simipour",

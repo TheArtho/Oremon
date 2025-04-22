@@ -41,12 +41,6 @@ const lunatone: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/lunatone.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/lunatone.png"
-  },
   "evolutions": []
 };
 

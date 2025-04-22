@@ -32,12 +32,6 @@ const houndoom_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/houndoom-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/houndoom-mega.png"
-    },
     "evolutions": []
 };
 export default houndoom_mega;

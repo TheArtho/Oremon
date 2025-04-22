@@ -41,12 +41,6 @@ const spinda: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/spinda.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/spinda.png"
-  },
   "evolutions": []
 };
 

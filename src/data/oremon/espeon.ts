@@ -40,12 +40,6 @@ const espeon: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/espeon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/espeon.png"
-  },
   "evolutions": []
 };
 

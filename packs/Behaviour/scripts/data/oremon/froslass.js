@@ -40,12 +40,6 @@ const froslass = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "White",
-    "model": {
-        "default": "models/entity/froslass.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/froslass.png"
-    },
     "evolutions": []
 };
 export default froslass;

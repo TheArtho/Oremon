@@ -42,12 +42,6 @@ const masquerain: OremonData = {
   "formSwitchable": false,
   "shape": "bug wings",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/masquerain.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/masquerain.png"
-  },
   "evolutions": []
 };
 

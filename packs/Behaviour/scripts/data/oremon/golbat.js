@@ -39,12 +39,6 @@ const golbat = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/golbat.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/golbat.png"
-    },
     "evolutions": [
         {
             "into": "oremon:crobat",

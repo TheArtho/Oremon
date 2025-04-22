@@ -35,12 +35,6 @@ const charizard_mega_y: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/charizard-mega-y.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/charizard-mega-y.png"
-  },
   "evolutions": []
 };
 

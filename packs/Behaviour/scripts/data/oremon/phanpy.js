@@ -38,12 +38,6 @@ const phanpy = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/phanpy.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/phanpy.png"
-    },
     "evolutions": [
         {
             "into": "oremon:donphan",

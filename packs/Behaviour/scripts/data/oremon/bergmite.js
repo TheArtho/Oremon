@@ -38,12 +38,6 @@ const bergmite = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/bergmite.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/bergmite.png"
-    },
     "evolutions": [
         {
             "into": "oremon:avalugg",

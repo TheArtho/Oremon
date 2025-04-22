@@ -38,12 +38,6 @@ const leafeon = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Green",
-    "model": {
-        "default": "models/entity/leafeon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/leafeon.png"
-    },
     "evolutions": []
 };
 export default leafeon;

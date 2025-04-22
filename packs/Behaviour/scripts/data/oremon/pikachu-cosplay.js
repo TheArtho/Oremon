@@ -32,12 +32,6 @@ const pikachu_cosplay = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/pikachu-cosplay.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pikachu-cosplay.png"
-    },
     "evolutions": []
 };
 export default pikachu_cosplay;

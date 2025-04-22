@@ -40,12 +40,6 @@ const bibarel = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/bibarel.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/bibarel.png"
-    },
     "evolutions": []
 };
 export default bibarel;

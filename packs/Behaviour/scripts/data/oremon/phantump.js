@@ -40,12 +40,6 @@ const phantump = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/phantump.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/phantump.png"
-    },
     "evolutions": [
         {
             "into": "oremon:trevenant",

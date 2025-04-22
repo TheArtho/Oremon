@@ -42,12 +42,6 @@ const woobat: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/woobat.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/woobat.png"
-  },
   "evolutions": [
     {
       "into": "oremon:swoobat",

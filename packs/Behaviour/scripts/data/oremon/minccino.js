@@ -38,12 +38,6 @@ const minccino = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/minccino.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/minccino.png"
-    },
     "evolutions": [
         {
             "into": "oremon:cinccino",

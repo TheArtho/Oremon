@@ -38,12 +38,6 @@ const luxray = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/luxray.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/luxray.png"
-    },
     "evolutions": []
 };
 export default luxray;

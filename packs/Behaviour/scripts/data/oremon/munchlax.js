@@ -38,12 +38,6 @@ const munchlax = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Black",
-    "model": {
-        "default": "models/entity/munchlax.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/munchlax.png"
-    },
     "evolutions": [
         {
             "into": "oremon:snorlax",

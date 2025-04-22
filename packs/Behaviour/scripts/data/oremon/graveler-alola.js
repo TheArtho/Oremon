@@ -32,12 +32,6 @@ const graveler_alola = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/graveler-alola.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/graveler-alola.png"
-    },
     "evolutions": []
 };
 export default graveler_alola;

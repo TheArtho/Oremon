@@ -39,12 +39,6 @@ const articuno = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/articuno.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/articuno.png"
-    },
     "evolutions": []
 };
 export default articuno;

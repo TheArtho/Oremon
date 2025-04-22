@@ -41,12 +41,6 @@ const nidoqueen: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/nidoqueen.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/nidoqueen.png"
-  },
   "evolutions": []
 };
 

@@ -40,12 +40,6 @@ const gumshoos: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/gumshoos.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gumshoos.png"
-  },
   "evolutions": []
 };
 

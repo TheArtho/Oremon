@@ -34,12 +34,6 @@ const mimikyu_totem_busted: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/mimikyu-totem-busted.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/mimikyu-totem-busted.png"
-  },
   "evolutions": []
 };
 

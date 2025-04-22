@@ -41,12 +41,6 @@ const feebas: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/feebas.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/feebas.png"
-  },
   "evolutions": [
     {
       "into": "oremon:milotic",

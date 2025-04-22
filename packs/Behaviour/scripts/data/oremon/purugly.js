@@ -38,12 +38,6 @@ const purugly = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/purugly.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/purugly.png"
-    },
     "evolutions": []
 };
 export default purugly;

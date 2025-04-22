@@ -41,12 +41,6 @@ const fearow: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/fearow.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/fearow.png"
-  },
   "evolutions": []
 };
 

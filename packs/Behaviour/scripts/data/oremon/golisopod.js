@@ -40,12 +40,6 @@ const golisopod = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/golisopod.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/golisopod.png"
-    },
     "evolutions": []
 };
 export default golisopod;

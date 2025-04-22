@@ -39,12 +39,6 @@ const toxicroak = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/toxicroak.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/toxicroak.png"
-    },
     "evolutions": []
 };
 export default toxicroak;

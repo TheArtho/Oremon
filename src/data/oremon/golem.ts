@@ -41,12 +41,6 @@ const golem: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/golem.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/golem.png"
-  },
   "evolutions": []
 };
 

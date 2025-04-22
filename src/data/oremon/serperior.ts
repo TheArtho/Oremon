@@ -41,12 +41,6 @@ const serperior: OremonData = {
   "formSwitchable": false,
   "shape": "squiggle",
   "color": "Green",
-  "model": {
-    "default": "models/entity/serperior.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/serperior.png"
-  },
   "evolutions": []
 };
 

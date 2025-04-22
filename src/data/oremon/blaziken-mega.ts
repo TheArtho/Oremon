@@ -34,12 +34,6 @@ const blaziken_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/blaziken-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/blaziken-mega.png"
-  },
   "evolutions": []
 };
 

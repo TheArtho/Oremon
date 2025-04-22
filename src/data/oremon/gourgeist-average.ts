@@ -41,12 +41,6 @@ const gourgeist_average: OremonData = {
   "formSwitchable": false,
   "shape": "blob",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/gourgeist-average.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gourgeist-average.png"
-  },
   "evolutions": []
 };
 

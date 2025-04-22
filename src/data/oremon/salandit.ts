@@ -42,12 +42,6 @@ const salandit: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Black",
-  "model": {
-    "default": "models/entity/salandit.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/salandit.png"
-  },
   "evolutions": [
     {
       "into": "oremon:salazzle",

@@ -39,12 +39,6 @@ const gloom = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/gloom.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/gloom.png"
-    },
     "evolutions": [
         {
             "into": "oremon:vileplume",

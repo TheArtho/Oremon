@@ -39,12 +39,6 @@ const rufflet = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "White",
-    "model": {
-        "default": "models/entity/rufflet.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/rufflet.png"
-    },
     "evolutions": [
         {
             "into": "oremon:braviary",

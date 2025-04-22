@@ -39,12 +39,6 @@ const jigglypuff = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/jigglypuff.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/jigglypuff.png"
-    },
     "evolutions": [
         {
             "into": "oremon:wigglytuff",

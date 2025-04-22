@@ -39,12 +39,6 @@ const giratina_altered = {
     "formSwitchable": true,
     "shape": "tentacles",
     "color": "Black",
-    "model": {
-        "default": "models/entity/giratina-altered.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/giratina-altered.png"
-    },
     "evolutions": []
 };
 export default giratina_altered;

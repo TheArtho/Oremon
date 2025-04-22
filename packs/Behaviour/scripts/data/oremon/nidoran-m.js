@@ -39,12 +39,6 @@ const nidoran_m = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/nidoran-m.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/nidoran-m.png"
-    },
     "evolutions": [
         {
             "into": "oremon:nidorino",

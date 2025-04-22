@@ -41,12 +41,6 @@ const jynx: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Red",
-  "model": {
-    "default": "models/entity/jynx.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/jynx.png"
-  },
   "evolutions": []
 };
 

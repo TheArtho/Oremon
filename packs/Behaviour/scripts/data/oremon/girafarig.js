@@ -39,12 +39,6 @@ const girafarig = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/girafarig.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/girafarig.png"
-    },
     "evolutions": []
 };
 export default girafarig;

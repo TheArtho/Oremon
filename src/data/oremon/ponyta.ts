@@ -40,12 +40,6 @@ const ponyta: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/ponyta.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/ponyta.png"
-  },
   "evolutions": [
     {
       "into": "oremon:rapidash",

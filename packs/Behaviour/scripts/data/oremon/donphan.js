@@ -38,12 +38,6 @@ const donphan = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/donphan.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/donphan.png"
-    },
     "evolutions": []
 };
 export default donphan;

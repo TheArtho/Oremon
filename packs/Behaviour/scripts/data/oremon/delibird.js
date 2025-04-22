@@ -40,12 +40,6 @@ const delibird = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Red",
-    "model": {
-        "default": "models/entity/delibird.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/delibird.png"
-    },
     "evolutions": []
 };
 export default delibird;

@@ -40,12 +40,6 @@ const unown: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Black",
-  "model": {
-    "default": "models/entity/unown.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/unown.png"
-  },
   "evolutions": []
 };
 

@@ -41,12 +41,6 @@ const smoochum: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/smoochum.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/smoochum.png"
-  },
   "evolutions": [
     {
       "into": "oremon:jynx",

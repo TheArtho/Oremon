@@ -38,12 +38,6 @@ const bonsly = {
     "formSwitchable": false,
     "shape": "legs",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/bonsly.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/bonsly.png"
-    },
     "evolutions": [
         {
             "into": "oremon:sudowoodo",

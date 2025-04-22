@@ -34,12 +34,6 @@ const sableye_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/sableye-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/sableye-mega.png"
-  },
   "evolutions": []
 };
 

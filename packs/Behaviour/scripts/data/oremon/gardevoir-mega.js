@@ -32,12 +32,6 @@ const gardevoir_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/gardevoir-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/gardevoir-mega.png"
-    },
     "evolutions": []
 };
 export default gardevoir_mega;

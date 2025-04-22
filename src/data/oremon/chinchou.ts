@@ -41,12 +41,6 @@ const chinchou: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/chinchou.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/chinchou.png"
-  },
   "evolutions": [
     {
       "into": "oremon:lanturn",

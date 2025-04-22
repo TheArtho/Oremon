@@ -41,12 +41,6 @@ const dragonair: OremonData = {
   "formSwitchable": false,
   "shape": "squiggle",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/dragonair.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/dragonair.png"
-  },
   "evolutions": [
     {
       "into": "oremon:dragonite",

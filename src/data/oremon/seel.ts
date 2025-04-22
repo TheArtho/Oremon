@@ -41,12 +41,6 @@ const seel: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "White",
-  "model": {
-    "default": "models/entity/seel.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/seel.png"
-  },
   "evolutions": [
     {
       "into": "oremon:dewgong",

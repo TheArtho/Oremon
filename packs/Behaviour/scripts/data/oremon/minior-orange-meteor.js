@@ -32,12 +32,6 @@ const minior_orange_meteor = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/minior-orange-meteor.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/minior-orange-meteor.png"
-    },
     "evolutions": []
 };
 export default minior_orange_meteor;

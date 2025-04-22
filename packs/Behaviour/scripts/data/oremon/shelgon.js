@@ -38,12 +38,6 @@ const shelgon = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "White",
-    "model": {
-        "default": "models/entity/shelgon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/shelgon.png"
-    },
     "evolutions": [
         {
             "into": "oremon:salamence",

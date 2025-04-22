@@ -42,12 +42,6 @@ const parasect: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Red",
-  "model": {
-    "default": "models/entity/parasect.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/parasect.png"
-  },
   "evolutions": []
 };
 

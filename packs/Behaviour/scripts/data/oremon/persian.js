@@ -38,12 +38,6 @@ const persian = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/persian.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/persian.png"
-    },
     "evolutions": []
 };
 export default persian;

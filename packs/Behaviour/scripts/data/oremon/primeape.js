@@ -38,12 +38,6 @@ const primeape = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/primeape.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/primeape.png"
-    },
     "evolutions": []
 };
 export default primeape;

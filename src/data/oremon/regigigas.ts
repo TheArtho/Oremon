@@ -40,12 +40,6 @@ const regigigas: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "White",
-  "model": {
-    "default": "models/entity/regigigas.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/regigigas.png"
-  },
   "evolutions": []
 };
 

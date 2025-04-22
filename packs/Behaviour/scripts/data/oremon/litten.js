@@ -38,12 +38,6 @@ const litten = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Red",
-    "model": {
-        "default": "models/entity/litten.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/litten.png"
-    },
     "evolutions": [
         {
             "into": "oremon:torracat",

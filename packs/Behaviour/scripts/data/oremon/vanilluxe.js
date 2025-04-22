@@ -38,12 +38,6 @@ const vanilluxe = {
     "formSwitchable": false,
     "shape": "heads",
     "color": "White",
-    "model": {
-        "default": "models/entity/vanilluxe.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/vanilluxe.png"
-    },
     "evolutions": []
 };
 export default vanilluxe;

@@ -39,12 +39,6 @@ const buizel = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/buizel.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/buizel.png"
-    },
     "evolutions": [
         {
             "into": "oremon:floatzel",

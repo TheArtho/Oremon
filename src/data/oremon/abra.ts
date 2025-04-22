@@ -40,12 +40,6 @@ const abra: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/abra.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/abra.png"
-  },
   "evolutions": [
     {
       "into": "oremon:kadabra",

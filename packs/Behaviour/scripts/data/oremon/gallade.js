@@ -39,12 +39,6 @@ const gallade = {
     "formSwitchable": true,
     "shape": "humanoid",
     "color": "White",
-    "model": {
-        "default": "models/entity/gallade.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/gallade.png"
-    },
     "evolutions": []
 };
 export default gallade;

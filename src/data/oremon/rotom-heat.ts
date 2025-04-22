@@ -34,12 +34,6 @@ const rotom_heat: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/rotom-heat.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/rotom-heat.png"
-  },
   "evolutions": []
 };
 

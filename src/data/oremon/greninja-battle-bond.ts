@@ -34,12 +34,6 @@ const greninja_battle_bond: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/greninja-battle-bond.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/greninja-battle-bond.png"
-  },
   "evolutions": []
 };
 

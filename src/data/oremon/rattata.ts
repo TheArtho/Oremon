@@ -40,12 +40,6 @@ const rattata: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/rattata.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/rattata.png"
-  },
   "evolutions": [
     {
       "into": "oremon:raticate",

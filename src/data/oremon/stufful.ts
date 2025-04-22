@@ -41,12 +41,6 @@ const stufful: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/stufful.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/stufful.png"
-  },
   "evolutions": [
     {
       "into": "oremon:bewear",

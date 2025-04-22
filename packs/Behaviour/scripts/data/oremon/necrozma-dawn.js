@@ -32,12 +32,6 @@ const necrozma_dawn = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/necrozma-dawn.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/necrozma-dawn.png"
-    },
     "evolutions": []
 };
 export default necrozma_dawn;

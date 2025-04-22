@@ -40,12 +40,6 @@ const chansey: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/chansey.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/chansey.png"
-  },
   "evolutions": [
     {
       "into": "oremon:blissey",

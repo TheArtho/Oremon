@@ -38,12 +38,6 @@ const torchic = {
     "formSwitchable": false,
     "shape": "legs",
     "color": "Red",
-    "model": {
-        "default": "models/entity/torchic.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/torchic.png"
-    },
     "evolutions": [
         {
             "into": "oremon:combusken",

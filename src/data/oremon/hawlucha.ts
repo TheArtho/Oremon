@@ -41,12 +41,6 @@ const hawlucha: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Green",
-  "model": {
-    "default": "models/entity/hawlucha.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/hawlucha.png"
-  },
   "evolutions": []
 };
 

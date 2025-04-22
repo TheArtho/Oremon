@@ -42,12 +42,6 @@ const gible: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/gible.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gible.png"
-  },
   "evolutions": [
     {
       "into": "oremon:gabite",

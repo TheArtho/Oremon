@@ -32,12 +32,6 @@ const oricorio_sensu = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/oricorio-sensu.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/oricorio-sensu.png"
-    },
     "evolutions": []
 };
 export default oricorio_sensu;

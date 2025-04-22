@@ -40,12 +40,6 @@ const torracat: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Red",
-  "model": {
-    "default": "models/entity/torracat.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/torracat.png"
-  },
   "evolutions": [
     {
       "into": "oremon:incineroar",

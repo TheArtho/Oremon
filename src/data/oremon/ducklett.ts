@@ -42,12 +42,6 @@ const ducklett: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/ducklett.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/ducklett.png"
-  },
   "evolutions": [
     {
       "into": "oremon:swanna",

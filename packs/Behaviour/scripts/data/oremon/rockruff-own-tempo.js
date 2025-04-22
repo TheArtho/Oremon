@@ -31,12 +31,6 @@ const rockruff_own_tempo = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/rockruff-own-tempo.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/rockruff-own-tempo.png"
-    },
     "evolutions": []
 };
 export default rockruff_own_tempo;

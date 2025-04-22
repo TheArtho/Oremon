@@ -38,12 +38,6 @@ const beartic = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "White",
-    "model": {
-        "default": "models/entity/beartic.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/beartic.png"
-    },
     "evolutions": []
 };
 export default beartic;

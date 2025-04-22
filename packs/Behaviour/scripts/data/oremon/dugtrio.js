@@ -38,12 +38,6 @@ const dugtrio = {
     "formSwitchable": false,
     "shape": "heads",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/dugtrio.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/dugtrio.png"
-    },
     "evolutions": []
 };
 export default dugtrio;

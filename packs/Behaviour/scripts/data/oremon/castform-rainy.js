@@ -32,12 +32,6 @@ const castform_rainy = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/castform-rainy.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/castform-rainy.png"
-    },
     "evolutions": []
 };
 export default castform_rainy;

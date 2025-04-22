@@ -32,12 +32,6 @@ const marowak_totem = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/marowak-totem.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/marowak-totem.png"
-    },
     "evolutions": []
 };
 export default marowak_totem;

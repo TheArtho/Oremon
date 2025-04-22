@@ -38,12 +38,6 @@ const slugma = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Red",
-    "model": {
-        "default": "models/entity/slugma.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/slugma.png"
-    },
     "evolutions": [
         {
             "into": "oremon:magcargo",

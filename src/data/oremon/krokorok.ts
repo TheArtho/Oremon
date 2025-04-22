@@ -41,12 +41,6 @@ const krokorok: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/krokorok.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/krokorok.png"
-  },
   "evolutions": [
     {
       "into": "oremon:krookodile",

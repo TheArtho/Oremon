@@ -40,12 +40,6 @@ const snorlax: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Black",
-  "model": {
-    "default": "models/entity/snorlax.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/snorlax.png"
-  },
   "evolutions": []
 };
 

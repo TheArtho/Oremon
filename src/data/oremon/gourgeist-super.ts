@@ -34,12 +34,6 @@ const gourgeist_super: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/gourgeist-super.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gourgeist-super.png"
-  },
   "evolutions": []
 };
 

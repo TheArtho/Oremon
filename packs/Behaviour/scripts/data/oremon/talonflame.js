@@ -39,12 +39,6 @@ const talonflame = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Red",
-    "model": {
-        "default": "models/entity/talonflame.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/talonflame.png"
-    },
     "evolutions": []
 };
 export default talonflame;

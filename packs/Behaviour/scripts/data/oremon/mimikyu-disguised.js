@@ -39,12 +39,6 @@ const mimikyu_disguised = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/mimikyu-disguised.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mimikyu-disguised.png"
-    },
     "evolutions": []
 };
 export default mimikyu_disguised;

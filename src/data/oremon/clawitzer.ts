@@ -41,12 +41,6 @@ const clawitzer: OremonData = {
   "formSwitchable": false,
   "shape": "squiggle",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/clawitzer.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/clawitzer.png"
-  },
   "evolutions": []
 };
 

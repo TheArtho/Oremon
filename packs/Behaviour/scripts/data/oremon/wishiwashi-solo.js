@@ -38,12 +38,6 @@ const wishiwashi_solo = {
     "formSwitchable": false,
     "shape": "fish",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/wishiwashi-solo.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/wishiwashi-solo.png"
-    },
     "evolutions": []
 };
 export default wishiwashi_solo;

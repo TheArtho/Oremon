@@ -39,12 +39,6 @@ const claydol = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Black",
-    "model": {
-        "default": "models/entity/claydol.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/claydol.png"
-    },
     "evolutions": []
 };
 export default claydol;

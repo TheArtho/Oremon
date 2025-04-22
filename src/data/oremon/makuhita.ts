@@ -40,12 +40,6 @@ const makuhita: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/makuhita.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/makuhita.png"
-  },
   "evolutions": [
     {
       "into": "oremon:hariyama",

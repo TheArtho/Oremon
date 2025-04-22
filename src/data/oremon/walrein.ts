@@ -42,12 +42,6 @@ const walrein: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/walrein.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/walrein.png"
-  },
   "evolutions": []
 };
 

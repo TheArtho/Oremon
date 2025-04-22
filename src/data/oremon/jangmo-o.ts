@@ -40,12 +40,6 @@ const jangmo_o: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/jangmo-o.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/jangmo-o.png"
-  },
   "evolutions": [
     {
       "into": "oremon:hakamo-o",

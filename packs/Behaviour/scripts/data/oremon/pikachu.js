@@ -39,12 +39,6 @@ const pikachu = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/pikachu.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pikachu.png"
-    },
     "evolutions": [
         {
             "into": "oremon:raichu",

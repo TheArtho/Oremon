@@ -32,12 +32,6 @@ const sableye_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/sableye-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/sableye-mega.png"
-    },
     "evolutions": []
 };
 export default sableye_mega;

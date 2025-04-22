@@ -39,12 +39,6 @@ const combusken = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Red",
-    "model": {
-        "default": "models/entity/combusken.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/combusken.png"
-    },
     "evolutions": [
         {
             "into": "oremon:blaziken",

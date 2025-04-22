@@ -34,12 +34,6 @@ const pumpkaboo_small: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/pumpkaboo-small.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pumpkaboo-small.png"
-  },
   "evolutions": []
 };
 

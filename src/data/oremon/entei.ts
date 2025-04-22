@@ -40,12 +40,6 @@ const entei: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/entei.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/entei.png"
-  },
   "evolutions": []
 };
 

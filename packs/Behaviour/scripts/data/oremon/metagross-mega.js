@@ -32,12 +32,6 @@ const metagross_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/metagross-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/metagross-mega.png"
-    },
     "evolutions": []
 };
 export default metagross_mega;

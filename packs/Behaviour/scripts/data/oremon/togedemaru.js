@@ -40,12 +40,6 @@ const togedemaru = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/togedemaru.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/togedemaru.png"
-    },
     "evolutions": []
 };
 export default togedemaru;

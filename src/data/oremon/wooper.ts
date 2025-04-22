@@ -42,12 +42,6 @@ const wooper: OremonData = {
   "formSwitchable": false,
   "shape": "legs",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/wooper.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/wooper.png"
-  },
   "evolutions": [
     {
       "into": "oremon:quagsire",

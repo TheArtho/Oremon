@@ -42,12 +42,6 @@ const heliolisk: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/heliolisk.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/heliolisk.png"
-  },
   "evolutions": []
 };
 

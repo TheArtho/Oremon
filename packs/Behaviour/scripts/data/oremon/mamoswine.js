@@ -39,12 +39,6 @@ const mamoswine = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/mamoswine.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mamoswine.png"
-    },
     "evolutions": []
 };
 export default mamoswine;

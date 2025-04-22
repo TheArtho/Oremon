@@ -34,12 +34,6 @@ const kommo_o_totem: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/kommo-o-totem.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/kommo-o-totem.png"
-  },
   "evolutions": []
 };
 

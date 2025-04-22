@@ -34,12 +34,6 @@ const minior_yellow: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/minior-yellow.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/minior-yellow.png"
-  },
   "evolutions": []
 };
 

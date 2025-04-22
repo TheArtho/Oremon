@@ -38,12 +38,6 @@ const vanillish = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "White",
-    "model": {
-        "default": "models/entity/vanillish.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/vanillish.png"
-    },
     "evolutions": [
         {
             "into": "oremon:vanilluxe",

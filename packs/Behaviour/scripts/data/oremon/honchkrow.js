@@ -39,12 +39,6 @@ const honchkrow = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Black",
-    "model": {
-        "default": "models/entity/honchkrow.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/honchkrow.png"
-    },
     "evolutions": []
 };
 export default honchkrow;

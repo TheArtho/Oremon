@@ -40,12 +40,6 @@ const sandshrew: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/sandshrew.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/sandshrew.png"
-  },
   "evolutions": [
     {
       "into": "oremon:sandslash",

@@ -33,12 +33,6 @@ const raichu_alola = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/raichu-alola.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/raichu-alola.png"
-    },
     "evolutions": []
 };
 export default raichu_alola;

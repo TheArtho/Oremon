@@ -42,12 +42,6 @@ const skrelp: OremonData = {
   "formSwitchable": false,
   "shape": "blob",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/skrelp.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/skrelp.png"
-  },
   "evolutions": [
     {
       "into": "oremon:dragalge",

@@ -34,12 +34,6 @@ const pikachu_cosplay: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/pikachu-cosplay.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pikachu-cosplay.png"
-  },
   "evolutions": []
 };
 

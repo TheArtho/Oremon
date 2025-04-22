@@ -40,12 +40,6 @@ const lotad = {
     "formSwitchable": false,
     "shape": "armor",
     "color": "Green",
-    "model": {
-        "default": "models/entity/lotad.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/lotad.png"
-    },
     "evolutions": [
         {
             "into": "oremon:lombre",

@@ -39,12 +39,6 @@ const cherubi = {
     "formSwitchable": false,
     "shape": "heads",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/cherubi.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/cherubi.png"
-    },
     "evolutions": [
         {
             "into": "oremon:cherrim",

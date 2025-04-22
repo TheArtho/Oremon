@@ -39,12 +39,6 @@ const crabominable = {
     "formSwitchable": false,
     "shape": "armor",
     "color": "White",
-    "model": {
-        "default": "models/entity/crabominable.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/crabominable.png"
-    },
     "evolutions": []
 };
 export default crabominable;

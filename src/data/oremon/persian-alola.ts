@@ -33,12 +33,6 @@ const persian_alola: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/persian-alola.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/persian-alola.png"
-  },
   "evolutions": []
 };
 

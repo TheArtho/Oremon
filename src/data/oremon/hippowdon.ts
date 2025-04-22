@@ -40,12 +40,6 @@ const hippowdon: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/hippowdon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/hippowdon.png"
-  },
   "evolutions": []
 };
 

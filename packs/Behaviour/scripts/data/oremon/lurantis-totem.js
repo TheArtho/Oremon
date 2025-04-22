@@ -31,12 +31,6 @@ const lurantis_totem = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/lurantis-totem.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/lurantis-totem.png"
-    },
     "evolutions": []
 };
 export default lurantis_totem;

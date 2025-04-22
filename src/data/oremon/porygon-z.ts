@@ -40,12 +40,6 @@ const porygon_z: OremonData = {
   "formSwitchable": false,
   "shape": "arms",
   "color": "Red",
-  "model": {
-    "default": "models/entity/porygon-z.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/porygon-z.png"
-  },
   "evolutions": []
 };
 

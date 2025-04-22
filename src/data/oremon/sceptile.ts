@@ -41,12 +41,6 @@ const sceptile: OremonData = {
   "formSwitchable": true,
   "shape": "upright",
   "color": "Green",
-  "model": {
-    "default": "models/entity/sceptile.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/sceptile.png"
-  },
   "evolutions": []
 };
 

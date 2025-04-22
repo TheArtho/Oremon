@@ -41,12 +41,6 @@ const houndour: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Black",
-  "model": {
-    "default": "models/entity/houndour.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/houndour.png"
-  },
   "evolutions": [
     {
       "into": "oremon:houndoom",

@@ -32,12 +32,6 @@ const muk_alola = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/muk-alola.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/muk-alola.png"
-    },
     "evolutions": []
 };
 export default muk_alola;

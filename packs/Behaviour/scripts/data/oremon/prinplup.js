@@ -39,12 +39,6 @@ const prinplup = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/prinplup.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/prinplup.png"
-    },
     "evolutions": [
         {
             "into": "oremon:empoleon",

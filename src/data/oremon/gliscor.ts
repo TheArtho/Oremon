@@ -41,12 +41,6 @@ const gliscor: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/gliscor.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gliscor.png"
-  },
   "evolutions": []
 };
 

@@ -38,12 +38,6 @@ const wurmple = {
     "formSwitchable": false,
     "shape": "armor",
     "color": "Red",
-    "model": {
-        "default": "models/entity/wurmple.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/wurmple.png"
-    },
     "evolutions": [
         {
             "into": "oremon:silcoon",

@@ -38,12 +38,6 @@ const cubone = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/cubone.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/cubone.png"
-    },
     "evolutions": [
         {
             "into": "oremon:marowak",

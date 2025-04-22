@@ -39,12 +39,6 @@ const mienshao = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/mienshao.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mienshao.png"
-    },
     "evolutions": []
 };
 export default mienshao;

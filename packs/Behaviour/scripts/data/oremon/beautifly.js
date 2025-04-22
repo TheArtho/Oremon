@@ -39,12 +39,6 @@ const beautifly = {
     "formSwitchable": false,
     "shape": "bug wings",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/beautifly.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/beautifly.png"
-    },
     "evolutions": []
 };
 export default beautifly;

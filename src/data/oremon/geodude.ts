@@ -41,12 +41,6 @@ const geodude: OremonData = {
   "formSwitchable": false,
   "shape": "arms",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/geodude.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/geodude.png"
-  },
   "evolutions": [
     {
       "into": "oremon:graveler",

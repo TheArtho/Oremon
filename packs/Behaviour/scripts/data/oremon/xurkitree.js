@@ -38,12 +38,6 @@ const xurkitree = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Black",
-    "model": {
-        "default": "models/entity/xurkitree.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/xurkitree.png"
-    },
     "evolutions": []
 };
 export default xurkitree;

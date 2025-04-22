@@ -42,12 +42,6 @@ const crustle: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Red",
-  "model": {
-    "default": "models/entity/crustle.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/crustle.png"
-  },
   "evolutions": []
 };
 

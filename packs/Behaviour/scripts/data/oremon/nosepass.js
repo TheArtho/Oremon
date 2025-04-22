@@ -38,12 +38,6 @@ const nosepass = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/nosepass.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/nosepass.png"
-    },
     "evolutions": [
         {
             "into": "oremon:probopass",

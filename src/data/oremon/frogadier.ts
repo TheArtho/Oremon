@@ -40,12 +40,6 @@ const frogadier: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/frogadier.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/frogadier.png"
-  },
   "evolutions": [
     {
       "into": "oremon:greninja",

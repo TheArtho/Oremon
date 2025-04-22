@@ -38,12 +38,6 @@ const flareon = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Red",
-    "model": {
-        "default": "models/entity/flareon.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/flareon.png"
-    },
     "evolutions": []
 };
 export default flareon;

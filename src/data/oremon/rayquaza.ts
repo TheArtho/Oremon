@@ -41,12 +41,6 @@ const rayquaza: OremonData = {
   "formSwitchable": true,
   "shape": "squiggle",
   "color": "Green",
-  "model": {
-    "default": "models/entity/rayquaza.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/rayquaza.png"
-  },
   "evolutions": []
 };
 

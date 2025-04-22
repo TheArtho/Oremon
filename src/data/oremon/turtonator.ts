@@ -42,12 +42,6 @@ const turtonator: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Red",
-  "model": {
-    "default": "models/entity/turtonator.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/turtonator.png"
-  },
   "evolutions": []
 };
 

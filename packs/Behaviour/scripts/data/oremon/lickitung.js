@@ -38,12 +38,6 @@ const lickitung = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/lickitung.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/lickitung.png"
-    },
     "evolutions": [
         {
             "into": "oremon:lickilicky",

@@ -40,12 +40,6 @@ const tyrantrum = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Red",
-    "model": {
-        "default": "models/entity/tyrantrum.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/tyrantrum.png"
-    },
     "evolutions": []
 };
 export default tyrantrum;

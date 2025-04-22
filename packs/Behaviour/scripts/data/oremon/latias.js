@@ -39,12 +39,6 @@ const latias = {
     "formSwitchable": true,
     "shape": "wings",
     "color": "Red",
-    "model": {
-        "default": "models/entity/latias.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/latias.png"
-    },
     "evolutions": []
 };
 export default latias;

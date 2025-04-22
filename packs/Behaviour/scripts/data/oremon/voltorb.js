@@ -38,12 +38,6 @@ const voltorb = {
     "formSwitchable": false,
     "shape": "ball",
     "color": "Red",
-    "model": {
-        "default": "models/entity/voltorb.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/voltorb.png"
-    },
     "evolutions": [
         {
             "into": "oremon:electrode",

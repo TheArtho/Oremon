@@ -39,12 +39,6 @@ const vileplume = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Red",
-    "model": {
-        "default": "models/entity/vileplume.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/vileplume.png"
-    },
     "evolutions": []
 };
 export default vileplume;

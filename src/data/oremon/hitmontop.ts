@@ -40,12 +40,6 @@ const hitmontop: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/hitmontop.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/hitmontop.png"
-  },
   "evolutions": []
 };
 

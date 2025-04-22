@@ -38,12 +38,6 @@ const braixen = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Red",
-    "model": {
-        "default": "models/entity/braixen.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/braixen.png"
-    },
     "evolutions": [
         {
             "into": "oremon:delphox",

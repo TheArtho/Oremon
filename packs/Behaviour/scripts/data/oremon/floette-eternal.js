@@ -31,12 +31,6 @@ const floette_eternal = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/floette-eternal.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/floette-eternal.png"
-    },
     "evolutions": []
 };
 export default floette_eternal;

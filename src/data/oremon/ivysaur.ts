@@ -42,12 +42,6 @@ const ivysaur: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Green",
-  "model": {
-    "default": "models/entity/ivysaur.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/ivysaur.png"
-  },
   "evolutions": [
     {
       "into": "oremon:venusaur",

@@ -32,12 +32,6 @@ const necrozma_ultra = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/necrozma-ultra.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/necrozma-ultra.png"
-    },
     "evolutions": []
 };
 export default necrozma_ultra;

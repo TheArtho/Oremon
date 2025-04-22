@@ -39,12 +39,6 @@ const amoonguss = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "White",
-    "model": {
-        "default": "models/entity/amoonguss.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/amoonguss.png"
-    },
     "evolutions": []
 };
 export default amoonguss;

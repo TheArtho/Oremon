@@ -42,12 +42,6 @@ const farfetchd: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/farfetchd.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/farfetchd.png"
-  },
   "evolutions": []
 };
 

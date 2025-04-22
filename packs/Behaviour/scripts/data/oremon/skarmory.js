@@ -39,12 +39,6 @@ const skarmory = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/skarmory.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/skarmory.png"
-    },
     "evolutions": []
 };
 export default skarmory;

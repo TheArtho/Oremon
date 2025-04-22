@@ -32,12 +32,6 @@ const oricorio_pau = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/oricorio-pau.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/oricorio-pau.png"
-    },
     "evolutions": []
 };
 export default oricorio_pau;

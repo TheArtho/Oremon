@@ -39,12 +39,6 @@ const sharpedo = {
     "formSwitchable": true,
     "shape": "fish",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/sharpedo.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/sharpedo.png"
-    },
     "evolutions": []
 };
 export default sharpedo;

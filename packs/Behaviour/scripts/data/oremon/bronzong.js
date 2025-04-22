@@ -39,12 +39,6 @@ const bronzong = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Green",
-    "model": {
-        "default": "models/entity/bronzong.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/bronzong.png"
-    },
     "evolutions": []
 };
 export default bronzong;

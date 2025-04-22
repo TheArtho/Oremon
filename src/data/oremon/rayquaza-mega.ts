@@ -34,12 +34,6 @@ const rayquaza_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/rayquaza-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/rayquaza-mega.png"
-  },
   "evolutions": []
 };
 

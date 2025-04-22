@@ -41,12 +41,6 @@ const weedle: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/weedle.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/weedle.png"
-  },
   "evolutions": [
     {
       "into": "oremon:kakuna",

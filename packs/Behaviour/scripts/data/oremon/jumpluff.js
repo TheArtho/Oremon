@@ -40,12 +40,6 @@ const jumpluff = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/jumpluff.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/jumpluff.png"
-    },
     "evolutions": []
 };
 export default jumpluff;

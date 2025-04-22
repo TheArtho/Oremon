@@ -38,12 +38,6 @@ const quilladin = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Green",
-    "model": {
-        "default": "models/entity/quilladin.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/quilladin.png"
-    },
     "evolutions": [
         {
             "into": "oremon:chesnaught",

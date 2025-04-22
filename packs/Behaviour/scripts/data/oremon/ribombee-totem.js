@@ -33,12 +33,6 @@ const ribombee_totem = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/ribombee-totem.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/ribombee-totem.png"
-    },
     "evolutions": []
 };
 export default ribombee_totem;

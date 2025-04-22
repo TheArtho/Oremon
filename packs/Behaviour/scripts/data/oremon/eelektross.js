@@ -38,12 +38,6 @@ const eelektross = {
     "formSwitchable": false,
     "shape": "fish",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/eelektross.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/eelektross.png"
-    },
     "evolutions": []
 };
 export default eelektross;

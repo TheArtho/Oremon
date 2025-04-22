@@ -42,12 +42,6 @@ const kabutops: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/kabutops.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/kabutops.png"
-  },
   "evolutions": []
 };
 

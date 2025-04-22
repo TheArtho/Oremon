@@ -33,12 +33,6 @@ const venusaur_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/venusaur-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/venusaur-mega.png"
-    },
     "evolutions": []
 };
 export default venusaur_mega;

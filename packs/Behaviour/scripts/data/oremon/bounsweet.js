@@ -38,12 +38,6 @@ const bounsweet = {
     "formSwitchable": false,
     "shape": "legs",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/bounsweet.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/bounsweet.png"
-    },
     "evolutions": [
         {
             "into": "oremon:steenee",

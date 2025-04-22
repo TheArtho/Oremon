@@ -39,12 +39,6 @@ const sewaddle = {
     "formSwitchable": false,
     "shape": "armor",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/sewaddle.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/sewaddle.png"
-    },
     "evolutions": [
         {
             "into": "oremon:swadloon",

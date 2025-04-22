@@ -40,12 +40,6 @@ const infernape = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/infernape.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/infernape.png"
-    },
     "evolutions": []
 };
 export default infernape;

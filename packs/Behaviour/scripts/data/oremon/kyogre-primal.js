@@ -31,12 +31,6 @@ const kyogre_primal = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/kyogre-primal.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/kyogre-primal.png"
-    },
     "evolutions": []
 };
 export default kyogre_primal;

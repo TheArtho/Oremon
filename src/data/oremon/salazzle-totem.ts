@@ -35,12 +35,6 @@ const salazzle_totem: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/salazzle-totem.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/salazzle-totem.png"
-  },
   "evolutions": []
 };
 

@@ -42,12 +42,6 @@ const scraggy: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/scraggy.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/scraggy.png"
-  },
   "evolutions": [
     {
       "into": "oremon:scrafty",

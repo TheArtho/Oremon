@@ -34,12 +34,6 @@ const audino_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/audino-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/audino-mega.png"
-  },
   "evolutions": []
 };
 

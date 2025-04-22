@@ -41,12 +41,6 @@ const litwick: OremonData = {
   "formSwitchable": false,
   "shape": "blob",
   "color": "White",
-  "model": {
-    "default": "models/entity/litwick.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/litwick.png"
-  },
   "evolutions": [
     {
       "into": "oremon:lampent",

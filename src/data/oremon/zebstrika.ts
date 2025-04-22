@@ -40,12 +40,6 @@ const zebstrika: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Black",
-  "model": {
-    "default": "models/entity/zebstrika.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/zebstrika.png"
-  },
   "evolutions": []
 };
 

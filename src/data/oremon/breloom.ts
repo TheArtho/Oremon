@@ -42,12 +42,6 @@ const breloom: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Green",
-  "model": {
-    "default": "models/entity/breloom.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/breloom.png"
-  },
   "evolutions": []
 };
 

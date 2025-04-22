@@ -40,12 +40,6 @@ const gurdurr: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/gurdurr.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gurdurr.png"
-  },
   "evolutions": [
     {
       "into": "oremon:conkeldurr",

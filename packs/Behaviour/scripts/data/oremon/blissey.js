@@ -38,12 +38,6 @@ const blissey = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/blissey.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/blissey.png"
-    },
     "evolutions": []
 };
 export default blissey;

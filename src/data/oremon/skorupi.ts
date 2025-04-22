@@ -42,12 +42,6 @@ const skorupi: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/skorupi.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/skorupi.png"
-  },
   "evolutions": [
     {
       "into": "oremon:drapion",

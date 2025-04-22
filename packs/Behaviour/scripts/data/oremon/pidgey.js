@@ -39,12 +39,6 @@ const pidgey = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/pidgey.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pidgey.png"
-    },
     "evolutions": [
         {
             "into": "oremon:pidgeotto",

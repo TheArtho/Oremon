@@ -41,12 +41,6 @@ const aggron: OremonData = {
   "formSwitchable": true,
   "shape": "upright",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/aggron.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/aggron.png"
-  },
   "evolutions": []
 };
 

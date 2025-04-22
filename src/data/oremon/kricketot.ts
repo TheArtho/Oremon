@@ -40,12 +40,6 @@ const kricketot: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Red",
-  "model": {
-    "default": "models/entity/kricketot.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/kricketot.png"
-  },
   "evolutions": [
     {
       "into": "oremon:kricketune",

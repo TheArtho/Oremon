@@ -39,12 +39,6 @@ const rotom = {
     "formSwitchable": true,
     "shape": "ball",
     "color": "Red",
-    "model": {
-        "default": "models/entity/rotom.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/rotom.png"
-    },
     "evolutions": []
 };
 export default rotom;

@@ -41,12 +41,6 @@ const swinub: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/swinub.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/swinub.png"
-  },
   "evolutions": [
     {
       "into": "oremon:piloswine",

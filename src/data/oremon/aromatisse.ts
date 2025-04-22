@@ -40,12 +40,6 @@ const aromatisse: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/aromatisse.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/aromatisse.png"
-  },
   "evolutions": []
 };
 

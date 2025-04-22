@@ -39,12 +39,6 @@ const staraptor = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/staraptor.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/staraptor.png"
-    },
     "evolutions": []
 };
 export default staraptor;

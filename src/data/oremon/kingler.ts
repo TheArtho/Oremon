@@ -40,12 +40,6 @@ const kingler: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Red",
-  "model": {
-    "default": "models/entity/kingler.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/kingler.png"
-  },
   "evolutions": []
 };
 

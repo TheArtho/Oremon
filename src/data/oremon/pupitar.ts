@@ -41,12 +41,6 @@ const pupitar: OremonData = {
   "formSwitchable": false,
   "shape": "squiggle",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/pupitar.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pupitar.png"
-  },
   "evolutions": [
     {
       "into": "oremon:tyranitar",

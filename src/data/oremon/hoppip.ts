@@ -42,12 +42,6 @@ const hoppip: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/hoppip.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/hoppip.png"
-  },
   "evolutions": [
     {
       "into": "oremon:skiploom",

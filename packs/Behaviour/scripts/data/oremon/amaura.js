@@ -39,12 +39,6 @@ const amaura = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/amaura.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/amaura.png"
-    },
     "evolutions": [
         {
             "into": "oremon:aurorus",

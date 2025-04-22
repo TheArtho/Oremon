@@ -38,12 +38,6 @@ const swalot = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/swalot.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/swalot.png"
-    },
     "evolutions": []
 };
 export default swalot;

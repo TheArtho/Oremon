@@ -38,12 +38,6 @@ const gorebyss = {
     "formSwitchable": false,
     "shape": "squiggle",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/gorebyss.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/gorebyss.png"
-    },
     "evolutions": []
 };
 export default gorebyss;

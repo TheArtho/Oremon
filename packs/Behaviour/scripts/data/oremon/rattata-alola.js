@@ -32,12 +32,6 @@ const rattata_alola = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/rattata-alola.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/rattata-alola.png"
-    },
     "evolutions": []
 };
 export default rattata_alola;

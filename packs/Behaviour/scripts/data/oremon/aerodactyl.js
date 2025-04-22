@@ -39,12 +39,6 @@ const aerodactyl = {
     "formSwitchable": true,
     "shape": "wings",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/aerodactyl.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/aerodactyl.png"
-    },
     "evolutions": []
 };
 export default aerodactyl;

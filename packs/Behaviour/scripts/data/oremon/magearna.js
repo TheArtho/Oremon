@@ -39,12 +39,6 @@ const magearna = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/magearna.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/magearna.png"
-    },
     "evolutions": []
 };
 export default magearna;

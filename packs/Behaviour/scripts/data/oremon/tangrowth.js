@@ -38,12 +38,6 @@ const tangrowth = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/tangrowth.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/tangrowth.png"
-    },
     "evolutions": []
 };
 export default tangrowth;

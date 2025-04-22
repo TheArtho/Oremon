@@ -39,12 +39,6 @@ const mime_jr = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/mime-jr.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mime-jr.png"
-    },
     "evolutions": [
         {
             "into": "oremon:mr-mime",

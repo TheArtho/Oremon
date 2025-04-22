@@ -34,12 +34,6 @@ const beedrill_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/beedrill-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/beedrill-mega.png"
-  },
   "evolutions": []
 };
 

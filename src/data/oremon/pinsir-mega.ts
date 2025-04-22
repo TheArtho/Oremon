@@ -34,12 +34,6 @@ const pinsir_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/pinsir-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/pinsir-mega.png"
-  },
   "evolutions": []
 };
 

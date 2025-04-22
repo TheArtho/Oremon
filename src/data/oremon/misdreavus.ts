@@ -40,12 +40,6 @@ const misdreavus: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/misdreavus.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/misdreavus.png"
-  },
   "evolutions": [
     {
       "into": "oremon:mismagius",

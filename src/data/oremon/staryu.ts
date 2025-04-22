@@ -40,12 +40,6 @@ const staryu: OremonData = {
   "formSwitchable": false,
   "shape": "blob",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/staryu.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/staryu.png"
-  },
   "evolutions": [
     {
       "into": "oremon:starmie",

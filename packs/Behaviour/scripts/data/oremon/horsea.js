@@ -39,12 +39,6 @@ const horsea = {
     "formSwitchable": false,
     "shape": "blob",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/horsea.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/horsea.png"
-    },
     "evolutions": [
         {
             "into": "oremon:seadra",

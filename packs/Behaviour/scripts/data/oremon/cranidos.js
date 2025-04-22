@@ -38,12 +38,6 @@ const cranidos = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/cranidos.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/cranidos.png"
-    },
     "evolutions": [
         {
             "into": "oremon:rampardos",

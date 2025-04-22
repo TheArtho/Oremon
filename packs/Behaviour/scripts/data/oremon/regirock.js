@@ -38,12 +38,6 @@ const regirock = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/regirock.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/regirock.png"
-    },
     "evolutions": []
 };
 export default regirock;

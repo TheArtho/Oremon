@@ -38,12 +38,6 @@ const mankey = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/mankey.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mankey.png"
-    },
     "evolutions": [
         {
             "into": "oremon:primeape",

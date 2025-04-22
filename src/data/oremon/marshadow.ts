@@ -41,12 +41,6 @@ const marshadow: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/marshadow.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/marshadow.png"
-  },
   "evolutions": []
 };
 

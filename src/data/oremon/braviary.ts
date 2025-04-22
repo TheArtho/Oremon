@@ -41,12 +41,6 @@ const braviary: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Red",
-  "model": {
-    "default": "models/entity/braviary.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/braviary.png"
-  },
   "evolutions": []
 };
 

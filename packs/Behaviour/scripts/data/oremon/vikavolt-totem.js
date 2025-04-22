@@ -32,12 +32,6 @@ const vikavolt_totem = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/vikavolt-totem.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/vikavolt-totem.png"
-    },
     "evolutions": []
 };
 export default vikavolt_totem;

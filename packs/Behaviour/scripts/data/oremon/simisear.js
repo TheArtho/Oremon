@@ -38,12 +38,6 @@ const simisear = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Red",
-    "model": {
-        "default": "models/entity/simisear.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/simisear.png"
-    },
     "evolutions": []
 };
 export default simisear;

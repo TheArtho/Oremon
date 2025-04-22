@@ -40,12 +40,6 @@ const silvally: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/silvally.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/silvally.png"
-  },
   "evolutions": []
 };
 

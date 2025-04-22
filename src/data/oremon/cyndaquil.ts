@@ -40,12 +40,6 @@ const cyndaquil: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/cyndaquil.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/cyndaquil.png"
-  },
   "evolutions": [
     {
       "into": "oremon:quilava",

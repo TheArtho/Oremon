@@ -38,12 +38,6 @@ const poliwhirl = {
     "formSwitchable": false,
     "shape": "humanoid",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/poliwhirl.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/poliwhirl.png"
-    },
     "evolutions": [
         {
             "into": "oremon:poliwrath",

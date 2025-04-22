@@ -41,12 +41,6 @@ const scizor: OremonData = {
   "formSwitchable": true,
   "shape": "bug wings",
   "color": "Red",
-  "model": {
-    "default": "models/entity/scizor.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/scizor.png"
-  },
   "evolutions": []
 };
 

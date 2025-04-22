@@ -40,12 +40,6 @@ const musharna: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/musharna.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/musharna.png"
-  },
   "evolutions": []
 };
 

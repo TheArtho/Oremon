@@ -41,12 +41,6 @@ const octillery: OremonData = {
   "formSwitchable": false,
   "shape": "tentacles",
   "color": "Red",
-  "model": {
-    "default": "models/entity/octillery.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/octillery.png"
-  },
   "evolutions": []
 };
 

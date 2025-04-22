@@ -32,12 +32,6 @@ const pinsir_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/pinsir-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pinsir-mega.png"
-    },
     "evolutions": []
 };
 export default pinsir_mega;

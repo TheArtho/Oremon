@@ -39,12 +39,6 @@ const croconaw = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/croconaw.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/croconaw.png"
-    },
     "evolutions": [
         {
             "into": "oremon:feraligatr",

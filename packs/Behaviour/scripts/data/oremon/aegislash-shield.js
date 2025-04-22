@@ -39,12 +39,6 @@ const aegislash_shield = {
     "formSwitchable": true,
     "shape": "blob",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/aegislash-shield.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/aegislash-shield.png"
-    },
     "evolutions": []
 };
 export default aegislash_shield;

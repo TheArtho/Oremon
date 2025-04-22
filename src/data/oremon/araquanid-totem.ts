@@ -35,12 +35,6 @@ const araquanid_totem: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/araquanid-totem.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/araquanid-totem.png"
-  },
   "evolutions": []
 };
 

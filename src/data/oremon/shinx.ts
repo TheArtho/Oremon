@@ -40,12 +40,6 @@ const shinx: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/shinx.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/shinx.png"
-  },
   "evolutions": [
     {
       "into": "oremon:luxio",

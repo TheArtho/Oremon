@@ -41,12 +41,6 @@ const gardevoir: OremonData = {
   "formSwitchable": true,
   "shape": "humanoid",
   "color": "White",
-  "model": {
-    "default": "models/entity/gardevoir.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gardevoir.png"
-  },
   "evolutions": []
 };
 

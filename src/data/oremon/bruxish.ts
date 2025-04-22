@@ -41,12 +41,6 @@ const bruxish: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/bruxish.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/bruxish.png"
-  },
   "evolutions": []
 };
 

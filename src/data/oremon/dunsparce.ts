@@ -40,12 +40,6 @@ const dunsparce: OremonData = {
   "formSwitchable": false,
   "shape": "squiggle",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/dunsparce.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/dunsparce.png"
-  },
   "evolutions": []
 };
 

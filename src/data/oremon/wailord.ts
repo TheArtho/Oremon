@@ -41,12 +41,6 @@ const wailord: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/wailord.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/wailord.png"
-  },
   "evolutions": []
 };
 

@@ -32,12 +32,6 @@ const pikachu_partner_cap = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/pikachu-partner-cap.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/pikachu-partner-cap.png"
-    },
     "evolutions": []
 };
 export default pikachu_partner_cap;

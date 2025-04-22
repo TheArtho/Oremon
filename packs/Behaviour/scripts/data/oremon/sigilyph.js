@@ -39,12 +39,6 @@ const sigilyph = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Black",
-    "model": {
-        "default": "models/entity/sigilyph.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/sigilyph.png"
-    },
     "evolutions": []
 };
 export default sigilyph;

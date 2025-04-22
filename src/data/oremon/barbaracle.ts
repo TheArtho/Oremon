@@ -41,12 +41,6 @@ const barbaracle: OremonData = {
   "formSwitchable": false,
   "shape": "heads",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/barbaracle.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/barbaracle.png"
-  },
   "evolutions": []
 };
 

@@ -31,12 +31,6 @@ const deoxys_speed = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/deoxys-speed.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/deoxys-speed.png"
-    },
     "evolutions": []
 };
 export default deoxys_speed;

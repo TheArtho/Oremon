@@ -41,12 +41,6 @@ const tapu_lele: OremonData = {
   "formSwitchable": false,
   "shape": "arms",
   "color": "Pink",
-  "model": {
-    "default": "models/entity/tapu-lele.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/tapu-lele.png"
-  },
   "evolutions": []
 };
 

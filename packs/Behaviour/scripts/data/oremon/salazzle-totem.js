@@ -33,12 +33,6 @@ const salazzle_totem = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/salazzle-totem.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/salazzle-totem.png"
-    },
     "evolutions": []
 };
 export default salazzle_totem;

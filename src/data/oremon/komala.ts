@@ -40,12 +40,6 @@ const komala: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/komala.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/komala.png"
-  },
   "evolutions": []
 };
 

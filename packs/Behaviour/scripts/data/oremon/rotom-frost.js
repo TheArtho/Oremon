@@ -32,12 +32,6 @@ const rotom_frost = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/rotom-frost.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/rotom-frost.png"
-    },
     "evolutions": []
 };
 export default rotom_frost;

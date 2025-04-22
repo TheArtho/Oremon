@@ -40,12 +40,6 @@ const shelmet: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Red",
-  "model": {
-    "default": "models/entity/shelmet.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/shelmet.png"
-  },
   "evolutions": [
     {
       "into": "oremon:accelgor",

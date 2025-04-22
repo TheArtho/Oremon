@@ -34,12 +34,6 @@ const gallade_mega: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/gallade-mega.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/gallade-mega.png"
-  },
   "evolutions": []
 };
 

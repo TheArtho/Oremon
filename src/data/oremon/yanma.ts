@@ -41,12 +41,6 @@ const yanma: OremonData = {
   "formSwitchable": false,
   "shape": "bug wings",
   "color": "Red",
-  "model": {
-    "default": "models/entity/yanma.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/yanma.png"
-  },
   "evolutions": [
     {
       "into": "oremon:yanmega",

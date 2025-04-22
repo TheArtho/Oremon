@@ -40,12 +40,6 @@ const archen = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/archen.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/archen.png"
-    },
     "evolutions": [
         {
             "into": "oremon:archeops",

@@ -41,12 +41,6 @@ const shroomish: OremonData = {
   "formSwitchable": false,
   "shape": "legs",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/shroomish.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/shroomish.png"
-  },
   "evolutions": [
     {
       "into": "oremon:breloom",

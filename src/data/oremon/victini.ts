@@ -41,12 +41,6 @@ const victini: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/victini.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/victini.png"
-  },
   "evolutions": []
 };
 

@@ -39,12 +39,6 @@ const doduo = {
     "formSwitchable": false,
     "shape": "legs",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/doduo.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/doduo.png"
-    },
     "evolutions": [
         {
             "into": "oremon:dodrio",

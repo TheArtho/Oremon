@@ -31,12 +31,6 @@ const wishiwashi_school = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/wishiwashi-school.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/wishiwashi-school.png"
-    },
     "evolutions": []
 };
 export default wishiwashi_school;

@@ -38,12 +38,6 @@ const spritzee = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/spritzee.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/spritzee.png"
-    },
     "evolutions": [
         {
             "into": "oremon:aromatisse",

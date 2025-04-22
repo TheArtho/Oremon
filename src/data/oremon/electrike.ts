@@ -40,12 +40,6 @@ const electrike: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Green",
-  "model": {
-    "default": "models/entity/electrike.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/electrike.png"
-  },
   "evolutions": [
     {
       "into": "oremon:manectric",

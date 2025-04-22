@@ -40,12 +40,6 @@ const regice: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/regice.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/regice.png"
-  },
   "evolutions": []
 };
 

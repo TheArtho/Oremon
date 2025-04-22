@@ -40,12 +40,6 @@ const kyogre: OremonData = {
   "formSwitchable": true,
   "shape": "fish",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/kyogre.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/kyogre.png"
-  },
   "evolutions": []
 };
 

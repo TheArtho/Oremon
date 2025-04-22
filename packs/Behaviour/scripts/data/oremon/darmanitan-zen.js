@@ -32,12 +32,6 @@ const darmanitan_zen = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/darmanitan-zen.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/darmanitan-zen.png"
-    },
     "evolutions": []
 };
 export default darmanitan_zen;

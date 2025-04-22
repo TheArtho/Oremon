@@ -40,12 +40,6 @@ const monferno = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/monferno.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/monferno.png"
-    },
     "evolutions": [
         {
             "into": "oremon:infernape",

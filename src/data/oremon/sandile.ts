@@ -41,12 +41,6 @@ const sandile: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/sandile.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/sandile.png"
-  },
   "evolutions": [
     {
       "into": "oremon:krokorok",

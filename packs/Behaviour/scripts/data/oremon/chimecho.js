@@ -38,12 +38,6 @@ const chimecho = {
     "formSwitchable": false,
     "shape": "arms",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/chimecho.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/chimecho.png"
-    },
     "evolutions": []
 };
 export default chimecho;

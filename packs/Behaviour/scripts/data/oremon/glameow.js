@@ -38,12 +38,6 @@ const glameow = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Gray",
-    "model": {
-        "default": "models/entity/glameow.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/glameow.png"
-    },
     "evolutions": [
         {
             "into": "oremon:purugly",

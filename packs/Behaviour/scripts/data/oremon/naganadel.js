@@ -39,12 +39,6 @@ const naganadel = {
     "formSwitchable": false,
     "shape": "wings",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/naganadel.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/naganadel.png"
-    },
     "evolutions": []
 };
 export default naganadel;

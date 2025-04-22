@@ -38,12 +38,6 @@ const goodra = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/goodra.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/goodra.png"
-    },
     "evolutions": []
 };
 export default goodra;

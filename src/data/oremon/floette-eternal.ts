@@ -33,12 +33,6 @@ const floette_eternal: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/floette-eternal.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/floette-eternal.png"
-  },
   "evolutions": []
 };
 

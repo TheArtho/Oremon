@@ -41,12 +41,6 @@ const stakataka: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/stakataka.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/stakataka.png"
-  },
   "evolutions": []
 };
 

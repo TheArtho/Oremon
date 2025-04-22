@@ -39,12 +39,6 @@ const diggersby = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/diggersby.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/diggersby.png"
-    },
     "evolutions": []
 };
 export default diggersby;

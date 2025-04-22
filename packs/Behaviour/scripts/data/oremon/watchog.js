@@ -38,12 +38,6 @@ const watchog = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/watchog.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/watchog.png"
-    },
     "evolutions": []
 };
 export default watchog;

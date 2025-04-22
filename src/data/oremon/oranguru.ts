@@ -41,12 +41,6 @@ const oranguru: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "White",
-  "model": {
-    "default": "models/entity/oranguru.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/oranguru.png"
-  },
   "evolutions": []
 };
 

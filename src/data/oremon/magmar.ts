@@ -40,12 +40,6 @@ const magmar: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Red",
-  "model": {
-    "default": "models/entity/magmar.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/magmar.png"
-  },
   "evolutions": [
     {
       "into": "oremon:magmortar",

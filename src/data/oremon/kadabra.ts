@@ -40,12 +40,6 @@ const kadabra: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/kadabra.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/kadabra.png"
-  },
   "evolutions": [
     {
       "into": "oremon:alakazam",

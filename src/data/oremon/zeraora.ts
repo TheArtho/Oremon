@@ -40,12 +40,6 @@ const zeraora: OremonData = {
   "formSwitchable": false,
   "shape": "humanoid",
   "color": "Yellow",
-  "model": {
-    "default": "models/entity/zeraora.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/zeraora.png"
-  },
   "evolutions": []
 };
 

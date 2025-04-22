@@ -41,12 +41,6 @@ const landorus_incarnate: OremonData = {
   "formSwitchable": true,
   "shape": "arms",
   "color": "Brown",
-  "model": {
-    "default": "models/entity/landorus-incarnate.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/landorus-incarnate.png"
-  },
   "evolutions": []
 };
 

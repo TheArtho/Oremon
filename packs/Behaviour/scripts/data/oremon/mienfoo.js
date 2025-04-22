@@ -39,12 +39,6 @@ const mienfoo = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Yellow",
-    "model": {
-        "default": "models/entity/mienfoo.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mienfoo.png"
-    },
     "evolutions": [
         {
             "into": "oremon:mienshao",

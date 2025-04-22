@@ -38,12 +38,6 @@ const growlithe = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/growlithe.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/growlithe.png"
-    },
     "evolutions": [
         {
             "into": "oremon:arcanine",

@@ -34,12 +34,6 @@ const necrozma_ultra: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "model": {
-    "default": "models/entity/necrozma-ultra.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/necrozma-ultra.png"
-  },
   "evolutions": []
 };
 

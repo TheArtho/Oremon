@@ -39,12 +39,6 @@ const chimchar = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Brown",
-    "model": {
-        "default": "models/entity/chimchar.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/chimchar.png"
-    },
     "evolutions": [
         {
             "into": "oremon:monferno",

@@ -40,12 +40,6 @@ const muk: OremonData = {
   "formSwitchable": false,
   "shape": "arms",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/muk.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/muk.png"
-  },
   "evolutions": []
 };
 

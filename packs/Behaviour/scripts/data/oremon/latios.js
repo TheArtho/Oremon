@@ -39,12 +39,6 @@ const latios = {
     "formSwitchable": true,
     "shape": "wings",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/latios.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/latios.png"
-    },
     "evolutions": []
 };
 export default latios;

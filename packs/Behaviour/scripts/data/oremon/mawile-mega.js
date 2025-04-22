@@ -33,12 +33,6 @@ const mawile_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/mawile-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mawile-mega.png"
-    },
     "evolutions": []
 };
 export default mawile_mega;

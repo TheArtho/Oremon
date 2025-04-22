@@ -40,12 +40,6 @@ const mismagius: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/mismagius.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/mismagius.png"
-  },
   "evolutions": []
 };
 

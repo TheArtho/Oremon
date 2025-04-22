@@ -32,12 +32,6 @@ const wormadam_sandy = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/wormadam-sandy.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/wormadam-sandy.png"
-    },
     "evolutions": []
 };
 export default wormadam_sandy;

@@ -40,12 +40,6 @@ const samurott: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/samurott.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/samurott.png"
-  },
   "evolutions": []
 };
 

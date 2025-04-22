@@ -33,12 +33,6 @@ const altaria_mega = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "model": {
-        "default": "models/entity/altaria-mega.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/altaria-mega.png"
-    },
     "evolutions": []
 };
 export default altaria_mega;

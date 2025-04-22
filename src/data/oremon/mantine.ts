@@ -41,12 +41,6 @@ const mantine: OremonData = {
   "formSwitchable": false,
   "shape": "wings",
   "color": "Purple",
-  "model": {
-    "default": "models/entity/mantine.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/mantine.png"
-  },
   "evolutions": []
 };
 

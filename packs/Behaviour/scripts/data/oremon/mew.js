@@ -38,12 +38,6 @@ const mew = {
     "formSwitchable": false,
     "shape": "upright",
     "color": "Pink",
-    "model": {
-        "default": "models/entity/mew.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/mew.png"
-    },
     "evolutions": []
 };
 export default mew;

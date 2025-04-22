@@ -39,12 +39,6 @@ const delcatty = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Purple",
-    "model": {
-        "default": "models/entity/delcatty.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/delcatty.png"
-    },
     "evolutions": []
 };
 export default delcatty;

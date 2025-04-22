@@ -40,12 +40,6 @@ const glaceon: OremonData = {
   "formSwitchable": false,
   "shape": "quadruped",
   "color": "Blue",
-  "model": {
-    "default": "models/entity/glaceon.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/glaceon.png"
-  },
   "evolutions": []
 };
 

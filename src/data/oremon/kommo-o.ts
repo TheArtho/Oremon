@@ -41,12 +41,6 @@ const kommo_o: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Gray",
-  "model": {
-    "default": "models/entity/kommo-o.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/kommo-o.png"
-  },
   "evolutions": []
 };
 

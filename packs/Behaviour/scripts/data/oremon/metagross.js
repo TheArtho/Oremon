@@ -39,12 +39,6 @@ const metagross = {
     "formSwitchable": true,
     "shape": "heads",
     "color": "Blue",
-    "model": {
-        "default": "models/entity/metagross.geo.json"
-    },
-    "textures": {
-        "default": "textures/entity/metagross.png"
-    },
     "evolutions": []
 };
 export default metagross;

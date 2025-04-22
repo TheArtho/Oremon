@@ -41,12 +41,6 @@ const corphish: OremonData = {
   "formSwitchable": false,
   "shape": "armor",
   "color": "Red",
-  "model": {
-    "default": "models/entity/corphish.geo.json"
-  },
-  "textures": {
-    "default": "textures/entity/corphish.png"
-  },
   "evolutions": [
     {
       "into": "oremon:crawdaunt",

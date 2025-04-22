@@ -1,13 +1,12 @@
 import cn from "./cn";
-import en from "./en";
+import us from "./us";
 import fr from "./fr";
 import de from "./de";
 import es from "./es";
 import it from "./it";
 import jp from "./jp";
 import kr from "./kr";
-import us from "./us";
-const locales = { cn, de, en, es, fr, it, jp, kr, us };
+const locales = { cn, de, en: us, es, fr, it, jp, kr };
 export class Localization {
     static setLanguage(lang) {
         if (locales[lang]) {

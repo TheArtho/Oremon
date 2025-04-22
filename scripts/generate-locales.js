@@ -9,13 +9,13 @@ if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
 }
 
-// 1️⃣ Récupérer toutes les langues (id + code ISO)
+// Récupérer toutes les langues (id + code ISO)
 const languages = db.prepare(`
   SELECT id, iso3166 FROM languages
   WHERE official = 1
 `).all();
 
-// 2️⃣ Charger tous les noms de Pokémon (par langue)
+// Charger tous les noms de Pokémon (par langue)
 const nameData = db.prepare(`
   SELECT
     psn.pokemon_species_id,
@@ -26,30 +26,30 @@ const nameData = db.prepare(`
   JOIN pokemon_species p ON psn.pokemon_species_id = p.id
 `).all();
 
-// 3️⃣ Charger tous les textes descriptifs (1er texte FR/EN par espèce)
+// Charger tous les textes descriptifs
 const flavorData = db.prepare(`
   SELECT
     psf.species_id,
     psf.flavor_text,
     psf.language_id
   FROM pokemon_species_flavor_text psf
-  WHERE version_id = 26 -- Exemple: Version Émeraude
+  WHERE version_id = 26 -- Exemple: Dernière version
 `).all();
 
-// 🗂 Indexer les données par langue
+// Indexer les données par langue
 for (const lang of languages) {
     const code = lang.iso3166;
     const id = lang.id;
 
     const entries = {};
 
-    // 🏷 Noms
+    // Noms
     for (const row of nameData) {
         if (row.local_language_id !== id) continue;
         entries[`oremon.${row.slug.toLowerCase()}.name`] = row.name;
     }
 
-    // 📖 Descriptions
+    // Descriptions
     for (const row of flavorData) {
         if (row.language_id !== id) continue;
         const slug = nameData.find(n => n.pokemon_species_id === row.species_id)?.slug?.toLowerCase();

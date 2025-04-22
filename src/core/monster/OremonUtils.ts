@@ -27,6 +27,11 @@ export function generateFallbackId(): string {
     });
 }
 
+/**
+ * Compacts a IWildOremondata into a compressed CompactWildOremon array.
+ * @param data IWildOremondata object
+ * @returns CompactWildOremon array
+ */
 export function compactWildOremon(data: IWildOremondata): CompactWildOremon {
     return [
         data.species,
@@ -36,4 +41,20 @@ export function compactWildOremon(data: IWildOremondata): CompactWildOremon {
         data.gender,
         data.formId
     ];
+}
+
+/**
+ * Expands a CompactWildOremon array back into a full IWildOremondata object.
+ * @param data CompactWildOremon tuple
+ * @returns IWildOremondata object
+ */
+export function expandCompactWildOremon(data: CompactWildOremon): IWildOremondata {
+    return {
+        species: data[0],
+        level: data[1],
+        shiny: data[2],
+        size: data[3],
+        gender: data[4],
+        formId: data[5]
+    };
 }

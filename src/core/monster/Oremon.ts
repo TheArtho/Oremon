@@ -61,7 +61,13 @@ export class Oremon {
     private size: number | Sizes;
 
     /**
-     * Calculated stats of the Oremon.
+     * Current health of the Oremon.
+     * @private
+     */
+    private currentHp: number;
+
+    /**
+     * Calculated stats of the Oremon. (including total_hp, atk, def, spe_atk, spe_def, and speed)
      */
     private stats: Stats;
 
@@ -137,6 +143,7 @@ export class Oremon {
         this.ivs = ivs ?? generateRandomIVs();
         this.evs = evs ?? {atk: 0, hp: 0, atk_spe: 0, def: 0, def_spe: 0, spd: 0};
         this.stats = this.calculateStats();
+        this.currentHp = this.stats.hp;
 
         this.happiness = happiness ?? 0;
 
@@ -282,6 +289,34 @@ export class Oremon {
         };
     }
 
+    getCurrentHp(): number {
+        return this.currentHp;
+    }
+
+    getTotalHp(): number {
+        return this.stats.hp;
+    }
+
+    getAtk(): number {
+        return this.stats.atk;
+    }
+
+    getDef(): number {
+        return this.stats.def;
+    }
+
+    getSpeAtk(): number {
+        return this.stats.atk_spe;
+    }
+
+    getSpeDef(): number {
+        return this.stats.def_spe;
+    }
+
+    getSpeed(): number {
+        return this.stats.spd;
+    }
+
     toWildData(): IWildOremondata {
         return {
             species: this.species.replace("oremon:", ' '),
@@ -291,6 +326,21 @@ export class Oremon {
             gender: this.gender,
             formId: this.formId
         };
+    }
+
+    /**
+     * Static method to construct an Oremon from a wild data representation.
+     * @param data The wild data containing basic info for spawning a wild Oremon.
+     */
+    static fromWildData(data: IWildOremondata): Oremon {
+        const speciesId = `oremon:${data.species.trim()}`;
+        return new Oremon(speciesId, {
+            level: data.level,
+            shiny: data.shiny,
+            size: data.size,
+            gender: data.gender,
+            formId: data.formId
+        });
     }
 
     /**

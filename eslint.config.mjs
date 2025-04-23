@@ -8,7 +8,8 @@ export default defineConfig([
   {
     ignores: [
       "node_modules/**",
-      "src/showdown/**"
+      "src/showdown/**",
+      "src/data/generate-entities.ts"
     ]
   },
   { files: ["**/*.{js,mjs,cjs,ts}"], plugins: { js }, extends: ["js/recommended"] },

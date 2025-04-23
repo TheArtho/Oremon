@@ -1,11 +1,11 @@
-import { system, world } from "@minecraft/server";
+import { system } from "@minecraft/server";
 import { OremonEntityEventHandler } from "./core/monster/OremonEntityEventHandler";
 import { PlayerSaveEventHandler } from "./core/save/PlayerSaveEventHandler";
 import { PlayerSaveManager } from "./core/save/PlayerSaveManager";
 import { ItemEventHandler } from "./core/items/ItemEventHandler";
 import { CaptureEventHandler } from "./core/capture/CaptureEventHandler";
-import { UiManager } from "./core/ui/UiManager";
 import { CommandEventHandler } from "./core/commands/CommandEventHandler";
+import { UiEventManager } from "./core/ui/UiEventManager";
 class Game {
     static initialize() {
         // Register all world events
@@ -20,11 +20,7 @@ class Game {
         ItemEventHandler.register();
         CaptureEventHandler.register();
         CommandEventHandler.register();
+        UiEventManager.register();
     }
 }
 Game.initialize();
-system.runInterval(() => {
-    world.getPlayers().forEach(player => {
-        UiManager.displayPokemonTeam(player);
-    });
-}, 5);

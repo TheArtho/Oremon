@@ -1,1 +1,61 @@
-{}
+{
+  "entity_sounds": {
+    "entities": {
+      "oremon:cyndaquil": {
+        "volume": 1,
+        "pitch": [0.9, 1.0],
+        "events": {
+          "ambient": {
+            "sound": "oremon.cry.cyndaquil",
+            "volume": 0.2,
+            "pitch": 1
+          }
+        }
+      },
+      "oremon:totodile": {
+        "volume": 1,
+        "pitch": [0.9, 1.0],
+        "events": {
+          "ambient": {
+            "sound": "oremon.cry.totodile",
+            "volume": 0.2,
+            "pitch": 1
+          }
+        }
+      },
+      "oremon:bulbasaur": {
+        "volume": 1,
+        "pitch": [0.9, 1.0],
+        "events": {
+          "ambient": {
+            "sound": "oremon.cry.bulbasaur",
+            "volume": 0.2,
+            "pitch": 1
+          }
+        }
+      },
+      "oremon:chikorita": {
+        "volume": 1,
+        "pitch": [0.9, 1.0],
+        "events": {
+          "ambient": {
+            "sound": "oremon.cry.chikorita",
+            "volume": 0.2,
+            "pitch": 1
+          }
+        }
+      },
+      "oremon:tepig": {
+        "volume": 1,
+        "pitch": [0.9, 1.0],
+        "events": {
+          "ambient": {
+            "sound": "oremon.cry.tepig",
+            "volume": 0.2,
+            "pitch": 1
+          }
+        }
+      }
+    }
+  }
+}

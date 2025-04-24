@@ -1,4 +1,21 @@
 {
 	"format_version": "1.14.0",
-	"sound_definitions": {}
+	"sound_definitions": {
+		"oremon.cry.bulbasaur": {
+			"category": "neutral",
+			"sounds": ["sounds/cry/bulbasaur_cry"]
+		},
+		"oremon.cry.chikorita": {
+			"category": "neutral",
+			"sounds": ["sounds/cry/chikorita_cry"]
+		},
+		"oremon.cry.cyndaquil": {
+			"category": "neutral",
+			"sounds": ["sounds/cry/cyndaquil_cry"]
+		},
+		"oremon.cry.totodile": {
+			"category": "neutral",
+			"sounds": ["sounds/cry/totodile_cry"]
+		}
+	}
 }

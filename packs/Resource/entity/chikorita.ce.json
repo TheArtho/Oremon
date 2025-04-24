@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "oremon:chikorita",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/chikorita/chikorita",
+        "default_female": "textures/entity/chikorita/chikorita",
+        "shiny": "textures/entity/chikorita/chikorita_shiny",
+        "shiny_female": "textures/entity/chikorita/chikorita_shiny"
+      },
+      "geometry": {
+        "default": "geometry.chikorita",
+        "default_female": "geometry.chikorita"
+      },
+      "animations": {
+        "look_at": "animation.head_look",
+        "look_at_controller": "controller.animation.oremon.lookat",
+        "base_controller": "controller.animation.oremon.base",
+        "ground_idle": "animation.chikorita.ground_idle",
+        "ground_walk": "animation.chikorita.ground_walk",
+        "ground_run": "animation.chikorita.ground_walk",
+        "cry": "animation.chikorita.cry",
+        "battle_idle": "animation.chikorita.battle_idle"
+      },
+      "scripts": {
+        "animate": [
+          "base_controller"
+        ]
+      },
+      "spawn_egg": {
+        "overlay_color": "#669853",
+        "base_color": "#60a89c"
+      },
+      "render_controllers": [
+        "controller.render.oremon"
+      ]
+    }
+  }
+}

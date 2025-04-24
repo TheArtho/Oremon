@@ -4,8 +4,14 @@ const Database = require("better-sqlite3");
 
 const db = new Database(path.join(__dirname, "../db/veekun-pokedex.sqlite"));
 const MODEL_BASE_PATH = path.join(__dirname, "../geometry/pokemon");
+const SUBSTITUTE_PATH = path.join(MODEL_BASE_PATH, "special/substitute");
+
 const SERVER_OUT = path.join(__dirname, "../out/behavior/entities/");
 const CLIENT_OUT = path.join(__dirname, "../out/resource_pack/entity/");
+const MODEL_OUT = path.join(__dirname, "../out/resource_pack/models/entity/");
+const TEXTURE_OUT = path.join(__dirname, "../out/resource_pack/textures/entity/");
+const ANIMATION_OUT = path.join(__dirname, "../out/resource_pack/animations/");
+
 const GENERATIONS = ["gen1", "gen2", "gen3", "gen4", "gen5", "gen6", "gen7"];
 
 function toNum(v) {
@@ -31,8 +37,8 @@ const speciesIdToSlug = Object.fromEntries(
     db.prepare("SELECT id, identifier FROM pokemon_species").all().map(row => [row.id, row.identifier.toLowerCase()])
 );
 const evolutionsRaw = db.prepare(`
-  SELECT * FROM pokemon_evolution
-  LEFT JOIN pokemon_species ON pokemon_evolution.evolved_species_id = pokemon_species.id
+    SELECT * FROM pokemon_evolution
+                      LEFT JOIN pokemon_species ON pokemon_evolution.evolved_species_id = pokemon_species.id
 `).all();
 
 const evolutionMap = {};
@@ -63,6 +69,12 @@ for (const evo of evolutionsRaw) {
     });
 }
 
+function copyAsset(source, target) {
+    if (fs.existsSync(source)) {
+        fs.copySync(source, target);
+    }
+}
+
 function findModelAndTextures(id) {
     for (const gen of GENERATIONS) {
         const folder = path.join(MODEL_BASE_PATH, gen);
@@ -75,26 +87,46 @@ function findModelAndTextures(id) {
                 const subdir = path.join(folder, dirent.name);
                 const files = fs.readdirSync(subdir);
 
-                const hasDefaultModel = files.includes(`${id}.geo.json`);
-                const hasMaleModel = files.includes(`${id}_male.geo.json`);
-                const hasFemaleModel = files.includes(`${id}_female.geo.json`);
+                const geo = files.find(f => f.endsWith(".geo.json"));
+                const texture = files.find(f => f.endsWith(".png") && !f.includes("shiny"));
+                const shiny = files.find(f => f.includes("shiny.png"));
+                const animation = files.find(f => f.endsWith(".animation.json"));
 
-                if (hasDefaultModel || hasMaleModel || hasFemaleModel) {
+                if (geo && texture && shiny) {
+                    // Output directories
+                    const modelOut = path.join(MODEL_OUT, id);
+                    const texOut = path.join(TEXTURE_OUT, id);
+                    const animOut = path.join(ANIMATION_OUT, id);
+                    fs.ensureDirSync(modelOut);
+                    fs.ensureDirSync(texOut);
+                    fs.ensureDirSync(animOut);
+
+                    // Copy assets
+                    copyAsset(path.join(subdir, geo), path.join(modelOut, geo));
+                    copyAsset(path.join(subdir, texture), path.join(texOut, texture));
+                    copyAsset(path.join(subdir, shiny), path.join(texOut, shiny));
+                    if (animation) {
+                        copyAsset(path.join(subdir, animation), path.join(animOut, animation));
+                    }
+
                     return {
-                        geometry: hasDefaultModel ? `geometry.${id}` : `geometry.${id}_male`,
-                        geometry_female: hasFemaleModel
-                            ? `geometry.${id}_female`
-                            : hasDefaultModel
-                                ? `geometry.${id}`
-                                : `geometry.${id}_male`,
-                        texture: `textures/entity/${id}/${id}`,
-                        shiny: `textures/entity/${id}/${id}_shiny`,
+                        geometry: `geometry.${geo.replace(".geo.json", "")}`,
+                        geometry_female: `geometry.${geo.replace(".geo.json", "")}`,
+                        texture: `textures/entity/${id}/${texture.replace(".png", "")}`,
+                        shiny: `textures/entity/${id}/${shiny.replace(".png", "")}`,
                         hasCustomModel: true
                     };
                 }
             }
         }
     }
+
+    // Substitute fallback
+    fs.ensureDirSync(path.join(MODEL_OUT, "substitute"));
+    fs.ensureDirSync(path.join(TEXTURE_OUT, "substitute"));
+    copyAsset(path.join(SUBSTITUTE_PATH, "substitute.geo.json"), path.join(MODEL_OUT, "substitute", "substitute.geo.json"));
+    copyAsset(path.join(SUBSTITUTE_PATH, "substitute.png"), path.join(TEXTURE_OUT, "substitute", "substitute.png"));
+    copyAsset(path.join(SUBSTITUTE_PATH, "substitute_shiny.png"), path.join(TEXTURE_OUT, "substitute", "substitute_shiny.png"));
 
     return {
         geometry: "geometry.substitute",
@@ -127,7 +159,8 @@ for (const row of pokemons) {
                         values: ["male", "female", "genderless"],
                         default: "male",
                         client_sync: true
-                    }
+                    },
+                    "oremon:battling": { type: "bool", default: false, client_sync: true }
                 }
             },
             component_groups: {
@@ -138,9 +171,7 @@ for (const row of pokemons) {
                 "size:gigantic": { "minecraft:scale": { value: 1.4 } },
                 "despawn": { "minecraft:instant_despawn": {} },
                 "shiny": { "minecraft:skin_id": { value: 1 } },
-                "tamed": {
-                    "minecraft:is_tamed": {},
-                    "minecraft:persistent": {},
+                "follow": {
                     "minecraft:behavior.follow_owner": {
                         priority: 4,
                         speed_multiplier: 1.2,
@@ -148,6 +179,12 @@ for (const row of pokemons) {
                         stop_distance: 3,
                         can_teleport: true
                     }
+                },
+                "battle": { "minecraft:movement": { value: 0 } },
+                "overworld": { "minecraft:movement": { value: 0.5 } },
+                "tamed": {
+                    "minecraft:is_tamed": {},
+                    "minecraft:persistent": {}
                 },
                 "sit": { "minecraft:sittable": {} },
                 "tick_world": { "minecraft:tick_world": { never_despawn: true, radius: 6 } },
@@ -170,34 +207,57 @@ for (const row of pokemons) {
                 "minecraft:collision_box": { width: 0.9, height: 1.2 },
                 "minecraft:health": { value: 100, max: 100 },
                 "minecraft:attack": { damage: 10 },
-                "minecraft:movement": { value: 0.25 },
+                "minecraft:movement": { value: 0.5 },
                 "minecraft:jump.static": {},
                 "minecraft:can_climb": {},
                 "minecraft:navigation.generic": {},
                 "minecraft:movement.generic": {},
                 "minecraft:behavior.random_stroll": { priority: 8, speed_multiplier: 1 },
                 "minecraft:behavior.look_at_player": {
-                    priority: 0, probability: 1,
+                    priority: 0,
+                    probability: 1,
                     angle_of_view_horizontal: 45,
                     angle_of_view_vertical: 45
                 },
                 "minecraft:behavior.float": { priority: 0 },
                 "minecraft:breathable": {
-                    total_supply: 15, suffocate_time: 0,
-                    breathes_water: false, breathes_air: true
+                    total_supply: 15,
+                    suffocate_time: 0,
+                    breathes_water: false,
+                    breathes_air: true
                 },
-                "minecraft:pushable": { is_pushable: true, is_pushable_by_piston: false },
+                "minecraft:pushable": {
+                    is_pushable: true,
+                    is_pushable_by_piston: false
+                },
                 "minecraft:physics": { has_gravity: true }
             },
             events: {
                 "oremon:despawn": { add: { component_groups: ["despawn"] } },
-                "oremon:make_shiny": { add: { component_groups: ["shiny"] }, set_property: { "oremon:shiny": true } },
+                "oremon:make_shiny": {
+                    add: { component_groups: ["shiny"] },
+                    set_property: { "oremon:shiny": true }
+                },
                 "oremon:make_male": { set_property: { "oremon:gender": "male" } },
                 "oremon:make_female": { set_property: { "oremon:gender": "female" } },
                 "oremon:make_genderless": { set_property: { "oremon:gender": "genderless" } },
                 "oremon:sit": { add: { component_groups: ["sit"] } },
-                "oremon:capture": { add: { component_groups: ["tamed", "tick_world"] } },
-                "oremon:evolution": { add: { component_groups: ["tamed", "tick_world"] } },
+                "oremon:capture": {
+                    add: { component_groups: ["tamed", "tick_world", "follow"] }
+                },
+                "oremon:evolution": {
+                    add: { component_groups: ["tamed", "tick_world"] }
+                },
+                "oremon:battle": {
+                    remove: { component_groups: ["follow", "overworld"] },
+                    add: { component_groups: ["battle"] },
+                    set_property: { "oremon:battling": true }
+                },
+                "oremon:overworld": {
+                    add: { component_groups: ["follow", "overworld"] },
+                    remove: { component_groups: ["battle"] },
+                    set_property: { "oremon:battling": false }
+                },
                 ...Object.fromEntries(evolutions.map(evo => [
                     `oremon:evolve_${evo.into.split(":")[1]}`,
                     { add: { component_groups: [`evolve_to:${evo.into.split(":")[1]}`] } }
@@ -238,7 +298,7 @@ for (const row of pokemons) {
 
     fs.outputJsonSync(path.join(SERVER_OUT, `${id}.se.json`), serverEntity, { spaces: 2 });
     fs.outputJsonSync(path.join(CLIENT_OUT, `${id}.ce.json`), clientEntity, { spaces: 2 });
-    console.log(`✅ Generated entity files for ${identifier}`);
+    console.log(`✅ ${id}: entity + model + texture + animations`);
 }
 
-console.log("\x1b[32mAll server/client entity files generated from SQL!\x1b[0m");
+console.log("\x1b[32m✅ All entities generated with assets copied.\x1b[0m");

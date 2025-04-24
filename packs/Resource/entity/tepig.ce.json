@@ -2,26 +2,26 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "oremon:bulbasaur",
+      "identifier": "oremon:tepig",
       "materials": {
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/bulbasaur/bulbasaur",
-        "default_female": "textures/entity/bulbasaur/bulbasaur",
-        "shiny": "textures/entity/bulbasaur/bulbasaur_shiny",
-        "shiny_female": "textures/entity/bulbasaur/bulbasaur_shiny"
+        "default": "textures/entity/tepig/tepig",
+        "default_female": "textures/entity/tepig/tepig",
+        "shiny": "textures/entity/tepig/tepig_shiny",
+        "shiny_female": "textures/entity/tepig/tepig_shiny"
       },
       "geometry": {
-        "default": "geometry.bulbasaur",
-        "default_female": "geometry.bulbasaur"
+        "default": "geometry.tepig",
+        "default_female": "geometry.tepig"
       },
       "animations": {
         "look_at": "animation.head_look",
         "look_at_controller": "controller.animation.oremon.lookat",
         "walk_controller": "controller.animation.oremon.walk",
-        "idle": "animation.bulbasaur.ground_idle",
-        "walk": "animation.bulbasaur.ground_walk"
+        "idle": "animation.tepig.ground_idle",
+        "walk": "animation.tepig.ground_walk"
       },
       "scripts": {
         "animate": [

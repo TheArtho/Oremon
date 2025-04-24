@@ -1,0 +1,41 @@
+{
+  "format_version": "1.12.0",
+  "animation_controllers": {
+    "controller.animation.oremon.base": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "blend_transition": 0.2,
+          "animations": ["ground_idle", "look_at"],
+          "transitions": [
+            { "walking": "q.modified_move_speed > 0.1" },
+            { "battle_standing": "q.property('oremon:battling')" }
+          ]
+        },
+        "walking": {
+          "blend_transition": 0.2,
+          "animations": ["ground_walk"],
+          "transitions": [
+            { "running": "q.modified_move_speed > 0.5" },
+            { "standing": "q.modified_move_speed < 0.1" }
+          ]
+        },
+        "running": {
+          "blend_transition": 0.2,
+          "animations": ["ground_run"],
+          "transitions": [
+            { "standing": "q.modified_move_speed < 0.1" }
+          ]
+        },
+        "battle_standing": {
+          "blend_transition": 0.2,
+          "animations": ["battle_idle"],
+          "transitions": [
+            { "walking": "q.modified_move_speed > 0.1" },
+            { "standing": "!q.property('oremon:battling')" }
+          ]
+        }
+      }
+    }
+  }
+}

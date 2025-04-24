@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "oremon:totodile",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/totodile/totodile",
+        "default_female": "textures/entity/totodile/totodile",
+        "shiny": "textures/entity/totodile/totodile_shiny",
+        "shiny_female": "textures/entity/totodile/totodile_shiny"
+      },
+      "geometry": {
+        "default": "geometry.totodile",
+        "default_female": "geometry.totodile"
+      },
+      "animations": {
+        "look_at": "animation.head_look",
+        "look_at_controller": "controller.animation.oremon.lookat",
+        "base_controller": "controller.animation.oremon.base",
+        "ground_idle": "animation.totodile.ground_idle",
+        "ground_walk": "animation.totodile.ground_walk",
+        "ground_run": "animation.totodile.ground_run",
+        "cry": "animation.totodile.cry",
+        "battle_idle": "animation.totodile.battle_idle",
+        "battle_cry": "animation.totodile.battle_cry"
+      },
+      "scripts": {
+        "animate": [
+          "base_controller"
+        ]
+      },
+      "spawn_egg": {
+        "overlay_color": "#66c0cb",
+        "base_color": "#66c0cb"
+      },
+      "render_controllers": [
+        "controller.render.oremon"
+      ]
+    }
+  }
+}

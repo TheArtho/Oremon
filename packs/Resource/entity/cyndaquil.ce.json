@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "oremon:cyndaquil",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/cyndaquil/cyndaquil",
+        "default_female": "textures/entity/cyndaquil/cyndaquil",
+        "shiny": "textures/entity/cyndaquil/cyndaquil_shiny",
+        "shiny_female": "textures/entity/cyndaquil/cyndaquil_shiny"
+      },
+      "geometry": {
+        "default": "geometry.cyndaquil",
+        "default_female": "geometry.cyndaquil"
+      },
+      "animations": {
+        "look_at": "animation.head_look",
+        "look_at_controller": "controller.animation.oremon.lookat",
+        "base_controller": "controller.animation.oremon.base",
+        "ground_idle": "animation.cyndaquil.ground_idle",
+        "ground_walk": "animation.cyndaquil.ground_walk",
+        "ground_run": "animation.cyndaquil.ground_run",
+        "cry": "animation.cyndaquil.cry",
+        "battle_idle": "animation.cyndaquil.battle_idle",
+        "battle_entrance": "animation.cyndaquil.battle_entrance",
+        "battle_cry": "animation.cyndaquil.battle_cry"
+      },
+      "scripts": {
+        "animate": [
+          "base_controller"
+        ]
+      },
+      "spawn_egg": {
+        "overlay_color": "#3d7581",
+        "base_color": "#f6e28a"
+      },
+      "render_controllers": [
+        "controller.render.oremon"
+      ]
+    }
+  }
+}

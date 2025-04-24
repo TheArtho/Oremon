@@ -5,7 +5,8 @@ import {compactWildOremon} from "./OremonUtils";
 export class OremonEntityEventHandler {
     static register() {
         this.registerSpawnEvent();
-        this.registerInteractEvent();
+        this.registerInteractTameEvent();
+        this.registerInteractBattleEvent();
     }
 
     private static registerSpawnEvent() {
@@ -57,7 +58,7 @@ export class OremonEntityEventHandler {
         });
     }
 
-    private static registerInteractEvent() {
+    private static registerInteractTameEvent() {
         world.beforeEvents.playerInteractWithEntity.subscribe((event) => {
             const entity = event.target;
             const player = event.player;
@@ -72,6 +73,36 @@ export class OremonEntityEventHandler {
                         tameable.tame(player);
                         try {
                             entity.triggerEvent("oremon:capture");
+                        }
+                        catch (e) {
+                            console.error(e);
+                        }
+                    });
+                }
+            }
+        });
+    }
+
+    private static registerInteractBattleEvent() {
+        world.beforeEvents.playerInteractWithEntity.subscribe((event) => {
+            const entity = event.target;
+            if (!entity.isValid) return;
+
+            const family = entity.getComponent("type_family");
+            if (family && family.hasTypeFamily("oremon")) {
+                const tameable = entity.getComponent("tameable");
+
+                if (tameable && tameable.isTamed) {
+                    system.run(() => {
+                        try {
+                            if (entity.getProperty("oremon:battling") === true) {
+                                entity.triggerEvent("oremon:overworld");
+                                event.player.sendMessage("Not battling anymore.");
+                            }
+                            else {
+                                entity.triggerEvent("oremon:battle");
+                                event.player.sendMessage("Battling.");
+                            }
                         }
                         catch (e) {
                             console.error(e);

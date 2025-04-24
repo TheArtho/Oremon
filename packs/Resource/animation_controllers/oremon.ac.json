@@ -24,7 +24,7 @@
         },
         "moving": {
           "blend_transition": 0.2,
-          "animations": ["walk"],
+          "animations": ["walk", "idle"],
           "transitions": [
             {
               "standing": "q.modified_move_speed < 0.1"

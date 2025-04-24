@@ -2,3 +2,7 @@ pack.name=Oremon Resource Pack
 pack.description=Oremon Addon resource pack.
 entity.oremon:bulbasaur.name=Bulbasaur
 item.spawn_egg.entity.oremon:bulbasaur.name=Bulbasaur
+item.spawn_egg.entity.oremon:chikorita.name=Chikorita
+item.spawn_egg.entity.oremon:cyndaquil.name=Cyndaquil
+item.spawn_egg.entity.oremon:totodile.name=Totodile
+item.spawn_egg.entity.oremon:tepig.name=Tepig

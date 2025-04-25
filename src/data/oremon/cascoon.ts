@@ -50,6 +50,18 @@ const cascoon: OremonData = {
         "turnUpsideDown": false
       }
     }
+  ],
+  "moves": [
+    {
+      "id": "harden",
+      "method": "level_up",
+      "level": 0
+    },
+    {
+      "id": "harden",
+      "method": "level_up",
+      "level": 1
+    }
   ]
 };
 

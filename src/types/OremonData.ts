@@ -42,8 +42,8 @@ export interface OremonData {
     shape?: string;
     evolutions?: EvolutionData[];
     color?: string;
+    moves?: OremonMoves[]
 }
-
 
 // Basic stat block for an Oremon
 export interface Stats {
@@ -111,3 +111,12 @@ export interface FormData {
     isMega?: boolean;           // (ex: false)
     formOrder: number;          // (ex: 1)
 }
+
+export interface OremonMoves {
+    id: string;
+    method: MoveMethod;
+    level: number
+}
+
+export type MoveMethod = "level_up" | "egg" | "tutor" | "machine" | "form_change"
+    | "stadium-surfing-pikachu" | "light-ball-egg" | "colosseum-purification" | "xd-shadow" | "xd-purification";

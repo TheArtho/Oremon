@@ -32,6 +32,7 @@ const pikachu_belle = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "evolutions": []
+    "evolutions": [],
+    "moves": []
 };
 export default pikachu_belle;

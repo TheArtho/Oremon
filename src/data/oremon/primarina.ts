@@ -42,7 +42,279 @@ const primarina: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Blue",
-  "evolutions": []
+  "evolutions": [],
+  "moves": [
+    {
+      "id": "pound",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "double-slap",
+      "method": "level_up",
+      "level": 33
+    },
+    {
+      "id": "growl",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "growl",
+      "method": "level_up",
+      "level": 4
+    },
+    {
+      "id": "sing",
+      "method": "level_up",
+      "level": 28
+    },
+    {
+      "id": "water-gun",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "hydro-pump",
+      "method": "level_up",
+      "level": 55
+    },
+    {
+      "id": "surf",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "ice-beam",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "blizzard",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "bubble-beam",
+      "method": "level_up",
+      "level": 24
+    },
+    {
+      "id": "toxic",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "psychic",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "double-team",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "light-screen",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "reflect",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "waterfall",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rest",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "substitute",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "protect",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "icy-wind",
+      "method": "level_up",
+      "level": 16
+    },
+    {
+      "id": "swagger",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "attract",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "sleep-talk",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "return",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "frustration",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "encore",
+      "method": "level_up",
+      "level": 19
+    },
+    {
+      "id": "hidden-power",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rain-dance",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "psych-up",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "shadow-ball",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "hail",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "facade",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "hyper-voice",
+      "method": "level_up",
+      "level": 38
+    },
+    {
+      "id": "hydro-cannon",
+      "method": "tutor",
+      "level": 0
+    },
+    {
+      "id": "energy-ball",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "giga-impact",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "captivate",
+      "method": "level_up",
+      "level": 49
+    },
+    {
+      "id": "aqua-jet",
+      "method": "level_up",
+      "level": 14
+    },
+    {
+      "id": "round",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "echoed-voice",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "scald",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "acrobatics",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "water-pledge",
+      "method": "tutor",
+      "level": 0
+    },
+    {
+      "id": "work-up",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "disarming-voice",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "disarming-voice",
+      "method": "level_up",
+      "level": 9
+    },
+    {
+      "id": "misty-terrain",
+      "method": "level_up",
+      "level": 60
+    },
+    {
+      "id": "moonblast",
+      "method": "level_up",
+      "level": 44
+    },
+    {
+      "id": "confide",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "dazzling-gleam",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "baby-doll-eyes",
+      "method": "level_up",
+      "level": 11
+    },
+    {
+      "id": "sparkling-aria",
+      "method": "level_up",
+      "level": 0
+    },
+    {
+      "id": "sparkling-aria",
+      "method": "level_up",
+      "level": 1
+    }
+  ]
 };
 
 export default primarina;

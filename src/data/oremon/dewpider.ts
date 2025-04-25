@@ -52,6 +52,228 @@ const dewpider: OremonData = {
         "turnUpsideDown": false
       }
     }
+  ],
+  "moves": [
+    {
+      "id": "bite",
+      "method": "level_up",
+      "level": 21
+    },
+    {
+      "id": "surf",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "ice-beam",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "blizzard",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "bubble-beam",
+      "method": "level_up",
+      "level": 16
+    },
+    {
+      "id": "aurora-beam",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "toxic",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "double-team",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "waterfall",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "leech-life",
+      "method": "level_up",
+      "level": 29
+    },
+    {
+      "id": "leech-life",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "bubble",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "rest",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "substitute",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "spider-web",
+      "method": "level_up",
+      "level": 8
+    },
+    {
+      "id": "protect",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "swagger",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "attract",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "sleep-talk",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "return",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "frustration",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "hidden-power",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rain-dance",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "crunch",
+      "method": "level_up",
+      "level": 32
+    },
+    {
+      "id": "mirror-coat",
+      "method": "level_up",
+      "level": 40
+    },
+    {
+      "id": "stockpile",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "spit-up",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "facade",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "water-sport",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "aqua-ring",
+      "method": "level_up",
+      "level": 24
+    },
+    {
+      "id": "poison-jab",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "x-scissor",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "bug-bite",
+      "method": "level_up",
+      "level": 13
+    },
+    {
+      "id": "power-split",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "entrainment",
+      "method": "level_up",
+      "level": 48
+    },
+    {
+      "id": "round",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "scald",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "frost-breath",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "sticky-web",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "confide",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "infestation",
+      "method": "level_up",
+      "level": 5
+    },
+    {
+      "id": "infestation",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "lunge",
+      "method": "level_up",
+      "level": 37
+    },
+    {
+      "id": "liquidation",
+      "method": "level_up",
+      "level": 45
+    }
   ]
 };
 

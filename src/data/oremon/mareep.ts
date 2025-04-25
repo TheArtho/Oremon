@@ -51,6 +51,258 @@ const mareep: OremonData = {
         "turnUpsideDown": false
       }
     }
+  ],
+  "moves": [
+    {
+      "id": "sand-attack",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "tackle",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "body-slam",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "take-down",
+      "method": "level_up",
+      "level": 18
+    },
+    {
+      "id": "take-down",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "growl",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "thunder-shock",
+      "method": "level_up",
+      "level": 8
+    },
+    {
+      "id": "thunderbolt",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "thunder-wave",
+      "method": "level_up",
+      "level": 4
+    },
+    {
+      "id": "thunder-wave",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "thunder",
+      "method": "level_up",
+      "level": 46
+    },
+    {
+      "id": "thunder",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "toxic",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "agility",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "screech",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "double-team",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "confuse-ray",
+      "method": "level_up",
+      "level": 25
+    },
+    {
+      "id": "light-screen",
+      "method": "level_up",
+      "level": 43
+    },
+    {
+      "id": "light-screen",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rest",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "substitute",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "cotton-spore",
+      "method": "level_up",
+      "level": 11
+    },
+    {
+      "id": "protect",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "swagger",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "attract",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "sleep-talk",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "return",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "frustration",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "safeguard",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "iron-tail",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "hidden-power",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rain-dance",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "flatter",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "facade",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "charge",
+      "method": "level_up",
+      "level": 15
+    },
+    {
+      "id": "charge",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "odor-sleuth",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "signal-beam",
+      "method": "level_up",
+      "level": 39
+    },
+    {
+      "id": "power-gem",
+      "method": "level_up",
+      "level": 29
+    },
+    {
+      "id": "discharge",
+      "method": "level_up",
+      "level": 32
+    },
+    {
+      "id": "charge-beam",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "electro-ball",
+      "method": "level_up",
+      "level": 22
+    },
+    {
+      "id": "after-you",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "round",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "echoed-voice",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "wild-charge",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "cotton-guard",
+      "method": "level_up",
+      "level": 36
+    },
+    {
+      "id": "confide",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "eerie-impulse",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "electric-terrain",
+      "method": "egg",
+      "level": 0
+    }
   ]
 };
 

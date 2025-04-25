@@ -50,6 +50,253 @@ const nuzleaf = {
                 "turnUpsideDown": false
             }
         }
+    ],
+    "moves": [
+        {
+            "id": "pound",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "razor-wind",
+            "method": "level_up",
+            "level": 20
+        },
+        {
+            "id": "swords-dance",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "hyper-beam",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "growth",
+            "method": "level_up",
+            "level": 6
+        },
+        {
+            "id": "razor-leaf",
+            "method": "level_up",
+            "level": 0
+        },
+        {
+            "id": "razor-leaf",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "solar-beam",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "toxic",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "double-team",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "harden",
+            "method": "level_up",
+            "level": 3
+        },
+        {
+            "id": "explosion",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "rest",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "rock-slide",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "substitute",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "thief",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "protect",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "feint-attack",
+            "method": "level_up",
+            "level": 24
+        },
+        {
+            "id": "false-swipe",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "swagger",
+            "method": "level_up",
+            "level": 32
+        },
+        {
+            "id": "swagger",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "attract",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "sleep-talk",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "return",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "frustration",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "hidden-power",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "sunny-day",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "psych-up",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "shadow-ball",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "fake-out",
+            "method": "level_up",
+            "level": 12
+        },
+        {
+            "id": "torment",
+            "method": "level_up",
+            "level": 9
+        },
+        {
+            "id": "torment",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "facade",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "nature-power",
+            "method": "level_up",
+            "level": 16
+        },
+        {
+            "id": "nature-power",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "brick-break",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "rock-tomb",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "extrasensory",
+            "method": "level_up",
+            "level": 36
+        },
+        {
+            "id": "leaf-blade",
+            "method": "level_up",
+            "level": 28
+        },
+        {
+            "id": "payback",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "embargo",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "fling",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "dark-pulse",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "energy-ball",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "grass-knot",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "low-sweep",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "round",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "snarl",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "confide",
+            "method": "machine",
+            "level": 0
+        }
     ]
 };
 export default nuzleaf;

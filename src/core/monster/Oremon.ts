@@ -7,6 +7,7 @@ import {ISeriOremon} from "../../types/serialization/ISeriOremon";
 import {IWildOremondata} from "../../types/serialization/IWildOremondata";
 import {GenderRatio, Sizes, Types} from "../../enums/base";
 import {generateFallbackId, generateRandomIVs} from "./OremonUtils";
+import moveData from "../../data/moveData";
 
 export interface OremonOptions {
     level?: number;
@@ -22,6 +23,11 @@ export interface OremonOptions {
     status?: string;
     formId?: number;
     trainerId?: string;
+}
+
+export interface Move {
+    id: string;
+    pp: number;
 }
 
 export class Oremon {
@@ -117,6 +123,8 @@ export class Oremon {
      */
     private trainerId?: string;
 
+    readonly moves: (Move | undefined)[];
+
     /**
      * Constructs a new Oremon.
      * @param species The species identifier of the Oremon.
@@ -148,6 +156,8 @@ export class Oremon {
         this.happiness = happiness ?? 0;
 
         this.shinyFlag = shiny ?? this.rollShiny();
+
+        this.moves = this.generateMoveset(this.level);
     }
 
     /**
@@ -287,6 +297,25 @@ export class Oremon {
             def_spe: calc(base.def_spe, iv.def_spe, ev.def_spe),
             spd: calc(base.spd, iv.spd, ev.spd)
         };
+    }
+
+    public generateMoveset(level: number): (Move | undefined)[] {
+        if (!this.oremonData.moves || this.oremonData.moves.length === 0) {
+            return [];
+        }
+
+        const eligibleMoves = this.oremonData.moves
+            .filter(move => move.method === "level_up" && move.level <= level)
+            .sort((a, b) => b.level - a.level)
+            .slice(0, 4);
+
+        return eligibleMoves.map(move => {
+            const moveInfo = moveData[move.id];
+            return {
+                id: move.id,
+                pp: moveInfo.pp
+            };
+        });
     }
 
     getCurrentHp(): number {

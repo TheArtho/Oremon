@@ -40,7 +40,14 @@ const ditto: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Purple",
-  "evolutions": []
+  "evolutions": [],
+  "moves": [
+    {
+      "id": "transform",
+      "method": "level_up",
+      "level": 1
+    }
+  ]
 };
 
 export default ditto;

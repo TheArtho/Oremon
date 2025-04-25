@@ -34,7 +34,304 @@ const hoopa_unbound: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "evolutions": []
+  "evolutions": [],
+  "moves": [
+    {
+      "id": "psybeam",
+      "method": "level_up",
+      "level": 19
+    },
+    {
+      "id": "hyper-beam",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "thunderbolt",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "thunder-wave",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "toxic",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "confusion",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "psychic",
+      "method": "level_up",
+      "level": 75
+    },
+    {
+      "id": "psychic",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "double-team",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "light-screen",
+      "method": "level_up",
+      "level": 15
+    },
+    {
+      "id": "light-screen",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "reflect",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "dream-eater",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rest",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "substitute",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "thief",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "protect",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "destiny-bond",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "swagger",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "sleep-talk",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "return",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "frustration",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "safeguard",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "hidden-power",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rain-dance",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "sunny-day",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "psych-up",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "shadow-ball",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "torment",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "facade",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "taunt",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "trick",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "magic-coat",
+      "method": "level_up",
+      "level": 10
+    },
+    {
+      "id": "brick-break",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "knock-off",
+      "method": "level_up",
+      "level": 46
+    },
+    {
+      "id": "skill-swap",
+      "method": "level_up",
+      "level": 25
+    },
+    {
+      "id": "astonish",
+      "method": "level_up",
+      "level": 6
+    },
+    {
+      "id": "calm-mind",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "embargo",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "fling",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "dark-pulse",
+      "method": "level_up",
+      "level": 55
+    },
+    {
+      "id": "dark-pulse",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "focus-blast",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "energy-ball",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "giga-impact",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "trick-room",
+      "method": "level_up",
+      "level": 50
+    },
+    {
+      "id": "trick-room",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "grass-knot",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "charge-beam",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "guard-split",
+      "method": "level_up",
+      "level": 29
+    },
+    {
+      "id": "power-split",
+      "method": "level_up",
+      "level": 29
+    },
+    {
+      "id": "wonder-room",
+      "method": "level_up",
+      "level": 50
+    },
+    {
+      "id": "psyshock",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "round",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "ally-switch",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "quash",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "confide",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "hyperspace-fury",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "hyperspace-fury",
+      "method": "level_up",
+      "level": 85
+    }
+  ]
 };
 
 export default hoopa_unbound;

@@ -48,6 +48,43 @@ const scatterbug = {
                 "turnUpsideDown": false
             }
         }
+    ],
+    "moves": [
+        {
+            "id": "tackle",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "poison-powder",
+            "method": "egg",
+            "level": 0
+        },
+        {
+            "id": "stun-spore",
+            "method": "level_up",
+            "level": 6
+        },
+        {
+            "id": "stun-spore",
+            "method": "egg",
+            "level": 0
+        },
+        {
+            "id": "string-shot",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "bug-bite",
+            "method": "level_up",
+            "level": 15
+        },
+        {
+            "id": "rage-powder",
+            "method": "egg",
+            "level": 0
+        }
     ]
 };
 export default scatterbug;

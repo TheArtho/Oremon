@@ -20,13 +20,6 @@ export var Types;
     Types["Steel"] = "steel";
     Types["Fairy"] = "fairy";
 })(Types || (Types = {}));
-// Move categories
-export var MoveCategories;
-(function (MoveCategories) {
-    MoveCategories["Physical"] = "physical";
-    MoveCategories["Special"] = "special";
-    MoveCategories["Status"] = "status";
-})(MoveCategories || (MoveCategories = {}));
 // Stat identifiers
 export var Stats;
 (function (Stats) {

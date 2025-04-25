@@ -48,6 +48,28 @@ const kricketot = {
                 "turnUpsideDown": false
             }
         }
+    ],
+    "moves": [
+        {
+            "id": "growl",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "bide",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "bug-bite",
+            "method": "level_up",
+            "level": 16
+        },
+        {
+            "id": "struggle-bug",
+            "method": "level_up",
+            "level": 6
+        }
     ]
 };
 export default kricketot;

@@ -49,6 +49,228 @@ const fletchling = {
                 "turnUpsideDown": false
             }
         }
+    ],
+    "moves": [
+        {
+            "id": "razor-wind",
+            "method": "level_up",
+            "level": 25
+        },
+        {
+            "id": "swords-dance",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "fly",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "tackle",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "growl",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "peck",
+            "method": "level_up",
+            "level": 10
+        },
+        {
+            "id": "toxic",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "agility",
+            "method": "level_up",
+            "level": 13
+        },
+        {
+            "id": "quick-attack",
+            "method": "level_up",
+            "level": 6
+        },
+        {
+            "id": "double-team",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "rest",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "substitute",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "thief",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "flail",
+            "method": "level_up",
+            "level": 16
+        },
+        {
+            "id": "protect",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "swagger",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "steel-wing",
+            "method": "level_up",
+            "level": 48
+        },
+        {
+            "id": "steel-wing",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "attract",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "sleep-talk",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "return",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "frustration",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "hidden-power",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "sunny-day",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "facade",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "taunt",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "snatch",
+            "method": "egg",
+            "level": 0
+        },
+        {
+            "id": "overheat",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "aerial-ace",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "roost",
+            "method": "level_up",
+            "level": 21
+        },
+        {
+            "id": "roost",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "natural-gift",
+            "method": "level_up",
+            "level": 29
+        },
+        {
+            "id": "tailwind",
+            "method": "level_up",
+            "level": 45
+        },
+        {
+            "id": "tailwind",
+            "method": "egg",
+            "level": 0
+        },
+        {
+            "id": "u-turn",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "me-first",
+            "method": "level_up",
+            "level": 41
+        },
+        {
+            "id": "flame-charge",
+            "method": "level_up",
+            "level": 34
+        },
+        {
+            "id": "flame-charge",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "round",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "quick-guard",
+            "method": "egg",
+            "level": 0
+        },
+        {
+            "id": "acrobatics",
+            "method": "level_up",
+            "level": 39
+        },
+        {
+            "id": "acrobatics",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "work-up",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "confide",
+            "method": "machine",
+            "level": 0
+        }
     ]
 };
 export default fletchling;

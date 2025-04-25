@@ -40,7 +40,59 @@ const smeargle: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "White",
-  "evolutions": []
+  "evolutions": [],
+  "moves": [
+    {
+      "id": "sketch",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "sketch",
+      "method": "level_up",
+      "level": 11
+    },
+    {
+      "id": "sketch",
+      "method": "level_up",
+      "level": 21
+    },
+    {
+      "id": "sketch",
+      "method": "level_up",
+      "level": 31
+    },
+    {
+      "id": "sketch",
+      "method": "level_up",
+      "level": 41
+    },
+    {
+      "id": "sketch",
+      "method": "level_up",
+      "level": 51
+    },
+    {
+      "id": "sketch",
+      "method": "level_up",
+      "level": 61
+    },
+    {
+      "id": "sketch",
+      "method": "level_up",
+      "level": 71
+    },
+    {
+      "id": "sketch",
+      "method": "level_up",
+      "level": 81
+    },
+    {
+      "id": "sketch",
+      "method": "level_up",
+      "level": 91
+    }
+  ]
 };
 
 export default smeargle;

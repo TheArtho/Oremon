@@ -48,6 +48,23 @@ const caterpie = {
                 "turnUpsideDown": false
             }
         }
+    ],
+    "moves": [
+        {
+            "id": "tackle",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "string-shot",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "bug-bite",
+            "method": "level_up",
+            "level": 9
+        }
     ]
 };
 export default caterpie;

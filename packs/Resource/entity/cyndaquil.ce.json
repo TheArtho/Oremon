@@ -4,7 +4,8 @@
     "description": {
       "identifier": "oremon:cyndaquil",
       "materials": {
-        "default": "entity_alphatest"
+        "default": "alpha_block_color",
+        "emissive": "entity_emissive_alpha_one_sided"
       },
       "textures": {
         "default": "textures/entity/cyndaquil/cyndaquil",
@@ -38,7 +39,7 @@
         "base_color": "#f6e28a"
       },
       "render_controllers": [
-        "controller.render.oremon"
+        "controller.render.oremon_fire"
       ]
     }
   }

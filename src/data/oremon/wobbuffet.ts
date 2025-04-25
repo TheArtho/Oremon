@@ -40,7 +40,34 @@ const wobbuffet: OremonData = {
   "formSwitchable": false,
   "shape": "blob",
   "color": "Blue",
-  "evolutions": []
+  "evolutions": [],
+  "moves": [
+    {
+      "id": "counter",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "destiny-bond",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "safeguard",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "safeguard",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "mirror-coat",
+      "method": "level_up",
+      "level": 1
+    }
+  ]
 };
 
 export default wobbuffet;

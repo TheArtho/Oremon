@@ -51,6 +51,253 @@ const cherubi: OremonData = {
         "turnUpsideDown": false
       }
     }
+  ],
+  "moves": [
+    {
+      "id": "swords-dance",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "tackle",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "take-down",
+      "method": "level_up",
+      "level": 31
+    },
+    {
+      "id": "leech-seed",
+      "method": "level_up",
+      "level": 10
+    },
+    {
+      "id": "growth",
+      "method": "level_up",
+      "level": 7
+    },
+    {
+      "id": "razor-leaf",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "solar-beam",
+      "method": "level_up",
+      "level": 37
+    },
+    {
+      "id": "solar-beam",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "toxic",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "double-team",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "defense-curl",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "rest",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "substitute",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "protect",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rollout",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "swagger",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "attract",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "sleep-talk",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "return",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "frustration",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "safeguard",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "sweet-scent",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "morning-sun",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "hidden-power",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "sunny-day",
+      "method": "level_up",
+      "level": 22
+    },
+    {
+      "id": "sunny-day",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "facade",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "nature-power",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "nature-power",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "helping-hand",
+      "method": "level_up",
+      "level": 13
+    },
+    {
+      "id": "weather-ball",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "aromatherapy",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "grass-whistle",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "tickle",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "magical-leaf",
+      "method": "level_up",
+      "level": 19
+    },
+    {
+      "id": "healing-wish",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "natural-gift",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "lucky-chant",
+      "method": "level_up",
+      "level": 40
+    },
+    {
+      "id": "worry-seed",
+      "method": "level_up",
+      "level": 28
+    },
+    {
+      "id": "seed-bomb",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "energy-ball",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "grass-knot",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "round",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "heal-pulse",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "petal-blizzard",
+      "method": "level_up",
+      "level": 47
+    },
+    {
+      "id": "flower-shield",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "grassy-terrain",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "confide",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "dazzling-gleam",
+      "method": "machine",
+      "level": 0
+    }
   ]
 };
 

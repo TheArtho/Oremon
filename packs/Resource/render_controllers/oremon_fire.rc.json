@@ -1,0 +1,19 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.oremon_fire": {
+      "geometry": "geometry.default",
+      "materials": [
+        {
+          "*": "material.default"
+        },
+        {
+          "fire": "material.emissive"
+        }
+      ],
+      "textures": [
+        "query.skin_id == 1 ? texture.shiny : texture.default"
+      ]
+    }
+  }
+}

@@ -51,6 +51,23 @@ const magikarp: OremonData = {
         "turnUpsideDown": false
       }
     }
+  ],
+  "moves": [
+    {
+      "id": "tackle",
+      "method": "level_up",
+      "level": 15
+    },
+    {
+      "id": "splash",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "flail",
+      "method": "level_up",
+      "level": 30
+    }
   ]
 };
 

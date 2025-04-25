@@ -51,6 +51,318 @@ const chimchar: OremonData = {
         "turnUpsideDown": false
       }
     }
+  ],
+  "moves": [
+    {
+      "id": "fire-punch",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "thunder-punch",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "scratch",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "swords-dance",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "double-kick",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "leer",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "ember",
+      "method": "level_up",
+      "level": 7
+    },
+    {
+      "id": "flamethrower",
+      "method": "level_up",
+      "level": 47
+    },
+    {
+      "id": "flamethrower",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "submission",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "counter",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "fire-spin",
+      "method": "level_up",
+      "level": 33
+    },
+    {
+      "id": "toxic",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "double-team",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "focus-energy",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "fire-blast",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "fury-swipes",
+      "method": "level_up",
+      "level": 15
+    },
+    {
+      "id": "rest",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "substitute",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "flame-wheel",
+      "method": "level_up",
+      "level": 17
+    },
+    {
+      "id": "protect",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "swagger",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "attract",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "sleep-talk",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "return",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "frustration",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "encore",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "hidden-power",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "sunny-day",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "fake-out",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "heat-wave",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "torment",
+      "method": "level_up",
+      "level": 25
+    },
+    {
+      "id": "torment",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "will-o-wisp",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "facade",
+      "method": "level_up",
+      "level": 31
+    },
+    {
+      "id": "facade",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "focus-punch",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "taunt",
+      "method": "level_up",
+      "level": 9
+    },
+    {
+      "id": "taunt",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "helping-hand",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "assist",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "brick-break",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "blaze-kick",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "slack-off",
+      "method": "level_up",
+      "level": 41
+    },
+    {
+      "id": "overheat",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "aerial-ace",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "bulk-up",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "u-turn",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "fling",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "nasty-plot",
+      "method": "level_up",
+      "level": 23
+    },
+    {
+      "id": "shadow-claw",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "grass-knot",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "flame-charge",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "low-sweep",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "round",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "quick-guard",
+      "method": "egg",
+      "level": 0
+    },
+    {
+      "id": "acrobatics",
+      "method": "level_up",
+      "level": 39
+    },
+    {
+      "id": "acrobatics",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "fire-pledge",
+      "method": "tutor",
+      "level": 0
+    },
+    {
+      "id": "work-up",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "confide",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "power-up-punch",
+      "method": "egg",
+      "level": 0
+    }
   ]
 };
 

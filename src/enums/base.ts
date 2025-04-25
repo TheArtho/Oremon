@@ -20,13 +20,6 @@ export enum Types {
     Fairy = "fairy"
 }
 
-// Move categories
-export enum MoveCategories {
-    Physical = "physical",
-    Special = "special",
-    Status = "status"
-}
-
 // Stat identifiers
 export enum Stats {
     HP = "hp",

@@ -51,6 +51,23 @@ const weedle: OremonData = {
         "turnUpsideDown": false
       }
     }
+  ],
+  "moves": [
+    {
+      "id": "poison-sting",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "string-shot",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "bug-bite",
+      "method": "level_up",
+      "level": 9
+    }
   ]
 };
 

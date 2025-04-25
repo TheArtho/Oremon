@@ -3,7 +3,7 @@ const path = require("path");
 const Database = require("better-sqlite3");
 
 const db = new Database(path.join(__dirname, "../db/veekun-pokedex.sqlite"));
-const MODEL_BASE_PATH = path.join(__dirname, "../geometry/pokemon");
+const MODEL_BASE_PATH = path.join(__dirname, "../../cobblemon-assets/blockbench/pokemon");
 const SUBSTITUTE_PATH = path.join(MODEL_BASE_PATH, "special/substitute");
 
 const SERVER_OUT = path.join(__dirname, "../out/behavior/entities/");
@@ -233,6 +233,41 @@ for (const row of pokemons) {
                 "minecraft:physics": { has_gravity: true }
             },
             events: {
+                "setsize:very_small": {
+                    add: {
+                        component_groups: [
+                            "size:very_small"
+                        ]
+                    }
+                },
+                "setsize:small": {
+                    add: {
+                        component_groups: [
+                            "size:small"
+                        ]
+                    }
+                },
+                "setsize:medium": {
+                    add: {
+                        component_groups: [
+                            "size:medium"
+                        ]
+                    }
+                },
+                "setsize:big": {
+                    add: {
+                        component_groups: [
+                            "size:big"
+                        ]
+                    }
+                },
+                "setsize:gigantic": {
+                    add: {
+                        component_groups: [
+                            "size:gigantic"
+                        ]
+                    }
+                },
                 "oremon:despawn": { add: { component_groups: ["despawn"] } },
                 "oremon:make_shiny": {
                     add: { component_groups: ["shiny"] },

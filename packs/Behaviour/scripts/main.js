@@ -1,5 +1,5 @@
 import { system } from "@minecraft/server";
-import { OremonEntityEventHandler } from "./core/monster/OremonEntityEventHandler";
+import { OremonEntityEventHandler } from "./core/entity/OremonEntityEventHandler";
 import { PlayerSaveEventHandler } from "./core/save/PlayerSaveEventHandler";
 import { PlayerSaveManager } from "./core/save/PlayerSaveManager";
 import { ItemEventHandler } from "./core/items/ItemEventHandler";

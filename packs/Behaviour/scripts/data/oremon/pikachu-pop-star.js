@@ -32,6 +32,7 @@ const pikachu_pop_star = {
     "isBaby": false,
     "hasGenderDifferences": false,
     "formSwitchable": false,
-    "evolutions": []
+    "evolutions": [],
+    "moves": []
 };
 export default pikachu_pop_star;

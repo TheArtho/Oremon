@@ -34,7 +34,8 @@ const pikachu_belle: OremonData = {
   "isBaby": false,
   "hasGenderDifferences": false,
   "formSwitchable": false,
-  "evolutions": []
+  "evolutions": [],
+  "moves": []
 };
 
 export default pikachu_belle;

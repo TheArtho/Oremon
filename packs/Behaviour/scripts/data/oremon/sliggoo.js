@@ -48,6 +48,188 @@ const sliggoo = {
                 "turnUpsideDown": false
             }
         }
+    ],
+    "moves": [
+        {
+            "id": "tackle",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "body-slam",
+            "method": "level_up",
+            "level": 32
+        },
+        {
+            "id": "ice-beam",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "blizzard",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "absorb",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "absorb",
+            "method": "level_up",
+            "level": 5
+        },
+        {
+            "id": "thunderbolt",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "toxic",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "double-team",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "bide",
+            "method": "level_up",
+            "level": 13
+        },
+        {
+            "id": "bubble",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "rest",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "rock-slide",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "substitute",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "flail",
+            "method": "level_up",
+            "level": 28
+        },
+        {
+            "id": "protect",
+            "method": "level_up",
+            "level": 9
+        },
+        {
+            "id": "protect",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "sludge-bomb",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "swagger",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "attract",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "sleep-talk",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "return",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "frustration",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "dragon-breath",
+            "method": "level_up",
+            "level": 18
+        },
+        {
+            "id": "hidden-power",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "rain-dance",
+            "method": "level_up",
+            "level": 25
+        },
+        {
+            "id": "rain-dance",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "sunny-day",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "facade",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "muddy-water",
+            "method": "level_up",
+            "level": 38
+        },
+        {
+            "id": "dragon-pulse",
+            "method": "level_up",
+            "level": 47
+        },
+        {
+            "id": "draco-meteor",
+            "method": "tutor",
+            "level": 0
+        },
+        {
+            "id": "sludge-wave",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "round",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "confide",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "infestation",
+            "method": "machine",
+            "level": 0
+        }
     ]
 };
 export default sliggoo;

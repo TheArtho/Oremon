@@ -162,6 +162,41 @@
       }
     },
     "events": {
+      "setsize:very_small": {
+        "add": {
+          "component_groups": [
+            "size:very_small"
+          ]
+        }
+      },
+      "setsize:small": {
+        "add": {
+          "component_groups": [
+            "size:small"
+          ]
+        }
+      },
+      "setsize:medium": {
+        "add": {
+          "component_groups": [
+            "size:medium"
+          ]
+        }
+      },
+      "setsize:big": {
+        "add": {
+          "component_groups": [
+            "size:big"
+          ]
+        }
+      },
+      "setsize:gigantic": {
+        "add": {
+          "component_groups": [
+            "size:gigantic"
+          ]
+        }
+      },
       "oremon:despawn": {
         "add": {
           "component_groups": [

@@ -59,6 +59,23 @@ const cosmoem: OremonData = {
         "turnUpsideDown": false
       }
     }
+  ],
+  "moves": [
+    {
+      "id": "teleport",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "cosmic-power",
+      "method": "level_up",
+      "level": 0
+    },
+    {
+      "id": "cosmic-power",
+      "method": "level_up",
+      "level": 1
+    }
   ]
 };
 

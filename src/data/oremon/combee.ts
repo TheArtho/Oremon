@@ -52,6 +52,28 @@ const combee: OremonData = {
         "turnUpsideDown": false
       }
     }
+  ],
+  "moves": [
+    {
+      "id": "gust",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "sweet-scent",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "bug-buzz",
+      "method": "level_up",
+      "level": 29
+    },
+    {
+      "id": "bug-bite",
+      "method": "level_up",
+      "level": 13
+    }
   ]
 };
 

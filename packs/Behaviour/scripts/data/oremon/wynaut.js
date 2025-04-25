@@ -48,6 +48,48 @@ const wynaut = {
                 "turnUpsideDown": false
             }
         }
+    ],
+    "moves": [
+        {
+            "id": "counter",
+            "method": "level_up",
+            "level": 15
+        },
+        {
+            "id": "splash",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "destiny-bond",
+            "method": "level_up",
+            "level": 15
+        },
+        {
+            "id": "charm",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "safeguard",
+            "method": "level_up",
+            "level": 15
+        },
+        {
+            "id": "safeguard",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "encore",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "mirror-coat",
+            "method": "level_up",
+            "level": 15
+        }
     ]
 };
 export default wynaut;

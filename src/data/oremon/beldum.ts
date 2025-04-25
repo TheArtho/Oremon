@@ -51,6 +51,13 @@ const beldum: OremonData = {
         "turnUpsideDown": false
       }
     }
+  ],
+  "moves": [
+    {
+      "id": "take-down",
+      "method": "level_up",
+      "level": 1
+    }
   ]
 };
 

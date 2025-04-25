@@ -50,6 +50,153 @@ const poipole: OremonData = {
         "turnUpsideDown": false
       }
     }
+  ],
+  "moves": [
+    {
+      "id": "fury-attack",
+      "method": "level_up",
+      "level": 7
+    },
+    {
+      "id": "growl",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "acid",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "peck",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "toxic",
+      "method": "level_up",
+      "level": 41
+    },
+    {
+      "id": "toxic",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rest",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "substitute",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "protect",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "sludge-bomb",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "charm",
+      "method": "level_up",
+      "level": 19
+    },
+    {
+      "id": "sleep-talk",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "return",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "frustration",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "hidden-power",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "facade",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "helping-hand",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "poison-jab",
+      "method": "level_up",
+      "level": 37
+    },
+    {
+      "id": "poison-jab",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "dragon-pulse",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "nasty-plot",
+      "method": "level_up",
+      "level": 31
+    },
+    {
+      "id": "venoshock",
+      "method": "level_up",
+      "level": 13
+    },
+    {
+      "id": "venoshock",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "sludge-wave",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "round",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "echoed-voice",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "fell-stinger",
+      "method": "level_up",
+      "level": 47
+    },
+    {
+      "id": "confide",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "venom-drench",
+      "method": "level_up",
+      "level": 23
+    }
   ]
 };
 

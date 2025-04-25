@@ -48,6 +48,28 @@ const spewpa = {
                 "turnUpsideDown": false
             }
         }
+    ],
+    "moves": [
+        {
+            "id": "harden",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "protect",
+            "method": "level_up",
+            "level": 0
+        },
+        {
+            "id": "protect",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "protect",
+            "method": "machine",
+            "level": 0
+        }
     ]
 };
 export default spewpa;

@@ -50,6 +50,18 @@ const cosmog: OremonData = {
         "turnUpsideDown": false
       }
     }
+  ],
+  "moves": [
+    {
+      "id": "teleport",
+      "method": "level_up",
+      "level": 23
+    },
+    {
+      "id": "splash",
+      "method": "level_up",
+      "level": 1
+    }
   ]
 };
 

@@ -23,21 +23,57 @@ const shapesMap = Object.fromEntries(
     db.prepare("SELECT pokemon_shape_id, name FROM pokemon_shape_prose WHERE local_language_id = 9").all()
         .map(row => [row.pokemon_shape_id, row.name])
 );
+const speciesIdToSlug = Object.fromEntries(
+    db.prepare("SELECT id, identifier FROM pokemon_species").all()
+        .map(row => [row.id, row.identifier.toLowerCase()])
+);
 
-// Get all base evolutions
+// Pokémon moves data
+const movesRaw = db.prepare(`
+    SELECT move_id, pokemon_id, level, pokemon_move_method_id
+    FROM pokemon_moves
+    WHERE version_group_id = 18
+`).all();
+
+const moveMethodMap = {
+    1: "level_up",
+    2: "egg",
+    3: "tutor",
+    4: "machine",
+    5: "stadium-surfing-pikachu",
+    6:"light-ball-egg",
+    7: "colosseum-purification",
+    8: "xd-shadow",
+    9: "xd-purification",
+    10: "form_change"
+};
+
+const pokemonMovesMap = {};
+for (const move of movesRaw) {
+    const pokemonId = move.pokemon_id;
+    if (!pokemonMovesMap[pokemonId]) pokemonMovesMap[pokemonId] = [];
+
+    const method = moveMethodMap[move.pokemon_move_method_id] || "other";
+    pokemonMovesMap[pokemonId].push({
+        id: move_id_to_string(move.move_id),
+        method: method,
+        level: move.level
+    });
+}
+
+// Converts numeric move ID to move identifier (like "tackle")
+function move_id_to_string(moveId) {
+    const result = db.prepare("SELECT identifier FROM moves WHERE id = ?").get(moveId);
+    return result?.identifier ?? `unknown_move_${moveId}`;
+}
+
+// Evolutions
 const evolutionsRaw = db.prepare(`
   SELECT *
   FROM pokemon_evolution
   LEFT JOIN pokemon_species ON pokemon_evolution.evolved_species_id = pokemon_species.id
 `).all();
 
-// Map for dex id → identifier (ex: 1 → "bulbasaur")
-const speciesIdToSlug = Object.fromEntries(
-    db.prepare("SELECT id, identifier FROM pokemon_species").all()
-        .map(row => [row.id, row.identifier.toLowerCase()])
-);
-
-// Grouping evolution by source species
 const evolutionMap = {};
 for (const evo of evolutionsRaw) {
     const fromId = evo.evolves_from_species_id;
@@ -50,11 +86,7 @@ for (const evo of evolutionsRaw) {
             minLevel: toNum(evo.minimum_level),
             item: evo.trigger_item_id ? `item:${evo.trigger_item_id}` : undefined,
             heldItem: evo.held_item_id ? `item:${evo.held_item_id}` : undefined,
-            gender: toNum(evo.gender_id) === 1
-                ? "female"
-                : toNum(evo.gender_id) === 2
-                    ? "male"
-                    : undefined,
+            gender: toNum(evo.gender_id) === 1 ? "female" : toNum(evo.gender_id) === 2 ? "male" : undefined,
             timeOfDay: evo.time_of_day || undefined,
             knownMove: evo.known_move_id ? `move:${evo.known_move_id}` : undefined,
             knownType: typesMap[toNum(evo.known_move_type_id)] || undefined,
@@ -136,7 +168,8 @@ for (const row of pokemons) {
         formSwitchable: (row.forms_switchable ?? undefined) === 1,
         shape: shapesMap[row.shape_id]?.toLowerCase() || undefined,
         color: row.color ?? undefined,
-        evolutions: evolutionMap[row.id] || []
+        evolutions: evolutionMap[row.id] || [],
+        moves: pokemonMovesMap[row.id] || []
     };
 
     const outPath = path.join(outputDir, `${id}.ts`);
@@ -144,10 +177,11 @@ for (const row of pokemons) {
 
 const ${id.replaceAll('-', '_')}: OremonData = ${JSON.stringify(oremon, null, 2)};
 
-export default ${id.replaceAll('-', '_')};`;
+export default ${id.replaceAll('-', '_')};
+`;
 
     fs.writeFileSync(outPath, fileContent, "utf8");
-    console.log(`Generated ${id}.ts`);
+    console.log(`✅ Generated ${id}.ts`);
 }
 
-console.log("\x1b[32mAll OremonData files generated!\x1b[0m");
+console.log("\x1b[32mAll OremonData files generated including moves!\x1b[0m");

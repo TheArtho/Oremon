@@ -1,11 +1,12 @@
 import {system} from "@minecraft/server";
-import {OremonEntityEventHandler} from "./core/monster/OremonEntityEventHandler";
+import {OremonEntityEventHandler} from "./core/entity/OremonEntityEventHandler";
 import {PlayerSaveEventHandler} from "./core/save/PlayerSaveEventHandler";
 import {PlayerSaveManager} from "./core/save/PlayerSaveManager";
 import {ItemEventHandler} from "./core/items/ItemEventHandler";
 import {CaptureEventHandler} from "./core/capture/CaptureEventHandler";
 import {CommandEventHandler} from "./core/commands/CommandEventHandler";
 import {UiEventManager} from "./core/ui/UiEventManager";
+import {BattleEventHandler} from "./core/combat/BattleEventHandler";
 
 class Game {
     static initialize() {
@@ -22,6 +23,7 @@ class Game {
         ItemEventHandler.register();
         CaptureEventHandler.register();
         CommandEventHandler.register();
+        BattleEventHandler.register();
         UiEventManager.register();
     }
 }

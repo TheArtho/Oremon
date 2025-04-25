@@ -50,6 +50,38 @@ const tynamo: OremonData = {
         "turnUpsideDown": false
       }
     }
+  ],
+  "moves": [
+    {
+      "id": "tackle",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "thunder-wave",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "thunder-wave",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "spark",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "charge-beam",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "charge-beam",
+      "method": "machine",
+      "level": 0
+    }
   ]
 };
 

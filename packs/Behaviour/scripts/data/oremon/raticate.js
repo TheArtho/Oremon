@@ -38,6 +38,263 @@ const raticate = {
     "formSwitchable": false,
     "shape": "quadruped",
     "color": "Brown",
-    "evolutions": []
+    "evolutions": [],
+    "moves": [
+        {
+            "id": "swords-dance",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "swords-dance",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "tackle",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "double-edge",
+            "method": "level_up",
+            "level": 39
+        },
+        {
+            "id": "tail-whip",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "bite",
+            "method": "level_up",
+            "level": 10
+        },
+        {
+            "id": "roar",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "ice-beam",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "blizzard",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "hyper-beam",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "thunderbolt",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "thunder-wave",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "thunder",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "toxic",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "quick-attack",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "quick-attack",
+            "method": "level_up",
+            "level": 4
+        },
+        {
+            "id": "double-team",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "focus-energy",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "focus-energy",
+            "method": "level_up",
+            "level": 7
+        },
+        {
+            "id": "rest",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "hyper-fang",
+            "method": "level_up",
+            "level": 16
+        },
+        {
+            "id": "super-fang",
+            "method": "level_up",
+            "level": 34
+        },
+        {
+            "id": "substitute",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "thief",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "protect",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "scary-face",
+            "method": "level_up",
+            "level": 0
+        },
+        {
+            "id": "scary-face",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "swagger",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "attract",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "sleep-talk",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "return",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "frustration",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "pursuit",
+            "method": "level_up",
+            "level": 13
+        },
+        {
+            "id": "hidden-power",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "rain-dance",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "sunny-day",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "crunch",
+            "method": "level_up",
+            "level": 24
+        },
+        {
+            "id": "shadow-ball",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "facade",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "taunt",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "endeavor",
+            "method": "level_up",
+            "level": 44
+        },
+        {
+            "id": "u-turn",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "assurance",
+            "method": "level_up",
+            "level": 19
+        },
+        {
+            "id": "sucker-punch",
+            "method": "level_up",
+            "level": 29
+        },
+        {
+            "id": "giga-impact",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "grass-knot",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "charge-beam",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "round",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "work-up",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "wild-charge",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "confide",
+            "method": "machine",
+            "level": 0
+        }
+    ]
 };
 export default raticate;

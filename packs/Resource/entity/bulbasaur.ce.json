@@ -4,7 +4,7 @@
     "description": {
       "identifier": "oremon:bulbasaur",
       "materials": {
-        "default": "entity_alphatest"
+        "default": "alpha_block_color"
       },
       "textures": {
         "default": "textures/entity/bulbasaur/bulbasaur",

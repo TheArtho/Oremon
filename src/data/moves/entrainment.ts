@@ -1,0 +1,23 @@
+import { MoveData } from "../../types/MoveData";
+
+const entrainment: MoveData = {
+  id: "entrainment",
+  name: "oremon.entrainment.name",
+  description: "oremon.entrainment.description",
+  category: "status",
+  accuracy: 100,
+  power: undefined,
+  pp: 15,
+  priority: 0,
+  flags: {
+  snatch: true,
+  mirror: true,
+  charge: true
+},
+  target: "selected_pokemon",
+  type: "normal",
+  effectId: "none",
+  effectChance: undefined
+};
+
+export default entrainment;

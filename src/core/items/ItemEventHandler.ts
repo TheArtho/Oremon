@@ -11,8 +11,6 @@ export class ItemEventHandler {
                     event.source.getViewDirection(),
                     {maxDistance: 20});
 
-                event.source.camera
-
                 if (hitBlock) {
                     const hitPosition = {
                         x: hitBlock.block.location.x + hitBlock.faceLocation.x,

@@ -49,6 +49,163 @@ const swadloon = {
                 "turnUpsideDown": false
             }
         }
+    ],
+    "moves": [
+        {
+            "id": "tackle",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "razor-leaf",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "solar-beam",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "string-shot",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "toxic",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "double-team",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "light-screen",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "dream-eater",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "rest",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "substitute",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "protect",
+            "method": "level_up",
+            "level": 0
+        },
+        {
+            "id": "protect",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "protect",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "swagger",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "attract",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "sleep-talk",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "return",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "frustration",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "safeguard",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "hidden-power",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "sunny-day",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "facade",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "nature-power",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "grass-whistle",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "calm-mind",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "payback",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "energy-ball",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "grass-knot",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "bug-bite",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "round",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "confide",
+            "method": "machine",
+            "level": 0
+        }
     ]
 };
 export default swadloon;

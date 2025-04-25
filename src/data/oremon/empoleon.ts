@@ -42,7 +42,304 @@ const empoleon: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Blue",
-  "evolutions": []
+  "evolutions": [],
+  "moves": [
+    {
+      "id": "swords-dance",
+      "method": "level_up",
+      "level": 11
+    },
+    {
+      "id": "swords-dance",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "fury-attack",
+      "method": "level_up",
+      "level": 28
+    },
+    {
+      "id": "tackle",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "growl",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "growl",
+      "method": "level_up",
+      "level": 4
+    },
+    {
+      "id": "roar",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "mist",
+      "method": "level_up",
+      "level": 46
+    },
+    {
+      "id": "hydro-pump",
+      "method": "level_up",
+      "level": 59
+    },
+    {
+      "id": "surf",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "ice-beam",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "blizzard",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "bubble-beam",
+      "method": "level_up",
+      "level": 19
+    },
+    {
+      "id": "hyper-beam",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "peck",
+      "method": "level_up",
+      "level": 15
+    },
+    {
+      "id": "drill-peck",
+      "method": "level_up",
+      "level": 52
+    },
+    {
+      "id": "earthquake",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "toxic",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "double-team",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "waterfall",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "bubble",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "bubble",
+      "method": "level_up",
+      "level": 8
+    },
+    {
+      "id": "rest",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rock-slide",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "substitute",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "protect",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "swagger",
+      "method": "level_up",
+      "level": 24
+    },
+    {
+      "id": "swagger",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "steel-wing",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "attract",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "sleep-talk",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "return",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "frustration",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "metal-claw",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "hidden-power",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rain-dance",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "whirlpool",
+      "method": "level_up",
+      "level": 39
+    },
+    {
+      "id": "hail",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "facade",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "brick-break",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "hydro-cannon",
+      "method": "tutor",
+      "level": 0
+    },
+    {
+      "id": "rock-tomb",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "aerial-ace",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "brine",
+      "method": "level_up",
+      "level": 33
+    },
+    {
+      "id": "fling",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "giga-impact",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "shadow-claw",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "flash-cannon",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "grass-knot",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "aqua-jet",
+      "method": "level_up",
+      "level": 0
+    },
+    {
+      "id": "aqua-jet",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "round",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "echoed-voice",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "scald",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "quash",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "water-pledge",
+      "method": "tutor",
+      "level": 0
+    },
+    {
+      "id": "bulldoze",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "work-up",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "confide",
+      "method": "machine",
+      "level": 0
+    }
+  ]
 };
 
 export default empoleon;

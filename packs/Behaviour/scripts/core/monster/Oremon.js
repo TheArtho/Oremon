@@ -3,6 +3,7 @@ import { Localization } from "../../i18n/Localization";
 import { SHINY_CHANCE } from "../constants";
 import { GenderRatio } from "../../enums/base";
 import { generateFallbackId, generateRandomIVs } from "./OremonUtils";
+import moveData from "../../data/moveData";
 export class Oremon {
     /**
      * Constructs a new Oremon.
@@ -36,6 +37,7 @@ export class Oremon {
         this.currentHp = this.stats.hp;
         this.happiness = happiness ?? 0;
         this.shinyFlag = shiny ?? this.rollShiny();
+        this.moves = this.generateMoveset(this.level);
     }
     /**
      * Returns the unique id of the Oremon for instance equality check
@@ -157,6 +159,22 @@ export class Oremon {
             def_spe: calc(base.def_spe, iv.def_spe, ev.def_spe),
             spd: calc(base.spd, iv.spd, ev.spd)
         };
+    }
+    generateMoveset(level) {
+        if (!this.oremonData.moves || this.oremonData.moves.length === 0) {
+            return new Array(4).fill(undefined);
+        }
+        const eligibleMoves = this.oremonData.moves
+            .filter(move => move.method === "level_up" && move.level <= level)
+            .sort((a, b) => b.level - a.level)
+            .slice(0, 4);
+        return eligibleMoves.map(move => {
+            const moveInfo = moveData[move.id];
+            return {
+                id: move.id,
+                pp: moveInfo.pp
+            };
+        });
     }
     getCurrentHp() {
         return this.currentHp;

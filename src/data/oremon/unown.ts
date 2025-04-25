@@ -40,7 +40,19 @@ const unown: OremonData = {
   "formSwitchable": false,
   "shape": "ball",
   "color": "Black",
-  "evolutions": []
+  "evolutions": [],
+  "moves": [
+    {
+      "id": "hidden-power",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "hidden-power",
+      "method": "machine",
+      "level": 0
+    }
+  ]
 };
 
 export default unown;

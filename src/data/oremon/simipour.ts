@@ -40,7 +40,219 @@ const simipour: OremonData = {
   "formSwitchable": false,
   "shape": "upright",
   "color": "Blue",
-  "evolutions": []
+  "evolutions": [],
+  "moves": [
+    {
+      "id": "leer",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "surf",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "ice-beam",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "blizzard",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "hyper-beam",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "toxic",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "double-team",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "lick",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "waterfall",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "fury-swipes",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "rest",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rock-slide",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "substitute",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "thief",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "protect",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "swagger",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "attract",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "sleep-talk",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "return",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "frustration",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "hidden-power",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rain-dance",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "hail",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "torment",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "facade",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "taunt",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "brick-break",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rock-tomb",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "payback",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "fling",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "focus-blast",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "giga-impact",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "shadow-claw",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "grass-knot",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "low-sweep",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "round",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "scald",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "scald",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "acrobatics",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "water-pledge",
+      "method": "tutor",
+      "level": 0
+    },
+    {
+      "id": "work-up",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "confide",
+      "method": "machine",
+      "level": 0
+    }
+  ]
 };
 
 export default simipour;

@@ -40,7 +40,234 @@ const eelektross: OremonData = {
   "formSwitchable": false,
   "shape": "fish",
   "color": "Blue",
-  "evolutions": []
+  "evolutions": [],
+  "moves": [
+    {
+      "id": "headbutt",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "thrash",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "roar",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "acid",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "flamethrower",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "hyper-beam",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "thunderbolt",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "thunder-wave",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "thunder",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "toxic",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "double-team",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "light-screen",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rest",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rock-slide",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "substitute",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "protect",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "zap-cannon",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "swagger",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "attract",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "sleep-talk",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "return",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "frustration",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "hidden-power",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "rain-dance",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "crunch",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "facade",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "brick-break",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "crush-claw",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "rock-tomb",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "dragon-claw",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "u-turn",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "gastro-acid",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "giga-impact",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "flash-cannon",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "discharge",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "grass-knot",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "charge-beam",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "coil",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "round",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "acrobatics",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "volt-switch",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "dragon-tail",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "wild-charge",
+      "method": "machine",
+      "level": 0
+    },
+    {
+      "id": "ion-deluge",
+      "method": "level_up",
+      "level": 1
+    },
+    {
+      "id": "confide",
+      "method": "machine",
+      "level": 0
+    }
+  ]
 };
 
 export default eelektross;

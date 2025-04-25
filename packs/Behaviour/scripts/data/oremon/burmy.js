@@ -59,6 +59,38 @@ const burmy = {
                 "turnUpsideDown": false
             }
         }
+    ],
+    "moves": [
+        {
+            "id": "tackle",
+            "method": "level_up",
+            "level": 10
+        },
+        {
+            "id": "protect",
+            "method": "level_up",
+            "level": 1
+        },
+        {
+            "id": "protect",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "hidden-power",
+            "method": "level_up",
+            "level": 20
+        },
+        {
+            "id": "hidden-power",
+            "method": "machine",
+            "level": 0
+        },
+        {
+            "id": "bug-bite",
+            "method": "level_up",
+            "level": 15
+        }
     ]
 };
 export default burmy;

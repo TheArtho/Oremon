@@ -23,6 +23,8 @@ export interface OremonOptions {
     status?: string;
     formId?: number;
     trainerId?: string;
+    fainted?: boolean;
+    moves?: (Move | undefined)[];
 }
 
 export interface Move {
@@ -125,13 +127,15 @@ export class Oremon {
 
     readonly moves: (Move | undefined)[];
 
+    private fainted: boolean;
+
     /**
      * Constructs a new Oremon.
      * @param species The species identifier of the Oremon.
      * @param options Optional configuration object.
      */
     constructor(species : string | OremonSpecies, options : OremonOptions = {}) {
-        const { level = 1, name, size, shiny, ivs, evs, happiness, formId, gender } = options;
+        const { level = 1, name, size, shiny, ivs, evs, happiness, formId, gender, moves, fainted } = options;
         const data = oremonData[species];
         if (!data) {
             throw new Error(`Oremon data not found for species: ${species}`);
@@ -147,6 +151,7 @@ export class Oremon {
         this.level = level;
         this.size = size ?? this.getRandomSize();
         this.gender = gender ?? this.getRandomGender();
+        this.fainted = fainted ?? false;
 
         this.ivs = ivs ?? generateRandomIVs();
         this.evs = evs ?? {atk: 0, hp: 0, atk_spe: 0, def: 0, def_spe: 0, spd: 0};
@@ -157,7 +162,7 @@ export class Oremon {
 
         this.shinyFlag = shiny ?? this.rollShiny();
 
-        this.moves = this.generateMoveset(this.level);
+        this.moves = moves ?? this.generateMoveset(this.level);
     }
 
     /**
@@ -201,6 +206,10 @@ export class Oremon {
      */
     getLevel(): number {
         return this.level;
+    }
+
+    isFainted(): boolean {
+        return this.fainted;
     }
 
     /**
@@ -391,7 +400,9 @@ export class Oremon {
             happiness: this.happiness,
             status: this.status,
             formId: this.formId,
-            trainerId: this.trainerId
+            trainerId: this.trainerId,
+            moves: this.moves,
+            fainted: this.fainted
         };
     }
 
@@ -412,7 +423,9 @@ export class Oremon {
             status: data.status,
             formId: data.formId,
             trainerId: data.trainerId,
-            ballUsed: data.ballUsed
+            ballUsed: data.ballUsed,
+            fainted: data.fainted,
+            moves: data.moves
         });
 
         oremon.uniqueId = data.id;

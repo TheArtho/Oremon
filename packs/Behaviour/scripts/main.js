@@ -6,6 +6,7 @@ import { ItemEventHandler } from "./core/items/ItemEventHandler";
 import { CaptureEventHandler } from "./core/capture/CaptureEventHandler";
 import { CommandEventHandler } from "./core/commands/CommandEventHandler";
 import { UiEventManager } from "./core/ui/UiEventManager";
+import { BattleEventHandler } from "./core/combat/BattleEventHandler";
 class Game {
     static initialize() {
         // Register all world events
@@ -20,6 +21,7 @@ class Game {
         ItemEventHandler.register();
         CaptureEventHandler.register();
         CommandEventHandler.register();
+        BattleEventHandler.register();
         UiEventManager.register();
     }
 }

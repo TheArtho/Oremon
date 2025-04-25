@@ -5,4 +5,8 @@ export class OremonBattler {
     constructor(oremon: Oremon) {
         this.monster = oremon;
     }
+
+    getName(): string {
+        return this.monster.getName();
+    }
 }

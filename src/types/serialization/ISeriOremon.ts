@@ -1,4 +1,5 @@
 import { Stats } from "../OremonData";
+import {Move} from "../../core/monster/Oremon";
 
 export interface ISeriOremon {
     id: string;
@@ -16,4 +17,6 @@ export interface ISeriOremon {
     status?: string;
     formId: number;
     trainerId?: string;
+    fainted: boolean;
+    moves: (Move | undefined)[];
 }

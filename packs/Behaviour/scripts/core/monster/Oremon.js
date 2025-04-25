@@ -15,7 +15,7 @@ export class Oremon {
          * Type of Pokéball used to catch it.
          */
         this.ballUsed = "oremon:oreball";
-        const { level = 1, name, size, shiny, ivs, evs, happiness, formId, gender } = options;
+        const { level = 1, name, size, shiny, ivs, evs, happiness, formId, gender, moves, fainted } = options;
         const data = oremonData[species];
         if (!data) {
             throw new Error(`Oremon data not found for species: ${species}`);
@@ -31,13 +31,14 @@ export class Oremon {
         this.level = level;
         this.size = size ?? this.getRandomSize();
         this.gender = gender ?? this.getRandomGender();
+        this.fainted = fainted ?? false;
         this.ivs = ivs ?? generateRandomIVs();
         this.evs = evs ?? { atk: 0, hp: 0, atk_spe: 0, def: 0, def_spe: 0, spd: 0 };
         this.stats = this.calculateStats();
         this.currentHp = this.stats.hp;
         this.happiness = happiness ?? 0;
         this.shinyFlag = shiny ?? this.rollShiny();
-        this.moves = this.generateMoveset(this.level);
+        this.moves = moves ?? this.generateMoveset(this.level);
     }
     /**
      * Returns the unique id of the Oremon for instance equality check
@@ -75,6 +76,9 @@ export class Oremon {
      */
     getLevel() {
         return this.level;
+    }
+    isFainted() {
+        return this.fainted;
     }
     /**
      * Get the size of this Oremon
@@ -162,7 +166,7 @@ export class Oremon {
     }
     generateMoveset(level) {
         if (!this.oremonData.moves || this.oremonData.moves.length === 0) {
-            return new Array(4).fill(undefined);
+            return [];
         }
         const eligibleMoves = this.oremonData.moves
             .filter(move => move.method === "level_up" && move.level <= level)
@@ -240,7 +244,9 @@ export class Oremon {
             happiness: this.happiness,
             status: this.status,
             formId: this.formId,
-            trainerId: this.trainerId
+            trainerId: this.trainerId,
+            moves: this.moves,
+            fainted: this.fainted
         };
     }
     /**
@@ -260,7 +266,9 @@ export class Oremon {
             status: data.status,
             formId: data.formId,
             trainerId: data.trainerId,
-            ballUsed: data.ballUsed
+            ballUsed: data.ballUsed,
+            fainted: data.fainted,
+            moves: data.moves
         });
         oremon.uniqueId = data.id;
         // Recalculate stats

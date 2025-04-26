@@ -42,7 +42,7 @@ export class BattlePlayerScene {
     }
     onBattleStart() {
         system.run(() => {
-            // this.player.playMusic("oremon.music.wild_battle");
+            this.player.playMusic("oremon.music.wild_battle");
             this.player.camera.setCamera("oremon:shoulder_right", {
                 easeOptions: { easeType: EasingType.InOutQuad, easeTime: 0.5 },
                 rotation: { x: 0, y: 0 }
@@ -52,7 +52,7 @@ export class BattlePlayerScene {
     onBattleEnd() {
         this.player.sendMessage("[Battle] The battle is over!");
         system.run(() => {
-            // this.player.stopMusic()
+            this.player.runCommand("/music stop 2");
             this.player.camera.clear();
         });
     }

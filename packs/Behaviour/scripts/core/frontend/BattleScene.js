@@ -44,8 +44,10 @@ export class BattleScene {
         }
     }
     onUpdateInfo() {
-        this.playerScenes.forEach(p => {
-            p.onUpdateInfo();
+        this.enqueue(() => {
+            this.playerScenes.forEach(p => {
+                p.onUpdateInfo();
+            });
         });
     }
     onBattleStart(playerId) {

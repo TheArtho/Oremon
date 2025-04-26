@@ -1,6 +1,7 @@
 import { system, world } from "@minecraft/server";
 import { Oremon } from "../monster/Oremon";
 import { compactWildOremon } from "../monster/OremonUtils";
+import { PlayerSave } from "../save/PlayerSave";
 const blockedVanillaEntities = new Set([
     "minecraft:armadillo",
     "minecraft:creaking",
@@ -88,7 +89,7 @@ export class OremonEntityEventHandler {
     static register() {
         this.disableVanillaSpawnEvent();
         this.registerSpawnEvent();
-        this.registerInteractTameEvent();
+        // this.registerInteractTameEvent();
         this.registerInteractBattleEvent();
     }
     static registerSpawnEvent() {
@@ -98,44 +99,90 @@ export class OremonEntityEventHandler {
                 return;
             const family = entity.getComponent("type_family");
             if (family && family.hasTypeFamily("oremon")) {
-                const level = Math.ceil(Math.random() * 9);
-                const oremonInstance = new Oremon(entity.typeId, { level });
-                const name = oremonInstance.getName();
-                // Set Shiny
-                if (oremonInstance.isShiny()) {
+                if (entity.hasTag("captured")) {
+                    const playerId = entity.getTags().find(tag => tag.includes("player:"))?.replace("player:", "");
+                    const slot = Number(entity.getTags().find(tag => tag.includes("slot:"))?.replace("slot:", ""));
+                    const playerData = PlayerSave.data.get(playerId);
+                    if (!playerData) {
+                        return;
+                    }
+                    const oremonInstance = playerData.getTeamSlot(slot);
+                    const name = oremonInstance.getName();
+                    // Set Shiny
+                    if (oremonInstance.isShiny()) {
+                        try {
+                            entity.triggerEvent("oremon:make_shiny");
+                        }
+                        catch {
+                            // Skip
+                        }
+                    }
+                    // Set Gender
                     try {
-                        entity.triggerEvent("oremon:make_shiny");
+                        if (oremonInstance.getGender() === true) {
+                            entity.triggerEvent('oremon:make_male');
+                        }
+                        else if (oremonInstance.getGender() === false) {
+                            entity.triggerEvent('oremon:make_female');
+                        }
+                        else {
+                            entity.triggerEvent('oremon:make_genderless');
+                        }
                     }
                     catch {
                         // Skip
                     }
-                }
-                // Set Gender
-                try {
-                    if (oremonInstance.getGender() === true) {
-                        entity.triggerEvent('oremon:make_male');
+                    // Set Size
+                    try {
+                        const oremonSizes = ["very_small", "small", "medium", "big", "gigantic"];
+                        entity.triggerEvent(`setsize:${oremonSizes[oremonInstance.getSize()]}`);
                     }
-                    else if (oremonInstance.getGender() === false) {
-                        entity.triggerEvent('oremon:make_female');
+                    catch {
+                        // Skip
                     }
-                    else {
-                        entity.triggerEvent('oremon:make_genderless');
+                    entity.nameTag = `${name}\nLv.${oremonInstance.getLevel()}\n${playerData.player.name}'s`;
+                }
+                else {
+                    // Generate a brand new Oremon
+                    const level = Math.ceil(Math.random() * 9);
+                    const oremonInstance = new Oremon(entity.typeId, { level });
+                    const name = oremonInstance.getName();
+                    // Set Shiny
+                    if (oremonInstance.isShiny()) {
+                        try {
+                            entity.triggerEvent("oremon:make_shiny");
+                        }
+                        catch {
+                            // Skip
+                        }
                     }
+                    // Set Gender
+                    try {
+                        if (oremonInstance.getGender() === true) {
+                            entity.triggerEvent('oremon:make_male');
+                        }
+                        else if (oremonInstance.getGender() === false) {
+                            entity.triggerEvent('oremon:make_female');
+                        }
+                        else {
+                            entity.triggerEvent('oremon:make_genderless');
+                        }
+                    }
+                    catch {
+                        // Skip
+                    }
+                    // Set Size
+                    try {
+                        const oremonSizes = ["very_small", "small", "medium", "big", "gigantic"];
+                        entity.triggerEvent(`setsize:${oremonSizes[oremonInstance.getSize()]}`);
+                    }
+                    catch {
+                        // Skip
+                    }
+                    entity.nameTag = `${name}\nLv.${level}`;
+                    entity.setDynamicProperty("oremon:wild_data", JSON.stringify(compactWildOremon(oremonInstance.toWildData())));
+                    // console.log(`Saved oremon data proprerties : ${entity.getDynamicPropertyTotalByteCount()} total bytes`)
                 }
-                catch {
-                    // Skip
-                }
-                // Set Size
-                try {
-                    const oremonSizes = ["very_small", "small", "medium", "big", "gigantic"];
-                    entity.triggerEvent(`setsize:${oremonSizes[oremonInstance.getSize()]}`);
-                }
-                catch {
-                    // Skip
-                }
-                entity.nameTag = `${name}\nLv.${level}`;
-                entity.setDynamicProperty("oremon:wild_data", JSON.stringify(compactWildOremon(oremonInstance.toWildData())));
-                // console.log(`Saved oremon data proprerties : ${entity.getDynamicPropertyTotalByteCount()} total bytes`)
             }
         });
     }

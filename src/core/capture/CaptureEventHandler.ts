@@ -11,7 +11,7 @@ export class CaptureEventHandler {
             const entity = event.getEntityHit().entity;
             const trainer = event.source;
             if (projectile.typeId !== "minecraft:snowball") return;
-            if (!entity) return;
+            if (!entity || entity.hasTag("captured")) return;
             if (!entity.isValid) return;
             if (!trainer || !(trainer instanceof Player)) return;
             const family = entity.getComponent("type_family");
@@ -21,7 +21,7 @@ export class CaptureEventHandler {
                     return;
                 }
                 const oremon = Oremon.fromWildData(expandCompactWildOremon(JSON.parse(wildData as string)));
-                entity.kill();
+                entity.remove();
                 PlayerSave.data.get(trainer.id)?.giveMonster(oremon);
                 trainer.sendMessage(`${oremon.getName()} has been captured!`)
             }

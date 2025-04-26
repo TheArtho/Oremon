@@ -9,6 +9,8 @@ export class PlayerSave {
     private team: (Oremon | undefined)[];
     private pcStorage: (Oremon | undefined)[][];
 
+    oremonOut: number[] = [];
+
     constructor(player: Player, team: (Oremon | undefined)[] = [], pc: (Oremon | undefined)[][] = []) {
         if (!player) throw new Error("Player doesn't exist.");
         this.playerId = player.id;

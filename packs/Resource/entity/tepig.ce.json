@@ -34,8 +34,8 @@
         ]
       },
       "spawn_egg": {
-        "overlay_color": "#669853",
-        "base_color": "#60a89c"
+        "overlay_color": "#463a34",
+        "base_color": "#e89452"
       },
       "render_controllers": [
         "controller.render.oremon"

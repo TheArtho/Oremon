@@ -1,6 +1,8 @@
 import { PlayerSave } from "../../save/PlayerSave";
 import { Oremon } from "../../monster/Oremon";
 import { BattleManager } from "../../combat/BattleManager";
+import { BattlePlayerScene } from "../../frontend/BattlePlayerScene";
+import { BattleScene } from "../../frontend/BattleScene";
 export function battle(player, args) {
     if (!player?.isOp()) {
         throw new Error("You don't have the permission to use that command.");
@@ -26,7 +28,11 @@ export function battle(player, args) {
         const opponent = {
             type: "wild_pokemon", active: 0, team: [new Oremon(species, { level: level })]
         };
-        BattleManager.startBattle(playerTrainer, opponent);
+        const battle = BattleManager.createBattle(playerTrainer, opponent);
+        const battleScene = new BattleScene(battle);
+        battleScene.attachPlayerScene(new BattlePlayerScene(battle, player));
+        battle.attachMainScene(battleScene);
+        battle.start();
     }
     else {
         throw new Error("Command error: already in battle.");

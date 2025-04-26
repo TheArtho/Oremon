@@ -1,6 +1,5 @@
 import { OremonBattler } from "./OremonBattler";
 import { generateFallbackId } from "../monster/OremonUtils";
-import { EasingType, system } from "@minecraft/server";
 import { PlayerType } from "../../enums/battle";
 export class Battle {
     constructor(trainer1, trainer2, options = {}) {
@@ -40,38 +39,58 @@ export class Battle {
         console.log("Team 1:", this.trainer1.team.map(b => b.getName()));
         console.log("Team 2:", this.trainer2.team.map(b => b.getName()));
     }
+    attachMainScene(scene) {
+        this.battleScene = scene;
+    }
     start() {
         this.state = "starting";
+        // Check second trainer's type to see if this is a wild battle or a trainer battle
+        if (this.trainer2.type == PlayerType.AiWildPokemon) {
+            this.startWildBattle(this.battleScene);
+        }
+        else {
+            this.startTrainerBattle(this.battleScene);
+        }
+    }
+    startWildBattle(scene) {
         this.getPlayers().forEach(player => {
             const opponent = this.getOpponentTrainerForPlayer(player);
-            if (opponent.type == PlayerType.AiWildPokemon) {
-                this.startWildBattle(player, opponent);
-            }
-            else {
-                this.startTrainerBattle(player, opponent);
-            }
+            scene?.onBattleStart(player.id);
+            scene?.onDisplayMessage(`Wild battle started against wild ${opponent.team[0].getName()} Lv. ${opponent.team[0].getLevel()}.`);
         });
+        scene?.onUpdateInfo();
+        scene?.play();
+        this.waitForInput();
     }
-    startWildBattle(player, opponent) {
-        player.sendMessage(`[Battle] Wild battle started against ${opponent.team[0].getName()} Lv. ${opponent.team[0].getLevel()}.`);
-        system.run(() => {
-            player.camera.setCamera("oremon:shoulder_right", { easeOptions: {
-                    easeType: EasingType.InOutQuad,
-                    easeTime: 0.5
-                } });
+    startTrainerBattle(scene) {
+        this.getPlayers().forEach(player => {
+            const opponent = this.getOpponentTrainerForPlayer(player);
+            scene?.onBattleStart(player.id);
+            scene?.onDisplayMessage(`Trainer battle started against ${opponent.name}.`);
         });
-    }
-    startTrainerBattle(player, opponent) {
-        player.sendMessage(`[Battle] Trainer battle started against ${opponent.name}.`);
-        system.run(() => {
-            player.camera.setCamera("oremon:shoulder_right", { easeOptions: {
-                    easeType: EasingType.InOutQuad,
-                    easeTime: 0.5
-                } });
-        });
+        scene?.onUpdateInfo();
+        scene?.play();
+        this.waitForInput();
     }
     waitForInput() {
         this.state = "awaitingInput";
+    }
+    receiveInput(player, action) {
+        if (this.getPlayers().find(p => p === player)) {
+            if (action.type == "move") {
+                const playerInfo = this.getTrainerForPlayer(player);
+                const move = playerInfo.team[playerInfo.active].getMoves().find(move => move?.id && move?.id === action.value);
+                if (move) {
+                    player.sendMessage("Yay!");
+                }
+                else {
+                    throw new Error(`Your Oremon doesn't know ${action.value}`);
+                }
+            }
+        }
+        else {
+            throw new Error("This player can't send an input to this battle.");
+        }
     }
     processTurn() {
         this.state = "processingTurn";
@@ -84,6 +103,14 @@ export class Battle {
     }
     getPlayers() {
         return [this.trainer1.player, this.trainer2.player].filter(Boolean);
+    }
+    getTrainerForPlayer(player) {
+        if (this.trainer1.player === player) {
+            return this.trainer1;
+        }
+        else {
+            return this.trainer2;
+        }
     }
     getOpponentTrainerForPlayer(player) {
         if (this.trainer1.player === player) {
@@ -99,11 +126,30 @@ export class Battle {
     isFinished() {
         return this.state == "finished";
     }
-    abort(player) {
+    abort() {
         this.state = "finished";
-        player.sendMessage(`[Battle] Battle aborted.`);
-        system.run(() => {
-            player.camera.clear();
-        });
+        this.battleScene?.onBattleEnd();
+        this.battleScene?.play();
+    }
+    getBattleInfo(player) {
+        const playerInfo = this.getTrainerForPlayer(player);
+        const opponentInfo = this.getOpponentTrainerForPlayer(player);
+        const playerPkm = playerInfo.team[playerInfo.active];
+        const opponentPkm = opponentInfo.team[opponentInfo.active];
+        return {
+            player: {
+                name: playerPkm.getName(),
+                level: playerPkm.getLevel(),
+                currentHp: playerPkm.getCurrentHp(),
+                maxHp: playerPkm.getMaxHp(),
+                moves: playerPkm.getMoves()
+            },
+            opponent: {
+                name: opponentPkm.getName(),
+                level: opponentPkm.getLevel(),
+                currentHp: opponentPkm.getCurrentHp(),
+                maxHp: opponentPkm.getMaxHp()
+            }
+        };
     }
 }

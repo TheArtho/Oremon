@@ -1,6 +1,6 @@
 import { system, world } from "@minecraft/server";
 import { VectorUtils } from "../utils/vectorUtils";
-import { moveEntityToLocation } from "../utils/utils";
+import { moveEntityToLocation } from "../utils/physicsUtils";
 export class ItemEventHandler {
     static register() {
         world.beforeEvents.itemUse.subscribe(event => {

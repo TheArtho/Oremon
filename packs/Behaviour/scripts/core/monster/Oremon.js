@@ -80,6 +80,9 @@ export class Oremon {
     isFainted() {
         return this.fainted;
     }
+    getStatus() {
+        return this.status;
+    }
     /**
      * Get the size of this Oremon
      */

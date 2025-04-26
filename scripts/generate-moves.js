@@ -17,7 +17,7 @@ const reservedWords = new Set([
 
 // Mapping helpers
 const typeMap = Object.fromEntries(
-    db.prepare("SELECT id, identifier FROM types").all().map(row => [row.id, row.identifier.toLowerCase()])
+    db.prepare("SELECT id, identifier FROM enums").all().map(row => [row.id, row.identifier.toLowerCase()])
 );
 
 const targetMap = {

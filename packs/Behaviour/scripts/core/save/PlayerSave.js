@@ -1,5 +1,6 @@
 export class PlayerSave {
     constructor(player, team = [], pc = []) {
+        this.oremonOut = [];
         if (!player)
             throw new Error("Player doesn't exist.");
         this.playerId = player.id;

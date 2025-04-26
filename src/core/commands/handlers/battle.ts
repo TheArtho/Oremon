@@ -3,6 +3,8 @@ import {PlayerSave} from "../../save/PlayerSave";
 import {Oremon} from "../../monster/Oremon";
 import {BattleManager} from "../../combat/BattleManager";
 import {BattleTrainer} from "../../../types/Battle";
+import {BattlePlayerScene} from "../../frontend/BattlePlayerScene";
+import {BattleScene} from "../../frontend/BattleScene";
 
 export function battle(player: Player, args?: string[]) {
     if (!player?.isOp()) {
@@ -32,7 +34,11 @@ export function battle(player: Player, args?: string[]) {
         const opponent: BattleTrainer = {
             type: "wild_pokemon", active: 0, team: [new Oremon(species, {level: level})]
         }
-        BattleManager.startBattle(playerTrainer, opponent);
+        const battle = BattleManager.createBattle(playerTrainer, opponent);
+        const battleScene = new BattleScene(battle);
+        battleScene.attachPlayerScene(new BattlePlayerScene(battle, player));
+        battle.attachMainScene(battleScene);
+        battle.start();
     }
     else {
         throw new Error("Command error: already in battle.");

@@ -44,7 +44,7 @@ export class Oremon {
     private species: string;
 
     /**
-     * Reference data of the species (base stats, types, etc.).
+     * Reference data of the species (base stats, enums, etc.).
      */
     private oremonData: OremonData;
 
@@ -210,6 +210,10 @@ export class Oremon {
 
     isFainted(): boolean {
         return this.fainted;
+    }
+
+    getStatus(): string | undefined {
+        return this.status;
     }
 
     /**

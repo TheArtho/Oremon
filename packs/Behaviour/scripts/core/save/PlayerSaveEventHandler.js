@@ -8,8 +8,8 @@ export class PlayerSaveEventHandler {
     }
     static registerLoadOnJoinEvent() {
         world.afterEvents.playerJoin.subscribe(({ playerId }) => {
-            const player = world.getPlayers().find(p => p.id === playerId);
             const interval = system.runInterval(() => {
+                const player = world.getPlayers().find(p => p.id === playerId);
                 if (player) {
                     PlayerSaveManager.loadResetPlayerSave(player);
                     system.clearRun(interval);

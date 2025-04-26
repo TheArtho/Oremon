@@ -31,7 +31,7 @@ function mapEvolutionMethod(id) {
 }
 
 const typesMap = Object.fromEntries(
-    db.prepare("SELECT id, identifier FROM types").all().map(row => [row.id, row.identifier])
+    db.prepare("SELECT id, identifier FROM enums").all().map(row => [row.id, row.identifier])
 );
 const speciesIdToSlug = Object.fromEntries(
     db.prepare("SELECT id, identifier FROM pokemon_species").all().map(row => [row.id, row.identifier.toLowerCase()])

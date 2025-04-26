@@ -1,0 +1,19 @@
+export var MinecraftTextColor;
+(function (MinecraftTextColor) {
+    MinecraftTextColor["Black"] = "\u00A70";
+    MinecraftTextColor["DarkBlue"] = "\u00A71";
+    MinecraftTextColor["DarkGreen"] = "\u00A72";
+    MinecraftTextColor["DarkAqua"] = "\u00A73";
+    MinecraftTextColor["DarkRed"] = "\u00A74";
+    MinecraftTextColor["DarkPurple"] = "\u00A75";
+    MinecraftTextColor["Gold"] = "\u00A76";
+    MinecraftTextColor["Gray"] = "\u00A77";
+    MinecraftTextColor["DarkGray"] = "\u00A78";
+    MinecraftTextColor["Blue"] = "\u00A79";
+    MinecraftTextColor["Green"] = "\u00A7a";
+    MinecraftTextColor["Aqua"] = "\u00A7b";
+    MinecraftTextColor["Red"] = "\u00A7c";
+    MinecraftTextColor["LightPurple"] = "\u00A7d";
+    MinecraftTextColor["Yellow"] = "\u00A7e";
+    MinecraftTextColor["White"] = "\u00A7f";
+})(MinecraftTextColor || (MinecraftTextColor = {}));

@@ -18,10 +18,9 @@ export class BattleManager {
     /**
      * Start a new battle and add it to the list
      */
-    static startBattle(t1: BattleTrainer, t2: BattleTrainer): Battle {
+    static createBattle(t1: BattleTrainer, t2: BattleTrainer): Battle {
         const battle = new Battle(t1, t2);
         this.activeBattles.push(battle);
-        battle.start();
         return battle;
     }
 
@@ -38,7 +37,7 @@ export class BattleManager {
     static forceEndBattleForPlayer(player: Player): void {
         const battle = this.getBattleByPlayerId(player.id);
         if (battle) {
-            battle.abort(player);
+            battle.abort();
             this.cleanupFinishedBattles();
         }
         else {

@@ -1,4 +1,4 @@
-// Elemental types used by Oremon
+// Elemental enums used by Oremon
 export var Types;
 (function (Types) {
     Types["Normal"] = "normal";

@@ -8,7 +8,12 @@ export class BattleEventHandler {
     }
     static playerLeaveEndBattle(event) {
         const player = event.player;
-        BattleManager.forceEndBattleForPlayer(player);
+        try {
+            BattleManager.forceEndBattleForPlayer(player);
+        }
+        catch {
+            // Skip
+        }
     }
     static battleInputItem(event) {
         const playerId = event.source.id;
@@ -21,8 +26,22 @@ export class BattleEventHandler {
         const playerId = event.sender.id;
         const battle = BattleManager.getBattleByPlayerId(playerId);
         if (battle) {
-            event.sender.sendMessage("[Battle] You sent an input.");
-            event.cancel = true;
+            const command = event.message.split(" ");
+            if (command[0] === "move") {
+                try {
+                    if (command.length <= 1) {
+                        throw new Error("Missing argument: id");
+                    }
+                    const playerAction = {
+                        type: "move", value: command[1]
+                    };
+                    battle.receiveInput(event.sender, playerAction);
+                    event.cancel = true;
+                }
+                catch (e) {
+                    event.sender.sendMessage(e);
+                }
+            }
         }
     }
 }

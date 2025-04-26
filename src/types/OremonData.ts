@@ -5,7 +5,7 @@ export interface OremonData {
     id: string;
     name: string;
     description?: string;
-    types: [OremonType, OremonType?]; // max 2 types
+    types: [OremonType, OremonType?]; // max 2 enums
     baseStats: {
         hp: number;
         atk: number;
@@ -55,13 +55,13 @@ export interface Stats {
     spd: number;    // Speed stat
 }
 
-// Allowed types for Oremon — feel free to add custom strings
+// Allowed enums for Oremon — feel free to add custom strings
 export type OremonType =
     | "normal" | "fire" | "water" | "grass" | "electric"
     | "ice" | "fighting" | "poison" | "ground" | "flying"
     | "psychic" | "bug" | "rock" | "ghost" | "dragon"
     | "dark" | "steel" | "fairy"
-    | string; // Allow custom types if needed
+    | string; // Allow custom enums if needed
 
 // Structure for evolution data
 export interface Evolution {

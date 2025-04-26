@@ -1,5 +1,6 @@
 import {ChatSendBeforeEvent, ItemUseBeforeEvent, PlayerLeaveBeforeEvent, world} from "@minecraft/server";
 import {BattleManager} from "./BattleManager";
+import {PlayerAction} from "../../types/Battle";
 
 export class BattleEventHandler {
     static register() {
@@ -30,8 +31,22 @@ export class BattleEventHandler {
         const playerId = event.sender.id;
         const battle = BattleManager.getBattleByPlayerId(playerId);
         if (battle) {
-            event.sender.sendMessage("[Battle] You sent an input.");
-            event.cancel = true;
+            const command = event.message.split(" ");
+            if (command[0] === "move") {
+                try {
+                    if (command.length <= 1) {
+                        throw new Error("Missing argument: id")
+                    }
+                    const playerAction: PlayerAction = {
+                        type: "move", value: command[1]
+                    }
+                    battle.receiveInput(event.sender, playerAction);
+                    event.cancel = true;
+                }
+                catch (e) {
+                    event.sender.sendMessage(e as string);
+                }
+            }
         }
     }
 }

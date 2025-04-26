@@ -1,5 +1,6 @@
 import { pokegive } from "./handlers/pokegive";
 import { pokeclear } from "./handlers/pokeclear";
+import { battle } from "./handlers/battle";
 export class CommandHandler {
     static execute(commandName, player, args) {
         const command = this.commands.get(commandName);
@@ -19,4 +20,5 @@ export class CommandHandler {
 CommandHandler.commands = new Map([
     ["pokegive", pokegive],
     ["pokeclear", pokeclear],
+    ["battle", battle],
 ]);

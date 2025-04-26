@@ -1,54 +1,31 @@
-import {Oremon} from "../monster/Oremon";
 import {OremonBattler} from "./OremonBattler";
 import {generateFallbackId} from "../monster/OremonUtils";
-
-export interface BattleTrainer {
-    playerId?: string;
-    team: Oremon[]
-}
-
-export interface BattleOptions {
-    battleMode?: string;
-    canloose?: boolean;
-}
-
-type BattleState = "starting" | "awaitingInput" | "processingTurn" | "finished";
-
-enum PlayerType {
-    Player,
-    AI
-}
-
-interface playerInfo {
-    id?: string;
-    name: string;
-    type: PlayerType;
-    active: number;
-    team: OremonBattler[];
-}
+import {EasingType, Player, system} from "@minecraft/server";
+import {BattleMode, BattleOptions, BattleState, BattleTrainer, PlayerInfo} from "../../types/Battle";
+import {PlayerType} from "../../enums/battle";
 
 export class Battle {
     id: string;
 
-    player1: playerInfo;
-    player2: playerInfo;
+    trainer1: PlayerInfo;
+    trainer2: PlayerInfo;
 
-    private battleMode: string;
+    private battleMode: BattleMode;
     private canLoose: boolean;
     private state: BattleState;
 
     constructor(trainer1: BattleTrainer, trainer2: BattleTrainer, options: BattleOptions = {}) {
-        this.player1 = {
-            id: trainer1.playerId,
+        this.trainer1 = {
+            player: trainer1.player,
             name: "Player 1",
-            type: trainer1.playerId ? PlayerType.Player : PlayerType.AI,
+            type: trainer1.type == "trainer" ? (trainer1.player ? PlayerType.Player : PlayerType.AiTrainer) : PlayerType.AiWildPokemon,
             active: 0,
             team: trainer1.team.map(pokemon => new OremonBattler(pokemon))
         }
-        this.player2 = {
-            id: trainer2.playerId,
+        this.trainer2 = {
+            player: trainer2.player,
             name: "Player 2",
-            type: trainer2.playerId ? PlayerType.Player : PlayerType.AI,
+            type: trainer2.type == "trainer" ? (trainer2.player ? PlayerType.Player : PlayerType.AiTrainer) : PlayerType.AiWildPokemon,
             active: 0,
             team: trainer2.team.map(pokemon => new OremonBattler(pokemon))
         }
@@ -59,37 +36,102 @@ export class Battle {
         this.id = generateFallbackId();
         this.state = "starting";
 
+        this.trainer1.active = trainer1.active ?? this.getActiveOremonInTeam(this.trainer1.team);
+        this.trainer2.active = trainer2.active ?? this.getActiveOremonInTeam(this.trainer2.team);
+
+        if (this.trainer1.team.length === 0) {
+            throw new Error("Trainer 1 has no Oremon.")
+        }
+        if (this.trainer2.team.length === 0) {
+            throw new Error("Trainer 2 has no Oremon.")
+        }
+        if (this.trainer1.active == -1) {
+            throw new Error("All oremon are fainted for team 1.")
+        }
+        if (this.trainer2.active == -1) {
+            throw new Error("All oremon are fainted for team 2.")
+        }
+
         console.log("Battle initialized between:");
-        console.log("Team 1:",  this.player1.team.map(b => b.getName()));
-        console.log("Team 2:", this.player2.team.map(b => b.getName()));
+        console.log("Team 1:",  this.trainer1.team.map(b => b.getName()));
+        console.log("Team 2:", this.trainer2.team.map(b => b.getName()));
     }
 
     start() {
         this.state = "starting";
+        this.getPlayers().forEach(player => {
+            const opponent = this.getOpponentTrainerForPlayer(player);
+            if (opponent.type == PlayerType.AiWildPokemon) {
+                this.startWildBattle(player, opponent);
+            }
+            else {
+                this.startTrainerBattle(player, opponent);
+            }
+        });
     }
 
-    waitForInput() {
+    startWildBattle(player: Player, opponent: PlayerInfo) {
+        player.sendMessage(`[Battle] Wild battle started against ${opponent.team[0].getName()} Lv. ${opponent.team[0].getLevel()}.`)
+        system.run(() => {
+            player.camera.setCamera("oremon:shoulder_right", {easeOptions: {
+                    easeType: EasingType.InOutQuad,
+                    easeTime: 0.5
+                }});
+        });
+    }
+
+    startTrainerBattle(player: Player, opponent: PlayerInfo) {
+        player.sendMessage(`[Battle] Trainer battle started against ${opponent.name}.`)
+        system.run(() => {
+            player.camera.setCamera("oremon:shoulder_right", {easeOptions: {
+                    easeType: EasingType.InOutQuad,
+                    easeTime: 0.5
+                }});
+        });
+    }
+
+    private waitForInput() {
         this.state = "awaitingInput";
     }
 
-    processTurn() {
+    private processTurn() {
         this.state = "processingTurn";
     }
 
-    endBattle() {
+    private endBattle() {
         this.state = "finished";
     }
 
+    private getActiveOremonInTeam(team: OremonBattler[]): number {
+        return team.findIndex(oremon => !oremon.isFainted());
+    }
+
+    private getPlayers(): Player[] {
+        return [this.trainer1.player, this.trainer2.player].filter(Boolean) as Player[];
+    }
+
+    private getOpponentTrainerForPlayer(player: Player): PlayerInfo {
+        if (this.trainer1.player === player) {
+            return this.trainer2;
+        }
+        else {
+            return this.trainer1;
+        }
+    }
+
     hasPlayer(playerId: string) {
-        return this.player1.id === playerId || this.player2.id === playerId;
+        return this.trainer1.player?.id === playerId || this.trainer2.player?.id === playerId;
     }
 
     isFinished() {
         return this.state == "finished";
     }
 
-    Abort(playerId: string) {
+    abort(player: Player) {
         this.state = "finished";
-        console.log(`[Oremon Battle] Battle forced to finish for id:${playerId}`)
+        player.sendMessage(`[Battle] Battle aborted.`)
+        system.run(() => {
+            player.camera.clear();
+        });
     }
 }

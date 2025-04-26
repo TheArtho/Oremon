@@ -1,5 +1,6 @@
 import { Battle } from "./Battle";
-import { BattleTrainer } from "./Battle";
+import {BattleTrainer} from "../../types/Battle";
+import {Player} from "@minecraft/server";
 
 export class BattleManager {
     private static activeBattles: Battle[] = [];
@@ -20,6 +21,7 @@ export class BattleManager {
     static startBattle(t1: BattleTrainer, t2: BattleTrainer): Battle {
         const battle = new Battle(t1, t2);
         this.activeBattles.push(battle);
+        battle.start();
         return battle;
     }
 
@@ -33,11 +35,14 @@ export class BattleManager {
     /**
      * If a player leaves, battle needs to be forced to finish
      */
-    static forceEndBattleForPlayer(playerId: string): void {
-        const battle = this.getBattleByPlayerId(playerId);
+    static forceEndBattleForPlayer(player: Player): void {
+        const battle = this.getBattleByPlayerId(player.id);
         if (battle) {
-            battle.Abort(playerId);
+            battle.abort(player);
             this.cleanupFinishedBattles();
+        }
+        else {
+            throw new Error("Player is not in battle.")
         }
     }
 

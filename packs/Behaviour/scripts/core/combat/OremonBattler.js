@@ -5,4 +5,10 @@ export class OremonBattler {
     getName() {
         return this.monster.getName();
     }
+    getLevel() {
+        return this.monster.getLevel();
+    }
+    isFainted() {
+        return this.monster.isFainted();
+    }
 }

@@ -12,6 +12,7 @@ export class BattleManager {
     static startBattle(t1, t2) {
         const battle = new Battle(t1, t2);
         this.activeBattles.push(battle);
+        battle.start();
         return battle;
     }
     /**
@@ -23,11 +24,14 @@ export class BattleManager {
     /**
      * If a player leaves, battle needs to be forced to finish
      */
-    static forceEndBattleForPlayer(playerId) {
-        const battle = this.getBattleByPlayerId(playerId);
+    static forceEndBattleForPlayer(player) {
+        const battle = this.getBattleByPlayerId(player.id);
         if (battle) {
-            battle.Abort(playerId);
+            battle.abort(player);
             this.cleanupFinishedBattles();
+        }
+        else {
+            throw new Error("Player is not in battle.");
         }
     }
     /**

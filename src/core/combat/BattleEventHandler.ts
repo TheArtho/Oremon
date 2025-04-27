@@ -35,7 +35,7 @@ export class BattleEventHandler {
             if (command[0] === "move") {
                 try {
                     if (command.length <= 1) {
-                        throw new Error("Missing argument: id")
+                        throw new Error("Missing argument: id");
                     }
                     const playerAction: PlayerAction = {
                         type: "move", value: command[1]

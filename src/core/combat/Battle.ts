@@ -4,6 +4,7 @@ import {Player} from "@minecraft/server";
 import {BattleMode, BattleOptions, BattleState, BattleTrainer, PlayerAction, PlayerInfo} from "../../types/Battle";
 import {PlayerType} from "../../enums/battle";
 import {BattleScene} from "../frontend/BattleScene";
+import {BattleAi} from "./BattleAi";
 
 export class Battle {
     id: string;
@@ -16,6 +17,7 @@ export class Battle {
     private state: BattleState;
 
     private battleScene?: BattleScene;
+    private playerActions: Map<PlayerInfo, PlayerAction> = new Map<PlayerInfo, PlayerAction>();
 
     constructor(trainer1: BattleTrainer, trainer2: BattleTrainer, options: BattleOptions = {}) {
         this.trainer1 = {
@@ -75,30 +77,45 @@ export class Battle {
         }
     }
 
-    private startWildBattle(scene: (BattleScene | undefined)) {
-        this.getPlayers().forEach(player => {
+    private async startWildBattle(scene: (BattleScene | undefined)) {
+        if (!scene) return;
+
+        for (const player of this.getPlayers()) {
             const opponent = this.getOpponentTrainerForPlayer(player);
-            scene?.onBattleStart(player.id);
-            scene?.onDisplayMessage(`Wild battle started against wild ${opponent.team[0].getName()} Lv. ${opponent.team[0].getLevel()}.`);
-        });
-        scene?.onUpdateInfo();
-        scene?.play();
+            await scene.onBattleStart(player.id);
+            await scene.displayMessage(`Wild battle started against wild ${opponent.team[0].getName()} Lv. ${opponent.team[0].getLevel()}.`);
+        }
+        await scene.updateInfo();
+        await scene.wait(20);
         this.waitForInput();
     }
 
-    private startTrainerBattle(scene: (BattleScene | undefined)) {
-        this.getPlayers().forEach(player => {
+    private async startTrainerBattle(scene: (BattleScene | undefined)) {
+        if (!scene) return;
+
+        for (const player of this.getPlayers()) {
             const opponent = this.getOpponentTrainerForPlayer(player);
-            scene?.onBattleStart(player.id);
-            scene?.onDisplayMessage(`Trainer battle started against ${opponent.name}.`)
-        });
-        scene?.onUpdateInfo();
-        scene?.play();
+            await scene.onBattleStart(player.id);
+            await scene.displayMessage(`Trainer battle started against ${opponent.name}.`)
+        }
+        await scene.updateInfo();
+        await scene?.wait(20);
         this.waitForInput();
+    }
+
+    async abort() {
+        this.endBattle();
+        await this.battleScene?.battleEnd();
     }
 
     private waitForInput() {
         this.state = "awaitingInput";
+        if (this.isAi(this.trainer1)) {
+            this.playerActions.set(this.trainer1, BattleAi.selectRandomMove(this.trainer1));
+        }
+        if (this.isAi(this.trainer2)) {
+            this.playerActions.set(this.trainer2, BattleAi.selectRandomMove(this.trainer2));
+        }
     }
 
     receiveInput(player: Player, action: PlayerAction) {
@@ -107,20 +124,43 @@ export class Battle {
                 const playerInfo = this.getTrainerForPlayer(player);
                 const move = playerInfo.team[playerInfo.active].getMoves().find(move => move?.id && move?.id === action.value);
                 if (move) {
-                    player.sendMessage("Yay!")
+                    this.registerPlayerAction(this.getTrainerForPlayer(player), action);
                 }
                 else {
-                    throw new Error(`Your Oremon doesn't know ${action.value}`)
+                    throw new Error(`Your Oremon doesn't know ${action.value}`);
                 }
             }
         }
         else {
-            throw new Error("This player can't send an input to this battle.")
+            throw new Error("This player can't send an input to this battle.");
+        }
+    }
+
+    registerPlayerAction(player: PlayerInfo, action: PlayerAction) {
+        this.playerActions.set(player, action);
+        // Check if all actions are registered
+        if (this.playerActions.has(this.trainer1) && this.playerActions.has(this.trainer2)) {
+            // Process the turn if all the actions are registered
+            this.processTurn();
+        }
+        else {
+            // TODO Notify the player he has to wait other's player action
         }
     }
 
     private processTurn() {
         this.state = "processingTurn";
+        this.endTurn();
+        this.waitForInput();
+    }
+
+    private endTurn() {
+        // Clear player actions for the next turn
+        this.playerActions.clear();
+    }
+
+    private checkEndBattle(): boolean {
+        return false;
     }
 
     private endBattle() {
@@ -161,10 +201,8 @@ export class Battle {
         return this.state == "finished";
     }
 
-    abort() {
-        this.state = "finished";
-        this.battleScene?.onBattleEnd();
-        this.battleScene?.play();
+    isAi(trainer: PlayerInfo): boolean {
+        return trainer.type !== PlayerType.Player;
     }
 
     getBattleInfo(player: Player) {

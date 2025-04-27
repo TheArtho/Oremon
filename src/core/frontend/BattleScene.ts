@@ -1,94 +1,92 @@
-import {Battle} from "../combat/Battle";
-import {system} from "@minecraft/server";
-import {BattlePlayerScene} from "./BattlePlayerScene";
+import { system } from "@minecraft/server";
+import { BattlePlayerScene } from "./BattlePlayerScene";
+import { Battle } from "../combat/Battle";
 
-/**
- * Main scene of a battle (for general effects)
- */
+type BattleAction = () => Promise<void>;
+
 export class BattleScene {
     private playerScenes: Map<string, BattlePlayerScene> = new Map();
+    private eventQueue: BattleAction[] = [];
+    private processing = false;
 
-    private eventQueue: { action: () => void, delay: number }[] = [];
-    private processing: boolean = false;
-
-    constructor(public battle: Battle) {
-
-    }
+    constructor(public battle: Battle) {}
 
     attachPlayerScene(scene: BattlePlayerScene) {
         this.playerScenes.set(scene.player.id, scene);
     }
 
-    private enqueue(action: () => void, delay: number = 0) {
-        this.eventQueue.push({ action, delay });
-        this.processNext();
-    }
-
-    wait(ticks: number) {
-        this.enqueue(() => {}, ticks);
-    }
-
-    play() {
-        this.processNext();
-    }
-
-    private processNext() {
+    private async processNext() {
         if (this.processing || this.eventQueue.length === 0) return;
-
         this.processing = true;
+
         const next = this.eventQueue.shift();
         if (next) {
-            next.action();
-
-            if (next.delay === 0) {
-                system.run(() => {
-                    this.processing = false;
-                    this.processNext();
-                });
-            }
-            else {
-                system.runTimeout(() => {
-                    this.processing = false;
-                    this.processNext();
-                }, next.delay);
-            }
+            await next();
         }
+
+        this.processing = false;
+        this.processNext();
     }
 
-    onUpdateInfo() {
-        this.enqueue(() => {
-            this.playerScenes.forEach(p => {
-                p.onUpdateInfo();
+    private enqueue(action: BattleAction) {
+        this.eventQueue.push(action);
+        this.processNext();
+    }
+
+    // High level API
+
+    async wait(ticks: number) {
+        return new Promise<void>((resolve) => {
+            this.enqueue(async () => {
+                system.runTimeout(resolve, ticks);
             });
         });
     }
 
-    onBattleStart(playerId: string) {
-        const p = this.playerScenes.get(playerId)
-        this.enqueue(() => {
-            p?.onBattleStart();
-        });
-    }
-
-    onDisplayMessage(message: string, playerId?: string) {
-        this.enqueue(() => {
-            if (playerId) {
+    async onBattleStart(playerId: string) {
+        return new Promise<void>((resolve) => {
+            this.enqueue(async () => {
                 const p = this.playerScenes.get(playerId);
-                p?.onDisplayMessage(message);
-            }
-            else {
-                this.playerScenes.forEach(p => {
-                    p.onDisplayMessage(message);
-                });
-            }
+                await p?.onBattleStart();
+                resolve();
+            });
         });
     }
 
-    onBattleEnd() {
-        this.enqueue(() => {
-            this.playerScenes.forEach(p => {
-                p.onBattleEnd();
-            })
+    async displayMessage(message: string, playerId?: string) {
+        return new Promise<void>((resolve) => {
+            this.enqueue(async () => {
+                if (playerId) {
+                    await this.playerScenes.get(playerId)?.onDisplayMessage(message);
+                } else {
+                    for(const p of this.playerScenes.values()) {
+                        await p.onDisplayMessage(message);
+                    }
+                }
+                resolve();
+            });
+        });
+    }
+
+    async updateInfo() {
+        return new Promise<void>((resolve) => {
+            this.enqueue(async () => {
+                for(const p of this.playerScenes.values()) {
+                    p.onUpdateInfo();
+                }
+                resolve();
+            });
+        });
+    }
+
+    async battleEnd() {
+        return new Promise<void>((resolve) => {
+            this.enqueue(async () => {
+                for(const p of this.playerScenes.values()) {
+                    p.onBattleEnd();
+                }
+                resolve();
+            });
         });
     }
 }

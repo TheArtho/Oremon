@@ -1,7 +1,4 @@
 import { system } from "@minecraft/server";
-/**
- * Main scene of a battle (for general effects)
- */
 export class BattleScene {
     constructor(battle) {
         this.battle = battle;
@@ -12,67 +9,70 @@ export class BattleScene {
     attachPlayerScene(scene) {
         this.playerScenes.set(scene.player.id, scene);
     }
-    enqueue(action, delay = 0) {
-        this.eventQueue.push({ action, delay });
-        this.processNext();
-    }
-    wait(ticks) {
-        this.enqueue(() => { }, ticks);
-    }
-    play() {
-        this.processNext();
-    }
-    processNext() {
+    async processNext() {
         if (this.processing || this.eventQueue.length === 0)
             return;
         this.processing = true;
         const next = this.eventQueue.shift();
         if (next) {
-            next.action();
-            if (next.delay === 0) {
-                system.run(() => {
-                    this.processing = false;
-                    this.processNext();
-                });
-            }
-            else {
-                system.runTimeout(() => {
-                    this.processing = false;
-                    this.processNext();
-                }, next.delay);
-            }
+            await next();
         }
+        this.processing = false;
+        this.processNext();
     }
-    onUpdateInfo() {
-        this.enqueue(() => {
-            this.playerScenes.forEach(p => {
-                p.onUpdateInfo();
+    enqueue(action) {
+        this.eventQueue.push(action);
+        this.processNext();
+    }
+    // High level API
+    async wait(ticks) {
+        return new Promise((resolve) => {
+            this.enqueue(async () => {
+                system.runTimeout(resolve, ticks);
             });
         });
     }
-    onBattleStart(playerId) {
-        const p = this.playerScenes.get(playerId);
-        this.enqueue(() => {
-            p?.onBattleStart();
-        });
-    }
-    onDisplayMessage(message, playerId) {
-        this.enqueue(() => {
-            if (playerId) {
+    async onBattleStart(playerId) {
+        return new Promise((resolve) => {
+            this.enqueue(async () => {
                 const p = this.playerScenes.get(playerId);
-                p?.onDisplayMessage(message);
-            }
-            else {
-                this.playerScenes.forEach(p => {
-                    p.onDisplayMessage(message);
-                });
-            }
+                await p?.onBattleStart();
+                resolve();
+            });
         });
     }
-    onBattleEnd() {
-        this.enqueue(() => {
-            this.playerScenes.forEach(p => {
-                p.onBattleEnd();
+    async displayMessage(message, playerId) {
+        return new Promise((resolve) => {
+            this.enqueue(async () => {
+                if (playerId) {
+                    await this.playerScenes.get(playerId)?.onDisplayMessage(message);
+                }
+                else {
+                    for (const p of this.playerScenes.values()) {
+                        await p.onDisplayMessage(message);
+                    }
+                }
+                resolve();
+            });
+        });
+    }
+    async updateInfo() {
+        return new Promise((resolve) => {
+            this.enqueue(async () => {
+                for (const p of this.playerScenes.values()) {
+                    p.onUpdateInfo();
+                }
+                resolve();
+            });
+        });
+    }
+    async battleEnd() {
+        return new Promise((resolve) => {
+            this.enqueue(async () => {
+                for (const p of this.playerScenes.values()) {
+                    p.onBattleEnd();
+                }
+                resolve();
             });
         });
     }

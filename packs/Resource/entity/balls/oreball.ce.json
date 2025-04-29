@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "oremon:oreball",
+      "materials": {
+        "default": "alpha_block_color"
+      },
+      "textures": {
+        "default": "textures/entity/balls/poke_ball"
+      },
+      "geometry": {
+        "default": "geometry.pokeball"
+      },
+      "animations": {
+        "throw": "animation.poke_ball.throw"
+      },
+      "scripts": {
+        "animate": [
+          "throw"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.oreball"
+      ]
+    }
+  }
+}

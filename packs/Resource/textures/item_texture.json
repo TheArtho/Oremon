@@ -1,5 +1,15 @@
 {
 	"resource_pack_name": "Oremon Cobblemon Extension",
 	"texture_name": "atlas.items",
-	"texture_data": {}
+	"texture_data": {
+		"oremon:oreball": {
+			"textures": "textures/items/oreball"
+		},
+		"oremon:switch_to_oremon": {
+			"textures": "textures/items/ui/switch_to_items"
+		},
+		"oremon:switch_to_items": {
+			"textures": "textures/items/ui/switch_to_items"
+		}
+	}
 }

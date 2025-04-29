@@ -1,0 +1,32 @@
+{
+  "format_version": "1.21.70",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "oremon:player_inventory",
+      "is_summonable": true,
+      "is_spawnable": true
+    },
+    "components": {
+      "minecraft:fire_immune": true,
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": "no"
+        }
+      },
+      "minecraft:inventory": {
+        "container_type": "inventory",
+        "inventory_size": 9,
+        "private": true
+      }
+    }
+  }
+}

@@ -1,16 +1,20 @@
 import {Move, Oremon} from "../monster/Oremon";
 import {MathUtils} from "../utils/MathUtils";
+import {OremonType} from "../../types/OremonData";
+import {Battle} from "./Battle";
 
 export class OremonBattler {
     monster: Oremon;
+    battle: Battle;
 
     private currentHp: number;
     private statStages: { [stat: string]: number };
     private status?: string; // e.g. Poisoned, Burned, Asleep...
     private flags: Set<string>;
 
-    constructor(oremon: Oremon) {
+    constructor(oremon: Oremon, battle: Battle) {
         this.monster = oremon;
+        this.battle = battle;
 
         // Initialize current HP
         this.currentHp = oremon.getTotalHp();
@@ -47,6 +51,36 @@ export class OremonBattler {
         return this.currentHp <= 0;
     }
 
+    getMoves(): (Move | undefined)[] {
+        return this.monster.moves;
+    }
+
+    getType(index: number): OremonType | undefined {
+        return this.monster.getType(index);
+    }
+
+    // Stats
+
+    getAtk(): number {
+        return this.monster.getAtk();
+    }
+
+    getSpeAtk(): number {
+        return this.monster.getSpeAtk();
+    }
+
+    getDef(): number {
+        return this.monster.getDef();
+    }
+
+    getSpeDef(): number {
+        return this.monster.getSpeDef();
+    }
+
+    getSpeed(): number {
+        return this.monster.getSpeed();
+    }
+
     // --- HP Management ---
 
     getCurrentHp(): number {
@@ -55,10 +89,6 @@ export class OremonBattler {
 
     getMaxHp(): number {
         return this.monster.getTotalHp();
-    }
-
-    getMoves(): (Move | undefined)[] {
-        return this.monster.moves;
     }
 
     setCurrentHp(value: number): void {
@@ -127,5 +157,10 @@ export class OremonBattler {
 
     clearFlags(): void {
         this.flags.clear();
+    }
+
+    // Battle methods
+    onFaint() {
+        this.battle.getScene()?.displayMessage(`${this.getName()} fainted!`);
     }
 }

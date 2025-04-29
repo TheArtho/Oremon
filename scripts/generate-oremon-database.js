@@ -41,7 +41,7 @@ const moveMethodMap = {
     3: "tutor",
     4: "machine",
     5: "stadium-surfing-pikachu",
-    6:"light-ball-egg",
+    6:"light-balls-egg",
     7: "colosseum-purification",
     8: "xd-shadow",
     9: "xd-purification",

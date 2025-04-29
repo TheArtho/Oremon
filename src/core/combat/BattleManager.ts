@@ -38,7 +38,6 @@ export class BattleManager {
         const battle = this.getBattleByPlayerId(player.id);
         if (battle) {
             battle.abort();
-            this.cleanupFinishedBattles();
         }
         else {
             throw new Error("Player is not in battle.")

@@ -1,0 +1,44 @@
+{
+  "format_version": "1.21.70",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "oremon:oreball",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "oreball"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.2,
+        "height": 0.2
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": "no"
+        }
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:projectile": {
+        "on_hit": {
+          "affect_owner": false
+        },
+        "anchor": 1,
+        "power": 1.5,
+        "gravity": 0.015,
+        "angle_offset": 0,
+        "offset": [0, -0.1, 0]
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    }
+  }
+}

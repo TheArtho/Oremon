@@ -2,11 +2,10 @@ import { EasingType, Player, system } from "@minecraft/server";
 import { Battle } from "../combat/Battle";
 import moveData from "../../data/moveData";
 
-/**
- * Battle scene instance specific for a player
- */
+type PlayerAction = () => Promise<void>;
+
 export class BattlePlayerScene {
-    private eventQueue: (() => Promise<void>)[] = [];
+    private eventQueue: PlayerAction[] = [];
     private processing = false;
 
     constructor(public battle: Battle, public player: Player) {}
@@ -24,72 +23,63 @@ export class BattlePlayerScene {
         this.processNext();
     }
 
-    private enqueue(action: () => Promise<void>) {
+    private enqueue(actionBuilder: (resolve: () => void) => void) {
+        const action: PlayerAction = () => {
+            return new Promise<void>((resolve) => {
+                actionBuilder(resolve);
+            });
+        };
         this.eventQueue.push(action);
-        this.processNext();
     }
 
-    async wait(ticks: number) {
-        return new Promise<void>((resolve) => {
-            this.enqueue(async () => {
-                system.runTimeout(resolve, ticks);
-            });
+    // High-level API
+
+    wait(ticks: number) {
+        this.enqueue((resolve) => {
+            system.runTimeout(resolve, ticks);
         });
     }
 
-    async onBattleStart() {
+    onBattleStart() {
         return new Promise<void>((resolve) => {
-            this.enqueue(async () => {
-                system.run(() => {
-                    this.player.playMusic("oremon.music.wild_battle");
-                    this.player.camera.setCamera("oremon:shoulder_right", {
-                        easeOptions: { easeType: EasingType.InOutQuad, easeTime: 0.5 }
-                    });
-                    resolve();
+            system.run(() => {
+                // this.player.playMusic("oremon.music.wild_battle");
+                this.player.camera.setCamera("oremon:shoulder_right", {
+                    easeOptions: { easeType: EasingType.InOutQuad, easeTime: 0.5 }
                 });
+                resolve();
             });
-        });
+        })
     }
 
-    async onBattleEnd() {
+    onBattleEnd() {
         return new Promise<void>((resolve) => {
-            this.enqueue(async () => {
-                this.player.sendMessage("[Battle] The battle is over!");
-                system.run(() => {
-                    this.player.runCommand("/music stop 2");
-                    this.player.camera.clear();
-                    resolve();
-                });
-            });
-        });
-    }
-
-    async onDisplayMessage(message: string) {
-        return new Promise<void>((resolve) => {
-            this.enqueue(async () => {
-                this.player.sendMessage(`[Battle] ${message}`);
+            system.run(() => {
+                this.player.camera.clear();
                 resolve();
             });
         });
     }
 
-    async onUpdateInfo() {
-        return new Promise<void>((resolve) => {
-            this.enqueue(async () => {
-                const battleInfo = this.battle.getBattleInfo(this.player);
-                let str = "";
-                str += `    ${battleInfo.player.name} Lv.${battleInfo.player.level} - HP: ${battleInfo.player.currentHp}/${battleInfo.player.maxHp}\n`;
-                str += `    Vs\n`;
-                str += `    ${battleInfo.opponent.name} Lv.${battleInfo.opponent.level} - HP: ${battleInfo.opponent.currentHp}/${battleInfo.opponent.maxHp}\n`;
-                str += 'Moves:\n';
-                battleInfo.player.moves.forEach(move => {
-                    if (move) {
-                        str += `    ${move.id} - PP: ${move.pp}/${moveData[move.id].pp}\n`;
-                    }
-                })
-                this.player.sendMessage(str);
-                resolve();
-            });
+    onDisplayMessage(message: string) {
+       return new Promise<void>((resolve) => {
+           this.player.sendMessage(`[Battle] ${message}`);
+           resolve();
+       });
+    }
+
+    onUpdateInfo() {
+        const battleInfo = this.battle.getBattleInfo(this.player);
+        let str = `### TURN ${battleInfo.battle.turn + 1} ###\n`;
+        str += `    ${battleInfo.player.name} Lv.${battleInfo.player.level} - HP: ${battleInfo.player.currentHp}/${battleInfo.player.maxHp}\n`;
+        str += `    Vs\n`;
+        str += `    ${battleInfo.opponent.name} Lv.${battleInfo.opponent.level} - HP: ${battleInfo.opponent.currentHp}/${battleInfo.opponent.maxHp}\n`;
+        str += 'Moves:\n';
+        battleInfo.player.moves.forEach(move => {
+            if (move) {
+                str += `    ${move.id} - PP: ${move.pp}/${moveData[move.id].pp}\n`;
+            }
         });
+        this.player.sendMessage(str);
     }
 }

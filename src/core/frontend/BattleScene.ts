@@ -2,6 +2,7 @@ import { system } from "@minecraft/server";
 import { BattlePlayerScene } from "./BattlePlayerScene";
 import { Battle } from "../combat/Battle";
 
+// Each action is a Promise function that resolves manually
 type BattleAction = () => Promise<void>;
 
 export class BattleScene {
@@ -15,78 +16,105 @@ export class BattleScene {
         this.playerScenes.set(scene.player.id, scene);
     }
 
+    play() {
+        if (!this.processing) {
+            this.processing = true;
+            this.processNext();
+        }
+    }
+
+    pause() {
+        this.processing = false;
+    }
+
+    stop() {
+        this.processing = false;
+        this.eventQueue = [];
+    }
+
     private async processNext() {
-        if (this.processing || this.eventQueue.length === 0) return;
-        this.processing = true;
+        if (!this.processing) {
+            return;
+        }
+        if (this.eventQueue.length === 0) {
+            this.stop();
+            return;
+        }
 
         const next = this.eventQueue.shift();
         if (next) {
             await next();
         }
 
-        this.processing = false;
         this.processNext();
     }
 
-    private enqueue(action: BattleAction) {
+    private enqueue(actionBuilder: (resolve: () => void) => void) {
+        const action: BattleAction = () => {
+            return new Promise<void>((resolve) => {
+                actionBuilder(resolve);
+            });
+        };
         this.eventQueue.push(action);
-        this.processNext();
     }
 
     // High level API
 
-    async wait(ticks: number) {
-        return new Promise<void>((resolve) => {
-            this.enqueue(async () => {
-                system.runTimeout(resolve, ticks);
-            });
+    wait(ticks: number) {
+        this.enqueue((resolve) => {
+            system.runTimeout(resolve, ticks);
         });
     }
 
-    async onBattleStart(playerId: string) {
-        return new Promise<void>((resolve) => {
-            this.enqueue(async () => {
+    onBattleStart(playerId?: string) {
+        this.enqueue((resolve) => {
+            if (playerId) {
+                // If there is only one player then only wait for one
                 const p = this.playerScenes.get(playerId);
-                await p?.onBattleStart();
-                resolve();
-            });
+                p?.onBattleStart().then(resolve);
+            } else {
+                // Else every player have to finish before the resolve
+                const promises: Promise<void>[] = [];
+                for (const p of this.playerScenes.values()) {
+                    promises.push(p.onBattleStart());
+                }
+                Promise.all(promises).then(() => resolve());
+            }
         });
     }
 
-    async displayMessage(message: string, playerId?: string) {
-        return new Promise<void>((resolve) => {
-            this.enqueue(async () => {
-                if (playerId) {
-                    await this.playerScenes.get(playerId)?.onDisplayMessage(message);
-                } else {
-                    for(const p of this.playerScenes.values()) {
-                        await p.onDisplayMessage(message);
-                    }
+    displayMessage(message: string, playerId?: string) {
+        this.enqueue(async (resolve) => {
+            if (playerId) {
+                const p = this.playerScenes.get(playerId);
+                p?.onDisplayMessage(message).then(resolve);
+            } else {
+                const promises: Promise<void>[] = [];
+                for (const p of this.playerScenes.values()) {
+                    promises.push(p.onDisplayMessage(message));
                 }
-                resolve();
-            });
+                Promise.all(promises).then(() => resolve());
+            }
         });
     }
 
-    async updateInfo() {
-        return new Promise<void>((resolve) => {
-            this.enqueue(async () => {
-                for(const p of this.playerScenes.values()) {
-                    p.onUpdateInfo();
-                }
-                resolve();
-            });
+    updateInfo() {
+        this.enqueue((resolve) => {
+            for (const p of this.playerScenes.values()) {
+                p.onUpdateInfo();
+            }
+            resolve();
         });
     }
 
-    async battleEnd() {
-        return new Promise<void>((resolve) => {
-            this.enqueue(async () => {
-                for(const p of this.playerScenes.values()) {
-                    p.onBattleEnd();
-                }
-                resolve();
-            });
+    battleEnd() {
+        this.enqueue((resolve) => {
+            const promises: Promise<void>[] = [];
+            for (const p of this.playerScenes.values()) {
+                promises.push(p.onBattleEnd());
+            }
+            Promise.all(promises).then(() => resolve());
         });
     }
+
 }

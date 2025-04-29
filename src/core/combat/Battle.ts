@@ -1,10 +1,20 @@
 import {OremonBattler} from "./OremonBattler";
 import {generateFallbackId} from "../monster/OremonUtils";
 import {Player} from "@minecraft/server";
-import {BattleMode, BattleOptions, BattleState, BattleTrainer, PlayerAction, PlayerInfo} from "../../types/Battle";
+import {
+    BattleMode,
+    BattleOptions,
+    BattleState,
+    BattleTrainer,
+    PlayerAction,
+    PlayerInfo,
+    TurnResult
+} from "../../types/Battle";
 import {PlayerType} from "../../enums/battle";
 import {BattleScene} from "../frontend/BattleScene";
 import {BattleAi} from "./BattleAi";
+import {BattleLogic} from "./BattleLogic";
+import {BattleManager} from "./BattleManager";
 
 export class Battle {
     id: string;
@@ -13,26 +23,48 @@ export class Battle {
     trainer2: PlayerInfo;
 
     private battleMode: BattleMode;
-    private canLoose: boolean;
     private state: BattleState;
+    private turnCount: number = 0;
+
+    // Battle parameters
+    private canLoose: boolean;
+    private cantEscape: boolean = false;
+    private noExp: boolean = false;
+    private weather: string = "clear";
+    private weatherDuration: number = -1;
+    private extraMoney: boolean = false;
+    private doubleMoney: boolean = false;
 
     private battleScene?: BattleScene;
     private playerActions: Map<PlayerInfo, PlayerAction> = new Map<PlayerInfo, PlayerAction>();
+    private priority: {
+        battler: OremonBattler;
+        action: PlayerAction;
+        player: PlayerInfo;
+    }[] = [];
 
     constructor(trainer1: BattleTrainer, trainer2: BattleTrainer, options: BattleOptions = {}) {
+        // Check if a player is already in a battle
+        if (trainer1.player && BattleManager.getBattleByPlayerId(trainer1.player.id)) {
+            throw new Error(`${trainer1.player.name} is already in battle.`);
+        }
+        if (trainer2.player && BattleManager.getBattleByPlayerId(trainer2.player.id)) {
+            throw new Error(`${trainer2.player.name} is already in battle.`);
+        }
+
         this.trainer1 = {
             player: trainer1.player,
             name: "Player 1",
             type: trainer1.type == "trainer" ? (trainer1.player ? PlayerType.Player : PlayerType.AiTrainer) : PlayerType.AiWildPokemon,
             active: 0,
-            team: trainer1.team.map(pokemon => new OremonBattler(pokemon))
+            team: trainer1.team.map(pokemon => new OremonBattler(pokemon, this))
         }
         this.trainer2 = {
             player: trainer2.player,
             name: "Player 2",
             type: trainer2.type == "trainer" ? (trainer2.player ? PlayerType.Player : PlayerType.AiTrainer) : PlayerType.AiWildPokemon,
             active: 0,
-            team: trainer2.team.map(pokemon => new OremonBattler(pokemon))
+            team: trainer2.team.map(pokemon => new OremonBattler(pokemon, this))
         }
 
         this.battleMode = options?.battleMode ?? "single";
@@ -66,56 +98,55 @@ export class Battle {
         this.battleScene = scene;
     }
 
+    getScene() {
+        return this.battleScene;
+    }
+
     start() {
         this.state = "starting";
-        // Check second trainer's type to see if this is a wild battle or a trainer battle
-        if (this.trainer2.type == PlayerType.AiWildPokemon) {
-            this.startWildBattle(this.battleScene);
+        if (this.isTrainerBattle()) {
+            this.startTrainerBattle();
         }
         else {
-            this.startTrainerBattle(this.battleScene);
+            this.startWildBattle();
         }
     }
 
-    private async startWildBattle(scene: (BattleScene | undefined)) {
-        if (!scene) return;
-
+    private startWildBattle() {
         for (const player of this.getPlayers()) {
             const opponent = this.getOpponentTrainerForPlayer(player);
-            await scene.onBattleStart(player.id);
-            await scene.displayMessage(`Wild battle started against wild ${opponent.team[0].getName()} Lv. ${opponent.team[0].getLevel()}.`);
+            this.battleScene?.onBattleStart(player.id);
+            this.battleScene?.displayMessage(`Wild battle started against wild ${opponent.team[0].getName()} Lv. ${opponent.team[0].getLevel()}.`);
         }
-        await scene.updateInfo();
-        await scene.wait(20);
         this.waitForInput();
     }
 
-    private async startTrainerBattle(scene: (BattleScene | undefined)) {
-        if (!scene) return;
-
+    private startTrainerBattle() {
         for (const player of this.getPlayers()) {
             const opponent = this.getOpponentTrainerForPlayer(player);
-            await scene.onBattleStart(player.id);
-            await scene.displayMessage(`Trainer battle started against ${opponent.name}.`)
+            this.battleScene?.onBattleStart(player.id);
+            this.battleScene?.displayMessage(`Trainer battle started against ${opponent.name}.`)
         }
-        await scene.updateInfo();
-        await scene?.wait(20);
         this.waitForInput();
     }
 
-    async abort() {
+    abort() {
+        this.battleScene?.displayMessage("The battle has been aborted.");
         this.endBattle();
-        await this.battleScene?.battleEnd();
     }
 
     private waitForInput() {
         this.state = "awaitingInput";
         if (this.isAi(this.trainer1)) {
-            this.playerActions.set(this.trainer1, BattleAi.selectRandomMove(this.trainer1));
+            this.registerPlayerAction(this.trainer1, BattleAi.selectRandomMove(this.trainer1));
         }
         if (this.isAi(this.trainer2)) {
-            this.playerActions.set(this.trainer2, BattleAi.selectRandomMove(this.trainer2));
+            this.registerPlayerAction(this.trainer2, BattleAi.selectRandomMove(this.trainer2));
         }
+        // Scene Update
+        this.battleScene?.updateInfo();
+        this.battleScene?.displayMessage("Waiting for input.")
+        this.battleScene?.play();
     }
 
     receiveInput(player: Player, action: PlayerAction) {
@@ -150,21 +181,94 @@ export class Battle {
 
     private processTurn() {
         this.state = "processingTurn";
+        // Sort monster action by priority
+        this.priority = BattleLogic.calculatePriority(this.playerActions);
+        const MAX_ITERATION = 10;
+        let iteration = 0;
+        // Execute actions
+        while (this.priority.length > 0 && iteration < MAX_ITERATION) {
+            const p = this.priority.shift();
+            if (p) {
+                // Move
+                if (p.action.type === "move") {
+                    const moveId = p.action.value;
+                    const attackerBattler = p.battler;
+                    const targetInfo = (p.player == this.trainer1) ? this.trainer2 : this.trainer1;
+                    const targetBattler = targetInfo.team[targetInfo.active];
+                    this.executeMove(moveId, attackerBattler, targetBattler);
+                }
+            }
+            iteration++;
+        }
         this.endTurn();
-        this.waitForInput();
+    }
+
+    private executeMove(moveId: string, attacker: OremonBattler, target: OremonBattler) {
+        this.battleScene?.displayMessage(`${attacker.getName()} use ${moveId}!`);
+        const damageInfo = BattleLogic.calculateDamage(moveId, attacker, target);
+        target.takeDamage(damageInfo.damage);
+        if (damageInfo.effectiveness >= 2) {
+            this.battleScene?.displayMessage("It's super effective!");
+        }
+        else if (damageInfo.effectiveness <= 0.5) {
+            this.battleScene?.displayMessage("It's not very effective.");
+        }
+        // If the target fainted, trigger the target's faint and delete all the actions related to them
+        if (target.isFainted()) {
+            target.onFaint();
+            this.priority = this.priority.filter(p => p.battler !== target);
+        }
     }
 
     private endTurn() {
         // Clear player actions for the next turn
         this.playerActions.clear();
+        // Execute end turn events
+        // this.battleScene?.displayMessage("Ending turn.");
+        // Check for end condition to end the battle
+        const turnResult = this.checkEndBattle();
+        if (turnResult.result === "win") {
+            if (turnResult.winner.player) {
+                this.battleScene?.displayMessage("You won the battle!", turnResult.winner.player.id);
+            }
+            if (turnResult.loser.player) {
+                this.battleScene?.displayMessage("You lost the battle.", turnResult.loser.player.id);
+            }
+            this.endBattle();
+            return;
+        } else if (turnResult.result === "draw") {
+            this.battleScene?.displayMessage(`The battle ended in a draw!`);
+            this.endBattle();
+            return;
+        }
+        // Conclude the turn
+        this.turnCount++;
+        this.waitForInput();
     }
 
-    private checkEndBattle(): boolean {
-        return false;
+    private checkEndBattle(): TurnResult {
+        const trainer1Alive = this.trainer1.team.some(oremon => !oremon.isFainted());
+        const trainer2Alive = this.trainer2.team.some(oremon => !oremon.isFainted());
+
+        if (!trainer1Alive && trainer2Alive) {
+            return { result: "win", winner: this.trainer2, loser: this.trainer1 };
+        }
+        if (!trainer2Alive && trainer1Alive) {
+            return { result: "win", winner: this.trainer1, loser: this.trainer2 };
+        }
+        if (!trainer1Alive && !trainer2Alive) {
+            return { result: "draw" };
+        }
+
+        return { result: "continue" };
     }
+
 
     private endBattle() {
         this.state = "finished";
+        this.battleScene?.battleEnd();
+        this.battleScene?.play();
+        BattleManager.cleanupFinishedBattles();
     }
 
     private getActiveOremonInTeam(team: OremonBattler[]): number {
@@ -201,6 +305,10 @@ export class Battle {
         return this.state == "finished";
     }
 
+    isTrainerBattle(): boolean {
+        return this.trainer1.type !== PlayerType.AiWildPokemon && this.trainer2.type !== PlayerType.AiWildPokemon;
+    }
+
     isAi(trainer: PlayerInfo): boolean {
         return trainer.type !== PlayerType.Player;
     }
@@ -212,6 +320,9 @@ export class Battle {
         const opponentPkm = opponentInfo.team[opponentInfo.active];
 
         return {
+            battle: {
+                turn: this.turnCount
+            },
             player: {
                 name: playerPkm.getName(),
                 level: playerPkm.getLevel(),

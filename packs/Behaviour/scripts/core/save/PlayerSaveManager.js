@@ -1,7 +1,7 @@
 import { world } from "@minecraft/server";
 import { PlayerSave } from "./PlayerSave";
 import { Oremon } from "../monster/Oremon";
-const FORCE_RESET_DATA = true;
+const FORCE_RESET_DATA = false;
 export class PlayerSaveManager {
     static getTeamFromDP(player) {
         const team = [];

@@ -2,7 +2,7 @@ import {Player, world} from "@minecraft/server";
 import {PlayerSave} from "./PlayerSave";
 import {Oremon} from "../monster/Oremon";
 
-const FORCE_RESET_DATA = true;
+const FORCE_RESET_DATA = false;
 
 export class PlayerSaveManager {
     private static getTeamFromDP(player: Player): (Oremon | undefined)[] {

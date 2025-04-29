@@ -32,3 +32,8 @@ export interface PlayerAction {
     /** moveId or switch slot */
     value: string;
 }
+
+export type TurnResult =
+    | { result: "continue" } // Le tour est fini, on continue le combat
+    | { result: "win", winner: PlayerInfo, loser: PlayerInfo } // Quelqu'un a gagné
+    | { result: "draw" }; // Match nul (plus rare)

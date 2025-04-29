@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "oremon:switch_to_items",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "oremon:switch_to_items"
+      },
+      "minecraft:display_name": {
+        "value": "item.switch_to_items.name"
+      },
+      "minecraft:cooldown": {
+        "category": "oremon_switch",
+        "duration": 0.5
+      }
+    }
+  }
+}

@@ -1,7 +1,8 @@
 import { MathUtils } from "../utils/MathUtils";
 export class OremonBattler {
-    constructor(oremon) {
+    constructor(oremon, battle) {
         this.monster = oremon;
+        this.battle = battle;
         // Initialize current HP
         this.currentHp = oremon.getTotalHp();
         // Initialize stat stages (0 = no modification)
@@ -29,15 +30,34 @@ export class OremonBattler {
     isFainted() {
         return this.currentHp <= 0;
     }
+    getMoves() {
+        return this.monster.moves;
+    }
+    getType(index) {
+        return this.monster.getType(index);
+    }
+    // Stats
+    getAtk() {
+        return this.monster.getAtk();
+    }
+    getSpeAtk() {
+        return this.monster.getSpeAtk();
+    }
+    getDef() {
+        return this.monster.getDef();
+    }
+    getSpeDef() {
+        return this.monster.getSpeDef();
+    }
+    getSpeed() {
+        return this.monster.getSpeed();
+    }
     // --- HP Management ---
     getCurrentHp() {
         return this.currentHp;
     }
     getMaxHp() {
         return this.monster.getTotalHp();
-    }
-    getMoves() {
-        return this.monster.moves;
     }
     setCurrentHp(value) {
         this.currentHp = MathUtils.clamp(value, 0, this.getMaxHp());
@@ -90,5 +110,9 @@ export class OremonBattler {
     }
     clearFlags() {
         this.flags.clear();
+    }
+    // Battle methods
+    onFaint() {
+        this.battle.getScene()?.displayMessage(`${this.getName()} fainted!`);
     }
 }

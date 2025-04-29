@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "oremon:oreball",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "oremon:oreball"
+      },
+      "minecraft:display_name": {
+        "value": "item.oreball.name"
+      },
+      "minecraft:cooldown": {
+        "category": "oreball",
+        "duration": 0.5
+      }
+    }
+  }
+}

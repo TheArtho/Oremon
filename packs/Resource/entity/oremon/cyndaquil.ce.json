@@ -8,10 +8,10 @@
         "emissive": "entity_emissive_alpha_one_sided"
       },
       "textures": {
-        "default": "textures/entity/cyndaquil/cyndaquil",
-        "default_female": "textures/entity/cyndaquil/cyndaquil",
-        "shiny": "textures/entity/cyndaquil/cyndaquil_shiny",
-        "shiny_female": "textures/entity/cyndaquil/cyndaquil_shiny"
+        "default": "textures/entity/oremon/cyndaquil/cyndaquil",
+        "default_female": "textures/entity/oremon/cyndaquil/cyndaquil",
+        "shiny": "textures/entity/oremon/cyndaquil/cyndaquil_shiny",
+        "shiny_female": "textures/entity/oremon/cyndaquil/cyndaquil_shiny"
       },
       "geometry": {
         "default": "geometry.cyndaquil",

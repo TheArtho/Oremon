@@ -1,5 +1,5 @@
 import {OremonSpecies} from "../../enums/oremonIds";
-import {OremonData, Stats} from "../../types/OremonData";
+import {OremonData, OremonType, Stats} from "../../types/OremonData";
 import oremonData from "../../data/oremonData";
 import {Localization} from "../../i18n/Localization";
 import {SHINY_CHANCE} from "../constants";
@@ -236,6 +236,14 @@ export class Oremon {
      */
     hasType(type: Types): boolean {
         return this.oremonData.types[0] === type || this.oremonData.types[1] === type;
+    }
+
+    /**
+     * Returns whether this Oremon has the specified type
+     * @param index
+     */
+    getType(index: number): OremonType | undefined {
+        return this.oremonData.types[index];
     }
 
     /**

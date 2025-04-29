@@ -7,10 +7,10 @@
         "default": "alpha_block_color"
       },
       "textures": {
-        "default": "textures/entity/bulbasaur/bulbasaur",
-        "default_female": "textures/entity/bulbasaur/bulbasaur",
-        "shiny": "textures/entity/bulbasaur/bulbasaur_shiny",
-        "shiny_female": "textures/entity/bulbasaur/bulbasaur_shiny"
+        "default": "textures/entity/oremon/bulbasaur/bulbasaur",
+        "default_female": "textures/entity/oremon/bulbasaur/bulbasaur",
+        "shiny": "textures/entity/oremon/bulbasaur/bulbasaur_shiny",
+        "shiny_female": "textures/entity/oremon/bulbasaur/bulbasaur_shiny"
       },
       "geometry": {
         "default": "geometry.bulbasaur",

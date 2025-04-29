@@ -7,10 +7,10 @@
         "default": "alpha_block_color"
       },
       "textures": {
-        "default": "textures/entity/chikorita/chikorita",
-        "default_female": "textures/entity/chikorita/chikorita",
-        "shiny": "textures/entity/chikorita/chikorita_shiny",
-        "shiny_female": "textures/entity/chikorita/chikorita_shiny"
+        "default": "textures/entity/oremon/chikorita/chikorita",
+        "default_female": "textures/entity/oremon/chikorita/chikorita",
+        "shiny": "textures/entity/oremon/chikorita/chikorita_shiny",
+        "shiny_female": "textures/entity/oremon/chikorita/chikorita_shiny"
       },
       "geometry": {
         "default": "geometry.chikorita",

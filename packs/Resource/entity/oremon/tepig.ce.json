@@ -7,10 +7,10 @@
         "default": "alpha_block_color"
       },
       "textures": {
-        "default": "textures/entity/tepig/tepig",
-        "default_female": "textures/entity/tepig/tepig",
-        "shiny": "textures/entity/tepig/tepig_shiny",
-        "shiny_female": "textures/entity/tepig/tepig_shiny"
+        "default": "textures/entity/oremon/tepig/tepig",
+        "default_female": "textures/entity/oremon/tepig/tepig",
+        "shiny": "textures/entity/oremon/tepig/tepig_shiny",
+        "shiny_female": "textures/entity/oremon/tepig/tepig_shiny"
       },
       "geometry": {
         "default": "geometry.tepig",

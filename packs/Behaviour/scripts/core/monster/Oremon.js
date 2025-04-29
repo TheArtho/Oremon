@@ -103,6 +103,13 @@ export class Oremon {
         return this.oremonData.types[0] === type || this.oremonData.types[1] === type;
     }
     /**
+     * Returns whether this Oremon has the specified type
+     * @param index
+     */
+    getType(index) {
+        return this.oremonData.types[index];
+    }
+    /**
      * Level up this Oremon by a given number (default 1)
      */
     levelUp(amount = 1) {

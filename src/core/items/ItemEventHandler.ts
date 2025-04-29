@@ -1,9 +1,16 @@
 import {system, world} from "@minecraft/server";
 import {VectorUtils} from "../utils/vectorUtils";
 import {moveEntityToLocation} from "../utils/physicsUtils";
+import {onBallHitBlock, onBallHitEntity, UseOreball} from "./Oreball";
 
 export class ItemEventHandler {
     static register() {
+        world.beforeEvents.itemUse.subscribe(UseOreball);
+        world.afterEvents.projectileHitBlock.subscribe(onBallHitBlock);
+        world.afterEvents.projectileHitEntity.subscribe(onBallHitEntity);
+    }
+
+    registerMagicStickEvent() {
         world.beforeEvents.itemUse.subscribe(event => {
             const item = event.itemStack.typeId;
             if (item === "minecraft:stick") {

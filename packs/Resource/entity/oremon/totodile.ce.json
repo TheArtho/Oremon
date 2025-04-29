@@ -7,10 +7,10 @@
         "default": "alpha_block_color"
       },
       "textures": {
-        "default": "textures/entity/totodile/totodile",
-        "default_female": "textures/entity/totodile/totodile",
-        "shiny": "textures/entity/totodile/totodile_shiny",
-        "shiny_female": "textures/entity/totodile/totodile_shiny"
+        "default": "textures/entity/oremon/totodile/totodile",
+        "default_female": "textures/entity/oremon/totodile/totodile",
+        "shiny": "textures/entity/oremon/totodile/totodile_shiny",
+        "shiny_female": "textures/entity/oremon/totodile/totodile_shiny"
       },
       "geometry": {
         "default": "geometry.totodile",

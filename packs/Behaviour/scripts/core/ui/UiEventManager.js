@@ -1,5 +1,6 @@
 import { system, world } from "@minecraft/server";
 import { UiManager } from "./UiManager";
+import { HotbarSwitchEventHandler } from "./HotbarSwitchEventHandler";
 export class UiEventManager {
     static register() {
         system.runInterval(() => {
@@ -7,5 +8,6 @@ export class UiEventManager {
                 UiManager.displayPokemonTeam(player);
             });
         }, 5);
+        HotbarSwitchEventHandler.register();
     }
 }

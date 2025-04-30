@@ -1,7 +1,9 @@
-import { system, world } from "@minecraft/server";
+import { Player, system, world } from "@minecraft/server";
 import { Oremon } from "../monster/Oremon";
 import { compactWildOremon } from "../monster/OremonUtils";
 import { PlayerSave } from "../save/PlayerSave";
+import { CaptureManager } from "../capture/CaptureManager";
+import { startBattleWithEntity } from "../items/Oreball";
 const blockedVanillaEntities = new Set([
     "minecraft:armadillo",
     "minecraft:creaking",
@@ -90,7 +92,8 @@ export class OremonEntityEventHandler {
         this.disableVanillaSpawnEvent();
         this.registerSpawnEvent();
         // this.registerInteractTameEvent();
-        this.registerInteractBattleEvent();
+        // this.registerInteractBattleEvent();
+        this.registerHitByBall();
     }
     static registerSpawnEvent() {
         // Test Entity spawn for Oremons
@@ -140,6 +143,14 @@ export class OremonEntityEventHandler {
                     catch {
                         // Skip
                     }
+                    if (!entity.hasTag("in_battle")) {
+                        try {
+                            entity.triggerEvent("oremon:overworld");
+                        }
+                        catch {
+                            // Skip
+                        }
+                    }
                     entity.nameTag = `${name}\nLv.${oremonInstance.getLevel()}\n${playerData.player.name}'s`;
                 }
                 else {
@@ -175,6 +186,12 @@ export class OremonEntityEventHandler {
                     try {
                         const oremonSizes = ["very_small", "small", "medium", "big", "gigantic"];
                         entity.triggerEvent(`setsize:${oremonSizes[oremonInstance.getSize()]}`);
+                    }
+                    catch {
+                        // Skip
+                    }
+                    try {
+                        entity.triggerEvent("oremon:overworld");
                     }
                     catch {
                         // Skip
@@ -250,6 +267,31 @@ export class OremonEntityEventHandler {
                     // Skip
                 }
             }
+        });
+    }
+    static registerHitByBall() {
+        world.afterEvents.projectileHitEntity.subscribe((event) => {
+            const projectile = event.projectile;
+            if (projectile.typeId !== "oremon:oreball")
+                return;
+            system.run(() => {
+                const entity = event.getEntityHit().entity;
+                const player = event.source;
+                if (!player || !(player instanceof Player))
+                    return;
+                if (!entity)
+                    return;
+                if (player === entity)
+                    return;
+                if (!projectile)
+                    return;
+                if (event.projectile?.isValid && !event.projectile.hasTag("captured")) {
+                    CaptureManager.CaptureEntity(entity, player, event.projectile);
+                }
+                else if (event.projectile?.isValid && event.projectile.hasTag("captured")) {
+                    startBattleWithEntity(player, entity, projectile);
+                }
+            });
         });
     }
 }

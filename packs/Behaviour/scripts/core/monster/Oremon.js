@@ -211,6 +211,11 @@ export class Oremon {
     getSpeed() {
         return this.stats.spd;
     }
+    getCry() {
+        const cry = `oremon.cry.${this.getSpeciesId().replace("oremon:", "")}`;
+        console.log(cry);
+        return cry;
+    }
     toWildData() {
         return {
             species: this.species.replace("oremon:", ' '),

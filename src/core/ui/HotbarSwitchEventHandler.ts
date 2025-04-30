@@ -20,11 +20,11 @@ export class HotbarSwitchEventHandler {
     }
 
     static switchToOremonMode(player: Player) {
-        // Remplir slots 0-5 avec équipe
+        // Fill slots 0-5 with team
         const playerData = PlayerSave.data.get(player.id);
         if (!playerData) return;
 
-        // Sauvegarde l'ancienne hotbar
+        // Save the hotbar
         this.saveHotbar(player);
 
         for (let i = 0; i < 6; i++) {
@@ -35,7 +35,7 @@ export class HotbarSwitchEventHandler {
                 player.getComponent("minecraft:inventory")?.container?.setItem(i, undefined);
             }
         }
-        // Slot 8 = bouton retour vers items
+        // Slot 8 = Switch to Items button
         const switchItem = new ItemStack("oremon:switch_to_items", 1);
         switchItem.lockMode = ItemLockMode.slot;
         player.getComponent("minecraft:inventory")?.container?.setItem(8, switchItem);
@@ -45,19 +45,21 @@ export class HotbarSwitchEventHandler {
         const inventory = player.getComponent("minecraft:inventory")?.container;
         if (!inventory) return;
 
-        // Recharge les anciens items sauvegardés
-        const savedInventory = this.getSavedInventoryEntity(player);
-        if (!savedInventory) return;
+        // Loads old items or creates a new inventory entity
+        let savedInventory = this.getSavedInventoryEntity(player);
+        if (!savedInventory) {
+            savedInventory = this.createInventoryEntity(player);
+        }
 
-        const savedContainer = savedInventory.getComponent("minecraft:inventory")?.container;
+        const savedContainer = savedInventory?.getComponent("minecraft:inventory")?.container;
         if (!savedContainer) return;
 
-        // Restore slots 0 à 7
+        // Restore slots 0 to 7
         for (let i = 0; i <= 7; i++) {
             const savedItem = savedContainer.getItem(i);
             inventory.setItem(i, savedItem);
         }
-        // Slot 8 = bouton retour vers oremon
+        // Slot 8 = Switch to Oremon button
         const switchItem = new ItemStack("oremon:switch_to_oremon", 1);
         switchItem.lockMode = ItemLockMode.slot;
         inventory.setItem(8, switchItem);
@@ -77,7 +79,7 @@ export class HotbarSwitchEventHandler {
         const savedContainer = playerInventoryEntity.getComponent("minecraft:inventory")?.container;
         if (!savedContainer) return;
 
-        // Copie slots 0 à 8
+        // copy slots 0 to 8
         for (let i = 0; i <= 8; i++) {
             const item = inventory.getItem(i);
             if (item) {
@@ -87,15 +89,20 @@ export class HotbarSwitchEventHandler {
                 savedContainer.setItem(i, undefined);
             }
         }
-
-        // Lie cette entité au joueur via une propriété dynamique
-        player.setDynamicProperty("oremon:saved_inventory", playerInventoryEntity.id);
     }
 
     private static getSavedInventoryEntity(player: Player): Entity | undefined {
         const id = player.getDynamicProperty("oremon:saved_inventory") as string;
         if (!id) return undefined;
         return world.getDimension("overworld").getEntities().find(entity => entity.id === id);
+    }
+
+    static createInventoryEntity(player: Player): Entity | undefined {
+        //@ts-expect-error: player_inventory entity check
+        const playerInventoryEntity = world.getDimension("overworld").spawnEntity("oremon:player_inventory", player.location);
+        // Links this entity through dynamic properties
+        player.setDynamicProperty("oremon:saved_inventory", playerInventoryEntity.id);
+        return playerInventoryEntity;
     }
 
     static createOreballForOremon(oremon: Oremon) {

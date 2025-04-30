@@ -367,6 +367,12 @@ export class Oremon {
         return this.stats.spd;
     }
 
+    getCry(): string {
+        const cry = `oremon.cry.${this.getSpeciesId().replace("oremon:", "")}`;
+        console.log(cry);
+        return cry;
+    }
+
     toWildData(): IWildOremondata {
         return {
             species: this.species.replace("oremon:", ' '),

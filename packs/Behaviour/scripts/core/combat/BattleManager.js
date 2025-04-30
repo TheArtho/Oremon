@@ -6,6 +6,10 @@ export class BattleManager {
     static getBattleByPlayerId(playerId) {
         return this.activeBattles.find(battle => battle.hasPlayer(playerId));
     }
+    static isInBattle(playerId) {
+        const battle = this.activeBattles.find(battle => battle.hasPlayer(playerId));
+        return battle !== undefined;
+    }
     /**
      * Start a new battle and add it to the list
      */

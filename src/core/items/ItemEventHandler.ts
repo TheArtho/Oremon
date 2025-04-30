@@ -1,13 +1,12 @@
 import {system, world} from "@minecraft/server";
-import {VectorUtils} from "../utils/vectorUtils";
+import {VectorUtils} from "../utils/VectorUtils";
 import {moveEntityToLocation} from "../utils/physicsUtils";
-import {onBallHitBlock, onBallHitEntity, UseOreball} from "./Oreball";
+import {onBallHitBlock, UseOreball} from "./Oreball";
 
 export class ItemEventHandler {
     static register() {
         world.beforeEvents.itemUse.subscribe(UseOreball);
         world.afterEvents.projectileHitBlock.subscribe(onBallHitBlock);
-        world.afterEvents.projectileHitEntity.subscribe(onBallHitEntity);
     }
 
     registerMagicStickEvent() {

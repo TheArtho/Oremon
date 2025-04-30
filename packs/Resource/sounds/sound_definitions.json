@@ -27,6 +27,10 @@
 		"oremon.cry.totodile": {
 			"category": "neutral",
 			"sounds": ["sounds/cry/totodile_cry"]
+		},
+		"oremon.cry.tepig": {
+			"category": "neutral",
+			"sounds": ["sounds/cry/tepig_cry"]
 		}
 	}
 }

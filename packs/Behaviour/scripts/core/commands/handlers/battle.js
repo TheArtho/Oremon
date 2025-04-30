@@ -30,7 +30,7 @@ export function battle(player, args) {
         };
         const battle = BattleManager.createBattle(playerTrainer, opponent);
         const battleScene = new BattleScene(battle);
-        battleScene.attachPlayerScene(new BattlePlayerScene(battle, player));
+        battleScene.attachPlayerScene(new BattlePlayerScene(1, battle, player));
         battle.attachMainScene(battleScene);
         battle.start();
     }

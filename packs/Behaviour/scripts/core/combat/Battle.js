@@ -26,15 +26,15 @@ export class Battle {
             player: trainer1.player,
             name: "Player 1",
             type: trainer1.type == "trainer" ? (trainer1.player ? PlayerType.Player : PlayerType.AiTrainer) : PlayerType.AiWildPokemon,
-            active: 0,
-            team: trainer1.team.map(pokemon => new OremonBattler(pokemon, this))
+            active: trainer1.active ?? 0,
+            team: trainer1.team.map(pokemon => new OremonBattler(1, pokemon, this))
         };
         this.trainer2 = {
             player: trainer2.player,
             name: "Player 2",
             type: trainer2.type == "trainer" ? (trainer2.player ? PlayerType.Player : PlayerType.AiTrainer) : PlayerType.AiWildPokemon,
-            active: 0,
-            team: trainer2.team.map(pokemon => new OremonBattler(pokemon, this))
+            active: trainer2.active ?? 0,
+            team: trainer2.team.map(pokemon => new OremonBattler(2, pokemon, this))
         };
         this.battleMode = options?.battleMode ?? "single";
         this.canLoose = options?.canloose ?? true;
@@ -76,7 +76,7 @@ export class Battle {
     startWildBattle() {
         for (const player of this.getPlayers()) {
             const opponent = this.getOpponentTrainerForPlayer(player);
-            this.battleScene?.onBattleStart(player.id);
+            this.battleScene?.onWildBattleStart(player.id);
             this.battleScene?.displayMessage(`Wild battle started against wild ${opponent.team[0].getName()} Lv. ${opponent.team[0].getLevel()}.`);
         }
         this.waitForInput();
@@ -84,7 +84,7 @@ export class Battle {
     startTrainerBattle() {
         for (const player of this.getPlayers()) {
             const opponent = this.getOpponentTrainerForPlayer(player);
-            this.battleScene?.onBattleStart(player.id);
+            this.battleScene?.onTrainerBattleStart(player.id);
             this.battleScene?.displayMessage(`Trainer battle started against ${opponent.name}.`);
         }
         this.waitForInput();
@@ -276,5 +276,21 @@ export class Battle {
                 maxHp: opponentPkm.getMaxHp()
             }
         };
+    }
+    getCry(index) {
+        if (index == 1) {
+            return this.trainer1.team[this.trainer1.active].getCry();
+        }
+        else {
+            return this.trainer2.team[this.trainer2.active].getCry();
+        }
+    }
+    getOpponentCry(index) {
+        if (index == 2) {
+            return this.trainer1.team[this.trainer1.active].getCry();
+        }
+        else {
+            return this.trainer2.team[this.trainer2.active].getCry();
+        }
     }
 }

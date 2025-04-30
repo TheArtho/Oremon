@@ -1,6 +1,8 @@
 import { MathUtils } from "../utils/MathUtils";
 export class OremonBattler {
-    constructor(oremon, battle) {
+    constructor(trainerIndex, oremon, battle) {
+        this.battlerIndex = 0;
+        this.trainerIndex = trainerIndex;
         this.monster = oremon;
         this.battle = battle;
         // Initialize current HP
@@ -21,6 +23,9 @@ export class OremonBattler {
         this.flags = new Set();
     }
     // --- Basic Info ---
+    getTrainerIndex() {
+        return this.trainerIndex;
+    }
     getName() {
         return this.monster.getName();
     }
@@ -35,6 +40,9 @@ export class OremonBattler {
     }
     getType(index) {
         return this.monster.getType(index);
+    }
+    getCry() {
+        return this.monster.getCry();
     }
     // Stats
     getAtk() {
@@ -114,5 +122,6 @@ export class OremonBattler {
     // Battle methods
     onFaint() {
         this.battle.getScene()?.displayMessage(`${this.getName()} fainted!`);
+        this.battle.getScene()?.faint(this.trainerIndex);
     }
 }

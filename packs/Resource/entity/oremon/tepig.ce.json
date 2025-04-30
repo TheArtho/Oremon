@@ -24,9 +24,7 @@
         "ground_walk": "animation.tepig.ground_walk",
         "ground_run": "animation.tepig.ground_run",
         "cry": "animation.tepig.cry",
-        "battle_idle": "animation.tepig.battle_idle",
-        "battle_entrance": "animation.tepig.battle_entrance",
-        "battle_cry": "animation.tepig.battle_cry"
+        "battle_idle": "animation.tepig.battle_idle"
       },
       "scripts": {
         "animate": [

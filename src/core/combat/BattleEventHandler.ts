@@ -37,14 +37,15 @@ export class BattleEventHandler {
                     if (command.length <= 1) {
                         throw new Error("Missing argument: id");
                     }
+                    console.log(command[1]);
                     const playerAction: PlayerAction = {
-                        type: "move", value: command[1]
+                        type: "move", value: command[1] as string
                     }
                     battle.receiveInput(event.sender, playerAction);
                     event.cancel = true;
                 }
                 catch (e) {
-                    event.sender.sendMessage(e as string);
+                    event.sender.sendMessage(`§c${e}`);
                 }
             }
         }

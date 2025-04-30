@@ -7,12 +7,16 @@ export class OremonBattler {
     monster: Oremon;
     battle: Battle;
 
+    private battlerIndex = 0;
+    private trainerIndex;
+
     private currentHp: number;
     private statStages: { [stat: string]: number };
     private status?: string; // e.g. Poisoned, Burned, Asleep...
     private flags: Set<string>;
 
-    constructor(oremon: Oremon, battle: Battle) {
+    constructor(trainerIndex: number, oremon: Oremon, battle: Battle) {
+        this.trainerIndex = trainerIndex;
         this.monster = oremon;
         this.battle = battle;
 
@@ -39,6 +43,10 @@ export class OremonBattler {
 
     // --- Basic Info ---
 
+    getTrainerIndex(): number {
+        return this.trainerIndex;
+    }
+
     getName(): string {
         return this.monster.getName();
     }
@@ -57,6 +65,10 @@ export class OremonBattler {
 
     getType(index: number): OremonType | undefined {
         return this.monster.getType(index);
+    }
+
+    getCry(): string {
+        return this.monster.getCry();
     }
 
     // Stats
@@ -162,5 +174,6 @@ export class OremonBattler {
     // Battle methods
     onFaint() {
         this.battle.getScene()?.displayMessage(`${this.getName()} fainted!`);
+        this.battle.getScene()?.faint(this.trainerIndex);
     }
 }

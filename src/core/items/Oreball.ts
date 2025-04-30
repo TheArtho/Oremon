@@ -1,11 +1,12 @@
 import {
+    Entity,
     ItemStack,
     ItemUseBeforeEvent,
     Player,
-    ProjectileHitBlockAfterEvent, ProjectileHitEntityAfterEvent,
+    ProjectileHitBlockAfterEvent,
     system
 } from "@minecraft/server";
-import {VectorUtils} from "../utils/vectorUtils";
+import {VectorUtils} from "../utils/VectorUtils";
 import {PlayerSave} from "../save/PlayerSave";
 import {PlayerMonEntityManager} from "../entity/PlayerMonEntityManager";
 import {BattleManager} from "../combat/BattleManager";
@@ -14,11 +15,13 @@ import {expandCompactWildOremon} from "../monster/OremonUtils";
 import {BattleTrainer} from "../../types/Battle";
 import {BattleScene} from "../frontend/BattleScene";
 import {BattlePlayerScene} from "../frontend/BattlePlayerScene";
+import {MathUtils} from "../utils/MathUtils";
 
 export function UseOreball(event: ItemUseBeforeEvent) {
     if (event.itemStack.typeId != "oremon:oreball") return;
     const player = event.source;
-    const inventory = player.getComponent("inventory")
+    if (BattleManager.isInBattle(player.id)) return;
+    const inventory = player.getComponent("inventory");
     if (inventory?.container.getItem(8)?.typeId == "oremon:switch_to_oremon") {
         system.run(() => {
             launchOreball(event);
@@ -30,7 +33,7 @@ export function UseOreball(event: ItemUseBeforeEvent) {
                 PlayerMonEntityManager.playerRetrieve(player, player.selectedSlotIndex);
             }
             else {
-                sendOutPokemon(event)
+                sendOutPokemon(event);
             }
         });
     }
@@ -110,10 +113,10 @@ function launchOreball(event: ItemUseBeforeEvent) {
  * @param event
  */
 export function onBallHitBlock(event: ProjectileHitBlockAfterEvent) {
-    if (event.projectile.typeId != "oremon:oreball") return;
-    if (event.projectile?.isValid && event.projectile.hasTag("captured")) {
+    const projectile = event.projectile;
+    if (projectile?.typeId !== "oremon:oreball") return;
+    if (projectile?.isValid && projectile?.hasTag("captured")) {
         const player = event.source as Player;
-        const projectile = event.projectile;
         const slot = projectile.getTags().find(tag => tag.startsWith("slot:"))?.replace("slot:", "");
         projectile.remove();
         system.run(() => {
@@ -124,58 +127,76 @@ export function onBallHitBlock(event: ProjectileHitBlockAfterEvent) {
 
 /**
  * When a captured ball hits a wild Oremon, start a battle
- * @param event
+ * @param player
+ * @param entity
+ * @param projectile
+ * @param location
  */
-export function onBallHitEntity(event: ProjectileHitEntityAfterEvent) {
-    const projectile = event.projectile;
-    if (projectile.typeId !== "oremon:oreball") return;
-    if (event.projectile?.isValid && event.projectile.hasTag("captured")) {
-        const player = event.source;
-        const entity = event.getEntityHit().entity;
-        if (!player || !(player instanceof Player)) return;
-        if (!entity || !entity.isValid || entity.hasTag("captured")) return;
-        const family = entity.getComponent("type_family");
-        // Start battle if it hits an Oremon
-        if (family && family.hasTypeFamily("oremon")) {
-            const battle = BattleManager.getBattleByPlayerId(player.id);
-            if (!battle) {
-                system.run(() => {
-                    // Sends out the Oremon
-                    const slot = projectile.getTags().find(tag => tag.startsWith("slot:"))?.replace("slot:", "");
-                    const playerOremon = PlayerMonEntityManager.playerSendOut(player, Number(slot), event.location);
-                    try {
-                        playerOremon?.triggerEvent("oremon:battle");
-                    }
-                    catch {
-                        // Skip
-                    }
-                    try {
-                        entity?.triggerEvent("oremon:battle");
-                    }
-                    catch {
-                        // Skip
-                    }
-                    projectile.remove();
+export function startBattleWithEntity(player: Player, entity: Entity, projectile: Entity) {
+    const battle = BattleManager.getBattleByPlayerId(player.id);
+    if (!battle) {
+        let spawnLocation = VectorUtils.offsetAroundTarget(
+            player.location,
+            entity.location,
+            VectorUtils.distance(player.location, entity.location),
+            -20
+        );
 
-                    // Get the data of the wild Pokémon
-                    const wildData = entity?.getDynamicProperty("oremon:wild_data");
-                    if (!wildData) return;
-                    const oremon = Oremon.fromWildData(expandCompactWildOremon(JSON.parse(wildData as string)));
+        // Do raycast down to ground
+        const rayResult = player.dimension.getBlockFromRay(
+            {
+                x: spawnLocation.x,
+                y: spawnLocation.y + 10,
+                z: spawnLocation.z
+            },
+            { x: 0, y: -1, z: 0 },
+            { maxDistance: 20 }
+        );
 
-                    // Set up the battle
-                    const playerTrainer: BattleTrainer = {
-                        type: "trainer", active: 0, player: player, team: PlayerSave.data.get(player.id)!.getTeam().filter(Boolean) as Oremon[]
-                    }
-                    const opponent: BattleTrainer = {
-                        type: "wild_pokemon", active: 0, team: [oremon]
-                    }
-                    const battle = BattleManager.createBattle(playerTrainer, opponent);
-                    const battleScene = new BattleScene(battle);
-                    battleScene.attachPlayerScene(new BattlePlayerScene(battle, player));
-                    battle.attachMainScene(battleScene);
-                    battle.start();
-                });
-            }
+        if (rayResult?.block) {
+            spawnLocation = {
+                x: rayResult.block.location.x + rayResult.faceLocation.x,
+                y: rayResult.block.location.y + rayResult.faceLocation.y,
+                z: rayResult.block.location.z + rayResult.faceLocation.z
+            };
         }
+
+        // Sends out the Oremon
+        const slot = projectile.getTags().find(tag => tag.startsWith("slot:"))?.replace("slot:", "");
+        const playerOremon = PlayerMonEntityManager.playerSendOut(player, Number(slot), spawnLocation);
+
+        try {
+            playerOremon?.triggerEvent("oremon:battle");
+        }
+        catch {
+            // Skip
+        }
+        try {
+            entity?.triggerEvent("oremon:battle");
+        }
+        catch {
+            // Skip
+        }
+
+        // Get the data of the wild Pokémon
+        const wildData = entity?.getDynamicProperty("oremon:wild_data");
+        if (!wildData) return;
+        const oremon = Oremon.fromWildData(expandCompactWildOremon(JSON.parse(wildData as string)));
+
+        // Set up the battle
+        const playerTrainer: BattleTrainer = {
+            type: "trainer", active: MathUtils.clamp(player.selectedSlotIndex, 0, PlayerSave.data.get(player.id)!.getTeam().filter(o => o !== undefined).length - 1), player: player, team: PlayerSave.data.get(player.id)!.getTeam().filter(Boolean) as Oremon[]
+        }
+        const opponent: BattleTrainer = {
+            type: "wild_pokemon", active: 0, team: [oremon]
+        }
+        const battle = BattleManager.createBattle(playerTrainer, opponent);
+        const battleScene = new BattleScene(battle);
+        battleScene.attachPlayerScene(new BattlePlayerScene(1, battle, player));
+        battleScene.attachMonster(1, playerOremon);
+        battleScene.attachMonster(2, entity);
+        battle.attachMainScene(battleScene);
+        battle.start();
+        projectile.remove();
     }
 }

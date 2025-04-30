@@ -15,6 +15,13 @@ export class BattleManager {
         );
     }
 
+    static isInBattle(playerId: string): boolean {
+        const battle = this.activeBattles.find(battle =>
+            battle.hasPlayer(playerId)
+        );
+        return battle !== undefined;
+    }
+
     /**
      * Start a new battle and add it to the list
      */

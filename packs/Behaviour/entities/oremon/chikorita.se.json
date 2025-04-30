@@ -79,6 +79,22 @@
       "overworld": {
         "minecraft:movement": {
           "value": 0.5
+        },
+        "minecraft:navigation.generic": {},
+        "minecraft:movement.generic": {},
+        "minecraft:behavior.random_stroll": {
+          "priority": 8,
+          "speed_multiplier": 1
+        },
+        "minecraft:behavior.look_at_player": {
+          "priority": 0,
+          "probability": 1,
+          "angle_of_view_horizontal": 45,
+          "angle_of_view_vertical": 45
+        },
+        "minecraft:pushable": {
+          "is_pushable": true,
+          "is_pushable_by_piston": false
         }
       },
       "tamed": {
@@ -132,18 +148,6 @@
       },
       "minecraft:jump.static": {},
       "minecraft:can_climb": {},
-      "minecraft:navigation.generic": {},
-      "minecraft:movement.generic": {},
-      "minecraft:behavior.random_stroll": {
-        "priority": 8,
-        "speed_multiplier": 1
-      },
-      "minecraft:behavior.look_at_player": {
-        "priority": 0,
-        "probability": 1,
-        "angle_of_view_horizontal": 45,
-        "angle_of_view_vertical": 45
-      },
       "minecraft:behavior.float": {
         "priority": 0
       },
@@ -152,10 +156,6 @@
         "suffocate_time": 0,
         "breathes_water": false,
         "breathes_air": true
-      },
-      "minecraft:pushable": {
-        "is_pushable": true,
-        "is_pushable_by_piston": false
       },
       "minecraft:physics": {
         "has_gravity": true

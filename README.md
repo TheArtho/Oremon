@@ -1,4 +1,4 @@
-# Oremon – Minecraft Bedrock Addon (Gen 1–8)
+# Oremon – Minecraft Bedrock Addon (Gen 1–7)
 
 **Oremon** is an open-source Minecraft Bedrock Behavior Pack written in **TypeScript**, bringing a modular Pokémon-inspired experience to Bedrock Edition. It aims to include full data support for all official Pokémon from **Generation 1 to Generation 8**.
 
@@ -8,7 +8,7 @@
 
 ## Current Features
 
-- Includes every Pokémon data from Gen 1 to Gen 8 (800+)
+- Includes every Pokémon data from Gen 1 to Gen 7 (800+)
 - TypeScript-based scripting for safe, maintainable code
 - NodeJS environment for automated compilation and deployment
 - Clean and type-safe `OremonData` interface structure

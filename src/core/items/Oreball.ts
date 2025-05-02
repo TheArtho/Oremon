@@ -16,6 +16,7 @@ import {BattleTrainer} from "../../types/Battle";
 import {BattleScene} from "../frontend/BattleScene";
 import {BattlePlayerScene} from "../frontend/BattlePlayerScene";
 import {MathUtils} from "../utils/MathUtils";
+import {OremonEntityManager} from "../entity/OremonEntityManager";
 
 export function UseOreball(event: ItemUseBeforeEvent) {
     if (event.itemStack.typeId != "oremon:oreball") return;
@@ -109,7 +110,7 @@ function launchOreball(event: ItemUseBeforeEvent) {
 }
 
 /**
- * When a captured ball hits a block, send out the Oremon
+ * When a ball hits a block, send out the Oremon or drop the ball
  * @param event
  */
 export function onBallHitBlock(event: ProjectileHitBlockAfterEvent) {
@@ -123,6 +124,11 @@ export function onBallHitBlock(event: ProjectileHitBlockAfterEvent) {
             PlayerMonEntityManager.playerSendOut(player, Number(slot), event.location);
         });
     }
+    else if (projectile?.isValid && !projectile?.hasTag("captured")) {
+        const item = new ItemStack(event.projectile.typeId);
+        event.projectile.dimension.spawnItem(item, event.location);
+        event.projectile.remove();
+    }
 }
 
 /**
@@ -135,35 +141,18 @@ export function onBallHitBlock(event: ProjectileHitBlockAfterEvent) {
 export function startBattleWithEntity(player: Player, entity: Entity, projectile: Entity) {
     const battle = BattleManager.getBattleByPlayerId(player.id);
     if (!battle) {
-        let spawnLocation = VectorUtils.offsetAroundTarget(
+        const preferred= VectorUtils.offsetAroundTarget(
             player.location,
             entity.location,
-            VectorUtils.distance(player.location, entity.location),
+            5,
             -20
         );
 
-        // Do raycast down to ground
-        const rayResult = player.dimension.getBlockFromRay(
-            {
-                x: spawnLocation.x,
-                y: spawnLocation.y + 10,
-                z: spawnLocation.z
-            },
-            { x: 0, y: -1, z: 0 },
-            { maxDistance: 20 }
-        );
-
-        if (rayResult?.block) {
-            spawnLocation = {
-                x: rayResult.block.location.x + rayResult.faceLocation.x,
-                y: rayResult.block.location.y + rayResult.faceLocation.y,
-                z: rayResult.block.location.z + rayResult.faceLocation.z
-            };
-        }
+        const spawnLocation = OremonEntityManager.findValidSpawnLocation(player.dimension, preferred, 5, 10);
 
         // Sends out the Oremon
         const slot = projectile.getTags().find(tag => tag.startsWith("slot:"))?.replace("slot:", "");
-        const playerOremon = PlayerMonEntityManager.playerSendOut(player, Number(slot), spawnLocation);
+        const playerOremon = PlayerMonEntityManager.playerSendOut(player, Number(slot), spawnLocation ?? preferred);
 
         try {
             playerOremon?.triggerEvent("oremon:battle");
@@ -190,6 +179,7 @@ export function startBattleWithEntity(player: Player, entity: Entity, projectile
         const opponent: BattleTrainer = {
             type: "wild_pokemon", active: 0, team: [oremon]
         }
+
         const battle = BattleManager.createBattle(playerTrainer, opponent);
         const battleScene = new BattleScene(battle);
         battleScene.attachPlayerScene(new BattlePlayerScene(1, battle, player));

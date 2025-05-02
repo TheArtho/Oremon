@@ -80,12 +80,9 @@ export class VectorUtils {
         const dx = to.x - from.x;
         const dy = to.y - from.y;
         const dz = to.z - from.z;
-        const horizontalDistance = Math.sqrt(dx * dx + dz * dz);
-        const yaw = MathUtils.radiansToDegrees(Math.atan2(-dx, -dz)); // Y-axis rotation
-        const pitch = MathUtils.radiansToDegrees(Math.atan2(dy, horizontalDistance)); // X-axis rotation
-        return {
-            x: pitch,
-            y: yaw
-        };
+        const horizontalDist = Math.sqrt(dx * dx + dz * dz);
+        const yaw = MathUtils.radiansToDegrees(Math.atan2(dz, dx)) - 90; // important: -90 to align with Minecraft's yaw
+        const pitch = -MathUtils.radiansToDegrees(Math.atan2(dy, horizontalDist)); // negative pitch = up
+        return { x: pitch, y: yaw };
     }
 }

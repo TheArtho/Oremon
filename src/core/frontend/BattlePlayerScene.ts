@@ -1,14 +1,17 @@
 import {EasingType, Entity, Player, system} from "@minecraft/server";
-import { Battle } from "../combat/Battle";
+import {Battle} from "../combat/Battle";
 import moveData from "../../data/moveData";
 import {VectorUtils} from "../utils/VectorUtils";
 import {secondsToTick} from "../utils/timeTickUtils";
 import {MathUtils} from "../utils/MathUtils";
+import {ActionFormData} from "@minecraft/server-ui";
+import {PlayerAction} from "../../types/Battle";
+import {BattleCameraManager} from "../camera/BattleCameraManager";
 
-type PlayerAction = () => Promise<void>;
+type SceneAction = () => Promise<void>;
 
 export class BattlePlayerScene {
-    private eventQueue: PlayerAction[] = [];
+    private eventQueue: SceneAction[] = [];
     private processing = false;
 
     constructor(public index: number, public battle: Battle, public player: Player) {}
@@ -27,7 +30,7 @@ export class BattlePlayerScene {
     }
 
     private enqueue(actionBuilder: (resolve: () => void) => void) {
-        const action: PlayerAction = () => {
+        const action: SceneAction = () => {
             return new Promise<void>((resolve) => {
                 actionBuilder(resolve);
             });
@@ -95,16 +98,23 @@ export class BattlePlayerScene {
                             this.player.sendMessage(e as string);
                         }
                     });
-                }
 
-                await this.wait(30);
+                    await this.wait(30);
 
-                system.run(() => {
-                    this.player.camera.setCamera("oremon:shoulder_right", {
-                        easeOptions: { easeType: EasingType.InOutQuad, easeTime: 0.5 }
+                    system.run(() => {
+                        /*
+                        this.player.camera.setCamera("oremon:shoulder_right", {
+                            easeOptions: { easeType: EasingType.InOutQuad, easeTime: 0.5 }
+                        });
+                        */
+                        const cameraOption = BattleCameraManager.BattleClassicCamera(playerMonsterPosition, opponentMonsterPosition, {easeType: EasingType.InOutQuad, easeTime: 0.6}, this.player.dimension)
+                        this.player.camera.setCamera("minecraft:free", cameraOption);
                     });
-                    resolve(); // Ne surtout pas oublier de résoudre à la fin
-                });
+
+                    await this.wait(secondsToTick(1.5));
+
+                    resolve();
+                }
             })()
         });
     }
@@ -131,6 +141,45 @@ export class BattlePlayerScene {
             });
         });
     }
+
+    async onAskInput() {
+        const battleInfo = this.battle.getBattleInfo(this.player);
+
+        const ask = async (): Promise<void> => {
+            const form = new ActionFormData()
+                .title("wiki_form:battle")
+                .body("Choose a move");
+
+            battleInfo.player.moves.forEach(move => {
+                if (move) {
+                    form.button(`${move.id} - PP: ${move.pp}/${moveData[move.id].pp}`);
+                }
+            });
+
+            const r = await form.show(this.player);
+
+            // If the player cancels, ask again
+            if (r.canceled) {
+                return ask(); // Recursive call
+            }
+
+            const moveId = battleInfo.player.moves[r.selection!]?.id;
+
+            if (!moveId) {
+                return ask(); // In case moveId is still undefined
+            }
+
+            const playerAction: PlayerAction = {
+                type: "move",
+                value: moveId
+            };
+
+            this.battle.receiveInput(this.player, playerAction);
+        };
+
+        await ask();
+    }
+
 
     onDisplayMessage(message: string) {
        return new Promise<void>((resolve) => {

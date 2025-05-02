@@ -8,6 +8,7 @@ import { expandCompactWildOremon } from "../monster/OremonUtils";
 import { BattleScene } from "../frontend/BattleScene";
 import { BattlePlayerScene } from "../frontend/BattlePlayerScene";
 import { MathUtils } from "../utils/MathUtils";
+import { OremonEntityManager } from "../entity/OremonEntityManager";
 export function UseOreball(event) {
     if (event.itemStack.typeId != "oremon:oreball")
         return;
@@ -93,7 +94,7 @@ function launchOreball(event) {
     }
 }
 /**
- * When a captured ball hits a block, send out the Oremon
+ * When a ball hits a block, send out the Oremon or drop the ball
  * @param event
  */
 export function onBallHitBlock(event) {
@@ -108,6 +109,11 @@ export function onBallHitBlock(event) {
             PlayerMonEntityManager.playerSendOut(player, Number(slot), event.location);
         });
     }
+    else if (projectile?.isValid && !projectile?.hasTag("captured")) {
+        const item = new ItemStack(event.projectile.typeId);
+        event.projectile.dimension.spawnItem(item, event.location);
+        event.projectile.remove();
+    }
 }
 /**
  * When a captured ball hits a wild Oremon, start a battle
@@ -119,23 +125,11 @@ export function onBallHitBlock(event) {
 export function startBattleWithEntity(player, entity, projectile) {
     const battle = BattleManager.getBattleByPlayerId(player.id);
     if (!battle) {
-        let spawnLocation = VectorUtils.offsetAroundTarget(player.location, entity.location, VectorUtils.distance(player.location, entity.location), -20);
-        // Do raycast down to ground
-        const rayResult = player.dimension.getBlockFromRay({
-            x: spawnLocation.x,
-            y: spawnLocation.y + 10,
-            z: spawnLocation.z
-        }, { x: 0, y: -1, z: 0 }, { maxDistance: 20 });
-        if (rayResult?.block) {
-            spawnLocation = {
-                x: rayResult.block.location.x + rayResult.faceLocation.x,
-                y: rayResult.block.location.y + rayResult.faceLocation.y,
-                z: rayResult.block.location.z + rayResult.faceLocation.z
-            };
-        }
+        const preferred = VectorUtils.offsetAroundTarget(player.location, entity.location, 5, -20);
+        const spawnLocation = OremonEntityManager.findValidSpawnLocation(player.dimension, preferred, 5, 10);
         // Sends out the Oremon
         const slot = projectile.getTags().find(tag => tag.startsWith("slot:"))?.replace("slot:", "");
-        const playerOremon = PlayerMonEntityManager.playerSendOut(player, Number(slot), spawnLocation);
+        const playerOremon = PlayerMonEntityManager.playerSendOut(player, Number(slot), spawnLocation ?? preferred);
         try {
             playerOremon?.triggerEvent("oremon:battle");
         }

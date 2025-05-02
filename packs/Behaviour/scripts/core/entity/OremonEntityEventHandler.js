@@ -4,6 +4,7 @@ import { compactWildOremon } from "../monster/OremonUtils";
 import { PlayerSave } from "../save/PlayerSave";
 import { CaptureManager } from "../capture/CaptureManager";
 import { startBattleWithEntity } from "../items/Oreball";
+import { ActionFormData } from "@minecraft/server-ui";
 const blockedVanillaEntities = new Set([
     "minecraft:armadillo",
     "minecraft:creaking",
@@ -91,6 +92,7 @@ export class OremonEntityEventHandler {
     static register() {
         this.disableVanillaSpawnEvent();
         this.registerSpawnEvent();
+        this.registerInteractFormEvent();
         // this.registerInteractTameEvent();
         // this.registerInteractBattleEvent();
         this.registerHitByBall();
@@ -200,6 +202,27 @@ export class OremonEntityEventHandler {
                     entity.setDynamicProperty("oremon:wild_data", JSON.stringify(compactWildOremon(oremonInstance.toWildData())));
                     // console.log(`Saved oremon data proprerties : ${entity.getDynamicPropertyTotalByteCount()} total bytes`)
                 }
+            }
+        });
+    }
+    static registerInteractFormEvent() {
+        world.beforeEvents.playerInteractWithEntity.subscribe((event) => {
+            const entity = event.target;
+            const player = event.player;
+            if (!entity.isValid)
+                return;
+            const family = entity.getComponent("type_family");
+            if (family && family.hasTypeFamily("oremon")) {
+                system.run(() => {
+                    const form = new ActionFormData()
+                        .title("wiki_form:battle_form:")
+                        .body("Choose a move")
+                        .button("Attack 1")
+                        .button("Attack 2")
+                        .button("Attack 3")
+                        .button("Attack 4");
+                    form.show(player);
+                });
             }
         });
     }

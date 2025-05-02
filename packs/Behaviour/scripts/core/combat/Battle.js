@@ -104,6 +104,7 @@ export class Battle {
         // Scene Update
         this.battleScene?.updateInfo();
         this.battleScene?.displayMessage("Waiting for input.");
+        this.battleScene?.displayInput();
         this.battleScene?.play();
     }
     receiveInput(player, action) {
@@ -132,6 +133,7 @@ export class Battle {
         }
         else {
             // TODO Notify the player he has to wait other's player action
+            player.player?.sendMessage("Waiting for opponent's choice.");
         }
     }
     processTurn() {

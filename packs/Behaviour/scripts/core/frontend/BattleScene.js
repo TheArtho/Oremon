@@ -117,6 +117,14 @@ export class BattleScene {
             }
         });
     }
+    displayInput() {
+        this.enqueue((resolve) => {
+            for (const p of this.playerScenes.values()) {
+                p.onAskInput();
+            }
+            resolve();
+        });
+    }
     displayMessage(message, playerId) {
         this.enqueue(async (resolve) => {
             if (playerId) {

@@ -2,6 +2,7 @@ import {OremonBattler} from "./OremonBattler";
 import {generateFallbackId} from "../monster/OremonUtils";
 import {Player} from "@minecraft/server";
 import {
+    BattleInfo,
     BattleMode,
     BattleOptions,
     BattleState,
@@ -144,7 +145,7 @@ export class Battle {
             this.registerPlayerAction(this.trainer2, BattleAi.selectRandomMove(this.trainer2));
         }
         // Scene Update
-        this.battleScene?.updateInfo();
+        // this.battleScene?.updateInfo();
         this.battleScene?.displayMessage("Waiting for input.")
         this.battleScene?.displayInput();
         this.battleScene?.play();
@@ -315,7 +316,7 @@ export class Battle {
         return trainer.type !== PlayerType.Player;
     }
 
-    getBattleInfo(player: Player) {
+    getBattleInfo(player: Player): BattleInfo {
         const playerInfo = this.getTrainerForPlayer(player);
         const opponentInfo = this.getOpponentTrainerForPlayer(player);
         const playerPkm = playerInfo.team[playerInfo.active];

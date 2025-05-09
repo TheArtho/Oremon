@@ -48,7 +48,7 @@ export class VectorUtils {
         const sin = Math.sin(angleRad);
         return {
             x: v.x * cos - v.z * sin,
-            y: v.y, // On ne touche pas à Y
+            y: v.y,
             z: v.x * sin + v.z * cos
         };
     }

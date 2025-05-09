@@ -10,7 +10,7 @@
           },
           {
             "binding_type": "view",
-            "source_property_name": "((#title_text - 'wiki_form:') = #title_text)", // We need to define the title we added on $title_needs_to_contain
+            "source_property_name": "((#title_text - 'battle_form:') = #title_text)", // We need to define the title we added on $title_needs_to_contain
             // By the way, you can also put the title of your forms as much as you want like this -> (#title_text - 'form_1' - 'form_2' - 'form_3')
             "target_property_name": "#visible"
           }
@@ -40,7 +40,7 @@
             "name": "buttons",
             "control_ids": {
               "button": "server_form.battlemove_button",
-              "label": "@server_form.dynamic_label",
+              "label": "@server_form.battle_label",
               "header": "@server_form.dynamic_header",
               "divider": "@settings_common.option_group_section_divider"
             }
@@ -55,7 +55,6 @@
           ]
         }
       },
-      // You can reference your forms here but for now we will use an image of apple as an example
       {
         "playerui_battle_form_panel": {
           "type": "image",
@@ -65,7 +64,7 @@
           "offset": [5, -5],
           "anchor_from": "bottom_left",
           "anchor_to": "bottom_left",
-          "$title_needs_to_contain": "wiki_form:", // What the action form title needs to contain in order for this apple to show
+          "$title_needs_to_contain": "battle_form:", // What the action form title needs to contain in order for this apple to show
           "bindings": [
             {
               "binding_type": "view",
@@ -78,21 +77,119 @@
             {
               "player_level_label": {
                 "type": "label",
-                "text": "Lv.100",
+                "text": "#text",
                 "anchor_from": "top_middle",
                 "anchor_to": "top_middle",
                 "offset": [-5, 1],
-                "layer": 10
+                "layer": 10,
+                "controls": [
+                  {
+                    "player_level_data_control": {
+                      "type": "collection_panel",
+                      "size": [ 0, 0 ],
+                      "collection_name": "form_buttons",
+                      "controls": [
+                        {
+                          "player_level_collection": {
+                            "type": "panel",
+                            "size": [ 0, 0 ],
+                            "collection_index": 3,
+                            "bindings": [
+                              {
+                                "binding_type": "collection_details",
+                                "binding_collection_name": "form_buttons"
+                              },
+                              {
+                                "binding_type": "collection",
+                                "binding_condition": "none",
+                                "binding_collection_name": "form_buttons",
+                                "binding_name": "#form_button_text",
+                                "binding_name_override": "#form_button_text"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "bindings": [
+                        {
+                          "binding_type": "view",
+                          // reads bindings from the "data_control" child element
+                          "source_control_name": "player_level_collection",
+                          "source_property_name": "#form_button_text",
+                          "target_property_name": "#text"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    // reads bindings from the "data_control" child element
+                    "source_control_name": "player_level_data_control",
+                    "source_property_name": "#text",
+                    "target_property_name": "#text"
+                  }
+                ]
               }
             },
             {
               "player_name_label": {
                 "type": "label",
-                "text": "Totodile",
+                "text": "#text",
                 "anchor_from": "left_middle",
                 "anchor_to": "bottom_left",
                 "offset": [12, 0],
-                "layer": 10
+                "layer": 10,
+                "controls": [
+                  {
+                    "player_name_data_control": {
+                      "type": "collection_panel",
+                      "size": [ 0, 0 ],
+                      "collection_name": "form_buttons",
+                      "controls": [
+                        {
+                          "player_name_collection": {
+                            "type": "panel",
+                            "size": [ 0, 0 ],
+                            "collection_index": 2,
+                            "bindings": [
+                              {
+                                "binding_type": "collection_details",
+                                "binding_collection_name": "form_buttons"
+                              },
+                              {
+                                "binding_type": "collection",
+                                "binding_condition": "none",
+                                "binding_collection_name": "form_buttons",
+                                "binding_name": "#form_button_text",
+                                "binding_name_override": "#form_button_text"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "bindings": [
+                        {
+                          "binding_type": "view",
+                          // reads bindings from the "data_control" child element
+                          "source_control_name": "player_name_collection",
+                          "source_property_name": "#form_button_text",
+                          "target_property_name": "#text"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    // reads bindings from the "data_control" child element
+                    "source_control_name": "player_name_data_control",
+                    "source_property_name": "#text",
+                    "target_property_name": "#text"
+                  }
+                ]
               }
             },
             {
@@ -108,15 +205,129 @@
                   {
                     "player_hp_bar": {
                       "type": "image",
+                      "clip_direction": "left",
+                      "clip_ratio": "#clip_ratio",
                       "texture": "textures/ui/battle/hpbar_green",
-                      "size": [56, 11],
+                      "size": [56, 10],
                       "anchor_from": "left_middle",
                       "anchor_to": "left_middle",
                       "offset": [
                         1,
                         0
                       ],
-                      "layer": 10
+                      "layer": 10,
+                      "$float_conversion": 100.0,
+                      "controls": [
+                        {
+                          "player_hp_bar_data_control": {
+                            "type": "collection_panel",
+                            "size": [ 0, 0 ],
+                            "collection_name": "form_buttons",
+                            "controls": [
+                              {
+                                "player_hp_bar_collection": {
+                                  "type": "panel",
+                                  "size": [ 0, 0 ],
+                                  "collection_index": 5,
+                                  "bindings": [
+                                    {
+                                      "binding_type": "collection_details",
+                                      "binding_collection_name": "form_buttons"
+                                    },
+                                    {
+                                      "binding_type": "collection",
+                                      "binding_condition": "none",
+                                      "binding_collection_name": "form_buttons",
+                                      "binding_name": "#form_button_text",
+                                      "binding_name_override": "#form_button_text"
+                                    }
+                                  ]
+                                }
+                              }
+                            ],
+                            "bindings": [
+                              {
+                                "binding_type": "view",
+                                "source_control_name": "player_hp_bar_collection",
+                                "source_property_name": "#form_button_text",
+                                "target_property_name": "#text"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "bindings": [
+                        {
+                          "binding_type": "view",
+                          "source_control_name": "player_hp_bar_data_control",
+                          "source_property_name": "(#text - 'playerbar:')",
+                          "target_property_name": "#ratio_string"
+                        },
+                        {
+                          "binding_type": "view",
+                          "source_property_name": "(#ratio_string / $float_conversion)",
+                          "target_property_name": "#clip_ratio"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "player_hp_text": {
+                      "type": "label",
+                      "text": "#text",
+                      "anchor_from": "right_middle",
+                      "anchor_to": "right_middle",
+                      "offset": [-2, 0],
+                      "layer": 10,
+                      "controls": [
+                        {
+                          "player_hp_text_data_control": {
+                            "type": "collection_panel",
+                            "size": [ 0, 0 ],
+                            "collection_name": "form_buttons",
+                            "controls": [
+                              {
+                                "player_hp_text_collection": {
+                                  "type": "panel",
+                                  "size": [ 0, 0 ],
+                                  "collection_index": 4,
+                                  "bindings": [
+                                    {
+                                      "binding_type": "collection_details",
+                                      "binding_collection_name": "form_buttons"
+                                    },
+                                    {
+                                      "binding_type": "collection",
+                                      "binding_condition": "none",
+                                      "binding_collection_name": "form_buttons",
+                                      "binding_name": "#form_button_text",
+                                      "binding_name_override": "#form_button_text"
+                                    }
+                                  ]
+                                }
+                              }
+                            ],
+                            "bindings": [
+                              {
+                                "binding_type": "view",
+                                // reads bindings from the "data_control" child element
+                                "source_control_name": "player_hp_text_collection",
+                                "source_property_name": "#form_button_text",
+                                "target_property_name": "#text"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "bindings": [
+                        {
+                          "binding_type": "view",
+                          // reads bindings from the "data_control" child element
+                          "source_control_name": "player_hp_text_data_control",
+                          "source_property_name": "#text",
+                          "target_property_name": "#text"
+                        }
+                      ]
                     }
                   }
                 ]
@@ -134,7 +345,7 @@
           "offset": [-5, 5],
           "anchor_from": "top_right",
           "anchor_to": "top_right",
-          "$title_needs_to_contain": "wiki_form:", // What the action form title needs to contain in order for this apple to show
+          "$title_needs_to_contain": "battle_form:", // What the action form title needs to contain in order for this apple to show
           "bindings": [
             {
               "binding_type": "view",
@@ -147,21 +358,119 @@
             {
               "opponent_level_label": {
                 "type": "label",
-                "text": "Lv.100",
+                "text": "#text",
                 "anchor_from": "top_middle",
                 "anchor_to": "top_middle",
-                "offset": [5, 1],
-                "layer": 10
+                "offset": [-13, 1],
+                "layer": 10,
+                "controls": [
+                  {
+                    "opponent_level_data_control": {
+                      "type": "collection_panel",
+                      "size": [ 0, 0 ],
+                      "collection_name": "form_buttons",
+                      "controls": [
+                        {
+                          "opponent_level_collection": {
+                            "type": "panel",
+                            "size": [ 0, 0 ],
+                            "collection_index": 1,
+                            "bindings": [
+                              {
+                                "binding_type": "collection_details",
+                                "binding_collection_name": "form_buttons"
+                              },
+                              {
+                                "binding_type": "collection",
+                                "binding_condition": "none",
+                                "binding_collection_name": "form_buttons",
+                                "binding_name": "#form_button_text",
+                                "binding_name_override": "#form_button_text"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "bindings": [
+                        {
+                          "binding_type": "view",
+                          // reads bindings from the "data_control" child element
+                          "source_control_name": "opponent_level_collection",
+                          "source_property_name": "#form_button_text",
+                          "target_property_name": "#text"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    // reads bindings from the "data_control" child element
+                    "source_control_name": "opponent_level_data_control",
+                    "source_property_name": "#text",
+                    "target_property_name": "#text"
+                  }
+                ]
               }
             },
             {
               "opponent_name_label": {
                 "type": "label",
-                "text": "Totodile",
-                "anchor_from": "right_middle",
-                "anchor_to": "bottom_right",
-                "offset": [-12, 0],
-                "layer": 10
+                "text": "#text",
+                "anchor_from": "left_middle",
+                "anchor_to": "bottom_left",
+                "offset": [5, 0],
+                "layer": 10,
+                "controls": [
+                  {
+                    "opponent_name_data_control": {
+                      "type": "collection_panel",
+                      "size": [ 0, 0 ],
+                      "collection_name": "form_buttons",
+                      "controls": [
+                        {
+                          "opponent_name_collection": {
+                            "type": "panel",
+                            "size": [ 0, 0 ],
+                            "collection_index": 0,
+                            "bindings": [
+                              {
+                                "binding_type": "collection_details",
+                                "binding_collection_name": "form_buttons"
+                              },
+                              {
+                                "binding_type": "collection",
+                                "binding_condition": "none",
+                                "binding_collection_name": "form_buttons",
+                                "binding_name": "#form_button_text",
+                                "binding_name_override": "#form_button_text"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "bindings": [
+                        {
+                          "binding_type": "view",
+                          // reads bindings from the "data_control" child element
+                          "source_control_name": "opponent_name_collection",
+                          "source_property_name": "#form_button_text",
+                          "target_property_name": "#text"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    // reads bindings from the "data_control" child element
+                    "source_control_name": "opponent_name_data_control",
+                    "source_property_name": "#text",
+                    "target_property_name": "#text"
+                  }
+                ]
               }
             },
             {
@@ -177,15 +486,70 @@
                   {
                     "opponent_hp_bar": {
                       "type": "image",
+                      "clip_direction": "left",
+                      "clip_ratio": "#clip_ratio",
                       "texture": "textures/ui/battle/hpbar_green",
-                      "size": [56, 11],
+                      "size": [56, 10],
                       "anchor_from": "right_middle",
                       "anchor_to": "right_middle",
                       "offset": [
                         -1,
                         0
                       ],
-                      "layer": 10
+                      "layer": 10,
+                      "$float_conversion": 100.0,
+                      "controls": [
+                        {
+                          "opponent_hp_bar_data_control": {
+                            "type": "collection_panel",
+                            "size": [ 0, 0 ],
+                            "collection_name": "form_buttons",
+                            "controls": [
+                              {
+                                "opponent_hp_bar_collection": {
+                                  "type": "panel",
+                                  "size": [ 0, 0 ],
+                                  "collection_index": 6,
+                                  "bindings": [
+                                    {
+                                      "binding_type": "collection_details",
+                                      "binding_collection_name": "form_buttons"
+                                    },
+                                    {
+                                      "binding_type": "collection",
+                                      "binding_condition": "none",
+                                      "binding_collection_name": "form_buttons",
+                                      "binding_name": "#form_button_text",
+                                      "binding_name_override": "#form_button_text"
+                                    }
+                                  ]
+                                }
+                              }
+                            ],
+                            "bindings": [
+                              {
+                                "binding_type": "view",
+                                "source_control_name": "opponent_hp_bar_collection",
+                                "source_property_name": "#form_button_text",
+                                "target_property_name": "#text"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "bindings": [
+                        {
+                          "binding_type": "view",
+                          "source_control_name": "opponent_hp_bar_data_control",
+                          "source_property_name": "(#text - 'opponentbar:')",
+                          "target_property_name": "#ratio_string"
+                        },
+                        {
+                          "binding_type": "view",
+                          "source_property_name": "(#ratio_string / $float_conversion)",  // should be a float between 0 and 1
+                          "target_property_name": "#clip_ratio"
+                        }
+                      ]
                     }
                   }
                 ]
@@ -195,6 +559,10 @@
         }
       }
     ]
+  },
+  "battle_label": {
+    "type": "panel",
+    "size": [0,0]
   },
   "battlemove_button": {
     "type": "stack_panel",

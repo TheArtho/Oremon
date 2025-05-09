@@ -1,4 +1,4 @@
-import {Oremon} from "../core/monster/Oremon";
+import {Move, Oremon} from "../core/monster/Oremon";
 import {OremonBattler} from "../core/combat/OremonBattler";
 import {PlayerType} from "../enums/battle";
 import {Player} from "@minecraft/server";
@@ -37,3 +37,22 @@ export type TurnResult =
     | { result: "continue" } // Le tour est fini, on continue le combat
     | { result: "win", winner: PlayerInfo, loser: PlayerInfo } // Quelqu'un a gagné
     | { result: "draw" }; // Match nul (plus rare)
+
+export interface BattleInfo {
+    battle: {
+        turn: number;
+    },
+    player: {
+        name: string;
+        level: number;
+        currentHp: number;
+        maxHp: number;
+        moves: (Move | undefined)[]
+    },
+    opponent: {
+        name: string;
+        level: number;
+        currentHp: number;
+        maxHp: number;
+    }
+}

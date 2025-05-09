@@ -102,7 +102,7 @@ export class Battle {
             this.registerPlayerAction(this.trainer2, BattleAi.selectRandomMove(this.trainer2));
         }
         // Scene Update
-        this.battleScene?.updateInfo();
+        // this.battleScene?.updateInfo();
         this.battleScene?.displayMessage("Waiting for input.");
         this.battleScene?.displayInput();
         this.battleScene?.play();

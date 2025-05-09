@@ -57,7 +57,7 @@ export class VectorUtils {
 
         return {
             x: v.x * cos - v.z * sin,
-            y: v.y, // On ne touche pas à Y
+            y: v.y,
             z: v.x * sin + v.z * cos
         };
     }

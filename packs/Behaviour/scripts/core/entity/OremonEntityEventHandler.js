@@ -215,8 +215,16 @@ export class OremonEntityEventHandler {
             if (family && family.hasTypeFamily("oremon")) {
                 system.run(() => {
                     const form = new ActionFormData()
-                        .title("wiki_form:battle_form:")
-                        .body("Choose a move")
+                        .title("battle_form:battle")
+                        .label("label_0")
+                        .label("label_1")
+                        .label("label_2")
+                        .label("label_3")
+                        .label("label_4")
+                        .label("0")
+                        .label("50")
+                        .label("label_7")
+                        .label("label_8")
                         .button("Attack 1")
                         .button("Attack 2")
                         .button("Attack 3")

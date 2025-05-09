@@ -5,6 +5,7 @@ import { secondsToTick } from "../utils/timeTickUtils";
 import { MathUtils } from "../utils/MathUtils";
 import { ActionFormData } from "@minecraft/server-ui";
 import { BattleCameraManager } from "../camera/BattleCameraManager";
+import { BattleUiManager } from "../ui/BattleUiManager";
 export class BattlePlayerScene {
     constructor(index, battle, player) {
         this.index = index;
@@ -45,7 +46,7 @@ export class BattlePlayerScene {
             const opponentMonsterPosition = opponentMonster?.location;
             (async () => {
                 system.run(() => {
-                    this.player.playMusic("oremon.music.wild_battle");
+                    // this.player.playMusic("oremon.music.wild_battle");
                     if (opponentMonsterPosition) {
                         const yaw = MathUtils.radiansToDegrees(Math.atan2(opponentMonsterPosition.x - playerPosition.x, playerPosition.z - opponentMonsterPosition.z));
                         opponentMonster.setRotation({ x: 0, y: yaw });
@@ -112,7 +113,7 @@ export class BattlePlayerScene {
     onBattleEnd() {
         return new Promise((resolve) => {
             system.run(() => {
-                this.player.runCommand("music stop 2");
+                // this.player.runCommand("music stop 2");
                 this.player.camera.clear();
                 resolve();
             });
@@ -122,8 +123,14 @@ export class BattlePlayerScene {
         const battleInfo = this.battle.getBattleInfo(this.player);
         const ask = async () => {
             const form = new ActionFormData()
-                .title("wiki_form:battle")
-                .body("Choose a move");
+                .title("battle_form:battle")
+                .label(`${battleInfo.opponent.name}`) // collection_index : 0
+                .label(`Lv.${battleInfo.opponent.level}`) // collection_index : 1
+                .label(`${battleInfo.player.name}`) // collection_index : 2
+                .label(`Lv.${battleInfo.player.level}`) // collection_index : 3
+                .label(`${battleInfo.player.currentHp}/${battleInfo.player.maxHp}`) // collection_index : 4
+                .label(`playerbar:${Math.ceil((1 - battleInfo.player.currentHp / battleInfo.player.maxHp) * 100)}`) // collection_index : 5
+                .label(`opponentbar:${Math.ceil((1 - battleInfo.opponent.currentHp / battleInfo.opponent.maxHp) * 100)}`); // collection_index : 6
             battleInfo.player.moves.forEach(move => {
                 if (move) {
                     form.button(`${move.id} - PP: ${move.pp}/${moveData[move.id].pp}`);
@@ -154,6 +161,7 @@ export class BattlePlayerScene {
     }
     onUpdateInfo() {
         const battleInfo = this.battle.getBattleInfo(this.player);
+        /*
         let str = `### TURN ${battleInfo.battle.turn + 1} ###\n`;
         str += `    ${battleInfo.player.name} Lv.${battleInfo.player.level} - HP: ${battleInfo.player.currentHp}/${battleInfo.player.maxHp}\n`;
         str += `    Vs\n`;
@@ -165,5 +173,14 @@ export class BattlePlayerScene {
             }
         });
         this.player.sendMessage(str);
+        */
+        return new Promise((resolve) => {
+            (async () => {
+                BattleUiManager.UpdateOpponentName(this.player, battleInfo.opponent.name);
+                await system.waitTicks(1);
+                BattleUiManager.UpdateOpponentLevel(this.player, `Lv.${battleInfo.opponent.level}`);
+                resolve();
+            })();
+        });
     }
 }

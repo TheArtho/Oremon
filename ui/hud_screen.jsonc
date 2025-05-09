@@ -1,0 +1,48 @@
+{
+  "namespace": "hud",
+
+  //---------------------------------------------------------------------------
+  // Oremon Hud
+  //---------------------------------------------------------------------------
+
+  "hud_elements_panel": {
+    "type": "panel",
+    "controls": [
+
+    ]
+  },
+
+  //---------------------------------------------------------------------------
+  // Vanilla Hud Screen Override
+  //---------------------------------------------------------------------------
+
+  // Override title component to only show when "ui_title:" is set as a title prefix
+  "hud_title_text/title_frame/title": {
+    "$update_string": "ui_title:",
+    "modifications": [
+      {
+        "array_name": "bindings",
+        "operation": "insert_back",
+        "value": [
+          {
+            "binding_type": "view",
+            "source_property_name": "(not ((#text - $update_string) = #text))",
+            "target_property_name": "#visible"
+          }
+        ]
+      }
+    ]
+  },
+
+  "root_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          { "hud_elements_panel@hud.hud_elements_panel": {} }
+        ]
+      }
+    ]
+  }
+}

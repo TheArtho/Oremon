@@ -7,6 +7,7 @@ import {MathUtils} from "../utils/MathUtils";
 import {ActionFormData} from "@minecraft/server-ui";
 import {PlayerAction} from "../../types/Battle";
 import {BattleCameraManager} from "../camera/BattleCameraManager";
+import {BattleUiManager} from "../ui/BattleUiManager";
 
 type SceneAction = () => Promise<void>;
 
@@ -53,7 +54,7 @@ export class BattlePlayerScene {
             const opponentMonsterPosition = opponentMonster?.location;
             (async () => {
                 system.run(() => {
-                    this.player.playMusic("oremon.music.wild_battle");
+                    // this.player.playMusic("oremon.music.wild_battle");
                     if (opponentMonsterPosition) {
                         const yaw = MathUtils.radiansToDegrees(Math.atan2(opponentMonsterPosition.x - playerPosition.x, playerPosition.z - opponentMonsterPosition.z));
                         opponentMonster.setRotation({ x: 0, y: yaw });
@@ -135,7 +136,7 @@ export class BattlePlayerScene {
     onBattleEnd() {
         return new Promise<void>((resolve) => {
             system.run(() => {
-                this.player.runCommand("music stop 2");
+                // this.player.runCommand("music stop 2");
                 this.player.camera.clear();
                 resolve();
             });
@@ -146,15 +147,7 @@ export class BattlePlayerScene {
         const battleInfo = this.battle.getBattleInfo(this.player);
 
         const ask = async (): Promise<void> => {
-            const form = new ActionFormData()
-                .title("wiki_form:battle")
-                .body("Choose a move");
-
-            battleInfo.player.moves.forEach(move => {
-                if (move) {
-                    form.button(`${move.id} - PP: ${move.pp}/${moveData[move.id].pp}`);
-                }
-            });
+            const form = BattleUiManager.getBattleForm(battleInfo);
 
             const r = await form.show(this.player);
 
@@ -188,8 +181,21 @@ export class BattlePlayerScene {
        });
     }
 
+    onDisplayText(message: string) {
+        return new Promise<void>((resolve) => {
+            this.player.sendMessage(`[Battle] ${message}`);
+            (async () => {
+                this.player.onScreenDisplay.setTitle("oremonDialog:true");
+                await system.waitTicks(20);
+                this.player.onScreenDisplay.setTitle("oremonDialog:false");
+            })()
+            resolve();
+        });
+    }
+
     onUpdateInfo() {
         const battleInfo = this.battle.getBattleInfo(this.player);
+        /*
         let str = `### TURN ${battleInfo.battle.turn + 1} ###\n`;
         str += `    ${battleInfo.player.name} Lv.${battleInfo.player.level} - HP: ${battleInfo.player.currentHp}/${battleInfo.player.maxHp}\n`;
         str += `    Vs\n`;
@@ -201,5 +207,13 @@ export class BattlePlayerScene {
             }
         });
         this.player.sendMessage(str);
+        */
+        return new Promise<void>((resolve) => {
+            (async () => {
+                // Update Battle UI
+                console.log(battleInfo);
+                resolve();
+            })()
+        });
     }
 }

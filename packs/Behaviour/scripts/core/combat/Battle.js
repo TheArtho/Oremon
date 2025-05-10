@@ -272,7 +272,8 @@ export class Battle {
         const opponentPkm = opponentInfo.team[opponentInfo.active];
         return {
             battle: {
-                turn: this.turnCount
+                turn: this.turnCount,
+                isTrainerBattle: this.isTrainerBattle()
             },
             player: {
                 name: playerPkm.getName(),

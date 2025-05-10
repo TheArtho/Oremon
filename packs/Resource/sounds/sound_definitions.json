@@ -5,7 +5,7 @@
 			"category": "ui",
 			"sounds": [
 				{
-					"name": "sounds/music/sv_wild_northern",
+					"name": "sounds/music/sv_wild",
 					"stream": true,
 					"load_on_low_memory": true,
 					"volume": 1

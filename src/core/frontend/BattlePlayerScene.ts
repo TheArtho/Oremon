@@ -53,7 +53,7 @@ export class BattlePlayerScene {
             const opponentMonsterPosition = opponentMonster?.location;
             (async () => {
                 system.run(() => {
-                    // this.player.playMusic("oremon.music.wild_battle");
+                    this.player.playMusic("oremon.music.wild_battle");
                     if (opponentMonsterPosition) {
                         const yaw = MathUtils.radiansToDegrees(Math.atan2(opponentMonsterPosition.x - playerPosition.x, playerPosition.z - opponentMonsterPosition.z));
                         opponentMonster.setRotation({ x: 0, y: yaw });
@@ -84,7 +84,7 @@ export class BattlePlayerScene {
                     await this.wait(secondsToTick(0.5));
 
                     system.run(() => {
-                        this.player?.dimension.playSound(opponentCry, opponentMonsterPosition);
+                        this.player?.dimension.playSound(opponentCry, {x: opponentMonsterPosition.x, y: opponentMonsterPosition.y + 0.5, z: opponentMonsterPosition.z});
                         this.player?.playSound(opponentCry, {volume: 1});
                         try {
                             opponentMonster?.playAnimation("battle_cry",
@@ -123,7 +123,7 @@ export class BattlePlayerScene {
     onTrainerBattleStart() {
         return new Promise<void>((resolve) => {
             system.run(() => {
-                // this.player.playMusic("oremon.music.wild_battle");
+                this.player.playMusic("oremon.music.wild_battle");
                 this.player.camera.setCamera("oremon:shoulder_right", {
                     easeOptions: { easeType: EasingType.InOutQuad, easeTime: 0.5 }
                 });
@@ -135,7 +135,7 @@ export class BattlePlayerScene {
     onBattleEnd() {
         return new Promise<void>((resolve) => {
             system.run(() => {
-                // this.player.runCommand("music stop 2");
+                this.player.runCommand("music stop 2");
                 this.player.camera.clear();
                 resolve();
             });

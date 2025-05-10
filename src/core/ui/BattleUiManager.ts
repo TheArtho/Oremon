@@ -43,40 +43,17 @@ export class BattleUiManager {
         return form;
     }
 
-    static UpdatePlayerHpBar(player: Player, value: number) {
-        player.onScreenDisplay.setTitle(`playerhpbar:${value}`);
+    static UpdateBattleHud(player: Player, battleInfo: BattleInfo) {
+        let str = "";
+        str += `playerpanel:on:/:`;
+        str += `opponentpanel:on:/:`;
+        str += `playername:${battleInfo.player.name}:/:`;
+        str += `playerlevel:${battleInfo.player.level}:/:`;
+        str += `opponentname:${battleInfo.opponent.name}:/:`;
+        str += `opponentlevel:${battleInfo.opponent.name}:/:`;
+        str += `playerhp:${battleInfo.player.currentHp}/${battleInfo.player.maxHp}:/:`;
+        str += `playerhp_ratio:${Math.ceil((1-battleInfo.player.currentHp/battleInfo.player.maxHp)*100)}:/:`;
+        str += `opponenthp_ratio:${Math.ceil((1-battleInfo.opponent.currentHp/battleInfo.opponent.maxHp)*100)}`;
+        player.onScreenDisplay.setTitle(str);
     }
-
-    static UpdatePlayerHpText(player: Player, value: string) {
-        player.onScreenDisplay.setTitle(`playerhptext:${value}`);
-    }
-
-    static UpdatePlayerName(player: Player, value: string) {
-        player.onScreenDisplay.setTitle(`playerbattlername:${value}`);
-    }
-
-    static UpdatePlayerLevel(player: Player, value: string) {
-        player.onScreenDisplay.setTitle(`playerbattlerlevel:${value}`);
-    }
-    /*
-    static UpdatePlayerTeam(player: Player, value: string) {
-
-    }
- */
-    static UpdateOpponentHpBar(player: Player, value: number) {
-        player.onScreenDisplay.setTitle(`opponenthpbar:${value}`);
-    }
-
-    static UpdateOpponentName(player: Player, value: string) {
-        player.onScreenDisplay.setTitle(`opponentbattlername:${value}`);
-    }
-
-    static UpdateOpponentLevel(player: Player, value: string) {
-        player.onScreenDisplay.setTitle(`opponentbattlerlevel:${value}`);
-    }
-    /*
-    static UpdateOpponentTeam(player: Player, value: string) {
-
-    }
-    */
 }

@@ -7,8 +7,117 @@
 
   "hud_elements_panel": {
     "type": "panel",
+    "$update_string_dialog_box": "oremonDialog:",
+    "$update_string_dialog_text": "oremonDialogText:",
     "controls": [
-
+      {
+        "debug_title_text": {
+          "type": "label",
+          "text": "#text",
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "offset": [ 0, 2 ],
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"                                          
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "#hud_title_text_string",
+              "target_property_name": "#text"
+            }
+          ]
+        }
+      },
+      {
+        "oremon_dialogbox_data_control": {
+          "type": "panel",
+          "size": [0,0],
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"                                          
+            },
+            {
+              "binding_name": "#hud_title_text_string",
+              "binding_name_override": "#preserved_text",                                                                     
+              "binding_condition": "visibility_changed"
+            },
+                                                                                                                           
+            {
+              "binding_type": "view",
+              "source_property_name": "(not (#hud_title_text_string = #preserved_text) and not ((#hud_title_text_string - $update_string_dialog_box) = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "oremon_dialogbox": {
+          "type": "image",
+          "size": [200, 50],
+          "texture": "textures/ui/Black",                     
+          "alpha": 0.5,
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "offset": [ 0, -25 ],
+          "layer": 10,
+          "controls": [
+            {
+              "oremon_dialogbox_text": {
+                "type": "label",
+                "text": "#text",
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "size": [180, 30],
+                "offset": [ 10, 10 ],
+                "layer": 11,
+                "controls": [
+                  {
+                    "oremon_dialogbox_text_data_control": {
+                      "type": "panel",
+                      "size": [0,0],
+                      "bindings": [
+                        {
+                          "binding_name": "#hud_title_text_string"                                          
+                        },
+                        {
+                          "binding_name": "#hud_title_text_string",
+                          "binding_name_override": "#preserved_text",                                                                     
+                          "binding_condition": "visibility_changed"
+                        },
+                                                                                                                                       
+                        {
+                          "binding_type": "view",
+                          "source_property_name": "(not (#hud_title_text_string = #preserved_text) and not ((#hud_title_text_string - $update_string_dialog_text) = #hud_title_text_string))",
+                          "target_property_name": "#visible"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "oremon_dialogbox_text_data_control",   	                                                       
+                    "resolve_sibling_scope": true,
+                    "source_property_name": "(#preserved_text - $update_string_dialog_text)",                                                             
+                    "target_property_name": "#text"
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "oremon_dialogbox_data_control",   	                                                       
+              "resolve_sibling_scope": true,
+              "source_property_name": "(((#preserved_text - $update_string_dialog_box) = 'on')",                                                     
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
     ]
   },
 

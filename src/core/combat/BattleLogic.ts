@@ -57,11 +57,12 @@ export class BattleLogic {
         return move.priority ?? 0;
     }
 
-    static calculateDamage(moveId: string, attacker: OremonBattler, defender: OremonBattler): {damage: number, effectiveness: number} {
+    static calculateDamage(moveId: string, attacker: OremonBattler, defender: OremonBattler): {damage: number, effectiveness: number, displayEffectiveness: boolean} {
         const move = moveData[moveId];
         if (!move || !move.power) return {
             damage: 0,
-            effectiveness: 0
+            effectiveness: 0,
+            displayEffectiveness: false
         }; // No damage if move has no power
 
         const attackerLevel = attacker.getLevel();
@@ -101,7 +102,8 @@ export class BattleLogic {
 
         return {
             damage: Math.max(1, damage), // Minimum 1 damage always
-            effectiveness: typeEffectiveness
+            effectiveness: typeEffectiveness,
+            displayEffectiveness: true
         }
     }
 

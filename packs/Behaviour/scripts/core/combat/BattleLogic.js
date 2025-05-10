@@ -51,7 +51,8 @@ export class BattleLogic {
         if (!move || !move.power)
             return {
                 damage: 0,
-                effectiveness: 0
+                effectiveness: 0,
+                displayEffectiveness: false
             }; // No damage if move has no power
         const attackerLevel = attacker.getLevel();
         const movePower = move.power;
@@ -81,7 +82,8 @@ export class BattleLogic {
         damage = Math.floor(damage * modifier);
         return {
             damage: Math.max(1, damage), // Minimum 1 damage always
-            effectiveness: typeEffectiveness
+            effectiveness: typeEffectiveness,
+            displayEffectiveness: true
         };
     }
     static getTypeEffectiveness(attackType, defender) {

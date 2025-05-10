@@ -160,14 +160,19 @@ export class Battle {
         this.endTurn();
     }
     executeMove(moveId, attacker, target) {
-        this.battleScene?.displayMessage(`${attacker.getName()} use ${moveId}!`);
+        this.battleScene?.displayDialog(`${attacker.getName()} use ${moveId}!`);
         const damageInfo = BattleLogic.calculateDamage(moveId, attacker, target);
         target.takeDamage(damageInfo.damage);
-        if (damageInfo.effectiveness >= 2) {
-            this.battleScene?.displayMessage("It's super effective!");
-        }
-        else if (damageInfo.effectiveness <= 0.5) {
-            this.battleScene?.displayMessage("It's not very effective.");
+        if (damageInfo.displayEffectiveness) {
+            if (damageInfo.effectiveness >= 2) {
+                this.battleScene?.displayDialog("It's super effective!");
+            }
+            else if (damageInfo.effectiveness <= 0) {
+                this.battleScene?.displayDialog(`It has no effect on ${target.getName()}.`);
+            }
+            else if (damageInfo.effectiveness <= 0.5) {
+                this.battleScene?.displayDialog("It's not very effective.");
+            }
         }
         // If the target fainted, trigger the target's faint and delete all the actions related to them
         if (target.isFainted()) {

@@ -173,7 +173,7 @@ export class OremonBattler {
 
     // Battle methods
     onFaint() {
-        this.battle.getScene()?.displayMessage(`${this.getName()} fainted!`);
+        this.battle.getScene()?.displayDialog(`${this.getName()} fainted!`);
         this.battle.getScene()?.faint(this.trainerIndex);
     }
 }

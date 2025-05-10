@@ -92,7 +92,7 @@ export class OremonEntityEventHandler {
     static register() {
         this.disableVanillaSpawnEvent();
         this.registerSpawnEvent();
-        this.registerInteractFormEvent();
+        // this.registerInteractFormEvent();
         // this.registerInteractTameEvent();
         // this.registerInteractBattleEvent();
         this.registerHitByBall();

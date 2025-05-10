@@ -140,6 +140,21 @@ export class BattleScene {
             }
         });
     }
+    displayDialog(message, playerId) {
+        this.enqueue(async (resolve) => {
+            if (playerId) {
+                const p = this.playerScenes.get(playerId);
+                p?.onDisplayDialog(message).then(resolve);
+            }
+            else {
+                const promises = [];
+                for (const p of this.playerScenes.values()) {
+                    promises.push(p.onDisplayDialog(message));
+                }
+                Promise.all(promises).then(() => resolve());
+            }
+        });
+    }
     updateInfo() {
         this.enqueue((resolve) => {
             for (const p of this.playerScenes.values()) {

@@ -213,7 +213,6 @@ export class Oremon {
     }
     getCry() {
         const cry = `oremon.cry.${this.getSpeciesId().replace("oremon:", "")}`;
-        console.log(cry);
         return cry;
     }
     toWildData() {

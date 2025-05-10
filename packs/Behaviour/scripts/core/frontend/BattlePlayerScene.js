@@ -1,11 +1,10 @@
 import { EasingType, system } from "@minecraft/server";
-import moveData from "../../data/moveData";
 import { VectorUtils } from "../utils/VectorUtils";
 import { secondsToTick } from "../utils/timeTickUtils";
 import { MathUtils } from "../utils/MathUtils";
-import { ActionFormData } from "@minecraft/server-ui";
 import { BattleCameraManager } from "../camera/BattleCameraManager";
 import { BattleUiManager } from "../ui/BattleUiManager";
+import { DialogBoxHandler } from "../ui/DialogBoxHandler";
 export class BattlePlayerScene {
     constructor(index, battle, player) {
         this.index = index;
@@ -122,20 +121,7 @@ export class BattlePlayerScene {
     async onAskInput() {
         const battleInfo = this.battle.getBattleInfo(this.player);
         const ask = async () => {
-            const form = new ActionFormData()
-                .title("battle_form:battle")
-                .label(`${battleInfo.opponent.name}`) // collection_index : 0
-                .label(`Lv.${battleInfo.opponent.level}`) // collection_index : 1
-                .label(`${battleInfo.player.name}`) // collection_index : 2
-                .label(`Lv.${battleInfo.player.level}`) // collection_index : 3
-                .label(`${battleInfo.player.currentHp}/${battleInfo.player.maxHp}`) // collection_index : 4
-                .label(`playerbar:${Math.ceil((1 - battleInfo.player.currentHp / battleInfo.player.maxHp) * 100)}`) // collection_index : 5
-                .label(`opponentbar:${Math.ceil((1 - battleInfo.opponent.currentHp / battleInfo.opponent.maxHp) * 100)}`); // collection_index : 6
-            battleInfo.player.moves.forEach(move => {
-                if (move) {
-                    form.button(`${move.id} - PP: ${move.pp}/${moveData[move.id].pp}`);
-                }
-            });
+            const form = BattleUiManager.getBattleForm(battleInfo);
             const r = await form.show(this.player);
             // If the player cancels, ask again
             if (r.canceled) {
@@ -159,6 +145,15 @@ export class BattlePlayerScene {
             resolve();
         });
     }
+    onDisplayDialog(message) {
+        return new Promise((resolve) => {
+            this.player.sendMessage(`[Battle Dialog] ${message}`);
+            (async () => {
+                await DialogBoxHandler.DisplayText(this.player, message, { waitTicks: 15, instant: true });
+                resolve();
+            })();
+        });
+    }
     onUpdateInfo() {
         const battleInfo = this.battle.getBattleInfo(this.player);
         /*
@@ -176,9 +171,8 @@ export class BattlePlayerScene {
         */
         return new Promise((resolve) => {
             (async () => {
-                BattleUiManager.UpdateOpponentName(this.player, battleInfo.opponent.name);
-                await system.waitTicks(1);
-                BattleUiManager.UpdateOpponentLevel(this.player, `Lv.${battleInfo.opponent.level}`);
+                // Update Battle UI
+                console.log(battleInfo);
                 resolve();
             })();
         });

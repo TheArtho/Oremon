@@ -1,13 +1,12 @@
 import {EasingType, Entity, Player, system} from "@minecraft/server";
 import {Battle} from "../combat/Battle";
-import moveData from "../../data/moveData";
 import {VectorUtils} from "../utils/VectorUtils";
 import {secondsToTick} from "../utils/timeTickUtils";
 import {MathUtils} from "../utils/MathUtils";
-import {ActionFormData} from "@minecraft/server-ui";
 import {PlayerAction} from "../../types/Battle";
 import {BattleCameraManager} from "../camera/BattleCameraManager";
 import {BattleUiManager} from "../ui/BattleUiManager";
+import {DialogBoxHandler} from "../ui/DialogBoxHandler";
 
 type SceneAction = () => Promise<void>;
 
@@ -181,15 +180,13 @@ export class BattlePlayerScene {
        });
     }
 
-    onDisplayText(message: string) {
+    onDisplayDialog(message: string) {
         return new Promise<void>((resolve) => {
-            this.player.sendMessage(`[Battle] ${message}`);
+            this.player.sendMessage(`[Battle Dialog] ${message}`);
             (async () => {
-                this.player.onScreenDisplay.setTitle("oremonDialog:true");
-                await system.waitTicks(20);
-                this.player.onScreenDisplay.setTitle("oremonDialog:false");
+                await DialogBoxHandler.DisplayText(this.player, message, {waitTicks: 15, instant: true});
+                resolve();
             })()
-            resolve();
         });
     }
 

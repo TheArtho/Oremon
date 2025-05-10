@@ -163,6 +163,11 @@ export class Battle {
                     throw new Error(`Your Oremon doesn't know ${action.value}`);
                 }
             }
+            else if (action.type == "run") {
+                if (!this.isTrainerBattle()) {
+                    this.endBattle();
+                }
+            }
         }
         else {
             throw new Error("This player can't send an input to this battle.");
@@ -198,7 +203,7 @@ export class Battle {
                     const attackerBattler = p.battler;
                     const targetInfo = (p.player == this.trainer1) ? this.trainer2 : this.trainer1;
                     const targetBattler = targetInfo.team[targetInfo.active];
-                    this.executeMove(moveId, attackerBattler, targetBattler);
+                    this.executeMove(moveId!, attackerBattler, targetBattler);
                 }
             }
             iteration++;
@@ -330,7 +335,8 @@ export class Battle {
 
         return {
             battle: {
-                turn: this.turnCount
+                turn: this.turnCount,
+                isTrainerBattle: this.isTrainerBattle()
             },
             player: {
                 name: playerPkm.getName(),

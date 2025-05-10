@@ -2,11 +2,22 @@ import {system, world} from "@minecraft/server";
 import {VectorUtils} from "../utils/VectorUtils";
 import {moveEntityToLocation} from "../utils/physicsUtils";
 import {onBallHitBlock, UseOreball} from "./Oreball";
+import {BattleManager} from "../combat/BattleManager";
 
 export class ItemEventHandler {
     static register() {
+        this.registerItemUseInBattle()
         world.beforeEvents.itemUse.subscribe(UseOreball);
         world.afterEvents.projectileHitBlock.subscribe(onBallHitBlock);
+    }
+
+    private static registerItemUseInBattle() {
+        world.beforeEvents.itemUse.subscribe((event) => {
+            const battle = BattleManager.getBattleByPlayerId(event.source.id);
+            if (battle) {
+                event.cancel = true;
+            }
+        });
     }
 
     registerMagicStickEvent() {

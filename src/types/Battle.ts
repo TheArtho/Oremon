@@ -28,19 +28,20 @@ export interface PlayerInfo {
 }
 
 export interface PlayerAction {
-    type: "move" | "switch" | "run";
-    /** moveId or switch slot */
+    type: "move" | "switch" | "item" | "run";
+    /** moveId, switch slot or itemId */
     value: string;
 }
 
 export type TurnResult =
-    | { result: "continue" } // Le tour est fini, on continue le combat
-    | { result: "win", winner: PlayerInfo, loser: PlayerInfo } // Quelqu'un a gagné
-    | { result: "draw" }; // Match nul (plus rare)
+    | { result: "continue" } // Turn ended, continue the battle
+    | { result: "win", winner: PlayerInfo, loser: PlayerInfo } // Somebody won
+    | { result: "draw" }; // Draw
 
 export interface BattleInfo {
     battle: {
         turn: number;
+        isTrainerBattle: boolean;
     },
     player: {
         name: string;

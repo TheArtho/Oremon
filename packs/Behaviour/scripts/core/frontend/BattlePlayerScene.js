@@ -120,16 +120,42 @@ export class BattlePlayerScene {
     }
     async onAskInput() {
         const battleInfo = this.battle.getBattleInfo(this.player);
-        const ask = async () => {
-            const form = BattleUiManager.getBattleForm(battleInfo);
+        const actionForm = async () => {
+            const form = BattleUiManager.getChoiceForm(battleInfo);
             const r = await form.show(this.player);
             // If the player cancels, ask again
             if (r.canceled) {
-                return ask(); // Recursive call
+                return actionForm(); // Recursive call
+            }
+            switch (r.selection) {
+                case 0: // Battle
+                    return moveChoice();
+                case 3: // Run
+                    {
+                        if (this.battle.isTrainerBattle()) {
+                            return actionForm();
+                        }
+                        const playerAction = {
+                            type: "run",
+                            value: ""
+                        };
+                        this.battle.receiveInput(this.player, playerAction);
+                        break;
+                    }
+                default:
+                    return actionForm();
+            }
+        };
+        const moveChoice = async () => {
+            const form = BattleUiManager.getMoveForm(battleInfo);
+            const r = await form.show(this.player);
+            // If the player cancels, go back to the previous form
+            if (r.canceled) {
+                return actionForm();
             }
             const moveId = battleInfo.player.moves[r.selection]?.id;
             if (!moveId) {
-                return ask(); // In case moveId is still undefined
+                return moveChoice(); // In case moveId is still undefined
             }
             const playerAction = {
                 type: "move",
@@ -137,7 +163,7 @@ export class BattlePlayerScene {
             };
             this.battle.receiveInput(this.player, playerAction);
         };
-        await ask();
+        await actionForm();
     }
     onDisplayMessage(message) {
         return new Promise((resolve) => {

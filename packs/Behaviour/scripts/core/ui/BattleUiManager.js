@@ -11,6 +11,18 @@ export class BattleUiManager {
             .label(`${battleInfo.player.currentHp}/${battleInfo.player.maxHp}`) // collection_index : 4
             .label(`playerbar:${Math.ceil((1 - battleInfo.player.currentHp / battleInfo.player.maxHp) * 100)}`) // collection_index : 5
             .label(`opponentbar:${Math.ceil((1 - battleInfo.opponent.currentHp / battleInfo.opponent.maxHp) * 100)}`); // collection_index : 6
+        return form;
+    }
+    static getChoiceForm(battleInfo) {
+        const form = this.getBattleForm(battleInfo);
+        form.button("Battle");
+        form.button("Oremon");
+        form.button("Items");
+        form.button("Run");
+        return form;
+    }
+    static getMoveForm(battleInfo) {
+        const form = this.getBattleForm(battleInfo);
         battleInfo.player.moves.forEach(move => {
             if (move) {
                 form.button(`${move.id} - PP: ${move.pp}/${moveData[move.id].pp}`);

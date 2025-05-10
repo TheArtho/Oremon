@@ -119,6 +119,11 @@ export class Battle {
                     throw new Error(`Your Oremon doesn't know ${action.value}`);
                 }
             }
+            else if (action.type == "run") {
+                if (!this.isTrainerBattle()) {
+                    this.endBattle();
+                }
+            }
         }
         else {
             throw new Error("This player can't send an input to this battle.");

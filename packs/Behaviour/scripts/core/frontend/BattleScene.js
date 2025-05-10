@@ -167,7 +167,10 @@ export class BattleScene {
         this.enqueue((resolve) => {
             system.run(() => {
                 this.getMonsterFromIndex(index)?.kill();
-                resolve();
+                (async () => {
+                    await system.waitTicks(20);
+                    resolve();
+                })();
             });
         });
     }
@@ -178,8 +181,18 @@ export class BattleScene {
                 promises.push(p.onBattleEnd());
             }
             system.run(() => {
-                this.monster1?.removeTag("in_battle");
-                this.monster2?.removeTag("in_battle");
+                try {
+                    this.monster1?.removeTag("in_battle");
+                }
+                catch {
+                    // Skip
+                }
+                try {
+                    this.monster2?.removeTag("in_battle");
+                }
+                catch {
+                    // Skip
+                }
                 try {
                     this.monster1?.triggerEvent("oremon:overworld");
                 }
